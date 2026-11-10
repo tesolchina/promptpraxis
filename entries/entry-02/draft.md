@@ -2,6 +2,8 @@
 
 **New order:** ① the problem (Career Column) ② the solutions without AI, as she proposed them — steps 1 and 2 only ③ GUI vs API, echoing Entry 1 ④ WorkBuddy how-to, two tracks ⑤ decisions, limits, value → closing.
 
+**Publication date (Simon, 10 Nov):** 13 November 2026
+
 **Title (Simon, 10 Nov):** *Introduction to Agentic AI: a hands-on lesson for academic literature management*
 *(earlier working title: From chasing papers to running pipelines)*
 
@@ -9,11 +11,9 @@
 
 ---
 
-## Part 1 — The problem
+## Part 1 — A hundred open tabs: the problem every researcher recognises
 
-Paste nothing yet. Start with a story that every researcher recognises.
-
-In July 2022, Maya Gosztyla wrote in *Nature* about the evening her laptop died. She had more than a hundred papers waiting in browser tabs, each one a promise to read later. When the crash took the tabs, her first feeling was relief: the loss finally forced the decision she had been postponing — a system, or another semester of re-reading the same pages (Gosztyla, 2022).
+In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. She had more than a hundred papers waiting in browser tabs, each one a promise to read later. When the crash took the tabs, her first feeling was relief: the loss finally forced the decision she had been postponing — a system, or another semester of re-reading the same pages (Gosztyla, 2022).
 
 Her article set out four steps: **find, manage, read, organize**. The finding is where collections start to leak: papers promised for later, alerts that flood the inbox, the good intentions of a Friday afternoon. The managing is where intentions become a database — or fail to. Read and organize are yours to build; they need your judgement, not a script.
 
@@ -23,9 +23,31 @@ This entry takes the first two steps, and it starts where she started: with the 
 
 Her fixes were conventional, and they still work.
 
-**Step 1 — find.** Stop hunting; subscribe. Journal tables of contents arrive by **RSS**, the orange feed icon on a journal's home page, and a feed aggregator (Feedly, Inoreader, NewsBlur) collects them in one place. Her routine: five minutes each morning, a glance at each title, anything interesting moved to a *Read Later* folder. For deeper dives she named the citation-mapping tools — ResearchRabbit, Connected Papers, Litmaps — which show which papers lean on which. The principle underneath: **let the literature come to you on a schedule you choose**, instead of going out to look for it between meetings.
+**Step 1 — find.** Stop hunting; subscribe. The plumbing is **RSS — Really Simple Syndication**. Every journal that offers it publishes a small XML file, its *feed*, at a fixed address; an **RSS reader** (a web app, a desktop program or a phone app) checks those addresses for you and lines up whatever is new. You subscribe once and the literature starts arriving: no emails to delete, no sites to visit, nothing lost when a laptop dies.
 
-**Step 2 — manage.** Never format a reference by hand again. Zotero, Mendeley or EndNote store the paper *and* the record — folders, keywords, tags, a browser plug-in that saves a paper in one click, a word-processor plug-in that builds the bibliography. Her rule was simple: the moment she decided a paper was worth reading, it went into the reference manager, and the browser tab could close. That satisfying close is the whole step.
+Setting it up takes ten minutes:
+
+1. **Get a reader.** A web reader such as [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) needs no installation; desktop and mobile readers exist for offline scanning. (Feedly, Inoreader and NewsBlur were Gosztyla's own picks.)
+2. **Paste a feed address to subscribe.** Real feeds, working as printed: [*Nature*](https://www.nature.com/nature.rss) · [*Nature Communications*](https://www.nature.com/ncomms.rss) · [arXiv cs.AI](https://rss.arxiv.org/rss/cs.AI).
+3. **Scan five minutes each morning.** Glance at titles, move anything interesting to *Read Later*, close the reader. Gosztyla's routine, kept exactly.
+
+> **Demo — subscribing in Feedly (5 minutes).** Open [feedly.com](https://feedly.com) → sign up free → click **Follow** → paste `https://www.nature.com/nature.rss` → the journal's newest articles appear in your sidebar → follow `https://rss.arxiv.org/rss/cs.AI` the same way. Tomorrow morning's scan is already waiting. *(screenshots added at assembly)*
+
+For deeper dives she also named the citation-mapping tools — ResearchRabbit, Connected Papers, Litmaps — which show which papers lean on which. The principle underneath: **let the literature come to you on a schedule you choose**, instead of going out to look for it between meetings.
+
+**Step 2 — manage.** Never format a reference by hand again. **Zotero** — free, open source, [zotero.org](https://www.zotero.org) — is the reference manager we demo here; Mendeley and EndNote do the same job. Zotero stores the paper *and* the record together, and its operations cover the whole managing loop:
+
+| Operation | What you do in Zotero |
+|---|---|
+| **Import** | one click from any article page with the browser connector; or by DOI, RIS/BibTeX file, or dragging a PDF in |
+| **Organize** | drag into *Collections* (a folder per project), tag, saved searches, duplicate detection |
+| **Read & annotate** | built-in PDF reader; highlights and notes attach to the record |
+| **Cite** | word-processor plug-in for Word and LibreOffice; thousands of citation styles; the bibliography builds itself |
+| **Share & export** | sync across machines, group libraries, export to BibTeX/RIS for anyone else |
+
+> **Demo — managing a paper in Zotero (5 minutes).** 1. Install Zotero + the browser connector (one time, [zotero.org](https://www.zotero.org)). 2. On any article page, click the connector icon — the citation **and** the PDF land in your library. 3. Drag it into a *Collection* and add a *tag*. 4. Read in the built-in reader; your highlights become notes on the record. 5. In Word, cite it and build the bibliography.
+
+Her rule was simple: the moment she decided a paper was worth reading, it went into the reference manager, and the browser tab could close. That satisfying close is the whole step.
 
 Two steps, two conventional tools, one honest limitation. Everything in Part 2 is operated **by hand, on a screen, one click at a time** — and that limitation is the door to Part 3.
 
