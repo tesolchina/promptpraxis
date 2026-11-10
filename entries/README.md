@@ -5,7 +5,7 @@
 | Entry | Draft | Issue |
 |---|---|---|
 | 1 — *From plain texts to playable* | published: https://blog.simonsays.hk/ieee/01.html | [procomm#4](https://github.com/tesolchina/procomm-microlearning/issues/4) |
-| 2 — *From chasing papers to running pipelines* | [`entry-02/draft.md`](entry-02/draft.md) · review copy live at https://blog.simonsays.hk/ieee/02.html (password) | [promptpraxis#2](https://github.com/tesolchina/promptpraxis/issues/2) |
+| 2 — *Introduction to Agentic AI: a hands-on lesson for academic literature management* | [`entry-02/draft.md`](entry-02/draft.md) · review copy live at https://blog.simonsays.hk/ieee/02.html (password) | [promptpraxis#2](https://github.com/tesolchina/promptpraxis/issues/2) |
 
 **For collaborators (winnie-bo, zian.zheng):** pick up tasks from the entry's issue, reply/annotate there, and open a PR against the draft file for text changes. Never edit the blog website directly — Simon owns that push.
 

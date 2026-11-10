@@ -2,7 +2,8 @@
 
 **New order:** ① the problem (Career Column) ② the solutions without AI, as she proposed them — steps 1 and 2 only ③ GUI vs API, echoing Entry 1 ④ WorkBuddy how-to, two tracks ⑤ decisions, limits, value → closing.
 
-**Suggested title:** *From chasing papers to running pipelines*
+**Title (Simon, 10 Nov):** *Introduction to Agentic AI: a hands-on lesson for academic literature management*
+*(earlier working title: From chasing papers to running pipelines)*
 
 **Standfirst:** A researcher's hundred open tabs, a column that told her to build a system, and the two steps where most systems still leak — now handed to instruments that do not have hands.
 
