@@ -2,17 +2,16 @@
 
 **Series:** *Prompt & Praxis — Experiments in AI and professional communication* (A working series for IEEE ProComm)  
 **Publication date:** 13 November 2026  
-**Authors:**
-- **Dr Simon Wang** (Lead Author) · Lecturer in English and Innovation Officer, Language Centre, Hong Kong Baptist University
-- **Wenyun (Winnie) FU** (Co-author) · Final year student at HKBU (Journalism)
-- **Zian (Andy) Zheng** (Co-author) · Final year student at HKBU (Computer Science)
+**Series Host:** Dr Simon Wang (Language Centre, HKBU)  
+**Guest Authors:**
+- **Wenyun (Winnie) FU** · Final year undergraduate student in Journalism, School of Communication, HKBU
+- **Zian (Andy) Zheng** · Final year undergraduate student in Computer Science, Faculty of Science, HKBU
 
-**Author Biographies:**
-- **Dr Simon Wang**: Lecturer in English and Innovation Officer, Language Centre, Hong Kong Baptist University. Researches and designs AI applications for professional communication education.
-- **Wenyun (Winnie) FU**: Final-year student at HKBU (Journalism). Explores AI-assisted communication, human-in-the-loop writing workflows, and academic literature synthesis.
-- **Zian (Andy) Zheng**: Final-year student at HKBU (Computer Science). Focuses on agentic AI pipelines, software prototyping, and API orchestration.
+**Guest Author Biographies:**
+- **Wenyun (Winnie) FU**: Final year undergraduate student in Journalism at Hong Kong Baptist University (School of Communication). Co-author of this article, exploring human-in-the-loop AI writing workflows, investigative source verification, and academic literature synthesis through a journalism lens.
+- **Zian (Andy) Zheng**: Final year undergraduate student in Computer Science at Hong Kong Baptist University (Faculty of Science). Co-author of this article, focusing on agentic AI pipelines, software prototyping, and API orchestration, connecting natural language instructions with computing instruments.
 
-*(Visual presentation note: Author cards render with Nobel Prize winner portrait sketch styling, 1-line bios, and interactive toggle layout matching the Entry 1 visual hierarchy.)*
+*(Visual presentation note: Rendered as a 2-column Guest Author showcase featuring Nobel Prize sketch portraits [assets/winnie-portrait.jpg and assets/andy-portrait.jpg] with expanded dimensions.)*
 
 **Table of Contents (Series Navigation):**
 - [Entry 1 — From plain texts to playable](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) · *earlier entry*
