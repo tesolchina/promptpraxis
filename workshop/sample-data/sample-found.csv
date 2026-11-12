@@ -1,4 +1,6 @@
 OpenAlex_ID,Title,Authors,Year,Citations,DOI,Journal,Reading_Status,Notes
-https://openalex.org/W4414939355,Qwen3 Technical Report,An Yang; Baosong Yang,2025,17561,https://doi.org/10.48550/arxiv.2505.09388,arXiv (Cornell University),Unread,
-https://openalex.org/W4414281281,DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning,Daya Guo; Dejian Yang,2025,16737,https://doi.org/10.1038/s41586-025-09422-z,Nature,Unread,
-https://openalex.org/W4362515116,A Survey of Large Language Models,Wayne Xin Zhao; Kun Zhou,2026,8505,https://doi.org/10.1007/s11704-026-60308-3,Frontiers of Computer Science,Unread,
+https://openalex.org/W7202110420,Automated Written Corrective Feedback in EFL context,Anano Chang,2026,0,https://doi.org/10.48321/d13320141e,California Digital Library,Unread,
+https://openalex.org/W4405410781,Automated Written Corrective Feedback (AWCF),,2024,1,https://doi.org/10.1163/9789004719118_009,BRILL eBooks,Unread,
+https://openalex.org/W4412170289,Effectiveness of Generative AI in Automated Written Corrective Feedback With Prompting,Jiahui Wu; Jianwei Li; Zi-Gang Ge; Mingrui Xu; Lin Li; Ru Zhang,2025,19,https://doi.org/10.1177/07356331251359430,Journal of Educational Computing Research,Unread,
+https://openalex.org/W4401888066,L2 writer engagement with automated written corrective feedback provided by ChatGPT: A mixed-method multiple case study,Da “Alex” Yan; Shuxian Zhang,2024,167,https://doi.org/10.1057/s41599-024-03543-y,Humanities and Social Sciences Communications,Unread,
+https://openalex.org/W7117467041,Impact of prompt sophistication on ChatGPT’s output for automated written corrective feedback,Na Luo; Yifan Wang; Zhe (Victor) Zhang; Yile Zhou; Rongfu Zhao,2025,10,https://doi.org/10.1017/s095834402510044x,ReCALL,Unread,

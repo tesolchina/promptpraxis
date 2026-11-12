@@ -2,29 +2,30 @@
 
 This beginner pack accompanies **Prompt & Praxis Entry 2**: *Introduction to Agentic AI: a hands-on lesson for academic literature management*.
 
-It enables knowledge workers and researchers to fetch verified literature metadata directly from OpenAlex, inspect it in a reading list CSV, export importable BibTeX/RIS bibliographies, and import them cleanly into Zotero.
+It provides instructions for running and customizing the standalone `workshop/fetch_literature.py` script to fetch literature metadata from OpenAlex, generate reading list CSVs, and export BibTeX/RIS reference files.
 
 ---
 
-## Prerequisites
+## 首次准备 (Prerequisites & Setup)
 
-- **Python 3.8+** (or Tencent WorkBuddy / Cursor / VS Code with terminal support)
-- No third-party packages required — uses standard library (`urllib`, `json`, `csv`, `re`)
-- An email address for OpenAlex's polite pool (increases reliability)
+1. **Environment:** Python 3.8+ (or Tencent WorkBuddy / Cursor / VS Code with integrated terminal).
+2. **Dependencies:** None — uses Python standard library modules (`urllib`, `json`, `csv`, `re`).
+3. **Working Directory:** Open your terminal in the repository root or navigate to `workshop/`.
+4. **Contact Email:** An email is optional. You may leave `--email=` blank for the standard pool, or provide your real institutional email for OpenAlex's polite pool. No fictitious email is required.
 
 ---
 
 ## Pipeline Overview
 
 ```
-[OpenAlex API] 
+[OpenAlex Public API] 
        │
-       ▼ (live HTTP query with polite pool)
+       ▼ (HTTP query with relevance ranking)
 [fetch_literature.py]
        │
-       ├──► found.csv  (Reading list table with Status and Notes)
+       ├──► found.csv  (Persistent reading list table with Status and Notes)
        ├──► found.bib  (Standard BibTeX for Zotero / LaTeX)
-       └──► found.ris  (Standard RIS for Zotero / EndNote / Mendeley)
+       └──► found.ris  (Standard RIS for reference managers)
 ```
 
 ---
@@ -33,76 +34,85 @@ It enables knowledge workers and researchers to fetch verified literature metada
 
 ### Level 1 — First Run (As Printed)
 
-Copy and run the base command in your terminal, or prompt your AI agent (WorkBuddy):
+**1. 输入提示词与命令 (Command):**  
+Tell your AI agent (WorkBuddy):  
+> *"Run `workshop/fetch_literature.py` to retrieve the 5 most relevant papers on automated written corrective feedback published since 2024."*
 
-> *"Run the literature pipeline to find the 5 most-cited papers on applied linguistics AI published since 2024 using OpenAlex polite pool."*
-
-**Direct Command:**
+Or run directly in terminal:
 ```bash
-python3 fetch_literature.py \
-  --topic "applied linguistics AI" \
+python3 workshop/fetch_literature.py \
+  --topic "automated written corrective feedback" \
   --year 2024 \
-  --sort "cited_by_count:desc" \
+  --sort relevance \
   --limit 5 \
-  --email "your.email@example.com"
+  --email=
 ```
 
-**Expected Outcome:**
-- Terminal prints count of total matching papers in OpenAlex (~130,000+).
-- Outputs 3 files: `found.csv`, `found.bib`, `found.ris`.
-- Displays top 3 paper titles and DOIs.
+**2. 预期结果 (Expected Outcome):**
+- Terminal reports total matching papers in OpenAlex (~11,000+).
+- Generates 3 files in your working folder: `found.csv`, `found.bib`, `found.ris`.
+- Displays retrieved paper titles, publication years, and DOI URLs.
+
+**3. 失败处理 (Troubleshooting):**
+- **HTTP 429:** If encountering rate limits, supply your real academic email via `--email="your_name@institution.edu"` or wait briefly.
+- **Offline Mode:** If offline, test using `--fixture workshop/tests/fixtures/openalex_normal.json`.
 
 ---
 
 ### Level 2 — Customize the Query
 
-Edit the parameters to fit your own research area. Change the topic, year, or sort order.
+**1. 输入提示词与命令 (Command):**  
+Edit parameters for your specific field:
 
-> *"Find the 10 newest papers on second language acquisition published in 2025, sorted by publication date."*
-
-**Direct Command:**
 ```bash
-python3 fetch_literature.py \
+python3 workshop/fetch_literature.py \
   --topic "second language acquisition" \
   --year 2025 \
   --sort "publication_date:desc" \
-  --limit 10 \
-  --email "your.email@example.com"
+  --limit 5 \
+  --email=
 ```
 
-**Key Parameters:**
-- `--topic`: Any phrase (e.g., `"generative AI in higher education"`, `"corpus pragmatics"`)
-- `--year`: Earliest year to include (e.g., `2024`, `2025`, `2026`)
-- `--sort`: Sort criterion (`cited_by_count:desc` for impact; `publication_date:desc` for freshness)
-- `--limit`: Number of entries (default: `10`)
+**2. 预期结果 (Expected Outcome):**
+- Returns the 5 newest publications on the specified topic published since 2025.
+- Files `found.csv`, `found.bib`, and `found.ris` are overwritten with the new results.
+
+**3. Key Parameters:**
+- `--topic`: Keywords or phrase (e.g., `"generative AI in higher education"`)
+- `--year`: Earliest publication year (e.g., `2024`, `2025`)
+- `--sort`: Ranking method (`relevance` for best matches, `cited_by_count:desc` for citation count, `publication_date:desc` for newest)
+- `--limit`: Number of records (1–50, default `5`)
+- `--email`: Optional contact email for polite pool
 
 ---
 
 ### Level 3 — Test Edge Cases & Recovery
 
-In research, real searches sometimes return zero results or papers with incomplete records. Test how the pipeline behaves under stress:
+In research, real queries can return empty sets or incomplete records. Test how the pipeline behaves:
 
 #### 1. Empty Results
 ```bash
-python3 fetch_literature.py --topic "xyznonexistenttopic999" --year 2026
+python3 workshop/fetch_literature.py --topic "xyznonexistenttopic999" --year 2026 --sort relevance --limit 5 --email=
 ```
-- **Expected result:** Reports `0 records found`. Generates empty templates without hallucinating or inventing non-existent publications.
+- **Expected result:** Reports `0 records found`. Generates empty template files without hallucinating non-existent publications.
 
 #### 2. Missing Metadata
-Some working papers or technical preprints do not have formal DOIs or source journals.
-- **Expected result:** Missing values remain empty strings; the pipeline never fabricates a DOI or journal name.
+Preprints and conference abstracts may lack registered DOIs or journal names.
+- **Expected result:** Missing values remain empty fields; the pipeline never fabricates citations, DOIs, or author names.
 
-#### 3. Network Disconnect
-If the network drops or OpenAlex is unreachable:
-- **Expected result:** Pipeline exits gracefully with error message and recovery advice: test offline using `--fixture tests/fixtures/openalex_normal.json`.
+#### 3. Network Disconnection
+If internet connection drops:
+- **Expected result:** Script halts gracefully with exit code `1`, logs `Network Connection Error`, and suggests checking connection or using `--fixture`.
 
 ---
 
-## Importing into Zotero
+## Reference Manager (Zotero) Import Note
 
+To import into Zotero Desktop:
 1. Open **Zotero Desktop**.
-2. Click **File** → **Import...** (or press `Ctrl+Shift+I` / `Cmd+Shift+I`).
+2. Click **File** → **Import...**
 3. Select **A file (BibTeX, RIS, Zotero RDF, etc.)** → click **Next**.
-4. Choose `found.bib` (or `found.ris`).
-5. Choose **Place items into a new collection** → click **Next**.
-6. All records land in your Zotero library, complete with titles, authors, years, journals, and clickable DOI URLs.
+4. Choose `found.bib` (or `found.ris`) from your working folder.
+5. Select destination collection.
+
+> [!NOTE]

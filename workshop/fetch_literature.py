@@ -17,7 +17,7 @@ Features:
   - Offline fixture support for automated testing
 
 Usage:
-  python3 fetch_literature.py --topic "applied linguistics AI" --year 2024 --sort "cited_by_count:desc" --limit 10
+  python3 fetch_literature.py --topic "automated written corrective feedback" --year 2024 --sort relevance --limit 5 --email=
 """
 
 import argparse
@@ -250,16 +250,16 @@ def write_ris(records: list, output_path: str):
 
 def main():
     parser = argparse.ArgumentParser(description="Fetch literature metadata from OpenAlex into CSV and BibTeX/RIS.")
-    parser.add_argument("--topic", type=str, default="applied linguistics AI", help="Search topic")
+    parser.add_argument("--topic", type=str, default="automated written corrective feedback", help="Search topic")
     parser.add_argument("--year", type=str, default="2024", help="Earliest publication year (e.g. 2024)")
     parser.add_argument(
         "--sort",
         type=str,
-        default="cited_by_count:desc",
-        help="Sort order: e.g. 'cited_by_count:desc', 'publication_date:desc', or 'relevance' (omits sort parameter for OpenAlex default relevance ranking)",
+        default="relevance",
+        help="Sort order: 'relevance' (default, omits sort parameter for OpenAlex best-match ranking), 'cited_by_count:desc', or 'publication_date:desc'",
     )
-    parser.add_argument("--limit", type=int, default=10, help="Number of records to retrieve (1-50)")
-    parser.add_argument("--email", type=str, default="andyzheng0715@example.com", help="Email for OpenAlex polite pool")
+    parser.add_argument("--limit", type=int, default=5, help="Number of records to retrieve (1-50)")
+    parser.add_argument("--email", type=str, default="", help="Optional contact email for OpenAlex polite pool (leave empty to query standard pool)")
     parser.add_argument("--output-csv", type=str, default="found.csv", help="Output CSV path")
     parser.add_argument("--output-bib", type=str, default="found.bib", help="Output BibTeX path")
     parser.add_argument("--output-ris", type=str, default="found.ris", help="Output RIS path")
