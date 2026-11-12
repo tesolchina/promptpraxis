@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "count": 3,
+    "page": 1,
+    "per_page": 3
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4414939355",
+      "doi": "https://doi.org/10.48550/arxiv.2505.09388",
+      "title": "Qwen3 Technical Report",
+      "publication_year": 2025,
+      "cited_by_count": 17561,
+      "primary_location": {
+        "source": {
+          "display_name": "arXiv (Cornell University)"
+        },
+        "landing_page_url": "https://doi.org/10.48550/arxiv.2505.09388"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://arxiv.org/abs/2505.09388"
+      },
+      "authorships": [
+        {
+          "author": {
+            "display_name": "An Yang"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Baosong Yang"
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4414281281",
+      "doi": "https://doi.org/10.1038/s41586-025-09422-z",
+      "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+      "publication_year": 2025,
+      "cited_by_count": 16737,
+      "primary_location": {
+        "source": {
+          "display_name": "Nature"
+        },
+        "landing_page_url": "https://doi.org/10.1038/s41586-025-09422-z"
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://www.nature.com/articles/s41586-025-09422-z.pdf"
+      },
+      "authorships": [
+        {
+          "author": {
+            "display_name": "Daya Guo"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Dejian Yang"
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4362515116",
+      "doi": "https://doi.org/10.1007/s11704-026-60308-3",
+      "title": "A Survey of Large Language Models",
+      "publication_year": 2026,
+      "cited_by_count": 8505,
+      "primary_location": {
+        "source": {
+          "display_name": "Frontiers of Computer Science"
+        },
+        "landing_page_url": "https://doi.org/10.1007/s11704-026-60308-3"
+      },
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null
+      },
+      "authorships": [
+        {
+          "author": {
+            "display_name": "Wayne Xin Zhao"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Kun Zhou"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "count": 2,
+    "page": 1,
+    "per_page": 2
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W9999999991",
+      "doi": null,
+      "title": "Early Working Paper on Syntax",
+      "publication_year": null,
+      "cited_by_count": null,
+      "primary_location": null,
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null
+      },
+      "authorships": []
+    },
+    {
+      "id": "https://openalex.org/W9999999992",
+      "doi": "https://doi.org/10.1234/test.5678",
+      "title": "Incomplete Record Without Source Journal",
+      "publication_year": 2023,
+      "cited_by_count": 0,
+      "primary_location": {
+        "source": null,
+        "landing_page_url": "https://doi.org/10.1234/test.5678"
+      },
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null
+      },
+      "authorships": [
+        {
+          "author": {
+            "display_name": "Jane Doe"
+          }
+        }
+      ]
+    }
+  ]
+}

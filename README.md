@@ -11,6 +11,7 @@ instructions — no hand-written code.
 | Folder | Entry | Artefact |
 |---|---|---|
 | [`plain2playable/`](plain2playable/) | Entry 1 — *From plain texts to playable* | Interactive listening lesson (HTML/CSS/JS + narrated audio) |
+| [`workshop/`](workshop/) | Entry 2 — *Introduction to Agentic AI* | Automated literature pipeline (OpenAlex queries, CSV reading list, Zotero BibTeX/RIS export) |
 
 ## The series' premise
 

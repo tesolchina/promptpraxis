@@ -1,0 +1,28 @@
+=== track-a ===
+  requested_at_utc: 2026-11-11T18:14:40.471651+00:00
+  http_status: 200 | Date header: Wed, 11 Nov 2026 18:14:41 GMT
+  body_bytes: 83958 | meta.count: 11915
+  x_query.order: best matches first | order_default: True
+  url: https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+  contains sort/mailto/api_key: False False False
+  run_times: START_LOCAL=2026-11-12 02:14:23 +0800 | START_UTC=2026-11-11T18:14:34Z | END_LOCAL=2026-11-12 02:14:59 +0800 | END_UTC=2026-11-11T18:15:10Z
+  exit: TRACK_A_EXIT=0
+=== track-b ===
+  requested_at_utc: 2026-11-11T18:17:17.495306+00:00
+  http_status: 200 | Date header: Wed, 11 Nov 2026 18:17:18 GMT
+  body_bytes: 83958 | meta.count: 11915
+  x_query.order: best matches first | order_default: True
+  url: https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+  contains sort/mailto/api_key: False False False
+  run_times: START_LOCAL=2026-11-12 02:17:00 +0800 | START_UTC=2026-11-11T18:17:11Z | END_LOCAL=2026-11-12 02:17:35 +0800 | END_UTC=2026-11-11T18:17:46Z
+  exit: TRACK_B_EXIT=0
+=== verify exits ===
+VERIFY_track-a_EXIT=0
+VERIFY_track-b_EXIT=0
+=== six export files ===
+  \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-a\found.csv | 1238 bytes | exists: True
+  \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-a\found.bib | 2005 bytes | exists: True
+  \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-a\found.ris | 1686 bytes | exists: True
+  \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\found.csv | 1238 bytes | exists: True
+  \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\found.bib | 2006 bytes | exists: True
+  \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\found.ris | 1686 bytes | exists: True
