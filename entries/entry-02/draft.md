@@ -137,51 +137,55 @@ In Part 4, we put this pipeline directly into practice using **WorkBuddy**.
 
 ## Part 4 — How you do that, with WorkBuddy
 
-The pipeline is published and free to take apart: **[`workshop/`](https://github.com/tesolchina/procomm-microlearning/tree/main/workshop)** carries the prompts, the script and the expected outputs. Two tracks — pick one.
+Open the [companion workshop](https://github.com/tesolchina/promptpraxis/tree/main/workshop). Choose either track. For Track B, download that branch or open its checkout in WorkBuddy; use an available Python 3 interpreter from the repository root.
 
-### Track A — write it from scratch
+### Track A — Describe the task from scratch
 
-**A1 — make it explain first (30 seconds).** Paste:
+Use WorkBuddy with network access and a writable workspace. It may generate and execute its own code; this route does not reuse our prepared script. Other agents need equivalent tools.
 
-> I'm new to this. Before doing anything: tell me in three lines what this prompt would do, what you need from me, and what could go wrong. Don't run it yet.
->
-> "Find the 10 most-cited papers on *your topic* published since *year*, from OpenAlex, and show me title, year, citations, and DOI."
+1. **A1: Planning contract.** In WorkBuddy, establish rules first:
+   > "I am new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet:
+   > 'Find the 5 most relevant papers on automated written corrective feedback published since 2024 from OpenAlex, and show Title, Year, Citations, and DOI.'"
+2. **A2: Query OpenAlex.** Once the agent outlines its plan, send:
+   > "Query OpenAlex Works API for the 5 most relevant articles on automated written corrective feedback since 2024 using default relevance sorting. Omit the email parameter. Output a table: Title | Year | Citations | DOI. Every row must come strictly from API metadata; leave missing fields blank and never fabricate publications."
+   *Outcome:* Up to five records appear. Inspect their titles for relevance and open an available DOI to check the linked record. Search ranking is not a quality assessment.
+3. **A3: Save to CSV.** Ask:
+   > "Save this table to `found.csv` with columns: OpenAlex_ID, Title, Authors, Year, Citations, DOI, Journal, Reading_Status, Notes. Set Reading_Status to Unread and leave Notes blank."
+   *Outcome:* `found.csv` opens in Excel, Google Sheets, or Tencent Docs as a durable reading log.
+4. **A4: Export to BibTeX and RIS.** Prompt:
+   > "Convert the returned records into standard `found.bib` and `found.ris` files with clean citekeys, author separation, and DOIs preserved."
+   *Outcome:* Reference files are saved. In Zotero, choose File → Import, select either file, and check the imported records against your CSV.
 
-If it starts running without explaining, say *"explain first."* You are training the workflow as much as using it.
+### Track B — Reuse the prepared Python script
 
-**A2 — your first query (2 minutes).** Ask for the ten most-cited articles on your topic since a given year, as a table of **title | year | citations | DOI**, with `mailto=your.email@example.com` on the request — OpenAlex's polite pool. House rule: *do not invent or complete any row; if the API returns nothing, say so.* Open one DOI; it must reach the paper.
+Ask WorkBuddy to explain and run the standalone script documented in [`workshop/prompts/beginner-pack.md`](https://github.com/tesolchina/promptpraxis/blob/codex/entry02-workshop-progress/workshop/prompts/beginner-pack.md):
 
-**A3 — keep it (3 minutes).** Ask for `found.csv` and a Google Doc tab "Reading list — *your topic*" with Status and Notes columns. Close the hunting tabs. That close is the point.
+```bash
+python3 workshop/fetch_literature.py \
+  --topic "automated written corrective feedback" \
+  --year 2024 \
+  --sort relevance \
+  --limit 5 \
+  --email=
+```
 
-**A4 — hand it to Zotero (5 minutes).** BibTeX export plus the menu steps to import, and it waits for your confirmation before acting. Zotero is free and open source; the record is yours.
+- **Output:** Writes `found.csv`, `found.bib`, and `found.ris` into your workspace. Missing metadata fields remain empty rather than hallucinated.
+- **Customization:** Modify `--topic`, `--year`, or sort order (`--sort "publication_date:desc"`).
+- **Edge cases:** If a query returns no matches, the script writes empty output files. If offline, the script suggests `--fixture workshop/tests/fixtures/openalex_normal.json`.
 
-**A5 — build on it.** Change one thing per run: topic, sort, or last week's date window — that last one makes a weekly literature alert.
+## Part 5 — Decisions, limits, and value
 
-### Track B — reuse the code we share
+**Decisions:** We limit this lesson to the first two steps (find and manage) because an entry attempting everything teaches nothing. Standard BibTeX/RIS export remains the dependable bridge to reference managers; experimental in-agent citation formatters remain a separate spike.
 
-1. Open [`workshop/prompts/beginner-pack.md`](https://github.com/tesolchina/procomm-microlearning/blob/main/workshop/prompts/beginner-pack.md).
-2. Send the link to your agent: *"Describe what this code does and how I can reuse it for my own topic."*
-3. Run Level 1, Level 2, Level 3 as printed.
-4. Then break it on purpose — change the topic, the year, the sort. Reusing code means editing it.
+**Limits:** Language models can invent or miscopy citations even when tools are available. Compare outputs with the saved API response, preserve missing fields and check relevance yourself. A DOI helps identify a record; it does not establish the quality of its claims or guarantee free full text. API access conditions and limits can change; stop on errors and follow the service instructions.
 
-**One difference worth knowing:** WorkBuddy returns tables in the chat; VS Code and Cursor work in a folder, so `found.csv` and `found.bib` land beside the code. The prompts are identical; the paste point changes.
+**Value:** An afternoon of browser tab chasing becomes a two-minute query. The same instructions can be reused: next month's literature review is last month's prompt with an updated date filter.
 
-## Part 5 — Decisions, limits, what it is worth
+## Closing — Starting the cycle
 
-**Decisions.** Two steps only, because an entry that does everything teaches nothing. Both instruments, because some literature should arrive by itself and some questions should be asked on demand. Remix over rebuild for Zotero: take one simpler module apart instead of writing a reference manager — its source is public, and its licence was checked before anything of ours was shared.
-
-**Limits.** An agent asked to *remember* a paper invents one that sounds right; asked to *fetch* it, it cannot — so every value above arrives from OpenAlex or does not appear. A DOI proves a paper is real, not that its findings are right. RSS still needs a human to decide what deserves a click. And a public API stays free because its users are polite: one `mailto`, no hammering.
-
-**Value.** An afternoon of tab-hunting becomes a two-minute query, and the second run is free: this Friday's search is last Friday's script with a new date. The list that returns is already sorted and filed, yours to filter by project. Gosztyla's answer to her own crisis was a system. This is that system's first two steps, running on instruments a beginner can drive in an afternoon.
-
-## Closing — the cycle this starts
-
-One query on one real topic returns a table too good not to open. The reader opens one. Tomorrow the same prompt returns something new, and the pipeline stops being a demo and becomes theirs. The platform first, the habit second — the reading, the notes and the organizing get picked up the same way, one working piece at a time.
+One query on a genuine topic yields a table too useful to discard. The reader opens one paper today, reruns the prompt next week, and the pipeline shifts from a classroom exercise into daily practice.
 
 ---
 
-**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² OpenAlex verified 8 Nov 2026: 26,881 results for `search=applied linguistics AI`, `from_publication_date:2026-01-01`. ³ WorkBuddy capability test Stage 1 (GET) passed 7 Nov 2026 — [procomm#9](https://github.com/tesolchina/procomm-microlearning/issues/9). ⁴ Zotero source: github.com/zotero/zotero; licence check logged in [#12](https://github.com/tesolchina/procomm-microlearning/issues/12).
+**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² OpenAlex verified 12 Nov 2026: ~11,915 results for `search=automated written corrective feedback`, `from_publication_date:2024-01-01`, default relevance. ³ Companion run evidence: [WorkBuddy two-track comparison](https://github.com/tesolchina/promptpraxis/blob/codex/entry02-workshop-progress/workshop/evidence/two-track-20261112/cross_check.txt).
 
-**Reviewer box:** Bremen Vance · Comments: open, moderated · Companion code: `workshop/`.
-
-*≈1,400 words. De-AI pass applied at assembly (WI-6, #14): tells checklist + `humanize_check.py` before deploy.*

@@ -1,0 +1,9 @@
+parsed-JSON differing leaf paths: 2
+  /meta/db_response_time_ms A= 390 | B= 203
+  /results/3/relevance_score A= 233.04147 | B= 233.67732
+byte lengths: 83958 83958
+=== key order check (top-level and meta) ===
+A top-level keys: ['meta', 'results', 'group_by']
+B top-level keys: ['meta', 'results', 'group_by']
+A meta keys: ['notice', 'count', 'db_response_time_ms', 'page', 'per_page', 'groups_count', 'x_query', 'cost_usd']
+B meta keys: ['notice', 'count', 'db_response_time_ms', 'page', 'per_page', 'groups_count', 'x_query', 'cost_usd']
