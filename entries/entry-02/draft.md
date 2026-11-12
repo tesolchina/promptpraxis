@@ -15,8 +15,8 @@
 *(Visual presentation note: Author cards render with Nobel Prize winner portrait sketch styling, 1-line bios, and interactive toggle layout matching the Entry 1 visual hierarchy.)*
 
 **Table of Contents (Series Navigation):**
-- [Entry 1 — From plain texts to playable](https://blog.simonsays.hk/ieee/01.html) · *earlier entry*
-- [Entry 2 — Introduction to Agentic AI: a hands-on lesson for academic literature management](https://blog.simonsays.hk/ieee/02.html) · *reading now*
+- [Entry 1 — From plain texts to playable](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) · *earlier entry*
+- [Entry 2 — Introduction to Agentic AI: a hands-on lesson for academic literature management](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry02/) · *reading now*
 
 *(Later entries follow every two weeks. Replaces theme intra-page heading TOC; 'continue reading' button removed.)*
 
@@ -98,7 +98,7 @@ It is also its boundary. A GUI can only display **one screen at a time**, and it
 
 ### How Entry 1 crossed it
 
-[Entry 1](https://blog.simonsays.hk/ieee/01.html) established a different principle: an AI agent sits between human language and computing instruments. You describe a job in ordinary sentences, and the agent orchestrates the underlying tools to execute multi-step workflows.
+[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established a different principle: an AI agent sits between human language and computing instruments. You describe a job in ordinary sentences, and the agent orchestrates the underlying tools to execute multi-step workflows.
 
 Crucially, Entry 1 drew a boundary we preserve here: **an agent is a reasoning engine and workflow processor, not an authoritative information oracle.** Its strength lies in action, not ungrounded memory. This entry never asks a model to hallucinate what the literature says; it directs the agent to query verified scientific databases directly.
 
