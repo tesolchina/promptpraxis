@@ -1,0 +1,68 @@
+=== 1. REQUEST COMPARISON ===
+A url: https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+A query_params: {"filter": ["from_publication_date:2024-01-01"], "per-page": ["5"], "search": ["automated written corrective feedback"]}
+A headers: {"User-agent": "PromptPraxisWorkshop/1.0"}
+A http_status: 200 | body_bytes: 83958
+A contains sort/mailto/api_key: False False False
+A error entries: {}
+B url: https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+B query_params: {"filter": ["from_publication_date:2024-01-01"], "per-page": ["5"], "search": ["automated written corrective feedback"]}
+B headers: {"User-agent": "PromptPraxisWorkshop/1.0"}
+B http_status: 200 | body_bytes: 83958
+B contains sort/mailto/api_key: False False False
+B error entries: {}
+URL identical: True
+query_params identical: True
+request headers identical: True
+BOTH no sort: True
+BOTH no mailto: True
+BOTH no api_key: True
+raw_response.json byte-identical: False
+=== 2. PER-TRACK OUTPUT vs ITS OWN RESPONSE ===
+--- TRACK A ---
+  meta.count: 11915 | x_query.order: best matches first | order_default: True
+  counts: results=5 csv_rows=5 bib_entries=5 ris_records=5
+    1 id=W7202110420 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    2 id=W4405410781 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    3 id=W4412170289 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    4 id=W4401888066 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    5 id=W7117467041 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+  CSV field-by-field ALL MATCH: True
+  CSV Authors contains 'Unknown': False
+  BibTeX has 'author = {Unknown}': False
+  RIS has 'AU  - Unknown': False
+  BibTeX citekeys containing 'Unknown': []
+  console log contains 'Authors: Unknown': False
+  authorless records in response: 1
+    authorless id: https://openalex.org/W4405410781 | doi: https://doi.org/10.1163/9789004719118_009
+--- TRACK B ---
+  meta.count: 11915 | x_query.order: best matches first | order_default: True
+  counts: results=5 csv_rows=5 bib_entries=5 ris_records=5
+    1 id=W7202110420 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    2 id=W4405410781 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    3 id=W4412170289 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    4 id=W4401888066 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+    5 id=W7117467041 flags: {'OpenAlex_ID': True, 'Title': True, 'Authors': True, 'Year': True, 'Citations': True, 'DOI': True, 'Journal': True}
+  CSV field-by-field ALL MATCH: True
+  CSV Authors contains 'Unknown': False
+  BibTeX has 'author = {Unknown}': False
+  RIS has 'AU  - Unknown': False
+  BibTeX citekeys containing 'Unknown': ['Unknown2024Automated']
+  console log contains 'Authors: Unknown': True
+  authorless records in response: 1
+    authorless id: https://openalex.org/W4405410781 | doi: https://doi.org/10.1163/9789004719118_009
+=== 3. CROSS-TRACK COMPARISON (A vs B) ===
+  response ID sequences identical: True
+  A response count / B response count: 5 5
+  meta.count A / B: 11915 11915
+  A/B CSV row count: 5 5
+  A/B CSV field differences: 0
+  A/B found.csv byte-identical: True
+  A/B found.bib byte-identical: False
+  A/B found.ris byte-identical: True
+  A bib citekeys: ['Chang2026Automated', 'Ref2024Automated', 'Wu2025Effectiveness', 'Yan2024L2', 'Luo2025Impact']
+  B bib citekeys: ['Chang2026Automated', 'Unknown2024Automated', 'Wu2025Effectiveness', 'Yan2024L2', 'Luo2025Impact']
+=== 4. SUMMARY FLAGS ===
+  both requests no sort & identical query: True
+  both HTTP 200: True
+  A/B bibliographic identity (ID/title/authors/year/DOI): True

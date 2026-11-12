@@ -88,38 +88,58 @@ The GUI remains where a person belongs: deciding which paper deserves a click, a
 
 ## Part 4 — How you do that, with WorkBuddy
 
-The pipeline is published and free to take apart: **[`workshop/`](https://github.com/tesolchina/procomm-microlearning/tree/main/workshop)** carries the prompts, the script and the expected outputs. Two tracks — pick one.
+The companion materials and verified code live in **[`workshop/`](../../workshop/)** (with public companion code at [`workshop/`](https://github.com/tesolchina/promptpraxis/tree/main/workshop)). Two tracks — pick one.
 
-### Track A — write it from scratch
+### Track A — write it from scratch (conversational prompts)
 
-**A1 — make it explain first (30 seconds).** Paste:
+**A1 — establish the contract (30 seconds).** In WorkBuddy or your chat agent, paste:
 
-> I'm new to this. Before doing anything: tell me in three lines what this prompt would do, what you need from me, and what could go wrong. Don't run it yet.
+> I'm new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet.
 >
-> "Find the 10 most-cited papers on *your topic* published since *year*, from OpenAlex, and show me title, year, citations, and DOI."
+> "Find the 10 most-cited papers on *applied linguistics AI* published since *2024* from OpenAlex, and show me Title, Year, Citations, and DOI."
 
-If it starts running without explaining, say *"explain first."* You are training the workflow as much as using it.
+If the agent executes immediately, respond: *"Explain first."* You are training the agent to plan before executing.
 
-**A2 — your first query (2 minutes).** Ask for the ten most-cited articles on your topic since a given year, as a table of **title | year | citations | DOI**, with `mailto=your.email@example.com` on the request — OpenAlex's polite pool. House rule: *do not invent or complete any row; if the API returns nothing, say so.* Open one DOI; it must reach the paper.
+**A2 — run your verified query (2 minutes).** Once the plan is confirmed, prompt:
 
-**A3 — keep it (3 minutes).** Ask for `found.csv` and a Google Doc tab "Reading list — *your topic*" with Status and Notes columns. Close the hunting tabs. That close is the point.
+> Query OpenAlex Works API for the 10 most-cited articles on *applied linguistics AI* since *2024*, sorted by citations descending. Use polite pool `mailto=your.email@example.com`. Display a table: **Title | Year | Citations | DOI**.
+>
+> *House rule:* Every row must come directly from the API response. If no records match or metadata is missing, leave the fields blank and report it. Do not invent any publication.
 
-**A4 — hand it to Zotero (5 minutes).** BibTeX export plus the menu steps to import, and it waits for your confirmation before acting. Zotero is free and open source; the record is yours.
+Click one returned DOI; it must resolve to the publisher or preprint page.
 
-**A5 — build on it.** Change one thing per run: topic, sort, or last week's date window — that last one makes a weekly literature alert.
+**A3 — save your persistent reading list (3 minutes).** Ask:
 
-### Track B — reuse the code we share
+> Save this table to `found.csv` with columns: `OpenAlex_ID, Title, Authors, Year, Citations, DOI, Journal, Reading_Status, Notes`. Set `Reading_Status` to "Unread" and leave `Notes` empty.
 
-1. Open [`workshop/prompts/beginner-pack.md`](https://github.com/tesolchina/procomm-microlearning/blob/main/workshop/prompts/beginner-pack.md).
-2. Send the link to your agent: *"Describe what this code does and how I can reuse it for my own topic."*
-3. Run Level 1, Level 2, Level 3 as printed.
-4. Then break it on purpose — change the topic, the year, the sort. Reusing code means editing it.
+Open `found.csv` in Excel, Sheets, or Tencent Docs. Your search is now a persistent database. Close the browser hunting tabs.
 
-**One difference worth knowing:** WorkBuddy returns tables in the chat; VS Code and Cursor work in a folder, so `found.csv` and `found.bib` land beside the code. The prompts are identical; the paste point changes.
+**A4 — export to Zotero (5 minutes).** Ask:
+
+> Convert these records into a standard BibTeX file `found.bib` (and `found.ris`). In Zotero Desktop, open **File → Import...**, select `found.bib`, and import into a new collection.
+
+Every citation lands in Zotero, complete with author names, publication year, journal title, and DOI URL.
+
+**A5 — automate a weekly alert.** Change the parameter: filter for the past 7 days and sort by publication date (`publication_date:desc`). The same prompt rerun every Friday morning replaces an hour of manual inbox scanning.
+
+---
+
+### Track B — reuse the code we share (scripted pipeline)
+
+1. Open [`workshop/prompts/beginner-pack.md`](../../workshop/prompts/beginner-pack.md).
+2. Tell your agent: *"Explain how `workshop/fetch_literature.py` works and run Level 1 for my topic."*
+3. **Run Level 1:** Execute as printed:
+   ```bash
+   python3 workshop/fetch_literature.py --topic "applied linguistics AI" --year 2024 --limit 10
+   ```
+4. **Run Level 2 (Customize):** Change `--topic "second language acquisition"` and `--sort "publication_date:desc"`.
+5. **Run Level 3 (Edge cases & recovery):** Test an empty search (`--topic "xyznonexistent"`). The script truthfully outputs 0 rows without hallucinating. If rate-limited (HTTP 429), pass your email via `--email` to use OpenAlex's polite pool.
+
+**Environment note:** WorkBuddy displays tables directly in chat and writes `found.csv` and `found.bib` into the active workspace directory. No external libraries or database daemons are required.
 
 ## Part 5 — Decisions, limits, what it is worth
 
-**Decisions.** Two steps only, because an entry that does everything teaches nothing. Both instruments, because some literature should arrive by itself and some questions should be asked on demand. Remix over rebuild for Zotero: take one simpler module apart instead of writing a reference manager — its source is public, and its licence was checked before anything of ours was shared.
+**Decisions.** Two steps only, because an entry that does everything teaches nothing. Both instruments, because some literature should arrive by itself and some questions should be asked on demand. For Zotero, standard BibTeX export into the desktop library remains the reliable handoff, while experimental in-agent formatters remain an open spike — upstream source and licensing were checked before any code was shared.
 
 **Limits.** An agent asked to *remember* a paper invents one that sounds right; asked to *fetch* it, it cannot — so every value above arrives from OpenAlex or does not appear. A DOI proves a paper is real, not that its findings are right. RSS still needs a human to decide what deserves a click. And a public API stays free because its users are polite: one `mailto`, no hammering.
 
