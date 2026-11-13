@@ -1,0 +1,20 @@
+=== Literature Query Pipeline ===
+Topic: applied linguistics AI
+Since year: 2024
+Sort: cited_by_count:desc
+Limit: 10
+Mode: Offline fixture (\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\tests\fixtures\openalex_missing_metadata.json)
+OpenAlex reports 2 matching records in database.
+Parsed 2 publications.
+Outputs written successfully:
+  - Reading list CSV: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\missing_metadata\found.csv
+  - Zotero BibTeX:   \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\missing_metadata\found.bib
+  - Zotero RIS:      \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\missing_metadata\found.ris
+
+Sample result summary:
+  [1] (n.d.) Early Working Paper on Syntax
+      Authors: Unknown
+      Citations: None | DOI: None
+  [2] (2023) Incomplete Record Without Source Journal
+      Authors: Jane Doe
+      Citations: 0 | DOI: https://doi.org/10.1234/test.5678

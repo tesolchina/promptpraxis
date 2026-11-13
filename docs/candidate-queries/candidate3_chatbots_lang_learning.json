@@ -1,0 +1,5079 @@
+{
+  "candidate_id": "candidate3",
+  "candidate_name": "Candidate 3: chatbots language learning",
+  "request_url": "https://api.openalex.org/works?search=chatbots+language+learning&filter=from_publication_date%3A2024-01-01&per-page=5",
+  "request_params": {
+    "search": "chatbots language learning",
+    "filter": "from_publication_date:2024-01-01",
+    "per-page": "5"
+  },
+  "timestamp_utc": "2026-11-11T16:44:16.333736+00:00",
+  "response": {
+    "meta": {
+      "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+      "count": 137372,
+      "db_response_time_ms": 297,
+      "page": 1,
+      "per_page": 5,
+      "groups_count": null,
+      "x_query": {
+        "oql": "get works since 2024-01-01 with (chatbots language learning) in the title, abstract, or full text",
+        "x_new_oql": "get works since 2024-01-01 with (chatbots language learning) in the title, abstract, or full text",
+        "oqo": {
+          "get_rows": "works",
+          "filter_rows": [
+            {
+              "column_id": "from_publication_date",
+              "value": "2024-01-01"
+            },
+            {
+              "column_id": "fulltext.search",
+              "value": "chatbots language learning",
+              "operator": "has"
+            }
+          ]
+        },
+        "url": "/works?filter=from_publication_date:2024-01-01,fulltext.search:chatbots language learning&per_page=5",
+        "order": "best matches first",
+        "order_default": true
+      },
+      "cost_usd": 0.001
+    },
+    "results": [
+      {
+        "id": "https://openalex.org/W4399681132",
+        "doi": "https://doi.org/10.3102/00346543241255621",
+        "title": "Does Chatting with Chatbots Improve Language Learning Performance? A Meta-Analysis of Chatbot-Assisted Language Learning",
+        "display_name": "Does Chatting with Chatbots Improve Language Learning Performance? A Meta-Analysis of Chatbot-Assisted Language Learning",
+        "relevance_score": 116.80617,
+        "publication_year": 2024,
+        "publication_date": "2024-06-14",
+        "ids": {
+          "openalex": "https://openalex.org/W4399681132",
+          "doi": "https://doi.org/10.3102/00346543241255621"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.3102/00346543241255621",
+          "doi": "https://doi.org/10.3102/00346543241255621",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.3102/00346543241255621",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S92895470",
+            "display_name": "Review of Educational Research",
+            "issn_l": "0034-6543",
+            "issn": [
+              "0034-6543",
+              "1935-1046"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-3",
+              "ki-jl-1",
+              "norway-2",
+              "poland-200",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Review of Educational Research",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "review",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref"
+        ],
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5100442810",
+              "display_name": "Feifei Wang",
+              "orcid": "https://orcid.org/0000-0001-8260-2053",
+              "observed_orcids": [
+                "https://orcid.org/0000-0001-8260-2053"
+              ]
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": true,
+            "raw_author_name": "Feifei Wang",
+            "raw_affiliation_strings": [],
+            "raw_orcid": null,
+            "affiliations": []
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5076636986",
+              "display_name": "Alan Cheung",
+              "orcid": "https://orcid.org/0000-0002-9013-1586",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-9013-1586"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I177725633",
+                "display_name": "Chinese University of Hong Kong",
+                "ror": "https://ror.org/00t33hh48",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Alan C. K. Cheung",
+            "raw_affiliation_strings": [
+              "The Chinese University of Hong Kong"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Chinese University of Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5047361348",
+              "display_name": "Amanda Jean Neitzel",
+              "orcid": "https://orcid.org/0000-0002-4676-9320",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-4676-9320"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I145311948",
+                "display_name": "Johns Hopkins University",
+                "ror": "https://ror.org/00za53h95",
+                "country_code": "US",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I145311948"
+                ]
+              }
+            ],
+            "countries": [
+              "US"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Amanda J. Neitzel",
+            "raw_affiliation_strings": [
+              "Johns Hopkins University"
+            ],
+            "raw_orcid": "https://orcid.org/0000-0002-4676-9320",
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Johns Hopkins University",
+                "institution_ids": [
+                  "https://openalex.org/I145311948"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5035167001",
+              "display_name": "Ching Sing Chai",
+              "orcid": "https://orcid.org/0000-0002-6298-4813",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-6298-4813"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I177725633",
+                "display_name": "Chinese University of Hong Kong",
+                "ror": "https://ror.org/00t33hh48",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Ching Sing Chai",
+            "raw_affiliation_strings": [
+              "The Chinese University of Hong Kong"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Chinese University of Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 2,
+        "institutions_distinct_count": 2,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5100442810"
+        ],
+        "corresponding_institution_ids": [],
+        "apc_list": {
+          "value": 2500,
+          "currency": "USD",
+          "value_usd": 2500
+        },
+        "apc_paid": null,
+        "fwci": 11.1679,
+        "has_fulltext": false,
+        "cited_by_count": 98,
+        "citation_normalized_percentile": {
+          "value": 0.98561151,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 95,
+          "max": 100
+        },
+        "biblio": {
+          "volume": "95",
+          "issue": "4",
+          "first_page": "623",
+          "last_page": "660"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T10021",
+          "display_name": "EFL/ESL Teaching and Learning",
+          "score": 0.54830002784729,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.54830002784729,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.12960000336170197,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T11902",
+            "display_name": "Intelligent Tutoring Systems and Adaptive Learning",
+            "score": 0.06909999996423721,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1702",
+              "display_name": "Artificial Intelligence"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/17",
+              "display_name": "Computer Science"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/3",
+              "display_name": "Physical Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/chatbots",
+            "display_name": "chatbots",
+            "score": 0.9290000200271606
+          },
+          {
+            "id": "https://openalex.org/keywords/chatbot-assisted-language-learning",
+            "display_name": "chatbot-assisted language learning",
+            "score": 0.9229999780654907
+          },
+          {
+            "id": "https://openalex.org/keywords/chatgpt",
+            "display_name": "ChatGPT",
+            "score": 0.8539999723434448
+          },
+          {
+            "id": "https://openalex.org/keywords/language-learning-performance",
+            "display_name": "language learning performance",
+            "score": 0.9279999732971191
+          },
+          {
+            "id": "https://openalex.org/keywords/conversation-practice",
+            "display_name": "conversation practice",
+            "score": 0.8270000219345093
+          },
+          {
+            "id": "https://openalex.org/keywords/interface-design",
+            "display_name": "interface design",
+            "score": 0.5609999895095825
+          },
+          {
+            "id": "https://openalex.org/keywords/learner-characteristics",
+            "display_name": "learner characteristics",
+            "score": 0.5189999938011169
+          },
+          {
+            "id": "https://openalex.org/keywords/language-proficiency-levels",
+            "display_name": "language proficiency levels",
+            "score": 0.5429999828338623
+          },
+          {
+            "id": "https://openalex.org/keywords/educational-attainment",
+            "display_name": "educational attainment",
+            "score": 0.8899999856948853
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C2779041454",
+            "wikidata": "https://www.wikidata.org/wiki/Q870780",
+            "display_name": "Chatbot",
+            "level": 2,
+            "score": 0.885124921798706
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.5813332796096802
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5742105841636658
+          },
+          {
+            "id": "https://openalex.org/C2779343474",
+            "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+            "display_name": "Context (archaeology)",
+            "level": 2,
+            "score": 0.547187864780426
+          },
+          {
+            "id": "https://openalex.org/C2776809875",
+            "wikidata": "https://www.wikidata.org/wiki/Q1375963",
+            "display_name": "Converse",
+            "level": 2,
+            "score": 0.458008736371994
+          },
+          {
+            "id": "https://openalex.org/C2777200299",
+            "wikidata": "https://www.wikidata.org/wiki/Q52943",
+            "display_name": "Conversation",
+            "level": 2,
+            "score": 0.45547083020210266
+          },
+          {
+            "id": "https://openalex.org/C2776035688",
+            "wikidata": "https://www.wikidata.org/wiki/Q1606558",
+            "display_name": "Affect (linguistics)",
+            "level": 2,
+            "score": 0.44949105381965637
+          },
+          {
+            "id": "https://openalex.org/C196083921",
+            "wikidata": "https://www.wikidata.org/wiki/Q7915758",
+            "display_name": "Variance (accounting)",
+            "level": 2,
+            "score": 0.44079554080963135
+          },
+          {
+            "id": "https://openalex.org/C195324797",
+            "wikidata": "https://www.wikidata.org/wiki/Q33742",
+            "display_name": "Natural language",
+            "level": 2,
+            "score": 0.4340208172798157
+          },
+          {
+            "id": "https://openalex.org/C15744967",
+            "wikidata": "https://www.wikidata.org/wiki/Q9418",
+            "display_name": "Psychology",
+            "level": 0,
+            "score": 0.3979893922805786
+          },
+          {
+            "id": "https://openalex.org/C204321447",
+            "wikidata": "https://www.wikidata.org/wiki/Q30642",
+            "display_name": "Natural language processing",
+            "level": 1,
+            "score": 0.37038907408714294
+          },
+          {
+            "id": "https://openalex.org/C145420912",
+            "wikidata": "https://www.wikidata.org/wiki/Q853077",
+            "display_name": "Mathematics education",
+            "level": 1,
+            "score": 0.2225801646709442
+          },
+          {
+            "id": "https://openalex.org/C46312422",
+            "wikidata": "https://www.wikidata.org/wiki/Q11024",
+            "display_name": "Communication",
+            "level": 1,
+            "score": 0.09295576810836792
+          },
+          {
+            "id": "https://openalex.org/C2524010",
+            "wikidata": "https://www.wikidata.org/wiki/Q8087",
+            "display_name": "Geometry",
+            "level": 1,
+            "score": 0.0
+          },
+          {
+            "id": "https://openalex.org/C121955636",
+            "wikidata": "https://www.wikidata.org/wiki/Q4116214",
+            "display_name": "Accounting",
+            "level": 1,
+            "score": 0.0
+          },
+          {
+            "id": "https://openalex.org/C86803240",
+            "wikidata": "https://www.wikidata.org/wiki/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0.0
+          },
+          {
+            "id": "https://openalex.org/C144133560",
+            "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+            "display_name": "Business",
+            "level": 0,
+            "score": 0.0
+          },
+          {
+            "id": "https://openalex.org/C151730666",
+            "wikidata": "https://www.wikidata.org/wiki/Q7205",
+            "display_name": "Paleontology",
+            "level": 1,
+            "score": 0.0
+          },
+          {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.0
+          }
+        ],
+        "mesh": [],
+        "locations_count": 2,
+        "locations": [
+          {
+            "id": "doi:10.3102/00346543241255621",
+            "doi": "https://doi.org/10.3102/00346543241255621",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.3102/00346543241255621",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S92895470",
+              "display_name": "Review of Educational Research",
+              "issn_l": "0034-6543",
+              "issn": [
+                "0034-6543",
+                "1935-1046"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "anvur-class-a",
+                "anvur-scientific",
+                "cwts-core",
+                "erih-plus",
+                "jufo-3",
+                "ki-jl-1",
+                "norway-2",
+                "poland-200",
+                "russia-white-list-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310320017",
+              "host_organization_name": "SAGE Publishing",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320017"
+              ],
+              "host_organization_lineage_names": [
+                "SAGE Publishing"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Review of Educational Research",
+            "raw_type": "journal-article"
+          },
+          {
+            "id": "pmh:oai:hub.hku.hk:10722/365321",
+            "doi": null,
+            "is_oa": false,
+            "landing_page_url": "http://hdl.handle.net/10722/365321",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4377196271",
+              "display_name": "The HKU Scholars Hub (University of Hong Kong)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I889458895",
+              "host_organization_name": "University of Hong Kong",
+              "host_organization_lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "submittedVersion",
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": null,
+            "raw_type": "Article"
+          }
+        ],
+        "best_oa_location": null,
+        "sustainable_development_goals": [
+          {
+            "id": "https://metadata.un.org/sdg/4",
+            "display_name": "Quality education",
+            "score": 0.9235000014305115
+          }
+        ],
+        "study_designs": [
+          {
+            "id": "https://openalex.org/study-designs/systematic-review",
+            "display_name": "Systematic Review"
+          },
+          {
+            "id": "https://openalex.org/study-designs/meta-analysis",
+            "display_name": "Meta-Analysis"
+          }
+        ],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "grobid_xml": false,
+          "pdf": false
+        },
+        "content_urls": null,
+        "referenced_works_count": 92,
+        "referenced_works": [
+          "https://openalex.org/W200246235",
+          "https://openalex.org/W240072570",
+          "https://openalex.org/W612372977",
+          "https://openalex.org/W1522379013",
+          "https://openalex.org/W1971238833",
+          "https://openalex.org/W1998577531",
+          "https://openalex.org/W2001107817",
+          "https://openalex.org/W2011992630",
+          "https://openalex.org/W2028854990",
+          "https://openalex.org/W2061018809",
+          "https://openalex.org/W2077201361",
+          "https://openalex.org/W2092144739",
+          "https://openalex.org/W2115040353",
+          "https://openalex.org/W2135943618",
+          "https://openalex.org/W2139168999",
+          "https://openalex.org/W2146984243",
+          "https://openalex.org/W2147234629",
+          "https://openalex.org/W2147485260",
+          "https://openalex.org/W2161866352",
+          "https://openalex.org/W2273035312",
+          "https://openalex.org/W2317922289",
+          "https://openalex.org/W2470242385",
+          "https://openalex.org/W2478536678",
+          "https://openalex.org/W2486521628",
+          "https://openalex.org/W2503629909",
+          "https://openalex.org/W2617381106",
+          "https://openalex.org/W2626659553",
+          "https://openalex.org/W2789087513",
+          "https://openalex.org/W2808299366",
+          "https://openalex.org/W2887720395",
+          "https://openalex.org/W2904976895",
+          "https://openalex.org/W2918492595",
+          "https://openalex.org/W2963430424",
+          "https://openalex.org/W2971670596",
+          "https://openalex.org/W2976179866",
+          "https://openalex.org/W2980189702",
+          "https://openalex.org/W2995787058",
+          "https://openalex.org/W3009335665",
+          "https://openalex.org/W3012220842",
+          "https://openalex.org/W3016709813",
+          "https://openalex.org/W3020924864",
+          "https://openalex.org/W3022672528",
+          "https://openalex.org/W3034267466",
+          "https://openalex.org/W3035263232",
+          "https://openalex.org/W3043790905",
+          "https://openalex.org/W3048687079",
+          "https://openalex.org/W3087130547",
+          "https://openalex.org/W3091171616",
+          "https://openalex.org/W3094264786",
+          "https://openalex.org/W3094631228",
+          "https://openalex.org/W3121683547",
+          "https://openalex.org/W3126226315",
+          "https://openalex.org/W3128904553",
+          "https://openalex.org/W3155464642",
+          "https://openalex.org/W3165235160",
+          "https://openalex.org/W3176849078",
+          "https://openalex.org/W3184900232",
+          "https://openalex.org/W3186199325",
+          "https://openalex.org/W3186514175",
+          "https://openalex.org/W3194282707",
+          "https://openalex.org/W3204718649",
+          "https://openalex.org/W3205296127",
+          "https://openalex.org/W3211695383",
+          "https://openalex.org/W3214237218",
+          "https://openalex.org/W4200236398",
+          "https://openalex.org/W4200288985",
+          "https://openalex.org/W4210731977",
+          "https://openalex.org/W4214847198",
+          "https://openalex.org/W4221031469",
+          "https://openalex.org/W4221144553",
+          "https://openalex.org/W4224109175",
+          "https://openalex.org/W4225381262",
+          "https://openalex.org/W4234822460",
+          "https://openalex.org/W4236521339",
+          "https://openalex.org/W4252989263",
+          "https://openalex.org/W4280550159",
+          "https://openalex.org/W4283733139",
+          "https://openalex.org/W4284896011",
+          "https://openalex.org/W4284991798",
+          "https://openalex.org/W4293010198",
+          "https://openalex.org/W4297918764",
+          "https://openalex.org/W4310436400",
+          "https://openalex.org/W4311780078",
+          "https://openalex.org/W4321499901",
+          "https://openalex.org/W4362584541",
+          "https://openalex.org/W4362677935",
+          "https://openalex.org/W4367055302",
+          "https://openalex.org/W4367678106",
+          "https://openalex.org/W4372319207",
+          "https://openalex.org/W4385077659",
+          "https://openalex.org/W4391101918",
+          "https://openalex.org/W4405946119"
+        ],
+        "related_works": [
+          "https://openalex.org/W6902616639",
+          "https://openalex.org/W4417347302",
+          "https://openalex.org/W4367055302",
+          "https://openalex.org/W4404869554",
+          "https://openalex.org/W4386625109",
+          "https://openalex.org/W4404576868",
+          "https://openalex.org/W4407313425",
+          "https://openalex.org/W7126339748",
+          "https://openalex.org/W7164887008",
+          "https://openalex.org/W4398767118"
+        ],
+        "abstract_inverted_index": {
+          "Given": [
+            0
+          ],
+          "the": [
+            1,
+            30,
+            34,
+            54,
+            126,
+            135,
+            141
+          ],
+          "importance": [
+            2
+          ],
+          "of": [
+            3,
+            39
+          ],
+          "conversation": [
+            4
+          ],
+          "practice": [
+            5,
+            146
+          ],
+          "in": [
+            6
+          ],
+          "language": [
+            7,
+            43,
+            101,
+            118
+          ],
+          "learning,": [
+            8
+          ],
+          "chatbots,": [
+            9,
+            80
+          ],
+          "especially": [
+            10
+          ],
+          "ChatGPT,": [
+            11
+          ],
+          "have": [
+            12
+          ],
+          "attracted": [
+            13
+          ],
+          "considerable": [
+            14
+          ],
+          "attention": [
+            15
+          ],
+          "for": [
+            16,
+            145
+          ],
+          "their": [
+            17
+          ],
+          "ability": [
+            18
+          ],
+          "to": [
+            19,
+            29,
+            109,
+            140
+          ],
+          "converse": [
+            20
+          ],
+          "with": [
+            21
+          ],
+          "learners": [
+            22
+          ],
+          "using": [
+            23,
+            40,
+            65,
+            93
+          ],
+          "natural": [
+            24
+          ],
+          "language.": [
+            25
+          ],
+          "This": [
+            26
+          ],
+          "review": [
+            27
+          ],
+          "contributes": [
+            28
+          ],
+          "literature": [
+            31
+          ],
+          "by": [
+            32
+          ],
+          "examining": [
+            33
+          ],
+          "currently": [
+            35
+          ],
+          "unclear": [
+            36
+          ],
+          "overall": [
+            37,
+            55,
+            98,
+            127
+          ],
+          "effect": [
+            38,
+            60,
+            99
+          ],
+          "chatbots": [
+            41,
+            94
+          ],
+          "on": [
+            42,
+            74,
+            100,
+            133
+          ],
+          "learning": [
+            44,
+            81,
+            102
+          ],
+          "performance": [
+            45,
+            103
+          ],
+          "and": [
+            46,
+            85,
+            87,
+            122,
+            147
+          ],
+          "comprehensively": [
+            47
+          ],
+          "identifying": [
+            48
+          ],
+          "important": [
+            49
+          ],
+          "study": [
+            50,
+            76
+          ],
+          "characteristics": [
+            51,
+            77,
+            114,
+            137
+          ],
+          "that": [
+            52,
+            92
+          ],
+          "affect": [
+            53
+          ],
+          "effectiveness.": [
+            56,
+            128
+          ],
+          "We": [
+            57
+          ],
+          "meta-analyzed": [
+            58
+          ],
+          "70": [
+            59
+          ],
+          "sizes": [
+            61
+          ],
+          "from": [
+            62
+          ],
+          "28": [
+            63
+          ],
+          "studies,": [
+            64
+          ],
+          "robust": [
+            66
+          ],
+          "variance": [
+            67
+          ],
+          "estimation.": [
+            68
+          ],
+          "The": [
+            69
+          ],
+          "effects": [
+            70
+          ],
+          "were": [
+            71
+          ],
+          "assessed": [
+            72
+          ],
+          "based": [
+            73
+          ],
+          "18": [
+            75,
+            136
+          ],
+          "about": [
+            78
+          ],
+          "learners,": [
+            79
+          ],
+          "objectives,": [
+            82
+          ],
+          "context,": [
+            83
+          ],
+          "communication/interaction,": [
+            84
+          ],
+          "methodological": [
+            86
+          ],
+          "pedagogical": [
+            88
+          ],
+          "designs.": [
+            89
+          ],
+          "Results": [
+            90
+          ],
+          "indicated": [
+            91
+          ],
+          "produced": [
+            95
+          ],
+          "a": [
+            96
+          ],
+          "positive": [
+            97
+          ],
+          "(": [
+            104
+          ],
+          "g": [
+            105
+          ],
+          "=": [
+            106
+          ],
+          "0.484),": [
+            107
+          ],
+          "compared": [
+            108
+          ],
+          "nonchatbot": [
+            110
+          ],
+          "conditions.": [
+            111
+          ],
+          "Moreover,": [
+            112
+          ],
+          "four": [
+            113
+          ],
+          "(i.e.,": [
+            115
+          ],
+          "educational": [
+            116
+          ],
+          "level,": [
+            117,
+            119
+          ],
+          "interface": [
+            120
+          ],
+          "design,": [
+            121
+          ],
+          "interaction": [
+            123
+          ],
+          "capability)": [
+            124
+          ],
+          "affected": [
+            125
+          ],
+          "In": [
+            129
+          ],
+          "an": [
+            130
+          ],
+          "in-depth": [
+            131
+          ],
+          "discussion": [
+            132
+          ],
+          "how": [
+            134
+          ],
+          "are": [
+            138,
+            149
+          ],
+          "related": [
+            139
+          ],
+          "effectiveness,": [
+            142
+          ],
+          "future": [
+            143
+          ],
+          "implications": [
+            144
+          ],
+          "research": [
+            148
+          ],
+          "presented.": [
+            150
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 57
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 38
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 3
+          }
+        ],
+        "updated_date": "2026-11-11T12:16:26.678958",
+        "created_date": "2024-06-15T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W4404869554",
+        "doi": "https://doi.org/10.1111/ijal.12668",
+        "title": "Effectiveness of Chatbots in Improving Language Learning: A Meta‐Analysis of Comparative Studies",
+        "display_name": "Effectiveness of Chatbots in Improving Language Learning: A Meta‐Analysis of Comparative Studies",
+        "relevance_score": 99.42696,
+        "publication_year": 2024,
+        "publication_date": "2024-11-28",
+        "ids": {
+          "openalex": "https://openalex.org/W4404869554",
+          "doi": "https://doi.org/10.1111/ijal.12668"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.1111/ijal.12668",
+          "doi": "https://doi.org/10.1111/ijal.12668",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/ijal.12668",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ijal.12668",
+          "source": {
+            "id": "https://openalex.org/S174221484",
+            "display_name": "International Journal of Applied Linguistics",
+            "issn_l": "0802-6106",
+            "issn": [
+              "0802-6106",
+              "1473-4192"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-2",
+              "norway-1",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Applied Linguistics",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ijal.12668",
+          "any_repository_has_fulltext": true
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5034620722",
+              "display_name": "Boning Lyu",
+              "orcid": "https://orcid.org/0000-0001-6858-2738",
+              "observed_orcids": [
+                "https://orcid.org/0000-0001-6858-2738"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I191208505",
+                "display_name": "Xiamen University",
+                "ror": "https://ror.org/00mcjh785",
+                "country_code": "CN",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I191208505"
+                ]
+              }
+            ],
+            "countries": [
+              "CN"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Boning Lyu",
+            "raw_affiliation_strings": [
+              "Chinese International Education College Xiamen University  Xiamen China"
+            ],
+            "raw_orcid": "https://orcid.org/0000-0001-6858-2738",
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Chinese International Education College Xiamen University  Xiamen China",
+                "institution_ids": [
+                  "https://openalex.org/I191208505"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5110667532",
+              "display_name": "Chun Lai",
+              "orcid": "https://orcid.org/0000-0002-7915-113X",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-7915-113X"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I889458895",
+                "display_name": "University of Hong Kong",
+                "ror": "https://ror.org/02zhqgq86",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I889458895"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Chun Lai",
+            "raw_affiliation_strings": [
+              "Faculty of Education The University of Hong Kong  Hong Kong Hong Kong"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Faculty of Education The University of Hong Kong  Hong Kong Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I889458895"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5100566975",
+              "display_name": "Jianing Guo",
+              "orcid": "https://orcid.org/0009-0003-6959-5620",
+              "observed_orcids": [
+                "https://orcid.org/0009-0003-6959-5620",
+                "https://orcid.org/0009-0004-5261-137X",
+                "https://orcid.org/0009-0006-9172-3408"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I191208505",
+                "display_name": "Xiamen University",
+                "ror": "https://ror.org/00mcjh785",
+                "country_code": "CN",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I191208505"
+                ]
+              }
+            ],
+            "countries": [
+              "CN"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Jianing Guo",
+            "raw_affiliation_strings": [
+              "Chinese International Education College Xiamen University  Xiamen China"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Chinese International Education College Xiamen University  Xiamen China",
+                "institution_ids": [
+                  "https://openalex.org/I191208505"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 2,
+        "institutions_distinct_count": 2,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5110667532"
+        ],
+        "corresponding_institution_ids": [
+          "https://openalex.org/I889458895"
+        ],
+        "apc_list": {
+          "value": 3090,
+          "currency": "USD",
+          "value_usd": 3090
+        },
+        "apc_paid": null,
+        "fwci": 60.5847,
+        "has_fulltext": true,
+        "cited_by_count": 75,
+        "citation_normalized_percentile": {
+          "value": 0.99862442,
+          "is_in_top_1_percent": true,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 99,
+          "max": 100
+        },
+        "biblio": {
+          "volume": "35",
+          "issue": "2",
+          "first_page": "834",
+          "last_page": "851"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T10021",
+          "display_name": "EFL/ESL Teaching and Learning",
+          "score": 0.44999998807907104,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.44999998807907104,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.12809999287128448,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.10840000212192535,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/chatbots",
+            "display_name": "chatbots",
+            "score": 0.9909999966621399
+          },
+          {
+            "id": "https://openalex.org/keywords/second-language-acquisition",
+            "display_name": "second language acquisition",
+            "score": 0.8209999799728394
+          },
+          {
+            "id": "https://openalex.org/keywords/foreign-language-learning",
+            "display_name": "foreign language learning",
+            "score": 0.9750000238418579
+          },
+          {
+            "id": "https://openalex.org/keywords/generative-ai",
+            "display_name": "generative AI",
+            "score": 0.7210000157356262
+          },
+          {
+            "id": "https://openalex.org/keywords/speech-recognition",
+            "display_name": "speech recognition",
+            "score": 0.7099999785423279
+          },
+          {
+            "id": "https://openalex.org/keywords/artificial-intelligence-in-language-teaching",
+            "display_name": "artificial intelligence in language teaching",
+            "score": 0.550000011920929
+          },
+          {
+            "id": "https://openalex.org/keywords/chatbot-effectiveness",
+            "display_name": "chatbot effectiveness",
+            "score": 0.5799999833106995
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C15744967",
+            "wikidata": "https://www.wikidata.org/wiki/Q9418",
+            "display_name": "Psychology",
+            "level": 0,
+            "score": 0.5861855745315552
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.5000088214874268
+          },
+          {
+            "id": "https://openalex.org/C95190672",
+            "wikidata": "https://www.wikidata.org/wiki/Q815382",
+            "display_name": "Meta-analysis",
+            "level": 2,
+            "score": 0.49915337562561035
+          },
+          {
+            "id": "https://openalex.org/C145420912",
+            "wikidata": "https://www.wikidata.org/wiki/Q853077",
+            "display_name": "Mathematics education",
+            "level": 1,
+            "score": 0.33521121740341187
+          },
+          {
+            "id": "https://openalex.org/C138885662",
+            "wikidata": "https://www.wikidata.org/wiki/Q5891",
+            "display_name": "Philosophy",
+            "level": 0,
+            "score": 0.1607818901538849
+          },
+          {
+            "id": "https://openalex.org/C71924100",
+            "wikidata": "https://www.wikidata.org/wiki/Q11190",
+            "display_name": "Medicine",
+            "level": 0,
+            "score": 0.06957226991653442
+          },
+          {
+            "id": "https://openalex.org/C126322002",
+            "wikidata": "https://www.wikidata.org/wiki/Q11180",
+            "display_name": "Internal medicine",
+            "level": 1,
+            "score": 0.0
+          }
+        ],
+        "mesh": [],
+        "locations_count": 2,
+        "locations": [
+          {
+            "id": "doi:10.1111/ijal.12668",
+            "doi": "https://doi.org/10.1111/ijal.12668",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1111/ijal.12668",
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ijal.12668",
+            "source": {
+              "id": "https://openalex.org/S174221484",
+              "display_name": "International Journal of Applied Linguistics",
+              "issn_l": "0802-6106",
+              "issn": [
+                "0802-6106",
+                "1473-4192"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "anvur-class-a",
+                "anvur-scientific",
+                "cwts-core",
+                "erih-plus",
+                "jufo-2",
+                "norway-1",
+                "poland-100",
+                "russia-white-list-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310320595",
+              "host_organization_name": "Wiley",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320595"
+              ],
+              "host_organization_lineage_names": [
+                "Wiley"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "International Journal of Applied Linguistics",
+            "raw_type": "journal-article"
+          },
+          {
+            "id": "pmh:oai:hub.hku.hk:10722/355065",
+            "doi": null,
+            "is_oa": true,
+            "landing_page_url": "https://hub.hku.hk/handle/10722/355065",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4377196271",
+              "display_name": "The HKU Scholars Hub (University of Hong Kong)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I889458895",
+              "host_organization_name": "University of Hong Kong",
+              "host_organization_lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by-nc-nd",
+            "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+            "version": "submittedVersion",
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": null,
+            "raw_type": "Article"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1111/ijal.12668",
+          "doi": "https://doi.org/10.1111/ijal.12668",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/ijal.12668",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ijal.12668",
+          "source": {
+            "id": "https://openalex.org/S174221484",
+            "display_name": "International Journal of Applied Linguistics",
+            "issn_l": "0802-6106",
+            "issn": [
+              "0802-6106",
+              "1473-4192"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-2",
+              "norway-1",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Applied Linguistics",
+          "raw_type": "journal-article"
+        },
+        "sustainable_development_goals": [
+          {
+            "id": "https://metadata.un.org/sdg/4",
+            "display_name": "Quality education",
+            "score": 0.9235000014305115
+          }
+        ],
+        "study_designs": [
+          {
+            "id": "https://openalex.org/study-designs/systematic-review",
+            "display_name": "Systematic Review"
+          },
+          {
+            "id": "https://openalex.org/study-designs/meta-analysis",
+            "display_name": "Meta-Analysis"
+          }
+        ],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "grobid_xml": true,
+          "pdf": true
+        },
+        "content_urls": {
+          "pdf": "https://content.openalex.org/works/W4404869554.pdf",
+          "grobid_xml": "https://content.openalex.org/works/W4404869554.grobid-xml"
+        },
+        "referenced_works_count": 58,
+        "referenced_works": [
+          "https://openalex.org/W34289060",
+          "https://openalex.org/W1964435302",
+          "https://openalex.org/W1964886933",
+          "https://openalex.org/W1978558298",
+          "https://openalex.org/W2051508702",
+          "https://openalex.org/W2059527510",
+          "https://openalex.org/W2087376663",
+          "https://openalex.org/W2272599431",
+          "https://openalex.org/W2617381106",
+          "https://openalex.org/W2808299366",
+          "https://openalex.org/W2885141419",
+          "https://openalex.org/W2914668327",
+          "https://openalex.org/W2921056286",
+          "https://openalex.org/W2948308879",
+          "https://openalex.org/W2971670596",
+          "https://openalex.org/W2995787058",
+          "https://openalex.org/W3004260982",
+          "https://openalex.org/W3009335665",
+          "https://openalex.org/W3022672528",
+          "https://openalex.org/W3031918069",
+          "https://openalex.org/W3034267466",
+          "https://openalex.org/W3048687079",
+          "https://openalex.org/W3082461923",
+          "https://openalex.org/W3100449273",
+          "https://openalex.org/W3176849078",
+          "https://openalex.org/W3184900232",
+          "https://openalex.org/W3194282707",
+          "https://openalex.org/W3204718649",
+          "https://openalex.org/W3205296127",
+          "https://openalex.org/W4206806123",
+          "https://openalex.org/W4221031469",
+          "https://openalex.org/W4225381262",
+          "https://openalex.org/W4229332212",
+          "https://openalex.org/W4281791809",
+          "https://openalex.org/W4283733139",
+          "https://openalex.org/W4284896011",
+          "https://openalex.org/W4293010198",
+          "https://openalex.org/W4297918764",
+          "https://openalex.org/W4299627282",
+          "https://openalex.org/W4319440682",
+          "https://openalex.org/W4323356631",
+          "https://openalex.org/W4362504902",
+          "https://openalex.org/W4367055302",
+          "https://openalex.org/W4367849331",
+          "https://openalex.org/W4372319207",
+          "https://openalex.org/W4379619507",
+          "https://openalex.org/W4379647813",
+          "https://openalex.org/W4385988305",
+          "https://openalex.org/W4386625109",
+          "https://openalex.org/W4391616453",
+          "https://openalex.org/W4391731128",
+          "https://openalex.org/W4399681132",
+          "https://openalex.org/W4400438713",
+          "https://openalex.org/W4400620911",
+          "https://openalex.org/W4401121881",
+          "https://openalex.org/W4401515033",
+          "https://openalex.org/W4401844408",
+          "https://openalex.org/W4413183847"
+        ],
+        "related_works": [
+          "https://openalex.org/W4411573088",
+          "https://openalex.org/W4417347302",
+          "https://openalex.org/W4367055302",
+          "https://openalex.org/W4399681132",
+          "https://openalex.org/W4410352835",
+          "https://openalex.org/W6902616639",
+          "https://openalex.org/W7138877064",
+          "https://openalex.org/W7126339748",
+          "https://openalex.org/W4387216370",
+          "https://openalex.org/W7220931115"
+        ],
+        "abstract_inverted_index": {
+          "ABSTRACT": [
+            0
+          ],
+          "The": [
+            1,
+            136,
+            149
+          ],
+          "development": [
+            2
+          ],
+          "of": [
+            3,
+            40,
+            43,
+            110,
+            115,
+            129,
+            157,
+            179,
+            182
+          ],
+          "artificial": [
+            4,
+            16,
+            26
+          ],
+          "intelligence": [
+            5,
+            17
+          ],
+          "has": [
+            6
+          ],
+          "presented": [
+            7
+          ],
+          "new": [
+            8
+          ],
+          "opportunities": [
+            9
+          ],
+          "and": [
+            10,
+            24,
+            36,
+            126,
+            162
+          ],
+          "challenges": [
+            11
+          ],
+          "for": [
+            12
+          ],
+          "language": [
+            13,
+            34,
+            49,
+            185
+          ],
+          "education.": [
+            14
+          ],
+          "Using": [
+            15
+          ],
+          "techniques": [
+            18
+          ],
+          "such": [
+            19
+          ],
+          "as": [
+            20
+          ],
+          "automatic": [
+            21
+          ],
+          "speech": [
+            22
+          ],
+          "recognition": [
+            23
+          ],
+          "generative": [
+            25,
+            121
+          ],
+          "intelligence,": [
+            27
+          ],
+          "conversational": [
+            28
+          ],
+          "chatbots": [
+            29,
+            44,
+            80,
+            140,
+            183
+          ],
+          "have": [
+            30,
+            81,
+            143
+          ],
+          "been": [
+            31
+          ],
+          "integrated": [
+            32
+          ],
+          "into": [
+            33
+          ],
+          "learning": [
+            35,
+            50,
+            87,
+            186
+          ],
+          "teaching.": [
+            37
+          ],
+          "However,": [
+            38
+          ],
+          "findings": [
+            39,
+            137
+          ],
+          "the": [
+            41,
+            62,
+            103,
+            108,
+            116,
+            127,
+            133,
+            155,
+            177,
+            180
+          ],
+          "impact": [
+            42
+          ],
+          "on": [
+            45,
+            85,
+            146
+          ],
+          "second": [
+            46
+          ],
+          "and/or": [
+            47
+          ],
+          "foreign": [
+            48
+          ],
+          "(L2)": [
+            51
+          ],
+          "are": [
+            52
+          ],
+          "mixed.": [
+            53
+          ],
+          "Therefore,": [
+            54
+          ],
+          "this": [
+            55,
+            74
+          ],
+          "research": [
+            56,
+            134
+          ],
+          "conducted": [
+            57
+          ],
+          "a": [
+            58,
+            82,
+            169
+          ],
+          "meta‐analysis": [
+            59
+          ],
+          "to": [
+            60,
+            112,
+            153,
+            165
+          ],
+          "synthesize": [
+            61
+          ],
+          "existing": [
+            63
+          ],
+          "research.": [
+            64
+          ],
+          "Thirty‐one": [
+            65
+          ],
+          "studies": [
+            66
+          ],
+          "with": [
+            67
+          ],
+          "41": [
+            68
+          ],
+          "effect": [
+            69,
+            84
+          ],
+          "sizes": [
+            70
+          ],
+          "were": [
+            71,
+            105
+          ],
+          "included": [
+            72
+          ],
+          "in": [
+            73,
+            132,
+            141,
+            184
+          ],
+          "meta‐analysis.": [
+            75
+          ],
+          "It": [
+            76
+          ],
+          "was": [
+            77,
+            124
+          ],
+          "found": [
+            78
+          ],
+          "that": [
+            79,
+            102,
+            139,
+            152
+          ],
+          "medium": [
+            83
+          ],
+          "L2": [
+            86,
+            147
+          ],
+          "(": [
+            88
+          ],
+          "g": [
+            89
+          ],
+          "=": [
+            90,
+            93
+          ],
+          "0.608,": [
+            91
+          ],
+          "Z": [
+            92
+          ],
+          "6.77,": [
+            94
+          ],
+          "p": [
+            95
+          ],
+          "<": [
+            96
+          ],
+          "0.001).": [
+            97
+          ],
+          "Moderating": [
+            98
+          ],
+          "analysis": [
+            99
+          ],
+          "further": [
+            100
+          ],
+          "showed": [
+            101
+          ],
+          "effects": [
+            104,
+            145
+          ],
+          "moderated": [
+            106
+          ],
+          "by": [
+            107
+          ],
+          "mobility": [
+            109
+          ],
+          "access": [
+            111
+          ],
+          "chatbot,": [
+            113,
+            117
+          ],
+          "modality": [
+            114,
+            161
+          ],
+          "whether": [
+            118
+          ],
+          "or": [
+            119
+          ],
+          "not": [
+            120
+          ],
+          "AI": [
+            122
+          ],
+          "technology": [
+            123
+          ],
+          "involved,": [
+            125
+          ],
+          "nature": [
+            128
+          ],
+          "comparison": [
+            130
+          ],
+          "groups": [
+            131
+          ],
+          "design.": [
+            135
+          ],
+          "suggest": [
+            138,
+            151
+          ],
+          "general": [
+            142
+          ],
+          "positive": [
+            144
+          ],
+          "learning.": [
+            148
+          ],
+          "results": [
+            150
+          ],
+          "enhance": [
+            154
+          ],
+          "advantages": [
+            156
+          ],
+          "chatbots,": [
+            158
+          ],
+          "their": [
+            159
+          ],
+          "accessibility,": [
+            160
+          ],
+          "adaptability": [
+            163
+          ],
+          "need": [
+            164
+          ],
+          "be": [
+            166
+          ],
+          "considered.": [
+            167
+          ],
+          "Furthermore,": [
+            168
+          ],
+          "more": [
+            170
+          ],
+          "refined": [
+            171
+          ],
+          "perspective": [
+            172
+          ],
+          "is": [
+            173
+          ],
+          "needed": [
+            174
+          ],
+          "when": [
+            175
+          ],
+          "discussing": [
+            176
+          ],
+          "benefits": [
+            178
+          ],
+          "use": [
+            181
+          ],
+          "process.": [
+            187
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 60
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 15
+          }
+        ],
+        "updated_date": "2026-11-09T13:22:03.289127",
+        "created_date": "2024-11-30T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W4391351458",
+        "doi": "https://doi.org/10.24071/ijiet.v8i1.7321",
+        "title": "THE USE OF CHATBOTS IN THE ENGLISH LANGUAGE TEACHING TO PROMOTE MODERN LANGUAGE LEARNING: A LITERATURE REVIEW",
+        "display_name": "THE USE OF CHATBOTS IN THE ENGLISH LANGUAGE TEACHING TO PROMOTE MODERN LANGUAGE LEARNING: A LITERATURE REVIEW",
+        "relevance_score": 96.57241,
+        "publication_year": 2024,
+        "publication_date": "2024-01-30",
+        "ids": {
+          "openalex": "https://openalex.org/W4391351458",
+          "doi": "https://doi.org/10.24071/ijiet.v8i1.7321"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.24071/ijiet.v8i1.7321",
+          "doi": "https://doi.org/10.24071/ijiet.v8i1.7321",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.24071/ijiet.v8i1.7321",
+          "pdf_url": "https://e-journal.usd.ac.id/index.php/IJIET/article/download/7321/3832",
+          "source": {
+            "id": "https://openalex.org/S4210186829",
+            "display_name": "IJIET (International Journal of Indonesian Education and Teaching)",
+            "issn_l": "2548-8422",
+            "issn": [
+              "2548-8422",
+              "2548-8430"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/P4310315172",
+            "host_organization_name": "Sanata Dharma University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315172"
+            ],
+            "host_organization_lineage_names": [
+              "Sanata Dharma University"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "IJIET (International Journal of Indonesian Education and Teaching)",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://e-journal.usd.ac.id/index.php/IJIET/article/download/7321/3832",
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5033102261",
+              "display_name": "Moh. Abraham Akbar Eisenring",
+              "orcid": "https://orcid.org/0009-0003-5965-5386",
+              "observed_orcids": [
+                "https://orcid.org/0009-0003-5965-5386"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I140942544",
+                "display_name": "Tadulako University",
+                "ror": "https://ror.org/01z0mc198",
+                "country_code": "ID",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ],
+            "countries": [
+              "ID"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Moh. Abraham Akbar Eisenring",
+            "raw_affiliation_strings": [
+              "Tadulako University"
+            ],
+            "raw_orcid": "https://orcid.org/0009-0003-5965-5386",
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Tadulako University",
+                "institution_ids": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5042466494",
+              "display_name": "Jamiluddin Jamiluddin",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I140942544",
+                "display_name": "Tadulako University",
+                "ror": "https://ror.org/01z0mc198",
+                "country_code": "ID",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ],
+            "countries": [
+              "ID"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Jamiluddin Jamiluddin",
+            "raw_affiliation_strings": [
+              "Tadulako University"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Tadulako University",
+                "institution_ids": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5092583736",
+              "display_name": "Muh. Arasy Hairul",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I140942544",
+                "display_name": "Tadulako University",
+                "ror": "https://ror.org/01z0mc198",
+                "country_code": "ID",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ],
+            "countries": [
+              "ID"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Muh. Arasy Hairul",
+            "raw_affiliation_strings": [
+              "Tadulako University"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Tadulako University",
+                "institution_ids": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5114104411",
+              "display_name": "Dwi Putri",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I140942544",
+                "display_name": "Tadulako University",
+                "ror": "https://ror.org/01z0mc198",
+                "country_code": "ID",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ],
+            "countries": [
+              "ID"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Dwi Putri",
+            "raw_affiliation_strings": [
+              "Tadulako University"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Tadulako University",
+                "institution_ids": [
+                  "https://openalex.org/I140942544"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 1,
+        "institutions_distinct_count": 1,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5033102261",
+          "https://openalex.org/A5042466494",
+          "https://openalex.org/A5092583736",
+          "https://openalex.org/A5114104411"
+        ],
+        "corresponding_institution_ids": [
+          "https://openalex.org/I140942544"
+        ],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 8.7722,
+        "has_fulltext": true,
+        "cited_by_count": 22,
+        "citation_normalized_percentile": {
+          "value": 0.98065786,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 98,
+          "max": 99
+        },
+        "biblio": {
+          "volume": "8",
+          "issue": "1",
+          "first_page": "127",
+          "last_page": "139"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T14516",
+          "display_name": "English Language Learning and Teaching",
+          "score": 0.9771000146865845,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.9771000146865845,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.006500000134110451,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.005200000014156103,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/chatbots",
+            "display_name": "chatbots",
+            "score": 1.0
+          },
+          {
+            "id": "https://openalex.org/keywords/english-language-teaching",
+            "display_name": "English language teaching",
+            "score": 0.9980000257492065
+          },
+          {
+            "id": "https://openalex.org/keywords/modern-language-learning",
+            "display_name": "modern language learning",
+            "score": 0.8569999933242798
+          },
+          {
+            "id": "https://openalex.org/keywords/educational-technology",
+            "display_name": "educational technology",
+            "score": 0.9679999947547913
+          },
+          {
+            "id": "https://openalex.org/keywords/language-learning",
+            "display_name": "language learning",
+            "score": 0.38499999046325684
+          },
+          {
+            "id": "https://openalex.org/keywords/classroom-technology",
+            "display_name": "classroom technology",
+            "score": 0.5889999866485596
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C123960582",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455196",
+            "display_name": "Language education",
+            "level": 2,
+            "score": 0.5129055976867676
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.48561063408851624
+          },
+          {
+            "id": "https://openalex.org/C2987496018",
+            "wikidata": "https://www.wikidata.org/wiki/Q1860",
+            "display_name": "English language",
+            "level": 2,
+            "score": 0.47084805369377136
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.4568711817264557
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.4382484257221222
+          },
+          {
+            "id": "https://openalex.org/C129353971",
+            "wikidata": "https://www.wikidata.org/wiki/Q5156949",
+            "display_name": "Comprehension approach",
+            "level": 3,
+            "score": 0.4130699336528778
+          },
+          {
+            "id": "https://openalex.org/C15744967",
+            "wikidata": "https://www.wikidata.org/wiki/Q9418",
+            "display_name": "Psychology",
+            "level": 0,
+            "score": 0.3750070333480835
+          },
+          {
+            "id": "https://openalex.org/C145420912",
+            "wikidata": "https://www.wikidata.org/wiki/Q853077",
+            "display_name": "Mathematics education",
+            "level": 1,
+            "score": 0.3110259771347046
+          },
+          {
+            "id": "https://openalex.org/C138885662",
+            "wikidata": "https://www.wikidata.org/wiki/Q5891",
+            "display_name": "Philosophy",
+            "level": 0,
+            "score": 0.11903020739555359
+          }
+        ],
+        "mesh": [],
+        "locations_count": 1,
+        "locations": [
+          {
+            "id": "doi:10.24071/ijiet.v8i1.7321",
+            "doi": "https://doi.org/10.24071/ijiet.v8i1.7321",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.24071/ijiet.v8i1.7321",
+            "pdf_url": "https://e-journal.usd.ac.id/index.php/IJIET/article/download/7321/3832",
+            "source": {
+              "id": "https://openalex.org/S4210186829",
+              "display_name": "IJIET (International Journal of Indonesian Education and Teaching)",
+              "issn_l": "2548-8422",
+              "issn": [
+                "2548-8422",
+                "2548-8430"
+              ],
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/P4310315172",
+              "host_organization_name": "Sanata Dharma University",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310315172"
+              ],
+              "host_organization_lineage_names": [
+                "Sanata Dharma University"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by-sa",
+            "license_id": "https://openalex.org/licenses/cc-by-sa",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "IJIET (International Journal of Indonesian Education and Teaching)",
+            "raw_type": "journal-article"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.24071/ijiet.v8i1.7321",
+          "doi": "https://doi.org/10.24071/ijiet.v8i1.7321",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.24071/ijiet.v8i1.7321",
+          "pdf_url": "https://e-journal.usd.ac.id/index.php/IJIET/article/download/7321/3832",
+          "source": {
+            "id": "https://openalex.org/S4210186829",
+            "display_name": "IJIET (International Journal of Indonesian Education and Teaching)",
+            "issn_l": "2548-8422",
+            "issn": [
+              "2548-8422",
+              "2548-8430"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/P4310315172",
+            "host_organization_name": "Sanata Dharma University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315172"
+            ],
+            "host_organization_lineage_names": [
+              "Sanata Dharma University"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "IJIET (International Journal of Indonesian Education and Teaching)",
+          "raw_type": "journal-article"
+        },
+        "sustainable_development_goals": [
+          {
+            "id": "https://metadata.un.org/sdg/4",
+            "display_name": "Quality education",
+            "score": 0.9235000014305115
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "grobid_xml": true,
+          "pdf": true
+        },
+        "content_urls": {
+          "pdf": "https://content.openalex.org/works/W4391351458.pdf",
+          "grobid_xml": "https://content.openalex.org/works/W4391351458.grobid-xml"
+        },
+        "referenced_works_count": 27,
+        "referenced_works": [
+          "https://openalex.org/W34289060",
+          "https://openalex.org/W1418763296",
+          "https://openalex.org/W1504500727",
+          "https://openalex.org/W1604679528",
+          "https://openalex.org/W2012149585",
+          "https://openalex.org/W2033323954",
+          "https://openalex.org/W2576404523",
+          "https://openalex.org/W2744832221",
+          "https://openalex.org/W2771950726",
+          "https://openalex.org/W2804242534",
+          "https://openalex.org/W2897311201",
+          "https://openalex.org/W2913843539",
+          "https://openalex.org/W2971670596",
+          "https://openalex.org/W2994392280",
+          "https://openalex.org/W3003687143",
+          "https://openalex.org/W3008081172",
+          "https://openalex.org/W3022672528",
+          "https://openalex.org/W3041759896",
+          "https://openalex.org/W3084021717",
+          "https://openalex.org/W3102034900",
+          "https://openalex.org/W3185181255",
+          "https://openalex.org/W3186199325",
+          "https://openalex.org/W3202285719",
+          "https://openalex.org/W3204718649",
+          "https://openalex.org/W3208284472",
+          "https://openalex.org/W4242859641",
+          "https://openalex.org/W4384160615"
+        ],
+        "related_works": [
+          "https://openalex.org/W7084159243",
+          "https://openalex.org/W4403676011",
+          "https://openalex.org/W7162119246",
+          "https://openalex.org/W4402897237",
+          "https://openalex.org/W7160237523",
+          "https://openalex.org/W7133137480",
+          "https://openalex.org/W4399500414",
+          "https://openalex.org/W6930389582",
+          "https://openalex.org/W4415728060",
+          "https://openalex.org/W4408176085"
+        ],
+        "abstract_inverted_index": {
+          "Our": [
+            0
+          ],
+          "world": [
+            1,
+            30
+          ],
+          "continues": [
+            2
+          ],
+          "to": [
+            3,
+            19,
+            24,
+            49,
+            59,
+            111,
+            126,
+            141
+          ],
+          "become": [
+            4,
+            12
+          ],
+          "increasingly": [
+            5
+          ],
+          "connected.": [
+            6
+          ],
+          "The": [
+            7,
+            22
+          ],
+          "use": [
+            8,
+            25,
+            101,
+            129
+          ],
+          "of": [
+            9,
+            31,
+            40,
+            66,
+            73,
+            78,
+            98,
+            102,
+            130
+          ],
+          "technology": [
+            10,
+            26,
+            108
+          ],
+          "has": [
+            11
+          ],
+          "a": [
+            13,
+            137
+          ],
+          "must": [
+            14
+          ],
+          "in": [
+            15,
+            34,
+            52,
+            56,
+            85,
+            132
+          ],
+          "this": [
+            16,
+            117
+          ],
+          "modern": [
+            17,
+            113,
+            143
+          ],
+          "era": [
+            18
+          ],
+          "live": [
+            20
+          ],
+          "accordingly.": [
+            21
+          ],
+          "requirement": [
+            23
+          ],
+          "also": [
+            27
+          ],
+          "widens": [
+            28
+          ],
+          "the": [
+            29,
+            63,
+            67,
+            79,
+            93,
+            100,
+            106,
+            122,
+            128
+          ],
+          "teaching,": [
+            32
+          ],
+          "especially": [
+            33
+          ],
+          "teaching": [
+            35,
+            68,
+            88,
+            135
+          ],
+          "English.": [
+            36
+          ],
+          "Nowadays,": [
+            37
+          ],
+          "all": [
+            38
+          ],
+          "generations": [
+            39,
+            46
+          ],
+          "educators,": [
+            41
+          ],
+          "whether": [
+            42
+          ],
+          "young": [
+            43
+          ],
+          "or": [
+            44
+          ],
+          "old": [
+            45
+          ],
+          "are": [
+            47,
+            76
+          ],
+          "expected": [
+            48
+          ],
+          "utilize": [
+            50
+          ],
+          "technologies": [
+            51,
+            80
+          ],
+          "their": [
+            53
+          ],
+          "respective": [
+            54
+          ],
+          "classrooms": [
+            55
+          ],
+          "an": [
+            57
+          ],
+          "attempt": [
+            58
+          ],
+          "facilitate": [
+            60
+          ],
+          "students": [
+            61
+          ],
+          "with": [
+            62
+          ],
+          "newest": [
+            64
+          ],
+          "atmosphere": [
+            65
+          ],
+          "and": [
+            69,
+            89,
+            96
+          ],
+          "learning": [
+            70
+          ],
+          "process.": [
+            71
+          ],
+          "Speaking": [
+            72
+          ],
+          "those,": [
+            74
+          ],
+          "chatbots": [
+            75,
+            103,
+            131
+          ],
+          "one": [
+            77
+          ],
+          "that": [
+            81
+          ],
+          "can": [
+            82
+          ],
+          "be": [
+            83,
+            105
+          ],
+          "engaged": [
+            84
+          ],
+          "English": [
+            86,
+            133
+          ],
+          "language": [
+            87,
+            114,
+            134,
+            144
+          ],
+          "learning.": [
+            90,
+            115,
+            145
+          ],
+          "Relying": [
+            91
+          ],
+          "on": [
+            92
+          ],
+          "huge": [
+            94
+          ],
+          "benefit": [
+            95
+          ],
+          "easiness": [
+            97
+          ],
+          "implementation,": [
+            99
+          ],
+          "could": [
+            104
+          ],
+          "leading": [
+            107
+          ],
+          "for": [
+            109,
+            139
+          ],
+          "teachers": [
+            110,
+            140
+          ],
+          "promote": [
+            112,
+            142
+          ],
+          "In": [
+            116
+          ],
+          "literature": [
+            118
+          ],
+          "review-based": [
+            119
+          ],
+          "research": [
+            120
+          ],
+          "paper,": [
+            121
+          ],
+          "writers": [
+            123
+          ],
+          "would": [
+            124
+          ],
+          "like": [
+            125
+          ],
+          "encourage": [
+            127
+          ],
+          "as": [
+            136
+          ],
+          "medium": [
+            138
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 6
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 10
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 6
+          }
+        ],
+        "updated_date": "2026-11-07T11:25:07.637180",
+        "created_date": "2024-01-31T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W7116350822",
+        "doi": "https://doi.org/10.5281/zenodo.17985348",
+        "title": "Intelligent Modelling For Multilingual Language Learning Chatbot",
+        "display_name": "Intelligent Modelling For Multilingual Language Learning Chatbot",
+        "relevance_score": 96.3393,
+        "publication_year": 2025,
+        "publication_date": "2025-01-01",
+        "ids": {
+          "openalex": "https://openalex.org/W7116350822",
+          "doi": "https://doi.org/10.5281/zenodo.17985348"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.5281/zenodo.17985348",
+          "doi": "https://doi.org/10.5281/zenodo.17985348",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.17985348",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "JournalArticle"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [
+          "datacite"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.5281/zenodo.17985348",
+          "any_repository_has_fulltext": true
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5120879249",
+              "display_name": "Saisha Hiray",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Saisha Hiray",
+            "raw_affiliation_strings": [],
+            "raw_orcid": null,
+            "affiliations": []
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5120902066",
+              "display_name": "Manisha Shinde",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Manisha Shinde",
+            "raw_affiliation_strings": [],
+            "raw_orcid": null,
+            "affiliations": []
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5120918125",
+              "display_name": "Priti Choudhari",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Priti Choudhari",
+            "raw_affiliation_strings": [],
+            "raw_orcid": null,
+            "affiliations": []
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5120925037",
+              "display_name": "Samarth Palve",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Samarth Palve",
+            "raw_affiliation_strings": [],
+            "raw_orcid": null,
+            "affiliations": []
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5120888502",
+              "display_name": "Rushi Bagul",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Rushi Bagul",
+            "raw_affiliation_strings": [],
+            "raw_orcid": null,
+            "affiliations": []
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 0,
+        "institutions_distinct_count": 0,
+        "corresponding_author_ids": [],
+        "corresponding_institution_ids": [],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 0.0,
+        "has_fulltext": false,
+        "cited_by_count": 0,
+        "citation_normalized_percentile": {
+          "value": 0.0,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": false
+        },
+        "cited_by_percentile_year": null,
+        "biblio": {
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T12031",
+          "display_name": "Speech and dialogue systems",
+          "score": 0.8213000297546387,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T12031",
+            "display_name": "Speech and dialogue systems",
+            "score": 0.8213000297546387,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1702",
+              "display_name": "Artificial Intelligence"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/17",
+              "display_name": "Computer Science"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/3",
+              "display_name": "Physical Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T11902",
+            "display_name": "Intelligent Tutoring Systems and Adaptive Learning",
+            "score": 0.1421000063419342,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1702",
+              "display_name": "Artificial Intelligence"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/17",
+              "display_name": "Computer Science"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/3",
+              "display_name": "Physical Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.013899999670684338,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/multilingual-chatbot",
+            "display_name": "multilingual chatbot",
+            "score": 0.8600000143051147
+          },
+          {
+            "id": "https://openalex.org/keywords/language-learning",
+            "display_name": "language learning",
+            "score": 0.8769999742507935
+          },
+          {
+            "id": "https://openalex.org/keywords/chatbots",
+            "display_name": "chatbots",
+            "score": 0.5419999957084656
+          },
+          {
+            "id": "https://openalex.org/keywords/raspberry-pi",
+            "display_name": "Raspberry Pi",
+            "score": 0.8389999866485596
+          },
+          {
+            "id": "https://openalex.org/keywords/speech-recognition",
+            "display_name": "speech recognition",
+            "score": 0.8690000176429749
+          },
+          {
+            "id": "https://openalex.org/keywords/text-to-speech",
+            "display_name": "text-to-speech",
+            "score": 0.8090000152587891
+          },
+          {
+            "id": "https://openalex.org/keywords/multilingual-speech-recognition",
+            "display_name": "multilingual speech recognition",
+            "score": 0.4659999907016754
+          },
+          {
+            "id": "https://openalex.org/keywords/simulated-dialogue",
+            "display_name": "simulated dialogue",
+            "score": 0.460999995470047
+          },
+          {
+            "id": "https://openalex.org/keywords/interactive-language-learning",
+            "display_name": "interactive language learning",
+            "score": 0.593999981880188
+          },
+          {
+            "id": "https://openalex.org/keywords/low-cost-educational-technology",
+            "display_name": "low-cost educational technology",
+            "score": 0.5649999976158142
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C2779041454",
+            "wikidata": "https://www.wikidata.org/wiki/Q870780",
+            "display_name": "Chatbot",
+            "level": 2,
+            "score": 0.9354000091552734
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.800599992275238
+          },
+          {
+            "id": "https://openalex.org/C183003079",
+            "wikidata": "https://www.wikidata.org/wiki/Q1000371",
+            "display_name": "Personalization",
+            "level": 2,
+            "score": 0.5383999943733215
+          },
+          {
+            "id": "https://openalex.org/C195324797",
+            "wikidata": "https://www.wikidata.org/wiki/Q33742",
+            "display_name": "Natural language",
+            "level": 2,
+            "score": 0.512499988079071
+          },
+          {
+            "id": "https://openalex.org/C144430266",
+            "wikidata": "https://www.wikidata.org/wiki/Q839721",
+            "display_name": "Interactivity",
+            "level": 2,
+            "score": 0.44999998807907104
+          },
+          {
+            "id": "https://openalex.org/C107457646",
+            "wikidata": "https://www.wikidata.org/wiki/Q207434",
+            "display_name": "Human–computer interaction",
+            "level": 1,
+            "score": 0.4318000078201294
+          },
+          {
+            "id": "https://openalex.org/C2779439875",
+            "wikidata": "https://www.wikidata.org/wiki/Q1078276",
+            "display_name": "Natural language understanding",
+            "level": 3,
+            "score": 0.3944999873638153
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.3930000066757202
+          },
+          {
+            "id": "https://openalex.org/C2777904410",
+            "wikidata": "https://www.wikidata.org/wiki/Q7397",
+            "display_name": "Software",
+            "level": 2,
+            "score": 0.3643999993801117
+          },
+          {
+            "id": "https://openalex.org/C2780598303",
+            "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+            "display_name": "Flexibility (engineering)",
+            "level": 2,
+            "score": 0.3467999994754791
+          },
+          {
+            "id": "https://openalex.org/C49774154",
+            "wikidata": "https://www.wikidata.org/wiki/Q131765",
+            "display_name": "Multimedia",
+            "level": 1,
+            "score": 0.32749998569488525
+          },
+          {
+            "id": "https://openalex.org/C94922259",
+            "wikidata": "https://www.wikidata.org/wiki/Q33215",
+            "display_name": "Constructed language",
+            "level": 2,
+            "score": 0.32019999623298645
+          },
+          {
+            "id": "https://openalex.org/C83479923",
+            "wikidata": "https://www.wikidata.org/wiki/Q2063748",
+            "display_name": "Universal Networking Language",
+            "level": 4,
+            "score": 0.3197999894618988
+          },
+          {
+            "id": "https://openalex.org/C14999030",
+            "wikidata": "https://www.wikidata.org/wiki/Q16346",
+            "display_name": "Speech synthesis",
+            "level": 2,
+            "score": 0.31439998745918274
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.3102000057697296
+          },
+          {
+            "id": "https://openalex.org/C136764020",
+            "wikidata": "https://www.wikidata.org/wiki/Q466",
+            "display_name": "World Wide Web",
+            "level": 1,
+            "score": 0.30079999566078186
+          },
+          {
+            "id": "https://openalex.org/C14919245",
+            "wikidata": "https://www.wikidata.org/wiki/Q1976109",
+            "display_name": "Language technology",
+            "level": 4,
+            "score": 0.29750001430511475
+          },
+          {
+            "id": "https://openalex.org/C2778756302",
+            "wikidata": "https://www.wikidata.org/wiki/Q8097",
+            "display_name": "Telugu",
+            "level": 2,
+            "score": 0.27129998803138733
+          },
+          {
+            "id": "https://openalex.org/C204321447",
+            "wikidata": "https://www.wikidata.org/wiki/Q30642",
+            "display_name": "Natural language processing",
+            "level": 1,
+            "score": 0.2678000032901764
+          },
+          {
+            "id": "https://openalex.org/C2777601897",
+            "wikidata": "https://www.wikidata.org/wiki/Q3409113",
+            "display_name": "Presentation (obstetrics)",
+            "level": 2,
+            "score": 0.2648000121116638
+          },
+          {
+            "id": "https://openalex.org/C110875604",
+            "wikidata": "https://www.wikidata.org/wiki/Q75",
+            "display_name": "The Internet",
+            "level": 2,
+            "score": 0.2574000060558319
+          }
+        ],
+        "mesh": [],
+        "locations_count": 2,
+        "locations": [
+          {
+            "id": "doi:10.5281/zenodo.17985348",
+            "doi": "https://doi.org/10.5281/zenodo.17985348",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.17985348",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": null,
+            "raw_type": "JournalArticle"
+          },
+          {
+            "id": "doi:10.5281/zenodo.17985349",
+            "doi": "https://doi.org/10.5281/zenodo.17985349",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.17985349",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": null,
+            "raw_type": "JournalArticle"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.5281/zenodo.17985348",
+          "doi": "https://doi.org/10.5281/zenodo.17985348",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.17985348",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "JournalArticle"
+        },
+        "sustainable_development_goals": [
+          {
+            "id": "https://metadata.un.org/sdg/4",
+            "display_name": "Quality education",
+            "score": 0.9235000014305115
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "grobid_xml": false,
+          "pdf": false
+        },
+        "content_urls": null,
+        "referenced_works_count": 0,
+        "referenced_works": [],
+        "related_works": [
+          "https://openalex.org/W4413763058",
+          "https://openalex.org/W7155610249",
+          "https://openalex.org/W7117881719",
+          "https://openalex.org/W7155498201",
+          "https://openalex.org/W4406622847",
+          "https://openalex.org/W4414707151",
+          "https://openalex.org/W7130679051",
+          "https://openalex.org/W2152563917",
+          "https://openalex.org/W4410855139",
+          "https://openalex.org/W4407058673"
+        ],
+        "abstract_inverted_index": {
+          "In": [
+            0
+          ],
+          "this": [
+            1,
+            39
+          ],
+          "era": [
+            2
+          ],
+          "of": [
+            3
+          ],
+          "rapid": [
+            4
+          ],
+          "globalization": [
+            5
+          ],
+          "and": [
+            6,
+            29,
+            53,
+            75,
+            93,
+            151,
+            179,
+            199
+          ],
+          "technological": [
+            7
+          ],
+          "advancement,": [
+            8
+          ],
+          "the": [
+            9,
+            27,
+            82,
+            89,
+            109,
+            120,
+            138,
+            153,
+            173,
+            185,
+            190,
+            194
+          ],
+          "ability": [
+            10,
+            148
+          ],
+          "to": [
+            11,
+            32,
+            55,
+            72,
+            111,
+            122,
+            149,
+            167,
+            175,
+            201,
+            209,
+            218,
+            227
+          ],
+          "communicate": [
+            12
+          ],
+          "in": [
+            13,
+            95,
+            142,
+            155,
+            203
+          ],
+          "multiple": [
+            14,
+            96,
+            181
+          ],
+          "languages": [
+            15,
+            178
+          ],
+          "has": [
+            16
+          ],
+          "become": [
+            17
+          ],
+          "a": [
+            18,
+            43,
+            68,
+            73,
+            126,
+            161,
+            229
+          ],
+          "crucial": [
+            19
+          ],
+          "skill.": [
+            20
+          ],
+          "Traditional": [
+            21
+          ],
+          "language": [
+            22,
+            45,
+            60,
+            132,
+            154,
+            219
+          ],
+          "learning": [
+            23,
+            46,
+            61,
+            163
+          ],
+          "methods": [
+            24
+          ],
+          "often": [
+            25
+          ],
+          "lack": [
+            26
+          ],
+          "interactivity": [
+            28
+          ],
+          "personalization": [
+            30
+          ],
+          "needed": [
+            31
+          ],
+          "fully": [
+            33
+          ],
+          "engage": [
+            34,
+            141
+          ],
+          "learners.": [
+            35
+          ],
+          "This": [
+            36,
+            212
+          ],
+          "project": [
+            37,
+            213
+          ],
+          "addresses": [
+            38
+          ],
+          "challenge": [
+            40
+          ],
+          "by": [
+            41,
+            165,
+            189
+          ],
+          "developing": [
+            42
+          ],
+          "multilingual": [
+            44,
+            234
+          ],
+          "chatbot": [
+            47,
+            90,
+            121,
+            159
+          ],
+          "robot": [
+            48
+          ],
+          "that": [
+            49,
+            129,
+            145
+          ],
+          "combines": [
+            50
+          ],
+          "both": [
+            51
+          ],
+          "software": [
+            52,
+            223
+          ],
+          "hardware": [
+            54,
+            226
+          ],
+          "offer": [
+            56
+          ],
+          "an": [
+            57,
+            215
+          ],
+          "innovative,": [
+            58
+          ],
+          "interactive": [
+            59,
+            231
+          ],
+          "experience.": [
+            62
+          ],
+          "The": [
+            63,
+            158
+          ],
+          "system": [
+            64,
+            110,
+            195
+          ],
+          "is": [
+            65,
+            196
+          ],
+          "built": [
+            66
+          ],
+          "around": [
+            67
+          ],
+          "Raspberry": [
+            69,
+            191
+          ],
+          "Pi,": [
+            70
+          ],
+          "connected": [
+            71
+          ],
+          "microphone": [
+            74
+          ],
+          "speaker,": [
+            76
+          ],
+          "enabling": [
+            77
+          ],
+          "real-time": [
+            78
+          ],
+          "voice": [
+            79
+          ],
+          "interactions": [
+            80
+          ],
+          "with": [
+            81,
+            137,
+            172,
+            224
+          ],
+          "chatbot.": [
+            83
+          ],
+          "Leveraging": [
+            84
+          ],
+          "Natural": [
+            85
+          ],
+          "Language": [
+            86
+          ],
+          "Processing": [
+            87
+          ],
+          "(NLP),": [
+            88
+          ],
+          "can": [
+            91
+          ],
+          "understand": [
+            92,
+            152
+          ],
+          "respond": [
+            94,
+            123
+          ],
+          "languages,": [
+            97,
+            169
+          ],
+          "making": [
+            98
+          ],
+          "it": [
+            99
+          ],
+          "suitable": [
+            100
+          ],
+          "for": [
+            101,
+            233
+          ],
+          "learners": [
+            102,
+            135
+          ],
+          "at": [
+            103
+          ],
+          "various": [
+            104,
+            204
+          ],
+          "levels.": [
+            105
+          ],
+          "Speech": [
+            106
+          ],
+          "recognition": [
+            107
+          ],
+          "allows": [
+            108
+          ],
+          "accurately": [
+            112
+          ],
+          "interpret": [
+            113
+          ],
+          "user": [
+            114
+          ],
+          "input,": [
+            115
+          ],
+          "while": [
+            116
+          ],
+          "speech": [
+            117
+          ],
+          "synthesis": [
+            118
+          ],
+          "enables": [
+            119
+          ],
+          "naturally,": [
+            124
+          ],
+          "creating": [
+            125
+          ],
+          "conversational": [
+            127
+          ],
+          "environment": [
+            128
+          ],
+          "mimics": [
+            130
+          ],
+          "real-world": [
+            131
+          ],
+          "use.": [
+            133,
+            211
+          ],
+          "As": [
+            134
+          ],
+          "interact": [
+            136
+          ],
+          "chatbot,": [
+            139
+          ],
+          "they": [
+            140
+          ],
+          "simulated": [
+            143
+          ],
+          "dialogues": [
+            144
+          ],
+          "enhance": [
+            146
+          ],
+          "their": [
+            147
+          ],
+          "speak": [
+            150
+          ],
+          "realistic": [
+            156
+          ],
+          "contexts.": [
+            157
+          ],
+          "offers": [
+            160
+          ],
+          "dynamic": [
+            162
+          ],
+          "experience": [
+            164
+          ],
+          "adapting": [
+            166
+          ],
+          "different": [
+            168
+          ],
+          "providing": [
+            170
+          ],
+          "users": [
+            171
+          ],
+          "flexibility": [
+            174
+          ],
+          "switch": [
+            176
+          ],
+          "between": [
+            177
+          ],
+          "practice": [
+            180
+          ],
+          "linguistic": [
+            182
+          ],
+          "skills": [
+            183
+          ],
+          "within": [
+            184
+          ],
+          "same": [
+            186
+          ],
+          "session.": [
+            187
+          ],
+          "Powered": [
+            188
+          ],
+          "Pi": [
+            192
+          ],
+          "platform,": [
+            193
+          ],
+          "portable,": [
+            197
+          ],
+          "affordable,": [
+            198
+          ],
+          "easy": [
+            200
+          ],
+          "deploy": [
+            202
+          ],
+          "educational": [
+            205
+          ],
+          "settings,": [
+            206
+          ],
+          "from": [
+            207
+          ],
+          "classrooms": [
+            208
+          ],
+          "home": [
+            210
+          ],
+          "represents": [
+            214
+          ],
+          "innovative": [
+            216
+          ],
+          "approach": [
+            217
+          ],
+          "learning,": [
+            220
+          ],
+          "combining": [
+            221
+          ],
+          "AI-driven": [
+            222
+          ],
+          "accessible": [
+            225
+          ],
+          "provide": [
+            228
+          ],
+          "scalable,": [
+            230
+          ],
+          "tool": [
+            232
+          ],
+          "education.": [
+            235
+          ]
+        },
+        "counts_by_year": [],
+        "updated_date": "2026-10-07T09:51:55.459714",
+        "created_date": "2025-12-21T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W7167281445",
+        "doi": "https://doi.org/10.21154/eltall.v7i1.12909",
+        "title": "Elevating Language Learning with Chatbot Technology",
+        "display_name": "Elevating Language Learning with Chatbot Technology",
+        "relevance_score": 95.37718,
+        "publication_year": 2026,
+        "publication_date": "2026-07-03",
+        "ids": {
+          "openalex": "https://openalex.org/W7167281445",
+          "doi": "https://doi.org/10.21154/eltall.v7i1.12909"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.21154/eltall.v7i1.12909",
+          "doi": "https://doi.org/10.21154/eltall.v7i1.12909",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.21154/eltall.v7i1.12909",
+          "pdf_url": "https://jurnal.iainponorogo.ac.id/index.php/eltall/article/download/12909/4576",
+          "source": {
+            "id": "https://openalex.org/S4210178926",
+            "display_name": "ELTALL English Language Teaching Applied Linguistic and Literature",
+            "issn_l": "2723-2700",
+            "issn": [
+              "2723-2700",
+              "2723-2719"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "listed_in": [
+              "doaj"
+            ],
+            "host_organization": "https://openalex.org/P4310314970",
+            "host_organization_name": "STAIN Ponorogo",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314970"
+            ],
+            "host_organization_lineage_names": [
+              "STAIN Ponorogo"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "ELTALL: English Language Teaching, Applied Linguistic and Literature",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref",
+          "doaj"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://jurnal.iainponorogo.ac.id/index.php/eltall/article/download/12909/4576",
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5016773908",
+              "display_name": "Nazirah Mahmud",
+              "orcid": "https://orcid.org/0000-0001-6343-6555",
+              "observed_orcids": [
+                "https://orcid.org/0000-0001-6343-6555"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I227486990",
+                "display_name": "University of Szeged",
+                "ror": "https://ror.org/01pnej532",
+                "country_code": "HU",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I227486990"
+                ]
+              }
+            ],
+            "countries": [
+              "HU"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Nazirah Binti Mahmud",
+            "raw_affiliation_strings": [
+              "University of Szeged"
+            ],
+            "raw_orcid": "https://orcid.org/0000-0001-6343-6555",
+            "affiliations": [
+              {
+                "raw_affiliation_string": "University of Szeged",
+                "institution_ids": [
+                  "https://openalex.org/I227486990"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 1,
+        "institutions_distinct_count": 1,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5016773908"
+        ],
+        "corresponding_institution_ids": [
+          "https://openalex.org/I227486990"
+        ],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 9.3168,
+        "has_fulltext": true,
+        "cited_by_count": 1,
+        "citation_normalized_percentile": {
+          "value": 0.95155374,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 91,
+          "max": 95
+        },
+        "biblio": {
+          "volume": "7",
+          "issue": "1",
+          "first_page": "114",
+          "last_page": "127"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T10021",
+          "display_name": "EFL/ESL Teaching and Learning",
+          "score": 0.3156999945640564,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.3156999945640564,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.12620000541210175,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T12128",
+            "display_name": "AI in Service Interactions",
+            "score": 0.11649999767541885,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1406",
+              "display_name": "Marketing"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/14",
+              "display_name": "Business, Management and Accounting"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/chatbots",
+            "display_name": "chatbots",
+            "score": 0.9959999918937683
+          },
+          {
+            "id": "https://openalex.org/keywords/foreign-language-learning",
+            "display_name": "foreign language learning",
+            "score": 0.8169999718666077
+          },
+          {
+            "id": "https://openalex.org/keywords/constructivism",
+            "display_name": "constructivism",
+            "score": 0.9049999713897705
+          },
+          {
+            "id": "https://openalex.org/keywords/connectivism",
+            "display_name": "connectivism",
+            "score": 1.0
+          },
+          {
+            "id": "https://openalex.org/keywords/language-development",
+            "display_name": "language development",
+            "score": 0.6510000228881836
+          },
+          {
+            "id": "https://openalex.org/keywords/chatbot-limitations",
+            "display_name": "chatbot limitations",
+            "score": 0.6259999871253967
+          },
+          {
+            "id": "https://openalex.org/keywords/interactive-language-learning",
+            "display_name": "interactive language learning",
+            "score": 0.6039999723434448
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C2779041454",
+            "wikidata": "https://www.wikidata.org/wiki/Q870780",
+            "display_name": "Chatbot",
+            "level": 2,
+            "score": 0.9413999915122986
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6812000274658203
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.531499981880188
+          },
+          {
+            "id": "https://openalex.org/C9652623",
+            "wikidata": "https://www.wikidata.org/wiki/Q190109",
+            "display_name": "Field (mathematics)",
+            "level": 2,
+            "score": 0.4174000024795532
+          },
+          {
+            "id": "https://openalex.org/C133281099",
+            "wikidata": "https://www.wikidata.org/wiki/Q1783023",
+            "display_name": "Constructivism (international relations)",
+            "level": 4,
+            "score": 0.3986000120639801
+          },
+          {
+            "id": "https://openalex.org/C14919245",
+            "wikidata": "https://www.wikidata.org/wiki/Q1976109",
+            "display_name": "Language technology",
+            "level": 4,
+            "score": 0.3889000117778778
+          },
+          {
+            "id": "https://openalex.org/C1813318",
+            "wikidata": "https://www.wikidata.org/wiki/Q2465887",
+            "display_name": "Language industry",
+            "level": 4,
+            "score": 0.3756999969482422
+          },
+          {
+            "id": "https://openalex.org/C129353971",
+            "wikidata": "https://www.wikidata.org/wiki/Q5156949",
+            "display_name": "Comprehension approach",
+            "level": 3,
+            "score": 0.3691999912261963
+          },
+          {
+            "id": "https://openalex.org/C2983448237",
+            "wikidata": "https://www.wikidata.org/wiki/Q1078276",
+            "display_name": "Language understanding",
+            "level": 2,
+            "score": 0.3531000018119812
+          },
+          {
+            "id": "https://openalex.org/C195324797",
+            "wikidata": "https://www.wikidata.org/wiki/Q33742",
+            "display_name": "Natural language",
+            "level": 2,
+            "score": 0.350600004196167
+          },
+          {
+            "id": "https://openalex.org/C114010052",
+            "wikidata": "https://www.wikidata.org/wiki/Q150352",
+            "display_name": "Foreign language",
+            "level": 2,
+            "score": 0.34700000286102295
+          },
+          {
+            "id": "https://openalex.org/C123960582",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455196",
+            "display_name": "Language education",
+            "level": 2,
+            "score": 0.2921999990940094
+          },
+          {
+            "id": "https://openalex.org/C83479923",
+            "wikidata": "https://www.wikidata.org/wiki/Q2063748",
+            "display_name": "Universal Networking Language",
+            "level": 4,
+            "score": 0.28999999165534973
+          },
+          {
+            "id": "https://openalex.org/C2779313563",
+            "wikidata": "https://www.wikidata.org/wiki/Q17072565",
+            "display_name": "On Language",
+            "level": 2,
+            "score": 0.2888000011444092
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.26339998841285706
+          },
+          {
+            "id": "https://openalex.org/C2776159695",
+            "wikidata": "https://www.wikidata.org/wiki/Q6486751",
+            "display_name": "Language learning strategies",
+            "level": 4,
+            "score": 0.25690001249313354
+          },
+          {
+            "id": "https://openalex.org/C49774154",
+            "wikidata": "https://www.wikidata.org/wiki/Q131765",
+            "display_name": "Multimedia",
+            "level": 1,
+            "score": 0.2554999887943268
+          },
+          {
+            "id": "https://openalex.org/C2988800540",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455196",
+            "display_name": "Foreign language teaching",
+            "level": 3,
+            "score": 0.2526000142097473
+          }
+        ],
+        "mesh": [],
+        "locations_count": 2,
+        "locations": [
+          {
+            "id": "doi:10.21154/eltall.v7i1.12909",
+            "doi": "https://doi.org/10.21154/eltall.v7i1.12909",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.21154/eltall.v7i1.12909",
+            "pdf_url": "https://jurnal.iainponorogo.ac.id/index.php/eltall/article/download/12909/4576",
+            "source": {
+              "id": "https://openalex.org/S4210178926",
+              "display_name": "ELTALL English Language Teaching Applied Linguistic and Literature",
+              "issn_l": "2723-2700",
+              "issn": [
+                "2723-2700",
+                "2723-2719"
+              ],
+              "is_oa": true,
+              "is_in_doaj": true,
+              "is_core": false,
+              "listed_in": [
+                "doaj"
+              ],
+              "host_organization": "https://openalex.org/P4310314970",
+              "host_organization_name": "STAIN Ponorogo",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310314970"
+              ],
+              "host_organization_lineage_names": [
+                "STAIN Ponorogo"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by-nc",
+            "license_id": "https://openalex.org/licenses/cc-by-nc",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "ELTALL: English Language Teaching, Applied Linguistic and Literature",
+            "raw_type": "journal-article"
+          },
+          {
+            "id": "pmh:oai:doaj.org/article:8edb1b0946ec4e268215b47954039466",
+            "doi": null,
+            "is_oa": false,
+            "landing_page_url": "https://doaj.org/article/8edb1b0946ec4e268215b47954039466",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306401280",
+              "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "submittedVersion",
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": "ELTALL, Vol 7, Iss 1 (2026)",
+            "raw_type": "article"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.21154/eltall.v7i1.12909",
+          "doi": "https://doi.org/10.21154/eltall.v7i1.12909",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.21154/eltall.v7i1.12909",
+          "pdf_url": "https://jurnal.iainponorogo.ac.id/index.php/eltall/article/download/12909/4576",
+          "source": {
+            "id": "https://openalex.org/S4210178926",
+            "display_name": "ELTALL English Language Teaching Applied Linguistic and Literature",
+            "issn_l": "2723-2700",
+            "issn": [
+              "2723-2700",
+              "2723-2719"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "listed_in": [
+              "doaj"
+            ],
+            "host_organization": "https://openalex.org/P4310314970",
+            "host_organization_name": "STAIN Ponorogo",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314970"
+            ],
+            "host_organization_lineage_names": [
+              "STAIN Ponorogo"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "ELTALL: English Language Teaching, Applied Linguistic and Literature",
+          "raw_type": "journal-article"
+        },
+        "sustainable_development_goals": [
+          {
+            "id": "https://metadata.un.org/sdg/4",
+            "display_name": "Quality education",
+            "score": 0.7567999958992004
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "grobid_xml": true,
+          "pdf": true
+        },
+        "content_urls": {
+          "pdf": "https://content.openalex.org/works/W7167281445.pdf",
+          "grobid_xml": "https://content.openalex.org/works/W7167281445.grobid-xml"
+        },
+        "referenced_works_count": 27,
+        "referenced_works": [
+          "https://openalex.org/W1041173458",
+          "https://openalex.org/W1981045396",
+          "https://openalex.org/W2001868978",
+          "https://openalex.org/W2048544198",
+          "https://openalex.org/W2054950643",
+          "https://openalex.org/W2081489056",
+          "https://openalex.org/W2212962555",
+          "https://openalex.org/W2395537882",
+          "https://openalex.org/W2617381106",
+          "https://openalex.org/W2789602359",
+          "https://openalex.org/W2795037203",
+          "https://openalex.org/W2887720395",
+          "https://openalex.org/W2914188784",
+          "https://openalex.org/W2945355023",
+          "https://openalex.org/W2994392280",
+          "https://openalex.org/W3017108608",
+          "https://openalex.org/W3034267466",
+          "https://openalex.org/W3037334488",
+          "https://openalex.org/W3099928629",
+          "https://openalex.org/W3186199325",
+          "https://openalex.org/W3193767085",
+          "https://openalex.org/W3204718649",
+          "https://openalex.org/W4280550159",
+          "https://openalex.org/W4360779956",
+          "https://openalex.org/W4384160615",
+          "https://openalex.org/W4402239774",
+          "https://openalex.org/W4413028927"
+        ],
+        "related_works": [
+          "https://openalex.org/W3028173088",
+          "https://openalex.org/W7216489059",
+          "https://openalex.org/W4394949683",
+          "https://openalex.org/W4394603255",
+          "https://openalex.org/W4414256860",
+          "https://openalex.org/W4403676011",
+          "https://openalex.org/W4391316614",
+          "https://openalex.org/W4407151315",
+          "https://openalex.org/W4391483849",
+          "https://openalex.org/W3186199325"
+        ],
+        "abstract_inverted_index": {
+          "Chatbots": [
+            0
+          ],
+          "are": [
+            1
+          ],
+          "emerging": [
+            2
+          ],
+          "as": [
+            3
+          ],
+          "popular": [
+            4
+          ],
+          "tools": [
+            5
+          ],
+          "for": [
+            6,
+            37
+          ],
+          "teaching": [
+            7
+          ],
+          "and": [
+            8,
+            49,
+            58,
+            104,
+            113,
+            123
+          ],
+          "learning": [
+            9,
+            42,
+            94
+          ],
+          "in": [
+            10,
+            40,
+            92,
+            125
+          ],
+          "foreign": [
+            11
+          ],
+          "language": [
+            12,
+            28,
+            41,
+            67,
+            93,
+            119
+          ],
+          "education.": [
+            13
+          ],
+          "Their": [
+            14
+          ],
+          "features": [
+            15
+          ],
+          "have": [
+            16,
+            55,
+            71
+          ],
+          "transformed": [
+            17
+          ],
+          "them": [
+            18
+          ],
+          "into": [
+            19
+          ],
+          "conversational": [
+            20
+          ],
+          "companions,": [
+            21
+          ],
+          "enabling": [
+            22
+          ],
+          "learners": [
+            23
+          ],
+          "to": [
+            24,
+            63,
+            82,
+            108
+          ],
+          "engage": [
+            25
+          ],
+          "with": [
+            26
+          ],
+          "the": [
+            27,
+            74,
+            87,
+            97,
+            111
+          ],
+          "more": [
+            29,
+            65
+          ],
+          "effectively.": [
+            30
+          ],
+          "This": [
+            31,
+            79
+          ],
+          "review": [
+            32,
+            80
+          ],
+          "establishes": [
+            33
+          ],
+          "a": [
+            34
+          ],
+          "theoretical": [
+            35,
+            99
+          ],
+          "framework": [
+            36
+          ],
+          "chatbot": [
+            38,
+            90
+          ],
+          "technology": [
+            39,
+            91
+          ],
+          "by": [
+            43,
+            95
+          ],
+          "utilising": [
+            44
+          ],
+          "two": [
+            45
+          ],
+          "theories,": [
+            46
+          ],
+          "namely": [
+            47
+          ],
+          "constructivism": [
+            48
+          ],
+          "connectivism.": [
+            50
+          ],
+          "To": [
+            51
+          ],
+          "date,": [
+            52
+          ],
+          "numerous": [
+            53
+          ],
+          "chatbots": [
+            54,
+            116
+          ],
+          "been": [
+            56
+          ],
+          "developed": [
+            57
+          ],
+          "implemented,": [
+            59
+          ],
+          "showcasing": [
+            60
+          ],
+          "their": [
+            61,
+            102
+          ],
+          "potential": [
+            62
+          ],
+          "provide": [
+            64
+          ],
+          "interactive": [
+            66
+          ],
+          "experiences.": [
+            68
+          ],
+          "However,": [
+            69
+          ],
+          "studies": [
+            70
+          ],
+          "also": [
+            72,
+            129
+          ],
+          "acknowledged": [
+            73
+          ],
+          "limitations": [
+            75
+          ],
+          "of": [
+            76,
+            86,
+            89,
+            115
+          ],
+          "these": [
+            77
+          ],
+          "tools.": [
+            78
+          ],
+          "aimed": [
+            81
+          ],
+          "offer": [
+            83
+          ],
+          "an": [
+            84
+          ],
+          "overview": [
+            85
+          ],
+          "application": [
+            88
+          ],
+          "discussing": [
+            96
+          ],
+          "underlying": [
+            98
+          ],
+          "concepts,": [
+            100
+          ],
+          "examining": [
+            101
+          ],
+          "usage": [
+            103
+          ],
+          "reviewing": [
+            105
+          ],
+          "recent": [
+            106
+          ],
+          "research": [
+            107
+          ],
+          "explore": [
+            109
+          ],
+          "both": [
+            110
+          ],
+          "benefits": [
+            112
+          ],
+          "drawbacks": [
+            114
+          ],
+          "on": [
+            117
+          ],
+          "learners’": [
+            118
+          ],
+          "development.": [
+            120
+          ],
+          "Future": [
+            121
+          ],
+          "directions": [
+            122
+          ],
+          "innovations": [
+            124
+          ],
+          "this": [
+            126
+          ],
+          "field": [
+            127
+          ],
+          "were": [
+            128
+          ],
+          "presented.": [
+            130
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 1
+          }
+        ],
+        "updated_date": "2026-11-04T10:54:05.112534",
+        "created_date": "2026-07-04T00:00:00"
+      }
+    ],
+    "group_by": []
+  }
+}

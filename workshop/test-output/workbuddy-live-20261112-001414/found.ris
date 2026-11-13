@@ -1,0 +1,287 @@
+TY  - JOUR
+TI  - Qwen3 Technical Report
+AU  - Yang, An
+AU  - A. Li
+AU  - Baosong Yang
+AU  - Beichen Zhang
+AU  - Binyuan Hui
+AU  - Zheng, Bo
+AU  - B. X. Yu
+AU  - Chang Gao
+AU  - C. Huang
+AU  - Chenxu Lv
+AU  - Chujie Zheng
+AU  - Dayiheng Liu
+AU  - Zhou, Fan
+AU  - Fei Huang
+AU  - H Feng
+AU  - Ge, Hao
+AU  - Haoran Wei
+AU  - Lin Huan
+AU  - Jialong Tang
+AU  - Jian Yang
+AU  - Jianhong Tu
+AU  - Jianwei Zhang
+AU  - Jianxin Yang
+AU  - Jiaxi Yang
+AU  - Jing Zhou
+AU  - Jingren Zhou
+AU  - Junyang Lin
+AU  - Kai Dang
+AU  - Keqin Bao
+AU  - Kexin Yang
+AU  - Le Yu
+AU  - Deng, Lianghao
+AU  - Mei Li
+AU  - Mingfeng Xue
+AU  - Mingze Li
+AU  - Pei Zhang
+AU  - Peng Wang
+AU  - Zhu, Qin
+AU  - Rui Men
+AU  - Ruize Gao
+AU  - Shixuan Liu
+AU  - Shuang Luo
+AU  - Tianhao Li
+AU  - Tang, Tianyi
+AU  - Wenbiao Yin
+AU  - Xingzhang Ren
+AU  - Xinyu Wang
+AU  - Xinyu Zhang
+AU  - Xuancheng Ren
+AU  - Fan Yang
+AU  - Su Yang
+AU  - Yichang Zhang
+AU  - Yinger Zhang
+AU  - Wan, Yu
+AU  - Yuqiong Liu
+AU  - Zekun Wang
+AU  - Zeyu Cui
+AU  - Zhenru Zhang
+AU  - Zhipeng Zhou
+AU  - Zihan Qiu
+PY  - 2025
+JO  - arXiv (Cornell University)
+DO  - 10.48550/arxiv.2505.09388
+UR  - https://doi.org/10.48550/arxiv.2505.09388
+N1  - OpenAlex: https://openalex.org/W4414939355
+ER  - 
+
+TY  - JOUR
+TI  - DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning
+AU  - Daya Guo
+AU  - Dejian Yang
+AU  - Haowei Zhang
+AU  - Junxiao Song
+AU  - Peiyi Wang
+AU  - Qihao Zhu
+AU  - Runxin Xu
+AU  - Ruoyu Zhang
+AU  - Shirong Ma
+AU  - Xiao Bi
+AU  - Xiaokang Zhang
+AU  - Xingkai Yu
+AU  - Yu Wu
+AU  - Z. F. Wu
+AU  - Zhibin Gou
+AU  - Zhihong Shao
+AU  - Zhuoshu Li
+AU  - Ziyi Gao
+AU  - Aixin Liu
+AU  - Bing Xue
+AU  - Bingxuan Wang
+AU  - Bowen Wu
+AU  - Bei Feng
+AU  - Chengda Lu
+AU  - Chenggang Zhao
+AU  - Chengqi Deng
+AU  - Chong Ruan
+AU  - Damai Dai
+AU  - Deli Chen
+AU  - Dongjie Ji
+AU  - Erhang Li
+AU  - Fangyun Lin
+AU  - Fucong Dai
+AU  - Fuli Luo
+AU  - Guangbo Hao
+AU  - Guan-Ting Chen
+AU  - Guowei Li
+AU  - H. Zhang
+AU  - Hanwei Xu
+AU  - Honghui Ding
+AU  - Huazuo Gao
+AU  - Hui Qu
+AU  - Hui Li
+AU  - Jianzhong Guo
+AU  - Jiashi Li
+AU  - Jingchang Chen
+AU  - Jingyang Yuan
+AU  - Jinhao Tu
+AU  - Junjie Qiu
+AU  - Junlong Li
+AU  - J. L. Cai
+AU  - Jiaqi Ni
+AU  - Jian Liang
+AU  - Jing Chen
+AU  - Kai Dong
+AU  - Kai Cheng Hu
+AU  - Kaichao You
+AU  - Kaige Gao
+AU  - Kang Guan
+AU  - Kexin Huang
+AU  - Kuai Yu
+AU  - Lean Wang
+AU  - Lecong Zhang
+AU  - Liang Zhao
+AU  - Litong Wang
+AU  - Liyue Zhang
+AU  - Lei Xu
+AU  - L. Xia
+AU  - Mingchuan Zhang
+AU  - Minghua Zhang
+AU  - Minghui Tang
+AU  - Mingxu Zhou
+AU  - Meng Li
+AU  - Miaojun Wang
+AU  - Mingming Li
+AU  - Ning Tian
+AU  - Panpan Huang
+AU  - Peng Zhang
+AU  - Qiancheng Wang
+AU  - Qinyu Chen
+AU  - Qiushi Du
+AU  - Ruiqi Ge
+AU  - Ruisong Zhang
+AU  - Ruizhe Pan
+AU  - Runji Wang
+AU  - R. J. Chen
+AU  - Rong Jin
+AU  - Ruyi Chen
+AU  - Shanghao Lu
+AU  - Shangyan Zhou
+AU  - Shanhuang Chen
+AU  - Shengfeng Ye
+AU  - Shiyu Wang
+AU  - Shuiping Yu
+AU  - Shunfeng Zhou
+AU  - Shuting Pan
+AU  - Sansan Li
+AU  - Shuang Zhou
+AU  - Shaoqing Wu
+AU  - Tao Yun
+PY  - 2025
+JO  - Nature
+DO  - 10.1038/s41586-025-09422-z
+UR  - https://doi.org/10.1038/s41586-025-09422-z
+N1  - OpenAlex: https://openalex.org/W4414281281
+ER  - 
+
+TY  - JOUR
+TI  - GPT-4o System Card
+AU  - OpenAI
+AU  - :
+AU  - Hurst, Aaron
+AU  - Adam K. Lerer
+AU  - Adam P. Goucher
+AU  - Adam Perelman
+AU  - Ramesh, Aditya
+AU  - Aidan Clark
+AU  - AJ Ostrow
+AU  - Akila Welihinda
+AU  - Hayes, Alan
+AU  - Alec Radford
+AU  - Aleksander Mądry
+AU  - Alex Baker-Whitcomb
+AU  - Alex Beutel
+AU  - Alex Borzunov
+AU  - Alex Carney
+AU  - Chow, Alex
+AU  - Kirillov, Alex
+AU  - Alex Nichol
+AU  - Alex Paino
+AU  - Alex Renzin
+AU  - Alex Tachard Passos
+AU  - Kirillov, Alexander
+AU  - Alexi Christakis
+AU  - Alexis Conneau
+AU  - Kamali, Ali
+AU  - Allan Jabri
+AU  - Allison F. Moyer
+AU  - Tam, Allison
+AU  - Amadou Crookes
+AU  - Amin Tootoochian
+AU  - Amin Tootoonchian
+AU  - Ananya Kumar
+AU  - Andrea Vallone
+AU  - Andrej Karpathy
+AU  - Andrew Braunstein
+AU  - A Mc Cann
+AU  - Andrew Codispoti
+AU  - Andrew Galu
+AU  - Andrew Kondrich
+AU  - Andrew Tulloch
+AU  - Mishchenko, Andrey
+AU  - Baek, Angela
+AU  - Angela Jiang
+AU  - Antoine Pelisse
+AU  - Antonia Woodford
+AU  - Anuj Gosalia
+AU  - Dhar, Arka
+AU  - Ashley Pantuliano
+AU  - Nayak, Avi
+AU  - Avital Oliver
+AU  - Barret Zoph
+AU  - Behrooz Ghorbani
+AU  - Ben Leimberger
+AU  - Ben Rossen
+AU  - Ben Sokolowsky
+AU  - Ben Wang
+AU  - Benjamin Zweig
+AU  - Hoover, Beth
+AU  - Blake Samic
+AU  - Bob McGrew
+AU  - Bobby Spero
+AU  - Bogo Giertler
+AU  - Cheng, Bowen
+AU  - Brad Lightcap
+AU  - Brandon Walkin
+AU  - Quinn, Brendan
+AU  - Brian Guarraci
+AU  - Brian Hsu
+AU  - Bright Kellogg
+AU  - Brydon Eastman
+AU  - Camillo Lugaresi
+AU  - Carroll L. Wainwright
+AU  - Cary Bassin
+AU  - Hudson, Cary
+AU  - Casey Chu
+AU  - Nelson, Chad
+AU  - Chak Li
+AU  - Jun Shern Chan
+AU  - Channing Conger
+AU  - Charlotte Barette
+AU  - Chelsea Voss
+AU  - Ding, Chen
+AU  - Lu, Cheng
+AU  - Chong Zhang
+AU  - Beaumont, Chris
+AU  - Chris Hallacy
+AU  - Koch, Chris
+AU  - Gibson, Christian
+AU  - Christina Kim
+AU  - Choi, Christine
+AU  - Christine McLeavey
+AU  - Christopher Hesse
+AU  - Fischer, Claudia
+AU  - Winter, Clemens
+AU  - Coley Czarnecki
+AU  - Jarvis, Colin
+AU  - Colin Wei
+AU  - Constantin Koumouzelis
+PY  - 2024
+JO  - arXiv (Cornell University)
+DO  - 10.48550/arxiv.2410.21276
+UR  - https://doi.org/10.48550/arxiv.2410.21276
+N1  - OpenAlex: https://openalex.org/W4404330874
+ER  - 
+

@@ -1,0 +1,64 @@
+=== FILE: candidate1_awcf.json bytes: 139190 ===
+  top-level keys: ['candidate_id', 'candidate_name', 'request_url', 'request_params', 'timestamp_utc', 'response']
+  declared request_url: https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+  declared request_params: {'search': 'automated written corrective feedback', 'filter': 'from_publication_date:2024-01-01', 'per-page': '5'}
+  declared timestamp_utc: 2026-11-11T16:44:14.367728+00:00
+  has nested 'response': True
+  response.meta.count: 11915
+  response.meta keys: ['notice', 'count', 'db_response_time_ms', 'page', 'per_page', 'groups_count', 'x_query', 'cost_usd']
+  x_query.order / order_default: best matches first / True
+  results count: 5
+    1 'Automated Written Corrective Feedback in EFL context' | 2026 | https://doi.org/10.48321/d13320141e | has_abstract_inverted_index: True
+    2 'Automated Written Corrective Feedback (AWCF)' | 2024 | https://doi.org/10.1163/9789004719118_009 | has_abstract_inverted_index: False
+    3 'Effectiveness of Generative AI in Automated Written Corrective Feedback With Prompting' | 2025 | https://doi.org/10.1177/07356331251359430 | has_abstract_inverted_index: True
+    4 'L2 writer engagement with automated written corrective feedback provided by ChatGPT: A mixed-method multiple case study' | 2024 | https://doi.org/10.1057/s41599-024-03543-y | has_abstract_inverted_index: True
+    5 'Impact of prompt sophistication on ChatGPT’s output for automated written corrective feedback' | 2025 | https://doi.org/10.1017/s095834402510044x | has_abstract_inverted_index: True
+  mentions http status/header keys: False
+  literal 'HTTP/2 200' present: False
+  literal 'BypassSandbox' present: False
+  literal 'PromptPraxisResearch' present: False
+=== FILE: candidate2_genai_l2_writing.json bytes: 140444 ===
+  top-level keys: ['candidate_id', 'candidate_name', 'request_url', 'request_params', 'timestamp_utc', 'response']
+  declared request_url: https://api.openalex.org/works?search=generative+AI+second+language+writing&filter=from_publication_date%3A2024-01-01&per-page=5
+  declared request_params: {'search': 'generative AI second language writing', 'filter': 'from_publication_date:2024-01-01', 'per-page': '5'}
+  declared timestamp_utc: 2026-11-11T16:44:15.346939+00:00
+  has nested 'response': True
+  response.meta.count: 141849
+  response.meta keys: ['notice', 'count', 'db_response_time_ms', 'page', 'per_page', 'groups_count', 'x_query', 'cost_usd']
+  x_query.order / order_default: best matches first / True
+  results count: 5
+    1 'Generative AI and Second Language Writing' | 2025 | https://doi.org/10.1515/dsll-2025-0007 | has_abstract_inverted_index: True
+    2 'Generative AI and Second Language Writing' | 2025 | https://doi.org/10.47908/38/2 | has_abstract_inverted_index: True
+    3 'The Application of Generative AI in Chinese as a Second Language Writing' | 2026 | https://doi.org/10.1051/shsconf/202623504012 | has_abstract_inverted_index: True
+    4 'The Application of Generative AI in Chinese as a Second Language Writing' | 2026 | https://doi.org/10.1051/shsconf/202623504012/pdf | has_abstract_inverted_index: True
+    5 'Generative AI is useful for second language writing, but when, why, and for how long do learners use it?' | 2025 | https://doi.org/10.1016/j.jslw.2025.101230 | has_abstract_inverted_index: True
+  mentions http status/header keys: False
+  literal 'HTTP/2 200' present: False
+  literal 'BypassSandbox' present: False
+  literal 'PromptPraxisResearch' present: False
+=== FILE: candidate3_chatbots_lang_learning.json bytes: 145636 ===
+  top-level keys: ['candidate_id', 'candidate_name', 'request_url', 'request_params', 'timestamp_utc', 'response']
+  declared request_url: https://api.openalex.org/works?search=chatbots+language+learning&filter=from_publication_date%3A2024-01-01&per-page=5
+  declared request_params: {'search': 'chatbots language learning', 'filter': 'from_publication_date:2024-01-01', 'per-page': '5'}
+  declared timestamp_utc: 2026-11-11T16:44:16.333736+00:00
+  has nested 'response': True
+  response.meta.count: 137372
+  response.meta keys: ['notice', 'count', 'db_response_time_ms', 'page', 'per_page', 'groups_count', 'x_query', 'cost_usd']
+  x_query.order / order_default: best matches first / True
+  results count: 5
+    1 'Does Chatting with Chatbots Improve Language Learning Performance? A Meta-Analysis of Chatbot-Assisted Language Learning' | 2024 | https://doi.org/10.3102/00346543241255621 | has_abstract_inverted_index: True
+    2 'Effectiveness of Chatbots in Improving Language Learning: A Meta‐Analysis of Comparative Studies' | 2024 | https://doi.org/10.1111/ijal.12668 | has_abstract_inverted_index: True
+    3 'THE USE OF CHATBOTS IN THE ENGLISH LANGUAGE TEACHING TO PROMOTE MODERN LANGUAGE LEARNING: A LITERATURE REVIEW' | 2024 | https://doi.org/10.24071/ijiet.v8i1.7321 | has_abstract_inverted_index: True
+    4 'Intelligent Modelling For Multilingual Language Learning Chatbot' | 2025 | https://doi.org/10.5281/zenodo.17985348 | has_abstract_inverted_index: True
+    5 'Elevating Language Learning with Chatbot Technology' | 2026 | https://doi.org/10.21154/eltall.v7i1.12909 | has_abstract_inverted_index: True
+  mentions http status/header keys: False
+  literal 'HTTP/2 200' present: False
+  literal 'BypassSandbox' present: False
+  literal 'PromptPraxisResearch' present: False
+=== FILE: summary.json bytes: 11360 ===
+  top-level: list of 3 items; first item keys: ['candidate', 'url', 'count', 'items']
+  derived summary fields (not raw API response)
+=== OFFLINE FIXTURES (for classification) ===
+   openalex_empty.json bytes: 87 keys: ['meta', 'results'] meta.count: 0 results: 0
+   openalex_missing_metadata.json bytes: 970 keys: ['meta', 'results'] meta.count: 2 results: 2
+   openalex_normal.json bytes: 2373 keys: ['meta', 'results'] meta.count: 3 results: 3

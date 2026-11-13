@@ -1,0 +1,5185 @@
+{
+  "candidate_id": "candidate2",
+  "candidate_name": "Candidate 2: generative AI second language writing",
+  "request_url": "https://api.openalex.org/works?search=generative+AI+second+language+writing&filter=from_publication_date%3A2024-01-01&per-page=5",
+  "request_params": {
+    "search": "generative AI second language writing",
+    "filter": "from_publication_date:2024-01-01",
+    "per-page": "5"
+  },
+  "timestamp_utc": "2026-11-11T16:44:15.346939+00:00",
+  "response": {
+    "meta": {
+      "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+      "count": 141849,
+      "db_response_time_ms": 289,
+      "page": 1,
+      "per_page": 5,
+      "groups_count": null,
+      "x_query": {
+        "oql": "get works since 2024-01-01 with (generative AI second language writing) in the title, abstract, or full text",
+        "x_new_oql": "get works since 2024-01-01 with (generative AI second language writing) in the title, abstract, or full text",
+        "oqo": {
+          "get_rows": "works",
+          "filter_rows": [
+            {
+              "column_id": "from_publication_date",
+              "value": "2024-01-01"
+            },
+            {
+              "column_id": "fulltext.search",
+              "value": "generative AI second language writing",
+              "operator": "has"
+            }
+          ]
+        },
+        "url": "/works?filter=from_publication_date:2024-01-01,fulltext.search:generative AI second language writing&per_page=5",
+        "order": "best matches first",
+        "order_default": true
+      },
+      "cost_usd": 0.001
+    },
+    "results": [
+      {
+        "id": "https://openalex.org/W4411179243",
+        "doi": "https://doi.org/10.1515/dsll-2025-0007",
+        "title": "Generative AI and Second Language Writing",
+        "display_name": "Generative AI and Second Language Writing",
+        "relevance_score": 176.67924,
+        "publication_year": 2025,
+        "publication_date": "2025-06-10",
+        "ids": {
+          "openalex": "https://openalex.org/W4411179243",
+          "doi": "https://doi.org/10.1515/dsll-2025-0007"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.1515/dsll-2025-0007",
+          "doi": "https://doi.org/10.1515/dsll-2025-0007",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1515/dsll-2025-0007",
+          "pdf_url": "https://www.degruyterbrill.com/document/doi/10.1515/dsll-2025-0007/pdf",
+          "source": {
+            "id": "https://openalex.org/S4404675628",
+            "display_name": "Digital studies in language and literature",
+            "issn_l": "2943-0607",
+            "issn": [
+              "2943-0607"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/P4310313990",
+            "host_organization_name": "De Gruyter",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310313990"
+            ],
+            "host_organization_lineage_names": [
+              "De Gruyter"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Digital Studies in Language and Literature",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://www.degruyterbrill.com/document/doi/10.1515/dsll-2025-0007/pdf",
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5101513175",
+              "display_name": "Shaofeng Li",
+              "orcid": "https://orcid.org/0000-0002-7763-8964",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-7763-8964"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I14243506",
+                "display_name": "Hong Kong Polytechnic University",
+                "ror": "https://ror.org/0030zas98",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I14243506"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Shaofeng Li",
+            "raw_affiliation_strings": [
+              "The Hong Kong Polytechnic University , Kowloon , Hong Kong"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Hong Kong Polytechnic University , Kowloon , Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I14243506"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 1,
+        "institutions_distinct_count": 1,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5101513175"
+        ],
+        "corresponding_institution_ids": [
+          "https://openalex.org/I14243506"
+        ],
+        "apc_list": {
+          "value": 0,
+          "currency": "USD",
+          "value_usd": 0
+        },
+        "apc_paid": {
+          "value": 0,
+          "currency": "USD",
+          "value_usd": 0
+        },
+        "fwci": 137.4839,
+        "has_fulltext": true,
+        "cited_by_count": 86,
+        "citation_normalized_percentile": {
+          "value": 0.99970705,
+          "is_in_top_1_percent": true,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 99,
+          "max": 100
+        },
+        "biblio": {
+          "volume": "2",
+          "issue": "1",
+          "first_page": "122",
+          "last_page": "152"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T10021",
+          "display_name": "EFL/ESL Teaching and Learning",
+          "score": 0.7851999998092651,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.7851999998092651,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.10360000282526016,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.014999999664723873,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/generative-ai",
+            "display_name": "generative AI",
+            "score": 0.9890000224113464
+          },
+          {
+            "id": "https://openalex.org/keywords/second-language-writing",
+            "display_name": "second language writing",
+            "score": 0.9990000128746033
+          },
+          {
+            "id": "https://openalex.org/keywords/genai-literacy",
+            "display_name": "GenAI literacy",
+            "score": 0.9800000190734863
+          },
+          {
+            "id": "https://openalex.org/keywords/written-feedback",
+            "display_name": "written feedback",
+            "score": 0.871999979019165
+          },
+          {
+            "id": "https://openalex.org/keywords/prompt-engineering",
+            "display_name": "prompt engineering",
+            "score": 0.9340000152587891
+          },
+          {
+            "id": "https://openalex.org/keywords/automated-writing-evaluation",
+            "display_name": "automated writing evaluation",
+            "score": 0.7879999876022339
+          },
+          {
+            "id": "https://openalex.org/keywords/ai-generated-text",
+            "display_name": "AI-generated text",
+            "score": 0.4129999876022339
+          },
+          {
+            "id": "https://openalex.org/keywords/writer-agency",
+            "display_name": "writer agency",
+            "score": 0.5879999995231628
+          },
+          {
+            "id": "https://openalex.org/keywords/individualization",
+            "display_name": "individualization",
+            "score": 0.7919999957084656
+          },
+          {
+            "id": "https://openalex.org/keywords/domain-specificity",
+            "display_name": "domain specificity",
+            "score": 0.800000011920929
+          },
+          {
+            "id": "https://openalex.org/keywords/ai-ethics-in-education",
+            "display_name": "AI ethics in education",
+            "score": 0.6169999837875366
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C100521375",
+            "wikidata": "https://www.wikidata.org/wiki/Q2015382",
+            "display_name": "Competence (human resources)",
+            "level": 2,
+            "score": 0.7066176533699036
+          },
+          {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.6111254692077637
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5531062483787537
+          },
+          {
+            "id": "https://openalex.org/C120936955",
+            "wikidata": "https://www.wikidata.org/wiki/Q2155640",
+            "display_name": "Empirical research",
+            "level": 2,
+            "score": 0.5386426448822021
+          },
+          {
+            "id": "https://openalex.org/C547764534",
+            "wikidata": "https://www.wikidata.org/wiki/Q8236",
+            "display_name": "Literacy",
+            "level": 2,
+            "score": 0.521893322467804
+          },
+          {
+            "id": "https://openalex.org/C108170787",
+            "wikidata": "https://www.wikidata.org/wiki/Q3951828",
+            "display_name": "Agency (philosophy)",
+            "level": 2,
+            "score": 0.4438638389110565
+          },
+          {
+            "id": "https://openalex.org/C2780790391",
+            "wikidata": "https://www.wikidata.org/wiki/Q1149626",
+            "display_name": "Written language",
+            "level": 2,
+            "score": 0.4163356423377991
+          },
+          {
+            "id": "https://openalex.org/C15744967",
+            "wikidata": "https://www.wikidata.org/wiki/Q9418",
+            "display_name": "Psychology",
+            "level": 0,
+            "score": 0.3747267723083496
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.2793400287628174
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.2749243676662445
+          },
+          {
+            "id": "https://openalex.org/C19417346",
+            "wikidata": "https://www.wikidata.org/wiki/Q7922",
+            "display_name": "Pedagogy",
+            "level": 1,
+            "score": 0.19793212413787842
+          },
+          {
+            "id": "https://openalex.org/C77805123",
+            "wikidata": "https://www.wikidata.org/wiki/Q161272",
+            "display_name": "Social psychology",
+            "level": 1,
+            "score": 0.16414308547973633
+          },
+          {
+            "id": "https://openalex.org/C144024400",
+            "wikidata": "https://www.wikidata.org/wiki/Q21201",
+            "display_name": "Sociology",
+            "level": 0,
+            "score": 0.14894461631774902
+          },
+          {
+            "id": "https://openalex.org/C111472728",
+            "wikidata": "https://www.wikidata.org/wiki/Q9471",
+            "display_name": "Epistemology",
+            "level": 1,
+            "score": 0.1370558738708496
+          },
+          {
+            "id": "https://openalex.org/C138885662",
+            "wikidata": "https://www.wikidata.org/wiki/Q5891",
+            "display_name": "Philosophy",
+            "level": 0,
+            "score": 0.0
+          },
+          {
+            "id": "https://openalex.org/C36289849",
+            "wikidata": "https://www.wikidata.org/wiki/Q34749",
+            "display_name": "Social science",
+            "level": 1,
+            "score": 0.0
+          }
+        ],
+        "mesh": [],
+        "locations_count": 1,
+        "locations": [
+          {
+            "id": "doi:10.1515/dsll-2025-0007",
+            "doi": "https://doi.org/10.1515/dsll-2025-0007",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1515/dsll-2025-0007",
+            "pdf_url": "https://www.degruyterbrill.com/document/doi/10.1515/dsll-2025-0007/pdf",
+            "source": {
+              "id": "https://openalex.org/S4404675628",
+              "display_name": "Digital studies in language and literature",
+              "issn_l": "2943-0607",
+              "issn": [
+                "2943-0607"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/P4310313990",
+              "host_organization_name": "De Gruyter",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310313990"
+              ],
+              "host_organization_lineage_names": [
+                "De Gruyter"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Digital Studies in Language and Literature",
+            "raw_type": "journal-article"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1515/dsll-2025-0007",
+          "doi": "https://doi.org/10.1515/dsll-2025-0007",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1515/dsll-2025-0007",
+          "pdf_url": "https://www.degruyterbrill.com/document/doi/10.1515/dsll-2025-0007/pdf",
+          "source": {
+            "id": "https://openalex.org/S4404675628",
+            "display_name": "Digital studies in language and literature",
+            "issn_l": "2943-0607",
+            "issn": [
+              "2943-0607"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/P4310313990",
+            "host_organization_name": "De Gruyter",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310313990"
+            ],
+            "host_organization_lineage_names": [
+              "De Gruyter"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Digital Studies in Language and Literature",
+          "raw_type": "journal-article"
+        },
+        "sustainable_development_goals": [
+          {
+            "score": 0.5,
+            "display_name": "Quality education",
+            "id": "https://metadata.un.org/sdg/4"
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "pdf": true,
+          "grobid_xml": true
+        },
+        "content_urls": {
+          "pdf": "https://content.openalex.org/works/W4411179243.pdf",
+          "grobid_xml": "https://content.openalex.org/works/W4411179243.grobid-xml"
+        },
+        "referenced_works_count": 44,
+        "referenced_works": [
+          "https://openalex.org/W1991111060",
+          "https://openalex.org/W1991848963",
+          "https://openalex.org/W2005247852",
+          "https://openalex.org/W2077408241",
+          "https://openalex.org/W2149763400",
+          "https://openalex.org/W2311308163",
+          "https://openalex.org/W2562543970",
+          "https://openalex.org/W2889705387",
+          "https://openalex.org/W2906219817",
+          "https://openalex.org/W2936107583",
+          "https://openalex.org/W2948884883",
+          "https://openalex.org/W2953987693",
+          "https://openalex.org/W3215201135",
+          "https://openalex.org/W4292571980",
+          "https://openalex.org/W4383815588",
+          "https://openalex.org/W4385628481",
+          "https://openalex.org/W4386253646",
+          "https://openalex.org/W4387954002",
+          "https://openalex.org/W4388588313",
+          "https://openalex.org/W4391322029",
+          "https://openalex.org/W4391815818",
+          "https://openalex.org/W4392639864",
+          "https://openalex.org/W4394891390",
+          "https://openalex.org/W4396673785",
+          "https://openalex.org/W4398793240",
+          "https://openalex.org/W4399434635",
+          "https://openalex.org/W4399610427",
+          "https://openalex.org/W4400138640",
+          "https://openalex.org/W4401070736",
+          "https://openalex.org/W4401922674",
+          "https://openalex.org/W4401976536",
+          "https://openalex.org/W4402985398",
+          "https://openalex.org/W4402992411",
+          "https://openalex.org/W4403750726",
+          "https://openalex.org/W4403897960",
+          "https://openalex.org/W4404447266",
+          "https://openalex.org/W4405449830",
+          "https://openalex.org/W4405744768",
+          "https://openalex.org/W4406036786",
+          "https://openalex.org/W4406179078",
+          "https://openalex.org/W4406702912",
+          "https://openalex.org/W4406878351",
+          "https://openalex.org/W4407441485",
+          "https://openalex.org/W4407559584"
+        ],
+        "related_works": [
+          "https://openalex.org/W7222931037",
+          "https://openalex.org/W7169661751",
+          "https://openalex.org/W7171844510",
+          "https://openalex.org/W4413188357",
+          "https://openalex.org/W7154464579",
+          "https://openalex.org/W4415439702",
+          "https://openalex.org/W7143528036",
+          "https://openalex.org/W7212069529",
+          "https://openalex.org/W7117473793",
+          "https://openalex.org/W7212059492"
+        ],
+        "abstract_inverted_index": {
+          "Abstract": [
+            0
+          ],
+          "This": [
+            1,
+            115,
+            206
+          ],
+          "article": [
+            2,
+            207
+          ],
+          "provides": [
+            3
+          ],
+          "a": [
+            4,
+            35,
+            119,
+            167
+          ],
+          "critical": [
+            5
+          ],
+          "synthesis": [
+            6
+          ],
+          "and": [
+            7,
+            52,
+            61,
+            68,
+            72,
+            84,
+            93,
+            124,
+            136,
+            173,
+            183,
+            194,
+            203,
+            219,
+            229,
+            236
+          ],
+          "analysis": [
+            8
+          ],
+          "of": [
+            9,
+            15,
+            46,
+            77,
+            86,
+            141,
+            170,
+            181,
+            212
+          ],
+          "the": [
+            10,
+            13,
+            29,
+            41,
+            44,
+            57,
+            65,
+            175,
+            213,
+            226
+          ],
+          "research": [
+            11,
+            30,
+            42,
+            96,
+            116,
+            214
+          ],
+          "on": [
+            12,
+            31,
+            56,
+            97,
+            106,
+            113,
+            149
+          ],
+          "application": [
+            14
+          ],
+          "generative": [
+            16
+          ],
+          "AI": [
+            17
+          ],
+          "(GenAI)": [
+            18
+          ],
+          "in": [
+            19,
+            49,
+            144
+          ],
+          "second": [
+            20
+          ],
+          "language": [
+            21
+          ],
+          "(L2)": [
+            22
+          ],
+          "writing.": [
+            23,
+            63
+          ],
+          "It": [
+            24
+          ],
+          "conceptualizes": [
+            25
+          ],
+          "GenAI": [
+            26,
+            47,
+            60,
+            74,
+            87,
+            109,
+            154,
+            163,
+            182,
+            188
+          ],
+          "literacy,": [
+            27
+          ],
+          "synthesizes": [
+            28
+          ],
+          "written": [
+            32,
+            98
+          ],
+          "feedback,": [
+            33
+          ],
+          "establishes": [
+            34
+          ],
+          "framework": [
+            36
+          ],
+          "for": [
+            37,
+            121,
+            232
+          ],
+          "prompt": [
+            38
+          ],
+          "engineering,": [
+            39
+          ],
+          "critiques": [
+            40
+          ],
+          "examining": [
+            43
+          ],
+          "validity": [
+            45
+          ],
+          "ratings": [
+            48,
+            155,
+            161
+          ],
+          "writing": [
+            50,
+            150,
+            185,
+            189,
+            198
+          ],
+          "assessment,": [
+            51
+          ],
+          "summarizes": [
+            53
+          ],
+          "empirical": [
+            54
+          ],
+          "evidence": [
+            55
+          ],
+          "differences": [
+            58
+          ],
+          "between": [
+            59
+          ],
+          "human": [
+            62,
+            160,
+            184,
+            197
+          ],
+          "Specifically,": [
+            64
+          ],
+          "following": [
+            66
+          ],
+          "findings": [
+            67
+          ],
+          "arguments": [
+            69
+          ],
+          "are": [
+            70,
+            156,
+            178
+          ],
+          "presented": [
+            71
+          ],
+          "discussed.": [
+            73
+          ],
+          "literacy": [
+            75
+          ],
+          "consists": [
+            76
+          ],
+          "four": [
+            78
+          ],
+          "components": [
+            79
+          ],
+          "pertaining": [
+            80
+          ],
+          "to": [
+            81
+          ],
+          "users’": [
+            82
+          ],
+          "competence": [
+            83
+          ],
+          "knowledge": [
+            85
+          ],
+          "basics,": [
+            88
+          ],
+          "effective": [
+            89
+          ],
+          "use,": [
+            90
+          ],
+          "output": [
+            91
+          ],
+          "evaluation,": [
+            92
+          ],
+          "ethics.": [
+            94
+          ],
+          "The": [
+            95,
+            147
+          ],
+          "feedback": [
+            99,
+            103,
+            110,
+            123,
+            125,
+            145
+          ],
+          "shows": [
+            100
+          ],
+          "that": [
+            101,
+            153,
+            187,
+            223
+          ],
+          "teacher": [
+            102
+          ],
+          "focuses": [
+            104,
+            111
+          ],
+          "more": [
+            105,
+            112,
+            157,
+            191,
+            200
+          ],
+          "content,": [
+            107
+          ],
+          "while": [
+            108,
+            196
+          ],
+          "organization.": [
+            114
+          ],
+          "also": [
+            117
+          ],
+          "suggests": [
+            118
+          ],
+          "need": [
+            120
+          ],
+          "criteria-based": [
+            122
+          ],
+          "evaluation.": [
+            126
+          ],
+          "Prompt": [
+            127
+          ],
+          "engineering": [
+            128
+          ],
+          "is": [
+            129,
+            164,
+            190,
+            199
+          ],
+          "discussed": [
+            130
+          ],
+          "along": [
+            131
+          ],
+          "three": [
+            132,
+            221
+          ],
+          "dimensions:": [
+            133
+          ],
+          "input,": [
+            134
+          ],
+          "task,": [
+            135
+          ],
+          "output,": [
+            137
+          ],
+          "followed": [
+            138
+          ],
+          "by": [
+            139,
+            209
+          ],
+          "snapshots": [
+            140
+          ],
+          "prompts": [
+            142
+          ],
+          "used": [
+            143
+          ],
+          "research.": [
+            146
+          ],
+          "studies": [
+            148
+          ],
+          "assessment": [
+            151
+          ],
+          "reveal": [
+            152
+          ],
+          "consistent": [
+            158
+          ],
+          "with": [
+            159
+          ],
+          "when": [
+            162,
+            174
+          ],
+          "trained": [
+            165
+          ],
+          "using": [
+            166
+          ],
+          "large": [
+            168
+          ],
+          "number": [
+            169
+          ],
+          "scored": [
+            171
+          ],
+          "essays": [
+            172
+          ],
+          "rating": [
+            176
+          ],
+          "criteria": [
+            177
+          ],
+          "well-defined.": [
+            179
+          ],
+          "Comparisons": [
+            180
+          ],
+          "demonstrate": [
+            186
+          ],
+          "formal,": [
+            192
+          ],
+          "academic,": [
+            193
+          ],
+          "impersonal,": [
+            195
+          ],
+          "personal,": [
+            201
+          ],
+          "creative,": [
+            202
+          ],
+          "linguistically": [
+            204
+          ],
+          "accessible.": [
+            205
+          ],
+          "concludes": [
+            208
+          ],
+          "making": [
+            210
+          ],
+          "sense": [
+            211
+          ],
+          "findings,": [
+            215
+          ],
+          "identifying": [
+            216
+          ],
+          "future": [
+            217
+          ],
+          "directions,": [
+            218
+          ],
+          "proposing": [
+            220
+          ],
+          "principles": [
+            222
+          ],
+          "may": [
+            224
+          ],
+          "guide": [
+            225
+          ],
+          "research,": [
+            227
+          ],
+          "practice,": [
+            228
+          ],
+          "theory": [
+            230
+          ],
+          "construction": [
+            231
+          ],
+          "GenAI:": [
+            233
+          ],
+          "individualization,": [
+            234
+          ],
+          "domain-specificity,": [
+            235
+          ],
+          "writer": [
+            237
+          ],
+          "agency.": [
+            238
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 68
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 18
+          }
+        ],
+        "updated_date": "2026-11-10T11:39:43.021295",
+        "created_date": "2025-10-10T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W4416530162",
+        "doi": "https://doi.org/10.47908/38/2",
+        "title": "Generative AI and Second Language Writing",
+        "display_name": "Generative AI and Second Language Writing",
+        "relevance_score": 146.18214,
+        "publication_year": 2025,
+        "publication_date": "2025-11-22",
+        "ids": {
+          "openalex": "https://openalex.org/W4416530162",
+          "doi": "https://doi.org/10.47908/38/2"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.47908/38/2",
+          "doi": "https://doi.org/10.47908/38/2",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.47908/38/2",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Artificial Intelligence in Our Language Learning Classrooms",
+          "raw_type": "book-chapter"
+        },
+        "volume": {
+          "id": "https://openalex.org/W7106340964",
+          "display_name": "Artificial Intelligence in Our Language Learning Classrooms"
+        },
+        "type": "book-chapter",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref"
+        ],
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5080437165",
+              "display_name": "Robert Godwin‐Jones",
+              "orcid": "https://orcid.org/0000-0002-2377-3204",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-2377-3204"
+              ]
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": true,
+            "raw_author_name": "Robert Godwin-Jones",
+            "raw_affiliation_strings": [],
+            "raw_orcid": "https://orcid.org/0000-0002-2377-3204",
+            "affiliations": []
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 0,
+        "institutions_distinct_count": 0,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5080437165"
+        ],
+        "corresponding_institution_ids": [],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 10.4777,
+        "has_fulltext": false,
+        "cited_by_count": 2,
+        "citation_normalized_percentile": {
+          "value": 0.9694875,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 95,
+          "max": 96
+        },
+        "biblio": {
+          "volume": null,
+          "issue": null,
+          "first_page": "42",
+          "last_page": "57"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T10021",
+          "display_name": "EFL/ESL Teaching and Learning",
+          "score": 0.899399995803833,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.899399995803833,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.03869999945163727,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.02590000070631504,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/generative-ai",
+            "display_name": "generative AI",
+            "score": 0.9929999709129333
+          },
+          {
+            "id": "https://openalex.org/keywords/second-language-writing",
+            "display_name": "second language writing",
+            "score": 0.9959999918937683
+          },
+          {
+            "id": "https://openalex.org/keywords/distributed-agency",
+            "display_name": "distributed agency",
+            "score": 0.8790000081062317
+          },
+          {
+            "id": "https://openalex.org/keywords/writing-instruction",
+            "display_name": "writing instruction",
+            "score": 0.7310000061988831
+          },
+          {
+            "id": "https://openalex.org/keywords/writing-assessment",
+            "display_name": "writing assessment",
+            "score": 0.9200000166893005
+          },
+          {
+            "id": "https://openalex.org/keywords/ai-documentation",
+            "display_name": "AI documentation",
+            "score": 0.4480000138282776
+          },
+          {
+            "id": "https://openalex.org/keywords/virtual-exchange",
+            "display_name": "virtual exchange",
+            "score": 0.8690000176429749
+          },
+          {
+            "id": "https://openalex.org/keywords/pragmatic-competence",
+            "display_name": "pragmatic competence",
+            "score": 0.9480000138282776
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C150672426",
+            "wikidata": "https://www.wikidata.org/wiki/Q191183",
+            "display_name": "Brainstorming",
+            "level": 2,
+            "score": 0.7835000157356262
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.6991000175476074
+          },
+          {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.5745999813079834
+          },
+          {
+            "id": "https://openalex.org/C98045186",
+            "wikidata": "https://www.wikidata.org/wiki/Q205663",
+            "display_name": "Process (computing)",
+            "level": 2,
+            "score": 0.49559998512268066
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.47749999165534973
+          },
+          {
+            "id": "https://openalex.org/C2987567764",
+            "wikidata": "https://www.wikidata.org/wiki/Q125421",
+            "display_name": "Second language",
+            "level": 2,
+            "score": 0.4535999894142151
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.4512999951839447
+          },
+          {
+            "id": "https://openalex.org/C2781341000",
+            "wikidata": "https://www.wikidata.org/wiki/Q1468902",
+            "display_name": "Writing process",
+            "level": 2,
+            "score": 0.42739999294281006
+          },
+          {
+            "id": "https://openalex.org/C2779192225",
+            "wikidata": "https://www.wikidata.org/wiki/Q7443730",
+            "display_name": "Second language writing",
+            "level": 3,
+            "score": 0.39660000801086426
+          },
+          {
+            "id": "https://openalex.org/C204321447",
+            "wikidata": "https://www.wikidata.org/wiki/Q30642",
+            "display_name": "Natural language processing",
+            "level": 1,
+            "score": 0.3831000030040741
+          },
+          {
+            "id": "https://openalex.org/C3018469783",
+            "wikidata": "https://www.wikidata.org/wiki/Q130192",
+            "display_name": "English as a second language",
+            "level": 2,
+            "score": 0.3310000002384186
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.3190999925136566
+          },
+          {
+            "id": "https://openalex.org/C171041071",
+            "wikidata": "https://www.wikidata.org/wiki/Q36870",
+            "display_name": "First language",
+            "level": 2,
+            "score": 0.3190999925136566
+          },
+          {
+            "id": "https://openalex.org/C98545295",
+            "wikidata": "https://www.wikidata.org/wiki/Q1193158",
+            "display_name": "Technical writing",
+            "level": 3,
+            "score": 0.31610000133514404
+          },
+          {
+            "id": "https://openalex.org/C123960582",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455196",
+            "display_name": "Language education",
+            "level": 2,
+            "score": 0.301800012588501
+          },
+          {
+            "id": "https://openalex.org/C177047870",
+            "wikidata": "https://www.wikidata.org/wiki/Q3953114",
+            "display_name": "Professional writing",
+            "level": 2,
+            "score": 0.2815000116825104
+          },
+          {
+            "id": "https://openalex.org/C155092808",
+            "wikidata": "https://www.wikidata.org/wiki/Q182557",
+            "display_name": "Computational linguistics",
+            "level": 2,
+            "score": 0.2680000066757202
+          },
+          {
+            "id": "https://openalex.org/C170350167",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455178",
+            "display_name": "Second-language acquisition",
+            "level": 2,
+            "score": 0.2646999955177307
+          },
+          {
+            "id": "https://openalex.org/C204323151",
+            "wikidata": "https://www.wikidata.org/wiki/Q905424",
+            "display_name": "Range (aeronautics)",
+            "level": 2,
+            "score": 0.26420000195503235
+          },
+          {
+            "id": "https://openalex.org/C94922259",
+            "wikidata": "https://www.wikidata.org/wiki/Q33215",
+            "display_name": "Constructed language",
+            "level": 2,
+            "score": 0.2635999917984009
+          },
+          {
+            "id": "https://openalex.org/C129353971",
+            "wikidata": "https://www.wikidata.org/wiki/Q5156949",
+            "display_name": "Comprehension approach",
+            "level": 3,
+            "score": 0.260699987411499
+          },
+          {
+            "id": "https://openalex.org/C2781306805",
+            "wikidata": "https://www.wikidata.org/wiki/Q4789761",
+            "display_name": "Argumentative",
+            "level": 2,
+            "score": 0.25870001316070557
+          },
+          {
+            "id": "https://openalex.org/C2780790391",
+            "wikidata": "https://www.wikidata.org/wiki/Q1149626",
+            "display_name": "Written language",
+            "level": 2,
+            "score": 0.25699999928474426
+          },
+          {
+            "id": "https://openalex.org/C522180918",
+            "wikidata": "https://www.wikidata.org/wiki/Q18342738",
+            "display_name": "Public speaking",
+            "level": 2,
+            "score": 0.25290000438690186
+          },
+          {
+            "id": "https://openalex.org/C2909807104",
+            "wikidata": "https://www.wikidata.org/wiki/Q1068473",
+            "display_name": "Computer-Assisted Instruction",
+            "level": 2,
+            "score": 0.2515999972820282
+          }
+        ],
+        "mesh": [],
+        "locations_count": 1,
+        "locations": [
+          {
+            "id": "doi:10.47908/38/2",
+            "doi": "https://doi.org/10.47908/38/2",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.47908/38/2",
+            "pdf_url": null,
+            "source": null,
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Artificial Intelligence in Our Language Learning Classrooms",
+            "raw_type": "book-chapter"
+          }
+        ],
+        "best_oa_location": null,
+        "sustainable_development_goals": [
+          {
+            "score": 0.9235000014305115,
+            "display_name": "Quality education",
+            "id": "https://metadata.un.org/sdg/4"
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "pdf": false,
+          "grobid_xml": false
+        },
+        "content_urls": null,
+        "referenced_works_count": 0,
+        "referenced_works": [],
+        "related_works": [
+          "https://openalex.org/W7148381669",
+          "https://openalex.org/W7124438610",
+          "https://openalex.org/W4415773994",
+          "https://openalex.org/W7171844510",
+          "https://openalex.org/W4400918512",
+          "https://openalex.org/W4411847804",
+          "https://openalex.org/W7204778568",
+          "https://openalex.org/W7131065760",
+          "https://openalex.org/W7169661751",
+          "https://openalex.org/W4414224870"
+        ],
+        "abstract_inverted_index": {
+          "Integrating": [
+            0
+          ],
+          "generative": [
+            1
+          ],
+          "AI": [
+            2,
+            45,
+            80,
+            116,
+            161,
+            189,
+            196,
+            218
+          ],
+          "into": [
+            3
+          ],
+          "second": [
+            4
+          ],
+          "language": [
+            5,
+            35
+          ],
+          "(L2)": [
+            6
+          ],
+          "writing": [
+            7,
+            127,
+            199,
+            210
+          ],
+          "has": [
+            8
+          ],
+          "been": [
+            9
+          ],
+          "a": [
+            10,
+            29,
+            118,
+            203,
+            207
+          ],
+          "controversial": [
+            11
+          ],
+          "issue,": [
+            12
+          ],
+          "as": [
+            13,
+            174
+          ],
+          "L2": [
+            14,
+            183,
+            198
+          ],
+          "instructors": [
+            15
+          ],
+          "fear": [
+            16
+          ],
+          "students": [
+            17,
+            63,
+            156
+          ],
+          "will": [
+            18
+          ],
+          "simply": [
+            19
+          ],
+          "copy": [
+            20
+          ],
+          "and": [
+            21,
+            47,
+            72,
+            87,
+            96,
+            132,
+            136,
+            147
+          ],
+          "paste": [
+            22
+          ],
+          "from": [
+            23,
+            84
+          ],
+          "AI.": [
+            24
+          ],
+          "However,": [
+            25
+          ],
+          "studies": [
+            26,
+            51
+          ],
+          "have": [
+            27,
+            52,
+            155
+          ],
+          "shown": [
+            28,
+            53
+          ],
+          "great": [
+            30
+          ],
+          "deal": [
+            31
+          ],
+          "of": [
+            32,
+            38,
+            59,
+            79,
+            89,
+            106,
+            160,
+            195,
+            211,
+            217
+          ],
+          "differentiation": [
+            33
+          ],
+          "in": [
+            34,
+            99,
+            171,
+            175,
+            180,
+            197
+          ],
+          "learner": [
+            36,
+            57
+          ],
+          "use": [
+            37,
+            58,
+            78,
+            159,
+            194,
+            216
+          ],
+          "AI,": [
+            39
+          ],
+          "varying": [
+            40
+          ],
+          "according": [
+            41
+          ],
+          "to": [
+            42,
+            56,
+            68,
+            92,
+            125,
+            137,
+            141,
+            154
+          ],
+          "goals,": [
+            43
+          ],
+          "backgrounds,": [
+            44
+          ],
+          "experience,": [
+            46
+          ],
+          "individual": [
+            48
+          ],
+          "differences.": [
+            49
+          ],
+          "Many": [
+            50
+          ],
+          "similar": [
+            54
+          ],
+          "patterns": [
+            55
+          ],
+          "machine": [
+            60
+          ],
+          "translation,": [
+            61
+          ],
+          "namely": [
+            62
+          ],
+          "using": [
+            64
+          ],
+          "the": [
+            65,
+            193
+          ],
+          "tools": [
+            66
+          ],
+          "selectively,": [
+            67
+          ],
+          "look": [
+            69
+          ],
+          "up": [
+            70
+          ],
+          "words": [
+            71
+          ],
+          "phrases": [
+            73
+          ],
+          "or": [
+            74
+          ],
+          "check": [
+            75
+          ],
+          "sentences.": [
+            76
+          ],
+          "The": [
+            77,
+            101
+          ],
+          "systems": [
+            81
+          ],
+          "can": [
+            82,
+            178
+          ],
+          "range": [
+            83
+          ],
+          "brainstorming": [
+            85
+          ],
+          "topics": [
+            86
+          ],
+          "revision": [
+            88
+          ],
+          "first": [
+            90
+          ],
+          "drafts": [
+            91
+          ],
+          "final": [
+            93
+          ],
+          "editing": [
+            94
+          ],
+          "assistance": [
+            95
+          ],
+          "many": [
+            97
+          ],
+          "stages": [
+            98
+          ],
+          "between.": [
+            100
+          ],
+          "process": [
+            102
+          ],
+          "often": [
+            103
+          ],
+          "involves": [
+            104
+          ],
+          "co-creation": [
+            105
+          ],
+          "texts,": [
+            107
+          ],
+          "involving": [
+            108
+          ],
+          "shared,": [
+            109
+          ],
+          "distributed": [
+            110
+          ],
+          "agency.": [
+            111
+          ],
+          "That": [
+            112
+          ],
+          "fact": [
+            113
+          ],
+          "demonstrates": [
+            114
+          ],
+          "that": [
+            115,
+            121
+          ],
+          "represents": [
+            117
+          ],
+          "disruptive": [
+            119
+          ],
+          "technology": [
+            120
+          ],
+          "calls": [
+            122
+          ],
+          "on": [
+            123
+          ],
+          "teachers": [
+            124,
+            150
+          ],
+          "revise": [
+            126
+          ],
+          "assignments": [
+            128
+          ],
+          "(emphasizing": [
+            129
+          ],
+          "personal": [
+            130
+          ],
+          "voice": [
+            131
+          ],
+          "authentic": [
+            133
+          ],
+          "human": [
+            134
+          ],
+          "experiences)": [
+            135
+          ],
+          "find": [
+            138
+          ],
+          "new": [
+            139
+          ],
+          "approaches": [
+            140
+          ],
+          "assessment": [
+            142
+          ],
+          "(moving": [
+            143
+          ],
+          "beyond": [
+            144
+          ],
+          "surface-level": [
+            145
+          ],
+          "mechanics": [
+            146
+          ],
+          "grammar).": [
+            148
+          ],
+          "Writing": [
+            149
+          ],
+          "may": [
+            151
+          ],
+          "also": [
+            152
+          ],
+          "want": [
+            153
+          ],
+          "document": [
+            157
+          ],
+          "their": [
+            158
+          ],
+          "(in": [
+            162
+          ],
+          "reflective": [
+            163
+          ],
+          "journals,": [
+            164
+          ],
+          "for": [
+            165,
+            188
+          ],
+          "example).": [
+            166
+          ],
+          "Additionally,": [
+            167
+          ],
+          "having": [
+            168
+          ],
+          "learners": [
+            169
+          ],
+          "engage": [
+            170
+          ],
+          "human-to-human": [
+            172
+          ],
+          "interactions,": [
+            173
+          ],
+          "virtual": [
+            176
+          ],
+          "exchange,": [
+            177
+          ],
+          "aid": [
+            179
+          ],
+          "developing": [
+            181
+          ],
+          "pragmatic": [
+            182
+          ],
+          "competence,": [
+            184
+          ],
+          "which": [
+            185
+          ],
+          "is": [
+            186,
+            201
+          ],
+          "problematic": [
+            187
+          ],
+          "systems.": [
+            190
+          ],
+          "Not": [
+            191
+          ],
+          "integrating": [
+            192
+          ],
+          "instruction": [
+            200
+          ],
+          "scarcely": [
+            202
+          ],
+          "viable": [
+            204
+          ],
+          "option": [
+            205
+          ],
+          "at": [
+            206
+          ],
+          "time": [
+            208
+          ],
+          "when": [
+            209
+          ],
+          "all": [
+            212
+          ],
+          "kinds": [
+            213
+          ],
+          "increasingly": [
+            214
+          ],
+          "makes": [
+            215
+          ],
+          "tools.": [
+            219
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 2
+          }
+        ],
+        "updated_date": "2026-10-28T10:33:24.094632",
+        "created_date": "2025-11-23T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W7166706686",
+        "doi": "https://doi.org/10.1051/shsconf/202623504012",
+        "title": "The Application of Generative AI in Chinese as a Second Language Writing",
+        "display_name": "The Application of Generative AI in Chinese as a Second Language Writing",
+        "relevance_score": 136.13411,
+        "publication_year": 2026,
+        "publication_date": "2026-01-01",
+        "ids": {
+          "openalex": "https://openalex.org/W7166706686",
+          "doi": "https://doi.org/10.1051/shsconf/202623504012"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.1051/shsconf/202623504012",
+          "doi": "https://doi.org/10.1051/shsconf/202623504012",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1051/shsconf/202623504012",
+          "pdf_url": "https://www.shs-conferences.org/articles/shsconf/pdf/2026/09/shsconf_icepcc2026_04012.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210202797",
+            "display_name": "SHS Web of Conferences",
+            "issn_l": "2261-2424",
+            "issn": [
+              "2261-2424",
+              "2416-5182"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "ddh",
+              "doaj",
+              "jufo-1",
+              "norway-1"
+            ],
+            "host_organization": "https://openalex.org/P4310319748",
+            "host_organization_name": "EDP Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319748",
+              "https://openalex.org/P4310319982"
+            ],
+            "host_organization_lineage_names": [
+              "EDP Sciences",
+              "Science Press"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "SHS Web of Conferences",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "conference-paper",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref",
+          "doaj"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://www.shs-conferences.org/articles/shsconf/pdf/2026/09/shsconf_icepcc2026_04012.pdf",
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5086817284",
+              "display_name": "Fanqi Cheng",
+              "orcid": "https://orcid.org/0009-0002-1198-3535",
+              "observed_orcids": [
+                "https://orcid.org/0009-0002-1198-3535"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I143868143",
+                "display_name": "Anhui University",
+                "ror": "https://ror.org/05th6yx34",
+                "country_code": "CN",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I143868143"
+                ]
+              }
+            ],
+            "countries": [
+              "CN"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Fanqi Cheng",
+            "raw_affiliation_strings": [
+              "School of Liberal Arts, Anhui University"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "School of Liberal Arts, Anhui University",
+                "institution_ids": [
+                  "https://openalex.org/I143868143"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5139691938",
+              "display_name": "Chen Ding",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I115592961",
+                "display_name": "Jiangsu University",
+                "ror": "https://ror.org/03jc41j30",
+                "country_code": "CN",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I115592961"
+                ]
+              }
+            ],
+            "countries": [
+              "CN"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Chen Ding",
+            "raw_affiliation_strings": [
+              "School of Liberal Arts, Jiangsu University"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "School of Liberal Arts, Jiangsu University",
+                "institution_ids": [
+                  "https://openalex.org/I115592961"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 1,
+        "institutions_distinct_count": 2,
+        "corresponding_author_ids": [],
+        "corresponding_institution_ids": [],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 20.6578,
+        "has_fulltext": true,
+        "cited_by_count": 1,
+        "citation_normalized_percentile": {
+          "value": 0.97466333,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 91,
+          "max": 95
+        },
+        "biblio": {
+          "volume": "235",
+          "issue": null,
+          "first_page": "04012",
+          "last_page": "04012"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T14414",
+          "display_name": "Artificial Intelligence in Education",
+          "score": 0.9394999742507935,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.9394999742507935,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.030500000342726707,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T12260",
+            "display_name": "Educational Technology and Pedagogy",
+            "score": 0.015300000086426735,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/generative-ai",
+            "display_name": "generative AI",
+            "score": 0.8349999785423279
+          },
+          {
+            "id": "https://openalex.org/keywords/chinese-as-a-second-language",
+            "display_name": "Chinese as a second language",
+            "score": 0.9909999966621399
+          },
+          {
+            "id": "https://openalex.org/keywords/second-language-writing",
+            "display_name": "second language writing",
+            "score": 0.8370000123977661
+          },
+          {
+            "id": "https://openalex.org/keywords/writing-process",
+            "display_name": "writing process",
+            "score": 0.5580000281333923
+          },
+          {
+            "id": "https://openalex.org/keywords/grammatical-error-correction",
+            "display_name": "grammatical error correction",
+            "score": 0.8109999895095825
+          },
+          {
+            "id": "https://openalex.org/keywords/vocabulary-expansion",
+            "display_name": "vocabulary enrichment",
+            "score": 0.6200000047683716
+          },
+          {
+            "id": "https://openalex.org/keywords/human-machine-collaboration",
+            "display_name": "human-machine collaboration",
+            "score": 0.6959999799728394
+          },
+          {
+            "id": "https://openalex.org/keywords/teacher-role",
+            "display_name": "teacher role",
+            "score": 0.7820000052452087
+          },
+          {
+            "id": "https://openalex.org/keywords/generative-ai-literacy",
+            "display_name": "generative AI literacy",
+            "score": 0.8100000023841858
+          },
+          {
+            "id": "https://openalex.org/keywords/teacher-education",
+            "display_name": "teacher professional development",
+            "score": 0.8460000157356262
+          },
+          {
+            "id": "https://openalex.org/keywords/large-language-models",
+            "display_name": "large language models",
+            "score": 0.6589999794960022
+          },
+          {
+            "id": "https://openalex.org/keywords/cultural-connotation",
+            "display_name": "cultural connotation",
+            "score": 0.7319999933242798
+          },
+          {
+            "id": "https://openalex.org/keywords/artificial-intelligence-in-language-teaching",
+            "display_name": "artificial intelligence in language teaching",
+            "score": 0.3630000054836273
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.8047000169754028
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5449000000953674
+          },
+          {
+            "id": "https://openalex.org/C2777601683",
+            "wikidata": "https://www.wikidata.org/wiki/Q6499736",
+            "display_name": "Vocabulary",
+            "level": 2,
+            "score": 0.5224000215530396
+          },
+          {
+            "id": "https://openalex.org/C12713177",
+            "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+            "display_name": "Perspective (graphical)",
+            "level": 2,
+            "score": 0.4952999949455261
+          },
+          {
+            "id": "https://openalex.org/C547764534",
+            "wikidata": "https://www.wikidata.org/wiki/Q8236",
+            "display_name": "Literacy",
+            "level": 2,
+            "score": 0.483599990606308
+          },
+          {
+            "id": "https://openalex.org/C26022165",
+            "wikidata": "https://www.wikidata.org/wiki/Q8091",
+            "display_name": "Grammar",
+            "level": 2,
+            "score": 0.47929999232292175
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.44609999656677246
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.4171000123023987
+          },
+          {
+            "id": "https://openalex.org/C98147612",
+            "wikidata": "https://www.wikidata.org/wiki/Q215599",
+            "display_name": "Promotion (chess)",
+            "level": 3,
+            "score": 0.41350001096725464
+          },
+          {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.4032000005245209
+          },
+          {
+            "id": "https://openalex.org/C2780790391",
+            "wikidata": "https://www.wikidata.org/wiki/Q1149626",
+            "display_name": "Written language",
+            "level": 2,
+            "score": 0.323199987411499
+          },
+          {
+            "id": "https://openalex.org/C90559484",
+            "wikidata": "https://www.wikidata.org/wiki/Q778379",
+            "display_name": "Expression (computer science)",
+            "level": 2,
+            "score": 0.321399986743927
+          },
+          {
+            "id": "https://openalex.org/C2987567764",
+            "wikidata": "https://www.wikidata.org/wiki/Q125421",
+            "display_name": "Second language",
+            "level": 2,
+            "score": 0.32100000977516174
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.31850001215934753
+          },
+          {
+            "id": "https://openalex.org/C2780980858",
+            "wikidata": "https://www.wikidata.org/wiki/Q110022",
+            "display_name": "Dual (grammatical number)",
+            "level": 2,
+            "score": 0.28940001130104065
+          },
+          {
+            "id": "https://openalex.org/C15744967",
+            "wikidata": "https://www.wikidata.org/wiki/Q9418",
+            "display_name": "Psychology",
+            "level": 0,
+            "score": 0.26510000228881836
+          },
+          {
+            "id": "https://openalex.org/C170350167",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455178",
+            "display_name": "Second-language acquisition",
+            "level": 2,
+            "score": 0.25999999046325684
+          },
+          {
+            "id": "https://openalex.org/C204321447",
+            "wikidata": "https://www.wikidata.org/wiki/Q30642",
+            "display_name": "Natural language processing",
+            "level": 1,
+            "score": 0.25929999351501465
+          }
+        ],
+        "mesh": [],
+        "locations_count": 2,
+        "locations": [
+          {
+            "id": "doi:10.1051/shsconf/202623504012",
+            "doi": "https://doi.org/10.1051/shsconf/202623504012",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1051/shsconf/202623504012",
+            "pdf_url": "https://www.shs-conferences.org/articles/shsconf/pdf/2026/09/shsconf_icepcc2026_04012.pdf",
+            "source": {
+              "id": "https://openalex.org/S4210202797",
+              "display_name": "SHS Web of Conferences",
+              "issn_l": "2261-2424",
+              "issn": [
+                "2261-2424",
+                "2416-5182"
+              ],
+              "is_oa": true,
+              "is_in_doaj": true,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "ddh",
+                "doaj",
+                "jufo-1",
+                "norway-1"
+              ],
+              "host_organization": "https://openalex.org/P4310319748",
+              "host_organization_name": "EDP Sciences",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319748",
+                "https://openalex.org/P4310319982"
+              ],
+              "host_organization_lineage_names": [
+                "EDP Sciences",
+                "Science Press"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "SHS Web of Conferences",
+            "raw_type": "journal-article"
+          },
+          {
+            "id": "pmh:oai:doaj.org/article:ce0c6ca709a34a4a9fb3f6a1bf026a07",
+            "doi": null,
+            "is_oa": false,
+            "landing_page_url": "https://doaj.org/article/ce0c6ca709a34a4a9fb3f6a1bf026a07",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306401280",
+              "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "submittedVersion",
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": "SHS Web of Conferences, Vol 235, p 04012 (2026)",
+            "raw_type": "article"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1051/shsconf/202623504012",
+          "doi": "https://doi.org/10.1051/shsconf/202623504012",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1051/shsconf/202623504012",
+          "pdf_url": "https://www.shs-conferences.org/articles/shsconf/pdf/2026/09/shsconf_icepcc2026_04012.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210202797",
+            "display_name": "SHS Web of Conferences",
+            "issn_l": "2261-2424",
+            "issn": [
+              "2261-2424",
+              "2416-5182"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "ddh",
+              "doaj",
+              "jufo-1",
+              "norway-1"
+            ],
+            "host_organization": "https://openalex.org/P4310319748",
+            "host_organization_name": "EDP Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319748",
+              "https://openalex.org/P4310319982"
+            ],
+            "host_organization_lineage_names": [
+              "EDP Sciences",
+              "Science Press"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "SHS Web of Conferences",
+          "raw_type": "journal-article"
+        },
+        "sustainable_development_goals": [
+          {
+            "score": 0.8278999924659729,
+            "display_name": "Quality education",
+            "id": "https://metadata.un.org/sdg/4"
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "pdf": true,
+          "grobid_xml": true
+        },
+        "content_urls": {
+          "pdf": "https://content.openalex.org/works/W7166706686.pdf",
+          "grobid_xml": "https://content.openalex.org/works/W7166706686.grobid-xml"
+        },
+        "referenced_works_count": 2,
+        "referenced_works": [
+          "https://openalex.org/W4307820782",
+          "https://openalex.org/W4410319411"
+        ],
+        "related_works": [
+          "https://openalex.org/W7124438610",
+          "https://openalex.org/W4412041424",
+          "https://openalex.org/W7171844510",
+          "https://openalex.org/W7117473793",
+          "https://openalex.org/W4403637302",
+          "https://openalex.org/W7148381669",
+          "https://openalex.org/W7223095868",
+          "https://openalex.org/W4416530162",
+          "https://openalex.org/W7162449659",
+          "https://openalex.org/W7169661751"
+        ],
+        "abstract_inverted_index": {
+          "The": [
+            0
+          ],
+          "rapid": [
+            1
+          ],
+          "development": [
+            2,
+            158,
+            162
+          ],
+          "of": [
+            3,
+            13,
+            79,
+            87,
+            113,
+            126,
+            132,
+            163
+          ],
+          "generative": [
+            4,
+            46,
+            89,
+            152
+          ],
+          "artificial": [
+            5,
+            67
+          ],
+          "intelligence": [
+            6,
+            68
+          ],
+          "is": [
+            7,
+            48,
+            139
+          ],
+          "profoundly": [
+            8
+          ],
+          "changing": [
+            9
+          ],
+          "the": [
+            10,
+            51,
+            85,
+            111,
+            136,
+            161
+          ],
+          "teaching": [
+            11,
+            149
+          ],
+          "environment": [
+            12
+          ],
+          "Chinese": [
+            14,
+            168
+          ],
+          "second": [
+            15
+          ],
+          "language": [
+            16,
+            127
+          ],
+          "writing.": [
+            17
+          ],
+          "This": [
+            18
+          ],
+          "article": [
+            19
+          ],
+          "systematically": [
+            20
+          ],
+          "reviews": [
+            21
+          ],
+          "relevant": [
+            22
+          ],
+          "research": [
+            23
+          ],
+          "at": [
+            24,
+            96
+          ],
+          "home": [
+            25
+          ],
+          "and": [
+            26,
+            39,
+            58,
+            81,
+            107,
+            109,
+            130,
+            145,
+            170,
+            182
+          ],
+          "abroad": [
+            27
+          ],
+          "since": [
+            28
+          ],
+          "2022,": [
+            29
+          ],
+          "analyzing": [
+            30
+          ],
+          "it": [
+            31,
+            122,
+            138
+          ],
+          "from": [
+            32
+          ],
+          "three": [
+            33
+          ],
+          "levels:": [
+            34
+          ],
+          "application": [
+            35
+          ],
+          "scenarios,": [
+            36
+          ],
+          "multidimensional": [
+            37
+          ],
+          "impacts,": [
+            38
+          ],
+          "promotion": [
+            40
+          ],
+          "directions.": [
+            41
+          ],
+          "Research": [
+            42
+          ],
+          "has": [
+            43,
+            91
+          ],
+          "found": [
+            44
+          ],
+          "that": [
+            45
+          ],
+          "AI": [
+            47,
+            90,
+            153
+          ],
+          "involved": [
+            49
+          ],
+          "in": [
+            50,
+            70
+          ],
+          "entire": [
+            52
+          ],
+          "writing": [
+            53
+          ],
+          "process,": [
+            54
+          ],
+          "including": [
+            55
+          ],
+          "pre-writing": [
+            56
+          ],
+          "ideation": [
+            57
+          ],
+          "preparation,": [
+            59
+          ],
+          "as": [
+            60,
+            62
+          ],
+          "well": [
+            61
+          ],
+          "expanding": [
+            63
+          ],
+          "vocabulary": [
+            64
+          ],
+          "richness.": [
+            65
+          ],
+          "Generative": [
+            66
+          ],
+          "excels": [
+            69
+          ],
+          "grammar": [
+            71
+          ],
+          "correction,": [
+            72
+          ],
+          "but": [
+            73
+          ],
+          "still": [
+            74
+          ],
+          "lacks": [
+            75
+          ],
+          "a": [
+            76,
+            114,
+            143,
+            164,
+            178
+          ],
+          "comprehensive": [
+            77
+          ],
+          "understanding": [
+            78
+          ],
+          "content": [
+            80
+          ],
+          "emotional": [
+            82
+          ],
+          "nuance.": [
+            83
+          ],
+          "From": [
+            84
+          ],
+          "perspective": [
+            86
+          ],
+          "impact,": [
+            88
+          ],
+          "different": [
+            92,
+            97
+          ],
+          "effects": [
+            93
+          ],
+          "on": [
+            94
+          ],
+          "learners": [
+            95
+          ],
+          "levels,": [
+            98
+          ],
+          "prompting": [
+            99
+          ],
+          "teachers": [
+            100
+          ],
+          "to": [
+            101,
+            141
+          ],
+          "shift": [
+            102
+          ],
+          "their": [
+            103
+          ],
+          "roles": [
+            104
+          ],
+          "towards": [
+            105
+          ],
+          "“designers”": [
+            106
+          ],
+          "“guides”,": [
+            108
+          ],
+          "promoting": [
+            110
+          ],
+          "formation": [
+            112
+          ],
+          "“human-machine": [
+            115
+          ],
+          "dual": [
+            116
+          ],
+          "teacher": [
+            117,
+            156
+          ],
+          "collaboration”": [
+            118
+          ],
+          "feedback": [
+            119
+          ],
+          "model.": [
+            120
+          ],
+          "However,": [
+            121
+          ],
+          "also": [
+            123
+          ],
+          "brings": [
+            124
+          ],
+          "risks": [
+            125
+          ],
+          "expression": [
+            128
+          ],
+          "convergence": [
+            129
+          ],
+          "weakening": [
+            131
+          ],
+          "cultural": [
+            133
+          ],
+          "connotations.": [
+            134
+          ],
+          "In": [
+            135
+          ],
+          "future,": [
+            137
+          ],
+          "necessary": [
+            140
+          ],
+          "develop": [
+            142
+          ],
+          "hierarchical": [
+            144
+          ],
+          "progressive": [
+            146
+          ],
+          "human-machine": [
+            147
+          ],
+          "collaborative": [
+            148
+          ],
+          "model,": [
+            150
+          ],
+          "incorporate": [
+            151
+          ],
+          "literacy": [
+            154
+          ],
+          "into": [
+            155
+          ],
+          "professional": [
+            157
+          ],
+          "content,": [
+            159
+          ],
+          "accelerate": [
+            160
+          ],
+          "large-scale": [
+            165
+          ],
+          "model": [
+            166
+          ],
+          "for": [
+            167,
+            174
+          ],
+          "writing,": [
+            169
+          ],
+          "establish": [
+            171
+          ],
+          "standardized": [
+            172
+          ],
+          "measures": [
+            173
+          ],
+          "application,": [
+            175
+          ],
+          "thereby": [
+            176
+          ],
+          "seeking": [
+            177
+          ],
+          "balance": [
+            179
+          ],
+          "between": [
+            180
+          ],
+          "technology": [
+            181
+          ],
+          "education.": [
+            183
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 1
+          }
+        ],
+        "updated_date": "2026-11-09T13:22:03.289127",
+        "created_date": "2026-07-01T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W7167276253",
+        "doi": "https://doi.org/10.1051/shsconf/202623504012/pdf",
+        "title": "The Application of Generative AI in Chinese as a Second Language Writing",
+        "display_name": "The Application of Generative AI in Chinese as a Second Language Writing",
+        "relevance_score": 134.37082,
+        "publication_year": 2026,
+        "publication_date": "2026-06-30",
+        "ids": {
+          "openalex": "https://openalex.org/W7167276253",
+          "doi": "https://doi.org/10.1051/shsconf/202623504012/pdf"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "pmh:oai:edpsciences.org:dkey/10.1051/shsconf/202623504012",
+          "doi": "https://doi.org/10.1051/shsconf/202623504012/pdf",
+          "is_oa": true,
+          "landing_page_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+          "pdf_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400744",
+            "display_name": "Springer Link (Chiba Institute of Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I8488066",
+            "host_organization_name": "Chiba Institute of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I8488066"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "https://doi.org/10.1051/shsconf/202623504012",
+          "raw_type": "Text"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+          "any_repository_has_fulltext": true
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5086817284",
+              "display_name": "Fanqi Cheng",
+              "orcid": "https://orcid.org/0009-0002-1198-3535",
+              "observed_orcids": [
+                "https://orcid.org/0009-0002-1198-3535"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I143868143",
+                "display_name": "Anhui University",
+                "ror": "https://ror.org/05th6yx34",
+                "country_code": "CN",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I143868143"
+                ]
+              }
+            ],
+            "countries": [
+              "CN"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Fanqi Cheng",
+            "raw_affiliation_strings": [
+              "School of Liberal Arts , Anhui University , Hefei , 230000 , China"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "School of Liberal Arts , Anhui University , Hefei , 230000 , China",
+                "institution_ids": [
+                  "https://openalex.org/I143868143"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5139989878",
+              "display_name": "Chen Ding",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I115592961",
+                "display_name": "Jiangsu University",
+                "ror": "https://ror.org/03jc41j30",
+                "country_code": "CN",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I115592961"
+                ]
+              }
+            ],
+            "countries": [
+              "CN"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Chen Ding",
+            "raw_affiliation_strings": [
+              "School of Liberal Arts , Jiangsu University , Zhenjiang , 212000 , China"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "School of Liberal Arts , Jiangsu University , Zhenjiang , 212000 , China",
+                "institution_ids": [
+                  "https://openalex.org/I115592961"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 1,
+        "institutions_distinct_count": 2,
+        "corresponding_author_ids": [],
+        "corresponding_institution_ids": [],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 0.0,
+        "has_fulltext": true,
+        "cited_by_count": 0,
+        "citation_normalized_percentile": {
+          "value": 0.0,
+          "is_in_top_1_percent": false,
+          "is_in_top_10_percent": false
+        },
+        "cited_by_percentile_year": null,
+        "biblio": {
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T14414",
+          "display_name": "Artificial Intelligence in Education",
+          "score": 0.9218999743461609,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.9218999743461609,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.04349999874830246,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T12260",
+            "display_name": "Educational Technology and Pedagogy",
+            "score": 0.013799999840557575,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/generative-ai",
+            "display_name": "generative AI",
+            "score": 0.8339999914169312
+          },
+          {
+            "id": "https://openalex.org/keywords/chinese-as-a-second-language",
+            "display_name": "Chinese as a second language",
+            "score": 0.9879999756813049
+          },
+          {
+            "id": "https://openalex.org/keywords/second-language-writing",
+            "display_name": "second language writing",
+            "score": 0.8059999942779541
+          },
+          {
+            "id": "https://openalex.org/keywords/writing-instruction",
+            "display_name": "writing instruction",
+            "score": 0.593999981880188
+          },
+          {
+            "id": "https://openalex.org/keywords/grammatical-error-correction",
+            "display_name": "grammatical error correction",
+            "score": 0.6959999799728394
+          },
+          {
+            "id": "https://openalex.org/keywords/human-machine-collaboration",
+            "display_name": "human-machine collaboration",
+            "score": 0.6890000104904175
+          },
+          {
+            "id": "https://openalex.org/keywords/teacher-role",
+            "display_name": "teacher role",
+            "score": 0.7870000004768372
+          },
+          {
+            "id": "https://openalex.org/keywords/generative-ai-literacy",
+            "display_name": "generative AI literacy",
+            "score": 0.8029999732971191
+          },
+          {
+            "id": "https://openalex.org/keywords/teacher-education",
+            "display_name": "teacher professional development",
+            "score": 0.7900000214576721
+          },
+          {
+            "id": "https://openalex.org/keywords/cultural-connotation",
+            "display_name": "cultural connotation",
+            "score": 0.7459999918937683
+          },
+          {
+            "id": "https://openalex.org/keywords/large-language-models",
+            "display_name": "large language models",
+            "score": 0.7099999785423279
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.8047000169754028
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.5449000000953674
+          },
+          {
+            "id": "https://openalex.org/C2777601683",
+            "wikidata": "https://www.wikidata.org/wiki/Q6499736",
+            "display_name": "Vocabulary",
+            "level": 2,
+            "score": 0.5224000215530396
+          },
+          {
+            "id": "https://openalex.org/C12713177",
+            "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+            "display_name": "Perspective (graphical)",
+            "level": 2,
+            "score": 0.4952999949455261
+          },
+          {
+            "id": "https://openalex.org/C547764534",
+            "wikidata": "https://www.wikidata.org/wiki/Q8236",
+            "display_name": "Literacy",
+            "level": 2,
+            "score": 0.483599990606308
+          },
+          {
+            "id": "https://openalex.org/C26022165",
+            "wikidata": "https://www.wikidata.org/wiki/Q8091",
+            "display_name": "Grammar",
+            "level": 2,
+            "score": 0.47929999232292175
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.44609999656677246
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.4171000123023987
+          },
+          {
+            "id": "https://openalex.org/C98147612",
+            "wikidata": "https://www.wikidata.org/wiki/Q215599",
+            "display_name": "Promotion (chess)",
+            "level": 3,
+            "score": 0.41350001096725464
+          },
+          {
+            "id": "https://openalex.org/C167966045",
+            "wikidata": "https://www.wikidata.org/wiki/Q5532625",
+            "display_name": "Generative model",
+            "level": 3,
+            "score": 0.4032000005245209
+          },
+          {
+            "id": "https://openalex.org/C2780790391",
+            "wikidata": "https://www.wikidata.org/wiki/Q1149626",
+            "display_name": "Written language",
+            "level": 2,
+            "score": 0.323199987411499
+          },
+          {
+            "id": "https://openalex.org/C90559484",
+            "wikidata": "https://www.wikidata.org/wiki/Q778379",
+            "display_name": "Expression (computer science)",
+            "level": 2,
+            "score": 0.321399986743927
+          },
+          {
+            "id": "https://openalex.org/C2987567764",
+            "wikidata": "https://www.wikidata.org/wiki/Q125421",
+            "display_name": "Second language",
+            "level": 2,
+            "score": 0.32100000977516174
+          },
+          {
+            "id": "https://openalex.org/C74672266",
+            "wikidata": "https://www.wikidata.org/wiki/Q815859",
+            "display_name": "Language acquisition",
+            "level": 2,
+            "score": 0.31850001215934753
+          },
+          {
+            "id": "https://openalex.org/C2780980858",
+            "wikidata": "https://www.wikidata.org/wiki/Q110022",
+            "display_name": "Dual (grammatical number)",
+            "level": 2,
+            "score": 0.28940001130104065
+          },
+          {
+            "id": "https://openalex.org/C15744967",
+            "wikidata": "https://www.wikidata.org/wiki/Q9418",
+            "display_name": "Psychology",
+            "level": 0,
+            "score": 0.26510000228881836
+          },
+          {
+            "id": "https://openalex.org/C170350167",
+            "wikidata": "https://www.wikidata.org/wiki/Q1455178",
+            "display_name": "Second-language acquisition",
+            "level": 2,
+            "score": 0.25999999046325684
+          },
+          {
+            "id": "https://openalex.org/C204321447",
+            "wikidata": "https://www.wikidata.org/wiki/Q30642",
+            "display_name": "Natural language processing",
+            "level": 1,
+            "score": 0.25929999351501465
+          }
+        ],
+        "mesh": [],
+        "locations_count": 1,
+        "locations": [
+          {
+            "id": "pmh:oai:edpsciences.org:dkey/10.1051/shsconf/202623504012",
+            "doi": "https://doi.org/10.1051/shsconf/202623504012/pdf",
+            "is_oa": true,
+            "landing_page_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+            "pdf_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+            "source": {
+              "id": "https://openalex.org/S4306400744",
+              "display_name": "Springer Link (Chiba Institute of Technology)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I8488066",
+              "host_organization_name": "Chiba Institute of Technology",
+              "host_organization_lineage": [
+                "https://openalex.org/I8488066"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "submittedVersion",
+            "is_accepted": false,
+            "is_published": false,
+            "raw_source_name": "https://doi.org/10.1051/shsconf/202623504012",
+            "raw_type": "Text"
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:edpsciences.org:dkey/10.1051/shsconf/202623504012",
+          "doi": "https://doi.org/10.1051/shsconf/202623504012/pdf",
+          "is_oa": true,
+          "landing_page_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+          "pdf_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400744",
+            "display_name": "Springer Link (Chiba Institute of Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I8488066",
+            "host_organization_name": "Chiba Institute of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I8488066"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "https://doi.org/10.1051/shsconf/202623504012",
+          "raw_type": "Text"
+        },
+        "sustainable_development_goals": [
+          {
+            "score": 0.8278999924659729,
+            "display_name": "Quality education",
+            "id": "https://metadata.un.org/sdg/4"
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "pdf": true,
+          "grobid_xml": true
+        },
+        "content_urls": {
+          "pdf": "https://content.openalex.org/works/W7167276253.pdf",
+          "grobid_xml": "https://content.openalex.org/works/W7167276253.grobid-xml"
+        },
+        "referenced_works_count": 1,
+        "referenced_works": [
+          "https://openalex.org/W7166706686"
+        ],
+        "related_works": [
+          "https://openalex.org/W7124438610",
+          "https://openalex.org/W4412041424",
+          "https://openalex.org/W7171844510",
+          "https://openalex.org/W4403637302",
+          "https://openalex.org/W7117473793",
+          "https://openalex.org/W7148381669",
+          "https://openalex.org/W7223095868",
+          "https://openalex.org/W7162449659",
+          "https://openalex.org/W4416530162",
+          "https://openalex.org/W4414224870"
+        ],
+        "abstract_inverted_index": {
+          "The": [
+            0
+          ],
+          "rapid": [
+            1
+          ],
+          "development": [
+            2,
+            158,
+            162
+          ],
+          "of": [
+            3,
+            13,
+            79,
+            87,
+            113,
+            126,
+            132,
+            163
+          ],
+          "generative": [
+            4,
+            46,
+            89,
+            152
+          ],
+          "artificial": [
+            5,
+            67
+          ],
+          "intelligence": [
+            6,
+            68
+          ],
+          "is": [
+            7,
+            48,
+            139
+          ],
+          "profoundly": [
+            8
+          ],
+          "changing": [
+            9
+          ],
+          "the": [
+            10,
+            51,
+            85,
+            111,
+            136,
+            161
+          ],
+          "teaching": [
+            11,
+            149
+          ],
+          "environment": [
+            12
+          ],
+          "Chinese": [
+            14,
+            168
+          ],
+          "second": [
+            15
+          ],
+          "language": [
+            16,
+            127
+          ],
+          "writing.": [
+            17
+          ],
+          "This": [
+            18
+          ],
+          "article": [
+            19
+          ],
+          "systematically": [
+            20
+          ],
+          "reviews": [
+            21
+          ],
+          "relevant": [
+            22
+          ],
+          "research": [
+            23
+          ],
+          "at": [
+            24,
+            96
+          ],
+          "home": [
+            25
+          ],
+          "and": [
+            26,
+            39,
+            58,
+            81,
+            107,
+            109,
+            130,
+            145,
+            170,
+            182
+          ],
+          "abroad": [
+            27
+          ],
+          "since": [
+            28
+          ],
+          "2022,": [
+            29
+          ],
+          "analyzing": [
+            30
+          ],
+          "it": [
+            31,
+            122,
+            138
+          ],
+          "from": [
+            32
+          ],
+          "three": [
+            33
+          ],
+          "levels:": [
+            34
+          ],
+          "application": [
+            35
+          ],
+          "scenarios,": [
+            36
+          ],
+          "multidimensional": [
+            37
+          ],
+          "impacts,": [
+            38
+          ],
+          "promotion": [
+            40
+          ],
+          "directions.": [
+            41
+          ],
+          "Research": [
+            42
+          ],
+          "has": [
+            43,
+            91
+          ],
+          "found": [
+            44
+          ],
+          "that": [
+            45
+          ],
+          "AI": [
+            47,
+            90,
+            153
+          ],
+          "involved": [
+            49
+          ],
+          "in": [
+            50,
+            70
+          ],
+          "entire": [
+            52
+          ],
+          "writing": [
+            53
+          ],
+          "process,": [
+            54
+          ],
+          "including": [
+            55
+          ],
+          "pre-writing": [
+            56
+          ],
+          "ideation": [
+            57
+          ],
+          "preparation,": [
+            59
+          ],
+          "as": [
+            60,
+            62
+          ],
+          "well": [
+            61
+          ],
+          "expanding": [
+            63
+          ],
+          "vocabulary": [
+            64
+          ],
+          "richness.": [
+            65
+          ],
+          "Generative": [
+            66
+          ],
+          "excels": [
+            69
+          ],
+          "grammar": [
+            71
+          ],
+          "correction,": [
+            72
+          ],
+          "but": [
+            73
+          ],
+          "still": [
+            74
+          ],
+          "lacks": [
+            75
+          ],
+          "a": [
+            76,
+            114,
+            143,
+            164,
+            178
+          ],
+          "comprehensive": [
+            77
+          ],
+          "understanding": [
+            78
+          ],
+          "content": [
+            80
+          ],
+          "emotional": [
+            82
+          ],
+          "nuance.": [
+            83
+          ],
+          "From": [
+            84
+          ],
+          "perspective": [
+            86
+          ],
+          "impact,": [
+            88
+          ],
+          "different": [
+            92,
+            97
+          ],
+          "effects": [
+            93
+          ],
+          "on": [
+            94
+          ],
+          "learners": [
+            95
+          ],
+          "levels,": [
+            98
+          ],
+          "prompting": [
+            99
+          ],
+          "teachers": [
+            100
+          ],
+          "to": [
+            101,
+            141
+          ],
+          "shift": [
+            102
+          ],
+          "their": [
+            103
+          ],
+          "roles": [
+            104
+          ],
+          "towards": [
+            105
+          ],
+          "“designers”": [
+            106
+          ],
+          "“guides”,": [
+            108
+          ],
+          "promoting": [
+            110
+          ],
+          "formation": [
+            112
+          ],
+          "“human-machine": [
+            115
+          ],
+          "dual": [
+            116
+          ],
+          "teacher": [
+            117,
+            156
+          ],
+          "collaboration”": [
+            118
+          ],
+          "feedback": [
+            119
+          ],
+          "model.": [
+            120
+          ],
+          "However,": [
+            121
+          ],
+          "also": [
+            123
+          ],
+          "brings": [
+            124
+          ],
+          "risks": [
+            125
+          ],
+          "expression": [
+            128
+          ],
+          "convergence": [
+            129
+          ],
+          "weakening": [
+            131
+          ],
+          "cultural": [
+            133
+          ],
+          "connotations.": [
+            134
+          ],
+          "In": [
+            135
+          ],
+          "future,": [
+            137
+          ],
+          "necessary": [
+            140
+          ],
+          "develop": [
+            142
+          ],
+          "hierarchical": [
+            144
+          ],
+          "progressive": [
+            146
+          ],
+          "human-machine": [
+            147
+          ],
+          "collaborative": [
+            148
+          ],
+          "model,": [
+            150
+          ],
+          "incorporate": [
+            151
+          ],
+          "literacy": [
+            154
+          ],
+          "into": [
+            155
+          ],
+          "professional": [
+            157
+          ],
+          "content,": [
+            159
+          ],
+          "accelerate": [
+            160
+          ],
+          "large-scale": [
+            165
+          ],
+          "model": [
+            166
+          ],
+          "for": [
+            167,
+            174
+          ],
+          "writing,": [
+            169
+          ],
+          "establish": [
+            171
+          ],
+          "standardized": [
+            172
+          ],
+          "measures": [
+            173
+          ],
+          "application,": [
+            175
+          ],
+          "thereby": [
+            176
+          ],
+          "seeking": [
+            177
+          ],
+          "balance": [
+            179
+          ],
+          "between": [
+            180
+          ],
+          "technology": [
+            181
+          ],
+          "education.": [
+            183
+          ]
+        },
+        "counts_by_year": [],
+        "updated_date": "2026-11-07T11:25:07.637180",
+        "created_date": "2026-07-04T00:00:00"
+      },
+      {
+        "id": "https://openalex.org/W4411847804",
+        "doi": "https://doi.org/10.1016/j.jslw.2025.101230",
+        "title": "Generative AI is useful for second language writing, but when, why, and for how long do learners use it?",
+        "display_name": "Generative AI is useful for second language writing, but when, why, and for how long do learners use it?",
+        "relevance_score": 130.47356,
+        "publication_year": 2025,
+        "publication_date": "2025-07-01",
+        "ids": {
+          "openalex": "https://openalex.org/W4411847804",
+          "doi": "https://doi.org/10.1016/j.jslw.2025.101230"
+        },
+        "language": "en",
+        "primary_location": {
+          "id": "doi:10.1016/j.jslw.2025.101230",
+          "doi": "https://doi.org/10.1016/j.jslw.2025.101230",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1016/j.jslw.2025.101230",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S192107914",
+            "display_name": "Journal of Second Language Writing",
+            "issn_l": "1060-3743",
+            "issn": [
+              "1060-3743",
+              "1873-1422"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-2",
+              "norway-1",
+              "poland-200",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Second Language Writing",
+          "raw_type": "journal-article"
+        },
+        "volume": null,
+        "type": "article",
+        "is_traditional": true,
+        "indexed_in": [
+          "crossref"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://doi.org/10.1016/j.jslw.2025.101230",
+          "any_repository_has_fulltext": false
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5081530179",
+              "display_name": "Haerim Hwang",
+              "orcid": "https://orcid.org/0000-0003-0888-590X",
+              "observed_orcids": [
+                "https://orcid.org/0000-0003-0888-590X"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I177725633",
+                "display_name": "Chinese University of Hong Kong",
+                "ror": "https://ror.org/00t33hh48",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Haerim Hwang",
+            "raw_affiliation_strings": [
+              "The Chinese University of Hong Kong, Hong Kong"
+            ],
+            "raw_orcid": "https://orcid.org/0000-0003-0888-590X",
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Chinese University of Hong Kong, Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": null,
+              "display_name": "Xingyu Chang",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I177725633",
+                "display_name": "Chinese University of Hong Kong",
+                "ror": "https://ror.org/00t33hh48",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Xingyu Chang",
+            "raw_affiliation_strings": [
+              "The Chinese University of Hong Kong, Hong Kong"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Chinese University of Hong Kong, Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5112419676",
+              "display_name": "Jiaxin Sun",
+              "orcid": "https://orcid.org/0009-0004-5321-9935",
+              "observed_orcids": [
+                "https://orcid.org/0009-0004-5321-9935"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I177725633",
+                "display_name": "Chinese University of Hong Kong",
+                "ror": "https://ror.org/00t33hh48",
+                "country_code": "HK",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ],
+            "countries": [
+              "HK"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Jiaxin Sun",
+            "raw_affiliation_strings": [
+              "The Chinese University of Hong Kong, Hong Kong"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Chinese University of Hong Kong, Hong Kong",
+                "institution_ids": [
+                  "https://openalex.org/I177725633"
+                ]
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 1,
+        "institutions_distinct_count": 1,
+        "corresponding_author_ids": [
+          "https://openalex.org/A5081530179"
+        ],
+        "corresponding_institution_ids": [
+          "https://openalex.org/I177725633"
+        ],
+        "apc_list": {
+          "value": 3830,
+          "currency": "USD",
+          "value_usd": 3830
+        },
+        "apc_paid": {
+          "value": 3830,
+          "currency": "USD",
+          "value_usd": 3830
+        },
+        "fwci": 113.5042,
+        "has_fulltext": false,
+        "cited_by_count": 73,
+        "citation_normalized_percentile": {
+          "value": 0.9995009,
+          "is_in_top_1_percent": true,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 93,
+          "max": 100
+        },
+        "biblio": {
+          "volume": "69",
+          "issue": null,
+          "first_page": "101230",
+          "last_page": "101230"
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T10021",
+          "display_name": "EFL/ESL Teaching and Learning",
+          "score": 0.8442000150680542,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T10021",
+            "display_name": "EFL/ESL Teaching and Learning",
+            "score": 0.8442000150680542,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1203",
+              "display_name": "Language and Linguistics"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14414",
+            "display_name": "Artificial Intelligence in Education",
+            "score": 0.057100001722574234,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T14516",
+            "display_name": "English Language Learning and Teaching",
+            "score": 0.0478999987244606,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3304",
+              "display_name": "Education"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/generative-ai",
+            "display_name": "generative AI",
+            "score": 0.9169999957084656
+          },
+          {
+            "id": "https://openalex.org/keywords/chatgpt",
+            "display_name": "ChatGPT",
+            "score": 0.8790000081062317
+          },
+          {
+            "id": "https://openalex.org/keywords/second-language-writing",
+            "display_name": "second language writing",
+            "score": 0.9959999918937683
+          },
+          {
+            "id": "https://openalex.org/keywords/l2-english-learners",
+            "display_name": "L2 English learners",
+            "score": 0.7260000109672546
+          },
+          {
+            "id": "https://openalex.org/keywords/screen-recording",
+            "display_name": "screen recording",
+            "score": 0.5669999718666077
+          },
+          {
+            "id": "https://openalex.org/keywords/learner-perceptions",
+            "display_name": "learner perceptions",
+            "score": 0.703000009059906
+          },
+          {
+            "id": "https://openalex.org/keywords/idea-generation",
+            "display_name": "idea generation",
+            "score": 0.8859999775886536
+          },
+          {
+            "id": "https://openalex.org/keywords/writing-process",
+            "display_name": "writing process",
+            "score": 0.5099999904632568
+          },
+          {
+            "id": "https://openalex.org/keywords/digital-literacy",
+            "display_name": "digital literacy",
+            "score": 0.8029999732971191
+          },
+          {
+            "id": "https://openalex.org/keywords/ai-assisted-writing",
+            "display_name": "AI-assisted writing",
+            "score": 0.5809999704360962
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C39890363",
+            "wikidata": "https://www.wikidata.org/wiki/Q36108",
+            "display_name": "Generative grammar",
+            "level": 2,
+            "score": 0.7772848606109619
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.7213112711906433
+          },
+          {
+            "id": "https://openalex.org/C204321447",
+            "wikidata": "https://www.wikidata.org/wiki/Q30642",
+            "display_name": "Natural language processing",
+            "level": 1,
+            "score": 0.5716989040374756
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.5395829081535339
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.4741211235523224
+          },
+          {
+            "id": "https://openalex.org/C138885662",
+            "wikidata": "https://www.wikidata.org/wiki/Q5891",
+            "display_name": "Philosophy",
+            "level": 0,
+            "score": 0.048722654581069946
+          }
+        ],
+        "mesh": [],
+        "locations_count": 1,
+        "locations": [
+          {
+            "id": "doi:10.1016/j.jslw.2025.101230",
+            "doi": "https://doi.org/10.1016/j.jslw.2025.101230",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1016/j.jslw.2025.101230",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S192107914",
+              "display_name": "Journal of Second Language Writing",
+              "issn_l": "1060-3743",
+              "issn": [
+                "1060-3743",
+                "1873-1422"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "anvur-class-a",
+                "anvur-scientific",
+                "cwts-core",
+                "erih-plus",
+                "jufo-2",
+                "norway-1",
+                "poland-200",
+                "russia-white-list-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by-nc-nd",
+            "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Journal of Second Language Writing",
+            "raw_type": "journal-article"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1016/j.jslw.2025.101230",
+          "doi": "https://doi.org/10.1016/j.jslw.2025.101230",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1016/j.jslw.2025.101230",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S192107914",
+            "display_name": "Journal of Second Language Writing",
+            "issn_l": "1060-3743",
+            "issn": [
+              "1060-3743",
+              "1873-1422"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-2",
+              "norway-1",
+              "poland-200",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Second Language Writing",
+          "raw_type": "journal-article"
+        },
+        "sustainable_development_goals": [
+          {
+            "score": 0.6164000034332275,
+            "display_name": "Quality education",
+            "id": "https://metadata.un.org/sdg/4"
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [
+          {
+            "id": "https://openalex.org/F4320322942",
+            "display_name": "Chinese University of Hong Kong",
+            "ror": "https://ror.org/00t33hh48"
+          }
+        ],
+        "has_content": {
+          "pdf": false,
+          "grobid_xml": false
+        },
+        "content_urls": null,
+        "referenced_works_count": 36,
+        "referenced_works": [
+          "https://openalex.org/W1514520715",
+          "https://openalex.org/W2039311355",
+          "https://openalex.org/W2103836951",
+          "https://openalex.org/W2123565526",
+          "https://openalex.org/W2141845152",
+          "https://openalex.org/W2147897958",
+          "https://openalex.org/W2164483209",
+          "https://openalex.org/W2183347824",
+          "https://openalex.org/W2336676157",
+          "https://openalex.org/W2582743722",
+          "https://openalex.org/W2922565083",
+          "https://openalex.org/W2964197149",
+          "https://openalex.org/W2982478226",
+          "https://openalex.org/W3016084164",
+          "https://openalex.org/W3092532943",
+          "https://openalex.org/W3106855672",
+          "https://openalex.org/W3109741911",
+          "https://openalex.org/W3189117171",
+          "https://openalex.org/W4323655724",
+          "https://openalex.org/W4362585490",
+          "https://openalex.org/W4367183886",
+          "https://openalex.org/W4378193514",
+          "https://openalex.org/W4379193309",
+          "https://openalex.org/W4381236221",
+          "https://openalex.org/W4389793309",
+          "https://openalex.org/W4391492575",
+          "https://openalex.org/W4391780419",
+          "https://openalex.org/W4394929444",
+          "https://openalex.org/W4396759351",
+          "https://openalex.org/W4398793240",
+          "https://openalex.org/W4399182459",
+          "https://openalex.org/W4399610427",
+          "https://openalex.org/W4401032976",
+          "https://openalex.org/W4401070736",
+          "https://openalex.org/W4405552455",
+          "https://openalex.org/W6703656494"
+        ],
+        "related_works": [
+          "https://openalex.org/W4403096918",
+          "https://openalex.org/W4413188357",
+          "https://openalex.org/W7143610981",
+          "https://openalex.org/W4413868066",
+          "https://openalex.org/W4411844448",
+          "https://openalex.org/W7124438610",
+          "https://openalex.org/W7216480291",
+          "https://openalex.org/W4416530162",
+          "https://openalex.org/W4413411466",
+          "https://openalex.org/W7171844510"
+        ],
+        "abstract_inverted_index": {
+          "Numerous": [
+            0
+          ],
+          "studies": [
+            1,
+            24
+          ],
+          "have": [
+            2,
+            25
+          ],
+          "highlighted": [
+            3
+          ],
+          "the": [
+            4,
+            35,
+            40,
+            75,
+            84,
+            102,
+            112,
+            123,
+            152,
+            158,
+            183,
+            194
+          ],
+          "benefits": [
+            5
+          ],
+          "of": [
+            6,
+            22,
+            55,
+            69,
+            86,
+            115,
+            148,
+            165,
+            185,
+            196
+          ],
+          "recent": [
+            7
+          ],
+          "advancements": [
+            8
+          ],
+          "in": [
+            9,
+            59,
+            63,
+            122,
+            170,
+            188
+          ],
+          "generative": [
+            10,
+            186
+          ],
+          "artificial": [
+            11
+          ],
+          "intelligence": [
+            12
+          ],
+          "(AI)": [
+            13
+          ],
+          "technology": [
+            14
+          ],
+          "for": [
+            15,
+            130,
+            134
+          ],
+          "second": [
+            16
+          ],
+          "language": [
+            17
+          ],
+          "(L2)": [
+            18
+          ],
+          "writing.": [
+            19,
+            116
+          ],
+          "However,": [
+            20
+          ],
+          "most": [
+            21
+          ],
+          "these": [
+            23
+          ],
+          "relied": [
+            26
+          ],
+          "on": [
+            27,
+            42
+          ],
+          "pretest/posttest": [
+            28
+          ],
+          "designs": [
+            29
+          ],
+          "or": [
+            30
+          ],
+          "interview/questionnaire": [
+            31
+          ],
+          "methods": [
+            32
+          ],
+          "that": [
+            33,
+            101,
+            157
+          ],
+          "reflect": [
+            34
+          ],
+          "researchers’": [
+            36
+          ],
+          "perspectives.": [
+            37
+          ],
+          "To": [
+            38
+          ],
+          "expand": [
+            39
+          ],
+          "research": [
+            41
+          ],
+          "this": [
+            43
+          ],
+          "topic,": [
+            44
+          ],
+          "we": [
+            45,
+            50,
+            79
+          ],
+          "take": [
+            46
+          ],
+          "two": [
+            47
+          ],
+          "approaches.": [
+            48
+          ],
+          "Firstly,": [
+            49
+          ],
+          "investigate": [
+            51
+          ],
+          "how": [
+            52,
+            81
+          ],
+          "L2": [
+            53,
+            190
+          ],
+          "learners": [
+            54
+          ],
+          "English": [
+            56
+          ],
+          "utilize": [
+            57
+          ],
+          "ChatGPT": [
+            58,
+            87,
+            106
+          ],
+          "a": [
+            60,
+            135,
+            162
+          ],
+          "writing": [
+            61,
+            76,
+            124,
+            191
+          ],
+          "task": [
+            62
+          ],
+          "real": [
+            64
+          ],
+          "time": [
+            65,
+            132,
+            174
+          ],
+          "by": [
+            66,
+            88
+          ],
+          "analyzing": [
+            67,
+            89
+          ],
+          "recordings": [
+            68
+          ],
+          "their": [
+            70,
+            90,
+            149
+          ],
+          "computer": [
+            71
+          ],
+          "screens": [
+            72
+          ],
+          "collected": [
+            73
+          ],
+          "throughout": [
+            74
+          ],
+          "process.": [
+            77
+          ],
+          "Secondly,": [
+            78
+          ],
+          "explore": [
+            80
+          ],
+          "they": [
+            82
+          ],
+          "perceive": [
+            83
+          ],
+          "usefulness": [
+            85
+          ],
+          "responses": [
+            91,
+            150
+          ],
+          "to": [
+            92,
+            107,
+            151
+          ],
+          "an": [
+            93
+          ],
+          "open-ended": [
+            94,
+            153
+          ],
+          "question.": [
+            95
+          ],
+          "Frequency": [
+            96
+          ],
+          "and": [
+            97,
+            129,
+            139,
+            173,
+            192
+          ],
+          "time-series": [
+            98
+          ],
+          "analyses": [
+            99,
+            147
+          ],
+          "show": [
+            100
+          ],
+          "participants": [
+            103,
+            159
+          ],
+          "primarily": [
+            104
+          ],
+          "utilized": [
+            105
+          ],
+          "generate": [
+            108
+          ],
+          "ideas,": [
+            109
+          ],
+          "particularly": [
+            110
+          ],
+          "during": [
+            111
+          ],
+          "initial": [
+            113
+          ],
+          "stages": [
+            114
+          ],
+          "They": [
+            117
+          ],
+          "also": [
+            118
+          ],
+          "used": [
+            119
+          ],
+          "it": [
+            120
+          ],
+          "later": [
+            121
+          ],
+          "process,": [
+            125
+          ],
+          "albeit": [
+            126
+          ],
+          "less": [
+            127,
+            131
+          ],
+          "frequently": [
+            128
+          ],
+          "overall,": [
+            133
+          ],
+          "word/grammar": [
+            136
+          ],
+          "search/check,": [
+            137
+          ],
+          "polishing,": [
+            138
+          ],
+          "example": [
+            140
+          ],
+          "generation,": [
+            141
+          ],
+          "alongside": [
+            142
+          ],
+          "idea": [
+            143
+          ],
+          "generation.": [
+            144
+          ],
+          "Semantic": [
+            145
+          ],
+          "network": [
+            146
+          ],
+          "question": [
+            154
+          ],
+          "further": [
+            155
+          ],
+          "reveal": [
+            156
+          ],
+          "generally": [
+            160
+          ],
+          "held": [
+            161
+          ],
+          "positive": [
+            163
+          ],
+          "opinion": [
+            164
+          ],
+          "ChatGPT,": [
+            166
+          ],
+          "valuing": [
+            167
+          ],
+          "its": [
+            168
+          ],
+          "assistance": [
+            169
+          ],
+          "content": [
+            171
+          ],
+          "creation": [
+            172
+          ],
+          "management,": [
+            175
+          ],
+          "while": [
+            176
+          ],
+          "expressing": [
+            177
+          ],
+          "some": [
+            178
+          ],
+          "concerns.": [
+            179
+          ],
+          "The": [
+            180
+          ],
+          "results": [
+            181
+          ],
+          "emphasize": [
+            182
+          ],
+          "potential": [
+            184
+          ],
+          "AI": [
+            187
+          ],
+          "facilitating": [
+            189
+          ],
+          "suggest": [
+            193
+          ],
+          "importance": [
+            195
+          ],
+          "digital": [
+            197
+          ],
+          "literacy.": [
+            198
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 65
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 6
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 2
+          }
+        ],
+        "updated_date": "2026-11-07T11:25:07.637180",
+        "created_date": "2025-10-10T00:00:00"
+      }
+    ],
+    "group_by": []
+  }
+}

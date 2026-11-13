@@ -1,0 +1,12 @@
+
+--- Verifying BibTeX file: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\missing_metadata\found.bib ---
+  Parsed 2 BibTeX entries.
+    - @article{UnknownndEarly}: Title=True, Author=True, Year=False
+    - @article{Doe2023Incomplete}: Title=True, Author=True, Year=True
+[PASS] BibTeX Verification Succeeded (2 records)
+
+--- Verifying RIS file: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\missing_metadata\found.ris ---
+  Parsed 2 RIS records.
+    - Record 1 (JOUR): Title=YES, Authors=0, Year=None, DOI=None
+    - Record 2 (JOUR): Title=YES, Authors=1, Year=2023, DOI=10.1234/test.5678
+[PASS] RIS Verification Succeeded (2 records)

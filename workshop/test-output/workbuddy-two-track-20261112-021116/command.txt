@@ -1,0 +1,28 @@
+Final two-track acceptance — 2026-11-12, output tag workbuddy-two-track-20261112-021116
+Unified query: topic "automated written corrective feedback", since 2024,
+default relevance (NO sort parameter in either URL), at most 5 results.
+
+Interpreter (Windows): C:\Users\andy\.workbuddy-ai\binaries\python\versions\3.13.12\python.exe
+Interpreter (bash):    /c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe
+Version: Python 3.13.14
+Path convention: Windows UNC \\wsl.localhost\Ubuntu\... ; MSYS2_ARG_CONV_EXCL='*' ; -B on every Python call.
+No email / mailto / api_key / credentials sent in either request.
+
+[TRACK A — independent standard-library implementation, one live request]
+MSYS2_ARG_CONV_EXCL='*' '/c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe' -B '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-a\track_a_run.py'
+  GET https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+  User-agent: PromptPraxisWorkshop/1.0 ; timeout 30s
+  Track A never reads, imports, runs or copies workshop/fetch_literature.py;
+  it uses no earlier response and no workshop/sample-data.
+
+[TRACK B — existing script via audit wrapper, one live request]
+MSYS2_ARG_CONV_EXCL='*' '/c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe' -B '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\audit_run.py' --topic 'automated written corrective feedback' --year 2024 --sort relevance --limit 5 --email= --output-csv '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\found.csv' --output-bib '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\found.bib' --output-ris '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-b\found.ris'
+  audit_run.py only tees this run's response; it does NOT edit project source.
+  --sort relevance omits sort; --email= omits mailto; three output paths explicit.
+
+[VERIFY — project format checker, syntax-only, NOT Zotero import]
+MSYS2_ARG_CONV_EXCL='*' '.../python.exe' -B '\\...\workshop\verify_zotero_import.py' --bib '\\...\track-a\found.bib' --ris '\\...\track-a\found.ris'
+MSYS2_ARG_CONV_EXCL='*' '.../python.exe' -B '\\...\workshop\verify_zotero_import.py' --bib '\\...\track-b\found.bib' --ris '\\...\track-b\found.ris'
+
+[CROSS-CHECK — read-only Python -B heredoc, no network]
+Parses both raw_response.json files and both sets of exports; writes cross_check.txt.

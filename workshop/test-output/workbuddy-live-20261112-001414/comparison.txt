@@ -1,0 +1,53 @@
+=== REQUEST EVIDENCE (request_meta.json) ===
+requested_at_utc: 2026-11-11T16:17:33.850392+00:00
+url: https://api.openalex.org/works?search=applied+linguistics+AI&filter=from_publication_date%3A2024-01-01&sort=cited_by_count%3Adesc&per-page=3
+query_params: {"filter": ["from_publication_date:2024-01-01"], "per-page": ["3"], "search": ["applied linguistics AI"], "sort": ["cited_by_count:desc"]}
+method: GET
+request_headers: {"User-agent": "PromptPraxisWorkshop/1.0"}
+timeout_seconds: 30
+http_status: 200
+response_headers: {"Access-Control-Allow-Origin": "*", "CF-Cache-Status": "DYNAMIC", "CF-Ray": "a58e9b9ccb6d03ad-HKG", "Connection": "close", "Content-Type": "application/json", "Date": "Wed, 11 Nov 2026 16:17:34 GMT", "Server": "cloudflare", "Transfer-Encoding": "chunked", "Via": "2.0 heroku-router", "X-RateLimit-Cost-USD": "0.001", "X-RateLimit-Credits-Used": "10", "X-RateLimit-Limit": "1000", "X-RateLimit-Limit-USD": "0.1", "X-RateLimit-Onetime-Remaining": "0", "X-RateLimit-Prepaid-Remaining-USD": "0", "X-RateLimit-Remaining": "910", "X-RateLimit-Remaining-USD": "0.091", "X-RateLimit-Reset": "27746", "access-control-allow-headers": "Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type, X-OpenAlex-UI, X-Impersonate-User", "access-control-allow-methods": "GET, HEAD, POST, PATCH, DELETE, OPTIONS", "access-control-expose-headers": "Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining, X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset, X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD, X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After, Location, Content-Disposition, X-OpenAlex-UI-Token", "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}", "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=spnUXoLXGgZvTjPtlHiTUaH83Un6yr%2F%2FUYd6y%2BRDvqM%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1794413854\"}],\"max_age\":3600}", "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=spnUXoLXGgZvTjPtlHiTUaH83Un6yr%2F%2FUYd6y%2BRDvqM%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1794413854\""}
+response_body_bytes: 184544
+error_entries: {}
+raw_response.json bytes on disk: 184544
+=== RAW RESPONSE SUMMARY ===
+meta.count: 139196
+len(results): 3
+found.csv data rows: 3
+found.bib @article entries: 3
+found.ris TY records: 3
+=== RECORD 1 ===
+  OpenAlex_ID: match=True expected='https://openalex.org/W4414939355' actual='https://openalex.org/W4414939355'
+  Title: match=True expected='Qwen3 Technical Report' actual='Qwen3 Technical Report'
+  Authors: match=True expected_len=707 actual_len=707
+  Year: match=True expected='2025' actual='2025'
+  Citations: match=True expected='17653' actual='17653'
+  DOI: match=True expected='https://doi.org/10.48550/arxiv.2505.09388' actual='https://doi.org/10.48550/arxiv.2505.09388'
+  Journal: match=True expected='arXiv (Cornell University)' actual='arXiv (Cornell University)'
+  missing/empty fields in raw response: none
+  bib: escaped_title_present=True year_present=True doi_present=True
+  ris: title_present=True year_present=True doi_present=True
+=== RECORD 2 ===
+  OpenAlex_ID: match=True expected='https://openalex.org/W4414281281' actual='https://openalex.org/W4414281281'
+  Title: match=True expected='DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning' actual='DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning'
+  Authors: match=True expected_len=1209 actual_len=1209
+  Year: match=True expected='2025' actual='2025'
+  Citations: match=True expected='16779' actual='16779'
+  DOI: match=True expected='https://doi.org/10.1038/s41586-025-09422-z' actual='https://doi.org/10.1038/s41586-025-09422-z'
+  Journal: match=True expected='Nature' actual='Nature'
+  missing/empty fields in raw response: none
+  bib: escaped_title_present=True year_present=True doi_present=True
+  ris: title_present=True year_present=True doi_present=True
+=== RECORD 3 ===
+  OpenAlex_ID: match=True expected='https://openalex.org/W4404330874' actual='https://openalex.org/W4404330874'
+  Title: match=True expected='GPT-4o System Card' actual='GPT-4o System Card'
+  Authors: match=True expected_len=1512 actual_len=1512
+  Year: match=True expected='2024' actual='2024'
+  Citations: match=True expected='8851' actual='8851'
+  DOI: match=True expected='https://doi.org/10.48550/arxiv.2410.21276' actual='https://doi.org/10.48550/arxiv.2410.21276'
+  Journal: match=True expected='arXiv (Cornell University)' actual='arXiv (Cornell University)'
+  missing/empty fields in raw response: none
+  bib: escaped_title_present=True year_present=True doi_present=True
+  ris: title_present=True year_present=True doi_present=True
+=== CSV FIELD-BY-FIELD ALL MATCH: True ===
+=== RECORD COUNTS EQUAL: True ===

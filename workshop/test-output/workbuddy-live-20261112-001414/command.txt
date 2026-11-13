@@ -1,0 +1,16 @@
+Live OpenAlex acceptance run — 2026-11-12, output tag 20261112-001414
+Email is explicitly empty (--email=). No --fixture. No API key or credentials.
+Interpreter (Windows path): C:\Users\andy\.workbuddy-ai\binaries\python\versions\3.13.12\python.exe
+Interpreter (bash form):    /c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe
+Version: Python 3.13.14
+Path convention: Windows UNC \\wsl.localhost\Ubuntu\... ; MSYS2_ARG_CONV_EXCL='*' ; -B on every Python call.
+
+[FETCH — real query, executed once]
+MSYS2_ARG_CONV_EXCL='*' '/c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe' -B '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\audit_run.py' --topic 'applied linguistics AI' --year 2024 --sort 'cited_by_count:desc' --limit 3 --email= --output-csv '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.csv' --output-bib '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.bib' --output-ris '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.ris'
+
+[VERIFY — project's own format checker, only if FETCH succeeded]
+MSYS2_ARG_CONV_EXCL='*' '/c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe' -B '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\verify_zotero_import.py' --bib '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.bib' --ris '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.ris'
+
+Note: audit_run.py does not modify project source. It replaces sys.argv and
+calls runpy.run_path(<project fetch_literature.py>, run_name="__main__"), with
+only urllib.request.urlopen wrapped to tee this single response to disk.

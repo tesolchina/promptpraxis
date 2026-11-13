@@ -1,0 +1,18 @@
+
+--- Verifying BibTeX file: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-a\found.bib ---
+  Parsed 5 BibTeX entries.
+    - @article{Chang2026Automated}: Title=True, Author=True, Year=True
+    - @article{Ref2024Automated}: Title=True, Author=False, Year=True
+    - @article{Wu2025Effectiveness}: Title=True, Author=True, Year=True
+    - @article{Yan2024L2}: Title=True, Author=True, Year=True
+    - @article{Luo2025Impact}: Title=True, Author=True, Year=True
+[PASS] BibTeX Verification Succeeded (5 records)
+
+--- Verifying RIS file: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-two-track-20261112-021116\track-a\found.ris ---
+  Parsed 5 RIS records.
+    - Record 1 (JOUR): Title=YES, Authors=1, Year=2026, DOI=10.48321/d13320141e
+    - Record 2 (JOUR): Title=YES, Authors=0, Year=2024, DOI=10.1163/9789004719118_009
+    - Record 3 (JOUR): Title=YES, Authors=6, Year=2025, DOI=10.1177/07356331251359430
+    - Record 4 (JOUR): Title=YES, Authors=2, Year=2024, DOI=10.1057/s41599-024-03543-y
+    - Record 5 (JOUR): Title=YES, Authors=5, Year=2025, DOI=10.1017/s095834402510044x
+[PASS] RIS Verification Succeeded (5 records)

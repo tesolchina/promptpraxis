@@ -1,0 +1,23 @@
+=== Literature Query Pipeline ===
+Topic: applied linguistics AI
+Since year: 2024
+Sort: cited_by_count:desc
+Limit: 3
+Mode: Live OpenAlex API ()
+OpenAlex reports 139196 matching records in database.
+Parsed 3 publications.
+Outputs written successfully:
+  - Reading list CSV: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.csv
+  - Zotero BibTeX:   \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.bib
+  - Zotero RIS:      \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.ris
+
+Sample result summary:
+  [1] (2025) Qwen3 Technical Report
+      Authors: Yang, An, A. Li, Baosong Yang
+      Citations: 17653 | DOI: https://doi.org/10.48550/arxiv.2505.09388
+  [2] (2025) DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning
+      Authors: Daya Guo, Dejian Yang, Haowei Zhang
+      Citations: 16779 | DOI: https://doi.org/10.1038/s41586-025-09422-z
+  [3] (2024) GPT-4o System Card
+      Authors: OpenAI, :, Hurst, Aaron
+      Citations: 8851 | DOI: https://doi.org/10.48550/arxiv.2410.21276

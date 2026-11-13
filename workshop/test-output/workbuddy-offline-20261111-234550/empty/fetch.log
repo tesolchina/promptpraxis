@@ -1,0 +1,9 @@
+=== Literature Query Pipeline ===
+Topic: applied linguistics AI
+Since year: 2024
+Sort: cited_by_count:desc
+Limit: 10
+Mode: Offline fixture (\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\tests\fixtures\openalex_empty.json)
+OpenAlex reports 0 matching records in database.
+Notice: Query returned 0 records. Generating empty output templates.
+Saved empty templates to: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\empty\found.csv, \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\empty\found.bib, \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-offline-20261111-234550\empty\found.ris

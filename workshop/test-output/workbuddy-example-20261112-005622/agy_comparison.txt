@@ -1,0 +1,71 @@
+=== AGGREGATE ===
+count: agy_wrapped=11915 | live=11915 | equal=True
+results: agy_wrapped=5 | live=5
+agy declared request_url: https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+agy declared timestamp_utc: 2026-11-11T16:44:14.367728+00:00
+========================================================================
+ITEM 1
+title equal agy/live: True | live: Automated Written Corrective Feedback in EFL context
+year agy/live/summary: 2026 2026 2026
+doi equal agy/live: True | live: https://doi.org/10.48321/d13320141e
+citations agy/live/summary: 0 0 0
+authors_count agy/live: 1 1 | summary: ['Anano Chang']
+venue live: California Digital Library | summary: California Digital Library
+has_abstract agy/live/summary: True True True
+is_oa agy/live/summary: True True True
+oa_url live: https://doi.org/10.48321/d13320141e | summary: https://doi.org/10.48321/d13320141e
+primary pdf_url live: None
+========================================================================
+ITEM 2
+title equal agy/live: True | live: Automated Written Corrective Feedback (AWCF)
+year agy/live/summary: 2024 2024 2024
+doi equal agy/live: True | live: https://doi.org/10.1163/9789004719118_009
+citations agy/live/summary: 1 1 1
+authors_count agy/live: 0 0 | summary: []
+venue live: BRILL eBooks | summary: BRILL eBooks
+has_abstract agy/live/summary: False False False
+is_oa agy/live/summary: False False False
+oa_url live: None | summary: None
+primary pdf_url live: None
+========================================================================
+ITEM 3
+title equal agy/live: True | live: Effectiveness of Generative AI in Automated Written Corrective Feedback With Prompting
+year agy/live/summary: 2025 2025 2025
+doi equal agy/live: True | live: https://doi.org/10.1177/07356331251359430
+citations agy/live/summary: 19 19 19
+authors_count agy/live: 6 6 | summary: ['Jiahui Wu', 'Jianwei Li', 'Zi-Gang Ge', 'Mingrui Xu', 'Lin Li', 'Ru Zhang']
+venue live: Journal of Educational Computing Research | summary: Journal of Educational Computing Research
+has_abstract agy/live/summary: True True True
+is_oa agy/live/summary: False False False
+oa_url live: None | summary: None
+primary pdf_url live: None
+========================================================================
+ITEM 4
+title equal agy/live: True | live: L2 writer engagement with automated written corrective feedback provided by ChatGPT: A mixed-method multiple case study
+year agy/live/summary: 2024 2024 2024
+doi equal agy/live: True | live: https://doi.org/10.1057/s41599-024-03543-y
+citations agy/live/summary: 167 167 167
+authors_count agy/live: 2 2 | summary: ['Da “Alex” Yan', 'Shuxian Zhang']
+venue live: Humanities and Social Sciences Communications | summary: Humanities and Social Sciences Communications
+has_abstract agy/live/summary: True True True
+is_oa agy/live/summary: True True True
+oa_url live: https://doi.org/10.1057/s41599-024-03543-y | summary: https://doi.org/10.1057/s41599-024-03543-y
+primary pdf_url live: None
+========================================================================
+ITEM 5
+title equal agy/live: True | live: Impact of prompt sophistication on ChatGPT’s output for automated written corrective feedback
+year agy/live/summary: 2025 2025 2025
+doi equal agy/live: True | live: https://doi.org/10.1017/s095834402510044x
+citations agy/live/summary: 10 10 10
+authors_count agy/live: 5 5 | summary: ['Na Luo', 'Yifan Wang', 'Zhe (Victor) Zhang', 'Yile Zhou', 'Rongfu Zhao']
+venue live: ReCALL | summary: ReCALL
+has_abstract agy/live/summary: True True True
+is_oa agy/live/summary: True True True
+oa_url live: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E15580A5BC9C13988936CC699761DED2/S095834402510044Xa.pdf/div-class-title-impact-of-prompt-sophistication-on-chatgpt-s-output-for-automated-written-corrective-feedback-div.pdf | summary: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E15580A5BC9C13988936CC699761DED2/S095834402510044Xa.pdf/div-class-title-impact-of-prompt-sophistication-on-chatgpt-s-output-for-automated-written-corrective-feedback-div.pdf
+primary pdf_url live: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E15580A5BC9C13988936CC699761DED2/S095834402510044Xa.pdf/div-class-title-impact-of-prompt-sophistication-on-chatgpt-s-output-for-automated-written-corrective-feedback-div.pdf
+=== agy summary abstract_preview (claimed, derived) ===
+1 'This study investigates how Chinese English as a Foreign Language (EFL) university students engage with automated written corrective feedback (AWCF) p...'
+2 'No abstract available in OpenAlex record'
+3 'Automated written corrective feedback (AWCF) tools play a crucial role in supporting English writing instruction. However, issues such as insufficient...'
+4 'Automated written corrective feedback (AWCF) has been widely applied in second language (L2) writing classrooms in the past few decades. Recently, the...'
+5 'Abstract The emergence of large language models, exemplified by ChatGPT, has garnered growing attention for their potential to generate feedback in se...'

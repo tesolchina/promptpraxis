@@ -1,0 +1,14 @@
+
+--- Verifying BibTeX file: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.bib ---
+  Parsed 3 BibTeX entries.
+    - @article{Yang2025Qwen3}: Title=True, Author=True, Year=True
+    - @article{Guo2025Deepseekr1}: Title=True, Author=True, Year=True
+    - @article{OpenAI2024Gpt4o}: Title=True, Author=True, Year=True
+[PASS] BibTeX Verification Succeeded (3 records)
+
+--- Verifying RIS file: \\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-live-20261112-001414\found.ris ---
+  Parsed 3 RIS records.
+    - Record 1 (JOUR): Title=YES, Authors=60, Year=2025, DOI=10.48550/arxiv.2505.09388
+    - Record 2 (JOUR): Title=YES, Authors=100, Year=2025, DOI=10.1038/s41586-025-09422-z
+    - Record 3 (JOUR): Title=YES, Authors=100, Year=2024, DOI=10.48550/arxiv.2410.21276
+[PASS] RIS Verification Succeeded (3 records)

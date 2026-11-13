@@ -1,0 +1,272 @@
+[
+  {
+    "candidate": "Candidate 1: automated written corrective feedback",
+    "url": "https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5",
+    "count": 11915,
+    "items": [
+      {
+        "rank": 1,
+        "title": "Automated Written Corrective Feedback in EFL context",
+        "year": 2026,
+        "authors": [
+          "Anano Chang"
+        ],
+        "citations": 0,
+        "venue": "California Digital Library",
+        "doi": "https://doi.org/10.48321/d13320141e",
+        "is_oa": true,
+        "oa_url": "https://doi.org/10.48321/d13320141e",
+        "has_abstract": true,
+        "abstract_preview": "This study investigates how Chinese English as a Foreign Language (EFL) university students engage with automated written corrective feedback (AWCF) p..."
+      },
+      {
+        "rank": 2,
+        "title": "Automated Written Corrective Feedback (AWCF)",
+        "year": 2024,
+        "authors": [],
+        "citations": 1,
+        "venue": "BRILL eBooks",
+        "doi": "https://doi.org/10.1163/9789004719118_009",
+        "is_oa": false,
+        "oa_url": null,
+        "has_abstract": false,
+        "abstract_preview": "No abstract available in OpenAlex record"
+      },
+      {
+        "rank": 3,
+        "title": "Effectiveness of Generative AI in Automated Written Corrective Feedback With Prompting",
+        "year": 2025,
+        "authors": [
+          "Jiahui Wu",
+          "Jianwei Li",
+          "Zi-Gang Ge",
+          "Mingrui Xu",
+          "Lin Li",
+          "Ru Zhang"
+        ],
+        "citations": 19,
+        "venue": "Journal of Educational Computing Research",
+        "doi": "https://doi.org/10.1177/07356331251359430",
+        "is_oa": false,
+        "oa_url": null,
+        "has_abstract": true,
+        "abstract_preview": "Automated written corrective feedback (AWCF) tools play a crucial role in supporting English writing instruction. However, issues such as insufficient..."
+      },
+      {
+        "rank": 4,
+        "title": "L2 writer engagement with automated written corrective feedback provided by ChatGPT: A mixed-method multiple case study",
+        "year": 2024,
+        "authors": [
+          "Da “Alex” Yan",
+          "Shuxian Zhang"
+        ],
+        "citations": 167,
+        "venue": "Humanities and Social Sciences Communications",
+        "doi": "https://doi.org/10.1057/s41599-024-03543-y",
+        "is_oa": true,
+        "oa_url": "https://doi.org/10.1057/s41599-024-03543-y",
+        "has_abstract": true,
+        "abstract_preview": "Automated written corrective feedback (AWCF) has been widely applied in second language (L2) writing classrooms in the past few decades. Recently, the..."
+      },
+      {
+        "rank": 5,
+        "title": "Impact of prompt sophistication on ChatGPT’s output for automated written corrective feedback",
+        "year": 2025,
+        "authors": [
+          "Na Luo",
+          "Yifan Wang",
+          "Zhe (Victor) Zhang",
+          "Yile Zhou",
+          "Rongfu Zhao"
+        ],
+        "citations": 10,
+        "venue": "ReCALL",
+        "doi": "https://doi.org/10.1017/s095834402510044x",
+        "is_oa": true,
+        "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E15580A5BC9C13988936CC699761DED2/S095834402510044Xa.pdf/div-class-title-impact-of-prompt-sophistication-on-chatgpt-s-output-for-automated-written-corrective-feedback-div.pdf",
+        "has_abstract": true,
+        "abstract_preview": "Abstract The emergence of large language models, exemplified by ChatGPT, has garnered growing attention for their potential to generate feedback in se..."
+      }
+    ]
+  },
+  {
+    "candidate": "Candidate 2: generative AI second language writing",
+    "url": "https://api.openalex.org/works?search=generative+AI+second+language+writing&filter=from_publication_date%3A2024-01-01&per-page=5",
+    "count": 141849,
+    "items": [
+      {
+        "rank": 1,
+        "title": "Generative AI and Second Language Writing",
+        "year": 2025,
+        "authors": [
+          "Shaofeng Li"
+        ],
+        "citations": 86,
+        "venue": "Digital studies in language and literature",
+        "doi": "https://doi.org/10.1515/dsll-2025-0007",
+        "is_oa": true,
+        "oa_url": "https://www.degruyterbrill.com/document/doi/10.1515/dsll-2025-0007/pdf",
+        "has_abstract": true,
+        "abstract_preview": "Abstract This article provides a critical synthesis and analysis of the research on the application of generative AI (GenAI) in second language (L2) w..."
+      },
+      {
+        "rank": 2,
+        "title": "Generative AI and Second Language Writing",
+        "year": 2025,
+        "authors": [
+          "Robert Godwin‐Jones"
+        ],
+        "citations": 2,
+        "venue": null,
+        "doi": "https://doi.org/10.47908/38/2",
+        "is_oa": false,
+        "oa_url": null,
+        "has_abstract": true,
+        "abstract_preview": "Integrating generative AI into second language (L2) writing has been a controversial issue, as L2 instructors fear students will simply copy and paste..."
+      },
+      {
+        "rank": 3,
+        "title": "The Application of Generative AI in Chinese as a Second Language Writing",
+        "year": 2026,
+        "authors": [
+          "Fanqi Cheng",
+          "Chen Ding"
+        ],
+        "citations": 1,
+        "venue": "SHS Web of Conferences",
+        "doi": "https://doi.org/10.1051/shsconf/202623504012",
+        "is_oa": true,
+        "oa_url": "https://www.shs-conferences.org/articles/shsconf/pdf/2026/09/shsconf_icepcc2026_04012.pdf",
+        "has_abstract": true,
+        "abstract_preview": "The rapid development of generative artificial intelligence is profoundly changing the teaching environment of Chinese second language writing. This a..."
+      },
+      {
+        "rank": 4,
+        "title": "The Application of Generative AI in Chinese as a Second Language Writing",
+        "year": 2026,
+        "authors": [
+          "Fanqi Cheng",
+          "Chen Ding"
+        ],
+        "citations": 0,
+        "venue": "Springer Link (Chiba Institute of Technology)",
+        "doi": "https://doi.org/10.1051/shsconf/202623504012/pdf",
+        "is_oa": true,
+        "oa_url": "https://www.shs-conferences.org/10.1051/shsconf/202623504012/pdf",
+        "has_abstract": true,
+        "abstract_preview": "The rapid development of generative artificial intelligence is profoundly changing the teaching environment of Chinese second language writing. This a..."
+      },
+      {
+        "rank": 5,
+        "title": "Generative AI is useful for second language writing, but when, why, and for how long do learners use it?",
+        "year": 2025,
+        "authors": [
+          "Haerim Hwang",
+          "Xingyu Chang",
+          "Jiaxin Sun"
+        ],
+        "citations": 73,
+        "venue": "Journal of Second Language Writing",
+        "doi": "https://doi.org/10.1016/j.jslw.2025.101230",
+        "is_oa": true,
+        "oa_url": "https://doi.org/10.1016/j.jslw.2025.101230",
+        "has_abstract": true,
+        "abstract_preview": "Numerous studies have highlighted the benefits of recent advancements in generative artificial intelligence (AI) technology for second language (L2) w..."
+      }
+    ]
+  },
+  {
+    "candidate": "Candidate 3: chatbots language learning",
+    "url": "https://api.openalex.org/works?search=chatbots+language+learning&filter=from_publication_date%3A2024-01-01&per-page=5",
+    "count": 137372,
+    "items": [
+      {
+        "rank": 1,
+        "title": "Does Chatting with Chatbots Improve Language Learning Performance? A Meta-Analysis of Chatbot-Assisted Language Learning",
+        "year": 2024,
+        "authors": [
+          "Feifei Wang",
+          "Alan Cheung",
+          "Amanda Jean Neitzel",
+          "Ching Sing Chai"
+        ],
+        "citations": 98,
+        "venue": "Review of Educational Research",
+        "doi": "https://doi.org/10.3102/00346543241255621",
+        "is_oa": false,
+        "oa_url": null,
+        "has_abstract": true,
+        "abstract_preview": "Given the importance of conversation practice in language learning, chatbots, especially ChatGPT, have attracted considerable attention for their abil..."
+      },
+      {
+        "rank": 2,
+        "title": "Effectiveness of Chatbots in Improving Language Learning: A Meta‐Analysis of Comparative Studies",
+        "year": 2024,
+        "authors": [
+          "Boning Lyu",
+          "Chun Lai",
+          "Jianing Guo"
+        ],
+        "citations": 75,
+        "venue": "International Journal of Applied Linguistics",
+        "doi": "https://doi.org/10.1111/ijal.12668",
+        "is_oa": true,
+        "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ijal.12668",
+        "has_abstract": true,
+        "abstract_preview": "ABSTRACT The development of artificial intelligence has presented new opportunities and challenges for language education. Using artificial intelligen..."
+      },
+      {
+        "rank": 3,
+        "title": "THE USE OF CHATBOTS IN THE ENGLISH LANGUAGE TEACHING TO PROMOTE MODERN LANGUAGE LEARNING: A LITERATURE REVIEW",
+        "year": 2024,
+        "authors": [
+          "Moh. Abraham Akbar Eisenring",
+          "Jamiluddin Jamiluddin",
+          "Muh. Arasy Hairul",
+          "Dwi Putri"
+        ],
+        "citations": 22,
+        "venue": "IJIET (International Journal of Indonesian Education and Teaching)",
+        "doi": "https://doi.org/10.24071/ijiet.v8i1.7321",
+        "is_oa": true,
+        "oa_url": "https://e-journal.usd.ac.id/index.php/IJIET/article/download/7321/3832",
+        "has_abstract": true,
+        "abstract_preview": "Our world continues to become increasingly connected. The use of technology has become a must in this modern era to live accordingly. The requirement ..."
+      },
+      {
+        "rank": 4,
+        "title": "Intelligent Modelling For Multilingual Language Learning Chatbot",
+        "year": 2025,
+        "authors": [
+          "Saisha Hiray",
+          "Manisha Shinde",
+          "Priti Choudhari",
+          "Samarth Palve",
+          "Rushi Bagul"
+        ],
+        "citations": 0,
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "doi": "https://doi.org/10.5281/zenodo.17985348",
+        "is_oa": true,
+        "oa_url": "https://doi.org/10.5281/zenodo.17985348",
+        "has_abstract": true,
+        "abstract_preview": "In this era of rapid globalization and technological advancement, the ability to communicate in multiple languages has become a crucial skill. Traditi..."
+      },
+      {
+        "rank": 5,
+        "title": "Elevating Language Learning with Chatbot Technology",
+        "year": 2026,
+        "authors": [
+          "Nazirah Mahmud"
+        ],
+        "citations": 1,
+        "venue": "ELTALL English Language Teaching Applied Linguistic and Literature",
+        "doi": "https://doi.org/10.21154/eltall.v7i1.12909",
+        "is_oa": true,
+        "oa_url": "https://jurnal.iainponorogo.ac.id/index.php/eltall/article/download/12909/4576",
+        "has_abstract": true,
+        "abstract_preview": "Chatbots are emerging as popular tools for teaching and learning in foreign language education. Their features have transformed them into conversation..."
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+Teaching-example verification — single live OpenAlex query, 2026-11-12
+Output tag: workbuddy-example-20261112-005622
+
+Interpreter (Windows): C:\Users\andy\.workbuddy-ai\binaries\python\versions\3.13.12\python.exe
+Interpreter (bash):    /c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe
+Version: Python 3.13.14
+Path convention: Windows UNC \\wsl.localhost\Ubuntu\... ; MSYS2_ARG_CONV_EXCL='*' ; -B on every Python call.
+
+[SINGLE LIVE QUERY — executed once]
+MSYS2_ARG_CONV_EXCL='*' '/c/Users/andy/.workbuddy-ai/binaries/python/versions/3.13.12/python.exe' -B '\\wsl.localhost\Ubuntu\home\andy\projects\promptpraxis\workshop\test-output\workbuddy-example-20261112-005622\example_query.py'
+
+Request constructed inside example_query.py (standard library only):
+  GET https://api.openalex.org/works?search=automated+written+corrective+feedback&filter=from_publication_date%3A2024-01-01&per-page=5
+  - NO sort parameter (OpenAlex default relevance order)
+  - NO mailto, NO api_key, NO Authorization, NO credentials
+  - User-Agent: PromptPraxisWorkshop/1.0
+  - timeout: 30s
+
+Why fetch_literature.py was NOT called: its query_openalex() always writes
+"sort" into the URL, with default "cited_by_count:desc". That would violate
+"use API default search sorting, do not set citation-count sorting". No source
+file was modified; the verification request lives only in this output folder.
+
+[READ-ONLY EVIDENCE INSPECTION, no network]
+Windows Python -B reading docs/candidate-queries/*.json and
+workshop/tests/fixtures/*.json -> evidence_inspection.txt
+
+[NO full-text link was opened in this run]
+OA/PDF URL fields are recorded from the API response only. No claim is made
+about downloadability or paywalls.
