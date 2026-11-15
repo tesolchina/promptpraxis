@@ -10,7 +10,7 @@
 - [Entry 1: From plain texts to playable](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) · *earlier entry*
 - [Entry 2: Introduction to Agentic AI](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry02/) · *reading now*
 
-**Standfirst:** A researcher's hundred open tabs, a column telling her to build a system, and the two steps where systems still leak, now handed to instruments without hands.
+**Standfirst:** A researcher's hundred open tabs, and a column telling her to build a system. Here are the two steps where that system still leaks, and the code that takes them over.
 
 ---
 
@@ -18,7 +18,7 @@
 
 In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing (Gosztyla, 2022).
 
-Her article outlined four steps: **find, manage, read, organize**. Finding is where collections leak: papers promised for later, alerts that flood the inbox. Managing decides whether those intentions become an indexed database or vanish. Reading and organizing demand human judgement and cannot be outsourced to a script.
+Her article outlined four steps: **find, manage, read, organize**. Collections leak at the first step: papers promised for later, alerts that flood the inbox. At the second, a scholar either files those intentions into an indexed database or loses them. Reading and organizing demand human judgement; no script can take them over.
 
 This entry takes the first two, starting where she started: with the tools already on our desktops.
 
@@ -41,7 +41,7 @@ She pointed to citation-visualisation tools such as ResearchRabbit and Litmaps.
 
 ### Step 2: manage
 
-If you still format references by hand, stop. Gosztyla's point was that a reference manager is a personal research database, holding full-text PDFs beside verified records, annotations bound to pages, and one-click capture from the web.
+If you still format references by hand, stop. Gosztyla treated a reference manager as a personal research database. Full-text PDFs sit beside verified records. Annotations stay bound to the page they came from, and one click pulls a paper off the web.
 
 We use **Zotero** (free, open source, [zotero.org](https://www.zotero.org)): its metadata and citation engines can be inspected and reused in automated pipelines, and its open architecture keeps data in the scholar's hands. Mendeley and EndNote follow similar patterns.
 
@@ -59,21 +59,21 @@ Five operations complete the loop:
 
 Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab. That close is the discipline.
 
-Everything in Part 2 runs **by hand, on a screen, one click at a time**. That ceiling opens Part 3.
+Everything in Part 2 runs **by hand, one click at a time**. That ceiling opens Part 3.
 
 ## Part 3: GUI against API
 
 ### What the GUI is, and where it stops
 
-Every tool in Part 2 relies on a graphical user interface: what you see is what you get. That is its virtue, since a newcomer becomes productive in minutes, and its boundary. A GUI shows **one screen at a time** and moves at the speed of fingers and eyes. It cannot check for new papers while you teach, or reproduce last week's multi-filter search without retyping. Gosztyla's hundred tabs were not disorganisation; they were the symptom of GUI-bounded searching.
+Every tool in Part 2 relies on a graphical user interface: what you see is what you get. That is its virtue, since a newcomer becomes productive in minutes. It is also its boundary. A GUI shows **one screen at a time** and moves at the speed of fingers and eyes. It cannot check for new papers while you teach, or reproduce last week's multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of GUI-bounded searching.
 
 ### How Entry 1 crossed it
 
-[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established a different principle: an agent sits between human language and computing instruments. You describe a job in ordinary sentences, and the agent orchestrates the tools to execute multi-step workflows. Entry 1 also drew a boundary we preserve: **an agent is a reasoning engine, not an authoritative information oracle.** This entry never asks a model to recall what the literature says. It sends the agent to query verified databases.
+[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established a different principle: an agent sits between human language and computing instruments. You describe a job in ordinary sentences, and the agent orchestrates the tools to execute multi-step workflows. Entry 1 also drew a boundary we preserve: **the agent reasons, and the database supplies the facts.** This entry never asks a model to recall what the literature says. It sends the agent to query verified databases.
 
 ### Code as the way past the boundary
 
-Programmed code has no hands or eyes. It can run a query at dawn, scan a few hundred thousand records while you make coffee, and repeat yesterday's search next month.
+Programmed code has no hands or eyes. It can run a query at dawn while you sleep, and repeat yesterday's search next month without retyping.
 
 Two instruments carry that work:
 
@@ -83,7 +83,7 @@ Two instruments carry that work:
   https://api.openalex.org/works?search=applied linguistics AI&per-page=3
   ```
 
-  It returns three verified papers with DOIs. Across OpenAlex, that query matches 202,945 works.²
+  It returns three verified papers with DOIs. Across OpenAlex, that same search narrowed to 2026 journal articles matches 27,945 works.²
 
 - **Syndicated feeds (RSS)** deliver in the opposite direction: new tables of contents arrive at an endpoint, and an agent watches the feed, compares abstracts with your criteria, and flags only relevant work:
 
@@ -91,7 +91,7 @@ Two instruments carry that work:
   https://rss.arxiv.org/rss/cs.AI
   ```
 
-The GUI returns to where human judgement belongs: reading critically, assessing evidence, deciding what to build next. Part 4 puts the pipeline into practice.
+The GUI keeps the part that needs a person: reading critically, and deciding what to build next. Part 4 puts the pipeline into practice.
 
 ## Part 4: How you do that, with WorkBuddy
 
@@ -127,7 +127,7 @@ python3 workshop/fetch_literature.py \
   --email=
 ```
 
-- **Output:** writes `found.csv`, `found.bib`, and `found.ris`. Missing metadata stays empty rather than invented.
+- **Output:** writes `found.csv`, `found.bib`, and `found.ris`. Missing metadata stays empty; nothing is invented.
 - **Customisation:** change `--topic`, `--year`, or the sort order.
 - **Edge cases:** no matches writes empty files; offline, add `--fixture workshop/tests/fixtures/openalex_normal.json`.
 
@@ -145,4 +145,4 @@ Open one paper today, rerun the prompt next week, and the pipeline becomes daily
 
 ---
 
-**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² OpenAlex, queried 14 Nov 2026: `search=applied linguistics AI` returns 202,945 works; the Part 4 query (`search=automated written corrective feedback`, `from_publication_date:2024-01-01`, default relevance) returns 12,002. Counts rise as the index grows; each number belongs to its own query. ³ Companion run evidence: [WorkBuddy two-track comparison](https://github.com/tesolchina/promptpraxis/blob/main/workshop/evidence/two-track-20261112/cross_check.txt).
+**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² OpenAlex Works API, `search=applied linguistics AI` with `from_publication_date:2026-01-01,type:article`: 26,881 works (queried 8 Nov 2026) and 27,945 (queried 14 Nov 2026); a re-run on 15 Nov 2026 returned 28,148. The Part 4 query (`search=automated written corrective feedback`, `from_publication_date:2024-01-01`, default relevance) returned 12,029 on 15 Nov 2026. Counts rise as the index grows; each number belongs to its own query and date. ³ Companion run evidence: [WorkBuddy two-track comparison](https://github.com/tesolchina/promptpraxis/blob/main/workshop/evidence/two-track-20261112/cross_check.txt).
