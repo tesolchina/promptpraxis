@@ -156,13 +156,15 @@ python3 workshop/fetch_literature.py \
 - **Customisation:** change `--topic`, `--year`, or the sort order.
 - **Edge cases:** no matches writes empty files; offline, add `--fixture workshop/tests/fixtures/openalex_normal.json`.
 
-## Part 5: Decisions, limits, and value
+## Part 5: What we chose to cover, what can go wrong, and why upgrading beats rebuilding
 
 **Decisions:** We limit the lesson to find and manage; an entry attempting everything teaches nothing. BibTeX/RIS export stays the dependable bridge to reference managers.
 
 **Limits:** Language models can invent or miscopy citations even when tools are available. Compare outputs with the saved API response, keep missing fields empty, and judge relevance yourself. A DOI identifies a record; it does not establish the quality of its claims or guarantee free full text. API conditions change, so stop on errors.
 
 **Value:** An afternoon of tab chasing becomes a two-minute query; next month's review is this month's prompt with a new date filter.
+
+**Conclusion: from tool users to tool builders.** The starting point of this entry is deliberately not the latest AI technology. It is a workflow proposed before generative AI became widely available — Maya Gosztyla's four steps, built entirely from ordinary GUI software: RSS feeds and Zotero. Our strategy is to take well-established solutions like these and let agentic AI upgrade them instead of starting from scratch. Two properties make that possible. RSS is a machine-readable format, so an agent can vibe-code a small tool that reads a feed and processes what it finds. Zotero is open-source, so an agent can read its source code and re-use it to replicate functions such as export and tagging. Re-using the code and ideas of pre-AI tools brings the flexibility to add custom features on top, and the cumulative effect is a shift in role: from tool users to tool builders.
 
 ## Closing: starting the cycle
 
