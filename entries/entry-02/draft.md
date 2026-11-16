@@ -83,6 +83,12 @@ Both GUI solutions from Part 2 can be rebuilt without their screens. An RSS read
 
 ## Part 4: How you do that, with WorkBuddy
 
+Entry 01 showed what agentic AI can build; this part answers the question it left open: how.
+
+WorkBuddy is not the only tool for agentic AI: integrated development environments (IDEs) such as VS Code, Codex, Claude Code and Cursor now ship agentic-AI modules, but those tools are built for professional programmers and developers, and a beginner would find them difficult to pick up. This entry runs in WorkBuddy instead, where you start from plain sentences.
+
+Before the hands-on part, revisit Entry 01's input-process-output model: plain sentences in, code written and run, files and tables out. Keep it in view to understand the big picture of what the two tracks below do.
+
 Open the [companion workshop](https://github.com/tesolchina/promptpraxis/tree/main/workshop). Choose either track. Track B runs in WorkBuddy using Python 3 from the repository root.
 
 ### Track A: describe the task from scratch
