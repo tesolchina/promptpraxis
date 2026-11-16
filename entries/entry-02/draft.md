@@ -10,7 +10,7 @@
 - [Entry 1: From plain texts to playable](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) · *earlier entry*
 - [Entry 2: Introduction to Agentic AI](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry02/) · *reading now*
 
-**Standfirst:** How agentic AI deploys the tools that were available through a GUI before the advent of AI: enhance the solutions that work rather than start from scratch, and run the agent quickly in WorkBuddy alongside other tools.
+**Standfirst:** In this entry, we learn how to use agentic AI to enhance the tools for academic literature management that were available through a graphical user interface (GUI) before the advent of vibe coding. WorkBuddy is introduced as a platform to access agentic AI, but instructions and resources are applicable to other agentic AI platforms as well.
 
 ---
 
@@ -18,9 +18,9 @@
 
 In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing.¹
 
-Her article set out four steps: **locate the relevant research literature**, **curate the literature using Zotero**, **read the papers on a set routine**, and **organize your notes in a database you can query**. Locating means finding the journal articles that matter to the researcher; curating means turning those finds into a lasting indexed database. This entry takes the first two; reading and organizing remain human work, since no script supplies the critical judgement they demand.
+Her article set out four steps: **locate the relevant research literature**, **curate the literature using Zotero**, **read the papers on a set routine**, and **organize your notes in a database you can query**. Locating means finding the journal articles that matter to the researcher; curating means turning those finds into a lasting indexed database. This entry takes the first two; reading and organizing remain human work, since no script supplies the critical judgement they demand. Entry 3 picks up steps three and four.
 
-## Part 2: The solutions she proposed (no AI in sight)
+## Part 2: RSS and Zotero: GUI software solutions for finding and managing research literature
 
 Her fixes were conventional, and they work. The RSS reader and Zotero encode workflows any user can leverage. With agentic AI, we keep these tools and extend them: vibe-coding our own tools that replicate the workflow, or using newer ones built for agents.
 
@@ -59,27 +59,20 @@ Everything in Part 2 runs **by hand, one click at a time**. That ceiling opens P
 
 ## Part 3: Enhancing GUI software solutions with agentic-AI-powered API programming
 
-Every tool in Part 2 runs through a graphical user interface (GUI). That is its virtue and its boundary. A newcomer becomes productive in minutes, yet a GUI shows one screen at a time and moves at the speed of fingers and eyes. It cannot check for new papers while you teach, or repeat a multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of GUI-bounded searching.
+Every tool in Part 2 reaches you through a graphical user interface (GUI): windows, buttons and menus that a person drives by hand, one screen at a time. The RSS reader shows incoming issues as a list you click through; Zotero shows your library as folders you drag files into. That is the GUI's virtue: a newcomer becomes productive in minutes. It is also its boundary: the screen moves at the speed of fingers and eyes, so it cannot check for new papers while you teach, or repeat last week's multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of that boundary.
 
-Programmed code has no hands or eyes: it runs a query at dawn and repeats yesterday's search next month. API programming is the alternative, sending structured requests to a service and receiving exact, machine-readable records.
+Programmed code has no hands or eyes: it runs a query at dawn and repeats yesterday's search next month. An Application Programming Interface (API) is how code reaches such services without a screen: a fixed menu of requests that returns exact, machine-readable records. Part 4 puts this in your hands: you describe the job, and an agent writes and runs the code that calls the API.
 
-- An Application Programming Interface (API) is a service counter with a fixed menu: request structured data, get exact records back. This address is a live query to OpenAlex:
+|  | Graphical user interface (GUI) | Application Programming Interface (API) |
+|---|---|---|
+| **Driven by** | fingers and eyes, one screen at a time | requests sent in code, no screen in between |
+| **Pace** | as fast as you can click | runs at dawn, repeats on schedule |
+| **Good for** | reading, judging, deciding what to keep | searching, collecting, exporting at scale |
+| **In this entry** | Feedly and Zotero, from Part 2 | the hands-on build in Part 4 |
 
-  ```
-  https://api.openalex.org/works?search=applied linguistics AI&per-page=3
-  ```
+[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established the bridge that makes this reachable: an agent sits between human language and computing instruments, so you describe a job in ordinary sentences and the agent writes the code that calls the API. Entry 1 also drew a boundary we preserve: **the agent reasons, and the database supplies the facts.**
 
-  It returns three verified papers with DOIs; narrowed to 2026 journal articles, the same search matches 27,945 works.²
-
-- Syndicated feeds (RSS) deliver in the opposite direction: an agent watches the endpoint and compares abstracts with your criteria, flagging only relevant work:
-
-  ```
-  https://rss.arxiv.org/rss/cs.AI
-  ```
-
-[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established that an agent sits between human language and computing instruments: you describe a job in ordinary sentences, and the agent orchestrates the tools. That bridge is what makes API programming reachable for end users who do not write code. Entry 1 also drew a boundary we preserve: the agent reasons, and the database supplies the facts. This entry sends the agent to query verified databases.
-
-Both GUI solutions from Part 2 can be rebuilt without their screens. An RSS reader becomes a feed watcher; Zotero becomes a metadata store an agent can query and write records to, then export to BibTeX or RIS. The GUI keeps the part that needs a person: reading critically, and deciding what to keep. Part 4 puts the pipeline into practice.
+With an API in hand, both GUI solutions from Part 2 can be rebuilt without their screens: an RSS reader becomes a feed watcher that checks the journal for you, and Zotero becomes a metadata store an agent can query, write records to, and export as BibTeX or RIS. The GUI keeps the part that needs a person: reading critically, and deciding what to keep. Part 4 puts the pipeline into practice.
 
 ## Part 4: How you do that, with WorkBuddy
 
@@ -139,4 +132,4 @@ Open one paper today, rerun the prompt next week, and the pipeline becomes daily
 
 ---
 
-**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² OpenAlex Works API, `search=applied linguistics AI` with `from_publication_date:2026-01-01,type:article`: 26,881 works (queried 8 Nov 2026) and 27,945 (queried 14 Nov 2026); a re-run on 15 Nov 2026 returned 28,148. The Part 4 query (`search=automated written corrective feedback`, `from_publication_date:2024-01-01`, default relevance) returned 12,029 on 15 Nov 2026. Counts rise as the index grows; each number belongs to its own query and date. ³ Companion run evidence: [WorkBuddy two-track comparison](https://github.com/tesolchina/promptpraxis/blob/main/workshop/evidence/two-track-20261112/cross_check.txt).
+**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² Companion run evidence: [WorkBuddy two-track comparison](https://github.com/tesolchina/promptpraxis/blob/main/workshop/evidence/two-track-20261112/cross_check.txt).
