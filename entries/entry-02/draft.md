@@ -80,7 +80,7 @@ In entry 01 of this blog series, we already showcased the power of agentic AI bu
 
 WorkBuddy is not the only tool for agentic AI: integrated development environments (IDEs) such as VS Code, Codex, Claude Code and Cursor now ship agentic-AI modules, but those tools are built for professional programmers and developers, and a beginner would find them difficult to pick up. This entry runs in WorkBuddy instead, where you start from plain sentences.
 
-Before the hands-on part, revisit Entry 01's input-process-output model: plain sentences in, code written and run, files and tables out. Keep it in view to understand the big picture of what the two tracks below do.
+Before the hands-on part, revisit Entry 01's input-process-output model: plain sentences in, code written and run, files and tables out. Keep it in view to understand the big picture of what the demo below does.
 
 <div class="figure-scroll" style="overflow-x:auto"><svg class="flow" viewBox="0 0 920 210" role="img" aria-label="Flow: a plain-language brief and source material feed an agentic AI that writes code and calls tools, producing something playable" style="max-width:100%;height:auto">
   <defs>
@@ -108,53 +108,36 @@ Before the hands-on part, revisit Entry 01's input-process-output model: plain s
   <text x="460" y="196" text-anchor="middle" font-size="12" fill="#5c6f83">The pipeline of this entry, drawn in code — no image generator involved.</text>
 </svg></div>
 
-The companion workshop page here collects everything needed for both tracks; Track B runs in WorkBuddy using Python 3 from the repository root.
+Everything needed for the demo is collected in the companion workshop folder.
 
-### Track A: describe the task from scratch
+### The demo: an RSS feed, a reading log, and Zotero
 
-Track A aims at one completed pass: plan the query, run it, and read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the last two are optional extensions once it works.
+The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI: an agent reads a journal feed, builds a reading log, and hands the records to a reference manager — all from plain sentences. It aims at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the last two are optional extensions once it works.
 
-1. **A1: Planning contract.** Establish rules first:
+1. **Planning contract.** Establish rules first:
    > "I am new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet:
-   > 'Find the 5 most relevant papers on automated written corrective feedback published since 2024 from OpenAlex, and show Title, Year, Citations, and DOI.'"
-2. **A2: Query OpenAlex.** Once the agent outlines its plan, send:
-   > "Query OpenAlex Works API for the 5 most relevant articles on automated written corrective feedback since 2024 using default relevance sorting. Omit the email parameter. Output a table: Title | Year | Citations | DOI. Every row must come strictly from API metadata; leave missing fields blank and never fabricate publications."
-   *Outcome:* Up to five records appear. Check titles, open an available DOI. Ranking is not quality assessment.
-3. **A3: Save to CSV.** Ask:
-   > "Save this table to `found.csv` with columns: OpenAlex_ID, Title, Authors, Year, Citations, DOI, Journal, Reading_Status, Notes. Set Reading_Status to Unread and leave Notes blank."
+   > 'Fetch the five most recent articles from Nature's RSS feed (https://www.nature.com/nature.rss) and show Title, Publication date, and Link.'"
+2. **Fetch the feed.** Once the agent outlines its plan, send:
+   > "Fetch the RSS feed at https://www.nature.com/nature.rss with Python, parse the five most recent items, and output a table: Title | Date | Link. Every row must come strictly from the feed; leave missing fields empty and never invent records."
+   *Outcome:* Five rows appear. Open one link to check it resolves. A feed is a plain XML file, so anything the feed does not carry stays empty.
+3. **Save to CSV.** Ask:
+   > "Save this table to `found.csv` with columns: Title, Date, Link, Reading_Status, Notes. Set Reading_Status to Unread and leave Notes blank."
    *Outcome:* `found.csv` opens in Excel, Google Sheets, or Tencent Docs as a durable reading log.
-4. **A4: Export to BibTeX and RIS.** Prompt:
-   > "Convert the returned records into standard `found.bib` and `found.ris` files with clean citekeys, author separation, and DOIs preserved."
-   *Outcome:* In Zotero, choose File → Import and check the records.
+4. **Zotero, called from code.** Prompt:
+   > "Convert these records into standard `found.bib` and `found.ris` files with clean citekeys; keep titles, dates and URLs, and leave every field the feed does not provide empty."
+   *Outcome:* In Zotero, choose File → Import and check the records. With a Zotero API key, the same pass can add items straight to a library — a Zotero function invoked from a script rather than clicked in its interface.
 
-**What a real pass returns.** The workshop's own run of this prompt (12 Nov 2026) matched 11,915 works and brought back five records.²
+**What the feed returned.** The five most recent items in Nature's RSS feed, fetched on 17 Nov 2026:
 
-| Title | Year | Citations | DOI |
-|---|---|---|---|
-| L2 writer engagement with automated written corrective feedback provided by ChatGPT: A mixed-method multiple case study | 2024 | 171 | [10.1057/s41599-024-03543-y](https://doi.org/10.1057/s41599-024-03543-y) |
-| Effectiveness of Generative AI in Automated Written Corrective Feedback With Prompting | 2025 | 19 | [10.1177/07356331251359430](https://doi.org/10.1177/07356331251359430) |
-| Impact of prompt sophistication on ChatGPT’s output for automated written corrective feedback | 2025 | 12 | [10.1017/s095834402510044x](https://doi.org/10.1017/s095834402510044x) |
-| Automated Written Corrective Feedback (AWCF) | 2024 | 1 | [10.1163/9789004719118_009](https://doi.org/10.1163/9789004719118_009) |
-| Automated Written Corrective Feedback in EFL context | 2026 | 0 | [10.48321/d13320141e](https://doi.org/10.48321/d13320141e) |
+| Title | Date |
+|---|---|
+| The climate is in crisis — here's four things we can do | 16 Nov 2026 |
+| As El Niño builds, studies of extreme marine heatwaves must start now | 16 Nov 2026 |
+| The psychology of imaginary friends — and why they are good for kids | 16 Nov 2026 |
+| Is the sixth great extinction imminent? Scientists must draw on natural history for clues | 16 Nov 2026 |
+| Number of international students arriving in US plunges — worrying scientists | 13 Nov 2026 |
 
-Records from the workshop run of 12 Nov 2026; titles and metadata verified against OpenAlex on 16 Nov 2026.
-
-### Track B: reuse the prepared Python script
-
-Ask WorkBuddy to explain and run the script documented in [`workshop/prompts/beginner-pack.md`](https://github.com/tesolchina/promptpraxis/blob/main/workshop/prompts/beginner-pack.md):
-
-```bash
-python3 workshop/fetch_literature.py \
-  --topic "automated written corrective feedback" \
-  --year 2024 \
-  --sort relevance \
-  --limit 5 \
-  --email=
-```
-
-- **Output:** writes `found.csv`, `found.bib`, and `found.ris`. Missing metadata stays empty; nothing is invented.
-- **Customisation:** change `--topic`, `--year`, or the sort order.
-- **Edge cases:** no matches writes empty files; offline, add `--fixture workshop/tests/fixtures/openalex_normal.json`.
+Every step above runs from plain sentences, and the code behind it is public: the [workshop folder](https://github.com/tesolchina/promptpraxis/tree/main/workshop) in the series repository holds the scripts used here. Re-use them, change the feed URL or the columns to suit your own journal, and check back for updates — the instructions in that folder will grow as the workflow does.
 
 ## Part 5: What we chose to cover, what can go wrong, and why upgrading beats rebuilding
 
@@ -172,4 +155,4 @@ Open one paper today, rerun the prompt next week, and the pipeline becomes daily
 
 ---
 
-**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² Companion run evidence: [WorkBuddy two-track comparison](https://github.com/tesolchina/promptpraxis/blob/main/workshop/evidence/two-track-20261112/cross_check.txt).
+**Footnotes:** ¹ Gosztyla, M. (2022). *How to find, read and organize papers*. Nature Careers, 07 July 2022. doi:10.1038/d41586-022-01878-7. ² Companion run evidence: [workshop run records](https://github.com/tesolchina/promptpraxis/blob/main/workshop/evidence/two-track-20261112/cross_check.txt).
