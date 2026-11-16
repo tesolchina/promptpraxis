@@ -22,11 +22,11 @@ Her article set out four steps: **locate the relevant research literature**, **c
 
 ## Part 2: RSS and Zotero: GUI software solutions for finding and managing research literature
 
-Her fixes were conventional, and they work. The RSS reader and Zotero encode workflows any user can leverage. With agentic AI, we keep these tools and extend them: vibe-coding our own tools that replicate the workflow, or using newer ones built for agents.
+Her fixes were conventional, and they work: an RSS reader brings the literature to you, and a reference manager files it. Both are established tools from before AI, and each already encodes a way of working that any researcher can follow. Agentic AI builds on them: with vibe coding we can write small tools that reproduce these workflows, or adopt newer tools designed to work with agents.
 
 ### Step 1: Locate the relevant research literature
 
-Stop hunting; subscribe. RSS (Really Simple Syndication) is the plumbing: each journal publishes a small XML *feed* at a fixed address, and an **RSS reader** polls those addresses on a schedule. Subscribe once and the literature arrives.
+Stop hunting for new papers and let them come to you. Really Simple Syndication (RSS) is a publishing format: when a journal posts new articles, it also publishes a small XML file at a fixed address, called a feed, that lists what is new with titles, authors and a short summary. An RSS reader visits those addresses on schedule and gathers every feed you follow into a single stream, so collecting runs automatically in the background instead of depending on your memory to check each journal. What you can do with that stream, though, depends on the reader you choose. A typical reader lets you skim the titles, mark what you have seen and save a few items for later; the feed itself only carries a summary, and features such as filtering, full-text reading or search differ from one reader to the next. Collection is automated; working through the stream is still up to you.
 
 1. **Choose a reader.** Web readers such as [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) need no installation; desktop and mobile readers work offline.
 2. **Subscribe with feed addresses.** Paste verified URLs into your reader: [*Nature*](https://www.nature.com/nature.rss), [*Nature Communications*](https://www.nature.com/ncomms.rss), [arXiv cs.AI](https://rss.arxiv.org/rss/cs.AI).
