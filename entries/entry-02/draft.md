@@ -112,7 +112,7 @@ Everything needed for the demo is collected in the companion workshop folder.
 
 ### The demo: an RSS feed, a reading log, and Zotero
 
-The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI: an agent reads a journal feed, builds a reading log, and hands the records to a reference manager — all from plain sentences. It aims at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the last two are optional extensions once it works.
+The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI: an agent reads a journal feed, builds a reading log, and replicates a reference manager's core function from the reference manager's own source code — all from plain sentences. It aims at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the last two are optional extensions once it works.
 
 1. **Planning contract.** Establish rules first:
    > "I am new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet:
@@ -123,9 +123,9 @@ The demo is a simple workflow built around RSS and Zotero, chosen to showcase th
 3. **Save to CSV.** Ask:
    > "Save this table to `found.csv` with columns: Title, Date, Link, Reading_Status, Notes. Set Reading_Status to Unread and leave Notes blank."
    *Outcome:* `found.csv` opens in Excel, Google Sheets, or Tencent Docs as a durable reading log.
-4. **Zotero, called from code.** Prompt:
-   > "Convert these records into standard `found.bib` and `found.ris` files with clean citekeys; keep titles, dates and URLs, and leave every field the feed does not provide empty."
-   *Outcome:* In Zotero, choose File → Import and check the records. With a Zotero API key, the same pass can add items straight to a library — a Zotero function invoked from a script rather than clicked in its interface.
+4. **Replicate a Zotero module, from its source.** Zotero is open-source, so its own code can serve as the specification. Point WorkBuddy at the repository and ask it to read one module, then write and run its own version:
+   > "Read how Zotero implements record export in https://github.com/zotero/zotero, with its per-format translators in https://github.com/zotero/translators. Explain the steps in three bullet points, then write and run a Python script that replicates that module for our five records, producing `found.bib` and `found.ris` with clean citekeys and no invented fields."
+   *Outcome:* The agent reads a real implementation, restates it, and runs its own version. What comes out is not a file prepared for import — it is a working replica of one Zotero function, written and run in the same pass. The same reading-then-replicating move applies to other modules: tagging, de-duplication, metadata clean-up.
 
 **What the feed returned.** The five most recent items in Nature's RSS feed, fetched on 17 Nov 2026:
 
