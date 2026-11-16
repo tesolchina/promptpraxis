@@ -18,34 +18,30 @@
 
 In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing.¹
 
-Her article outlined four steps: **find, manage, read, organize**. The first, finding, means locating the journal articles that are relevant to the researcher's interests and agenda. It is also where collections begin to leak: papers promised for later, alerts that flood the inbox, and the good intentions of a Friday afternoon. The second, managing, decides whether those intentions solidify into an indexed database or vanish. Reading and organizing remain human work; no script can supply the critical judgement they demand.
-
-This entry takes the first two, starting where she started: with the tools already on our desktops.
+Her article set out four steps: **locate the relevant research literature**, **curate the literature using Zotero**, read, and organize. Locating means finding the journal articles that matter to the researcher; curating means turning those finds into a lasting indexed database. Reading and organizing remain human work, since no script supplies the critical judgement they demand.
 
 ## Part 2: The solutions she proposed (no AI in sight)
 
-Her fixes were conventional, and they work.
+Her fixes were conventional, and they work. The RSS reader and Zotero encode workflows any user can leverage. With agentic AI, we keep these tools and extend them: vibe-coding our own tools that replicate the workflow, or using newer ones built for agents.
 
-### Step 1: find
+### Step 1: Locate the relevant research literature
 
-Stop hunting; subscribe. The plumbing is **RSS (Really Simple Syndication)**: every journal that offers it publishes a small XML *feed* at a fixed address, and an **RSS reader** polls those addresses on a schedule. You subscribe once, and the literature arrives.
+Stop hunting; subscribe. RSS (Really Simple Syndication) is the plumbing: each journal publishes a small XML *feed* at a fixed address, and an **RSS reader** polls those addresses on a schedule. Subscribe once and the literature arrives.
 
-1. **Choose a reader.** Web readers such as [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) need no installation; desktop and mobile readers work offline. Both were her recommendations.
+1. **Choose a reader.** Web readers such as [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) need no installation; desktop and mobile readers work offline.
 2. **Subscribe with feed addresses.** Paste verified URLs into your reader: [*Nature*](https://www.nature.com/nature.rss), [*Nature Communications*](https://www.nature.com/ncomms.rss), [arXiv cs.AI](https://rss.arxiv.org/rss/cs.AI).
 3. **Keep a five-minute morning routine.** Scan titles with your tea, move real candidates to *Read Later*, close the reader.
 
 ![Figure 1: Subscribing to journal feeds in Feedly](assets/feedly-demo.png)
 > **Figure 1** · *Subscribing to journal feeds in Feedly.* An 'Academic' collection aggregates incoming issues from journals like *Nature* and *arXiv cs.AI* into one reading stream, so morning triage needs no extra tabs.
 
-She pointed to citation-visualisation tools such as ResearchRabbit and Litmaps.
+### Step 2: Curate the literature using Zotero
 
-### Step 2: manage
-
-If you still format references by hand, stop. Gosztyla treated a reference manager as a personal research database. Full-text PDFs sit beside verified records. Annotations stay bound to the page they came from, and one click pulls a paper off the web.
+If you still format references by hand, stop. A reference manager is a personal research database: full-text PDFs sit beside verified records, annotations stay bound to their pages, and one click pulls a paper off the web.
 
 We use **Zotero** (free, open source, [zotero.org](https://www.zotero.org)): its metadata and citation engines can be inspected and reused in automated pipelines, and its open architecture keeps data in the scholar's hands. Mendeley and EndNote follow similar patterns.
 
-Five operations complete the loop:
+Four operations complete the loop:
 
 | Operation | What you do in Zotero | Advantage |
 |---|---|---|
@@ -57,7 +53,7 @@ Five operations complete the loop:
 ![Figure 2: Literature management loop in Zotero](assets/zotero-demo.png)
 > **Figure 2** · *Literature management in Zotero (Web Library).* Incoming papers are filed into a project collection ('Applied Linguistics & AI' in this illustrative example) with complete metadata, source URL, and DOI captured in one click.
 
-Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab. That close is the discipline.
+Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab.
 
 Everything in Part 2 runs **by hand, one click at a time**. That ceiling opens Part 3.
 
