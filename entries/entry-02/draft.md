@@ -76,17 +76,43 @@ With an API in hand, both GUI solutions from Part 2 can be rebuilt without their
 
 ## Part 4: How you do that, with WorkBuddy
 
-Entry 01 showed what agentic AI can build; this part answers the question it left open: how.
+In entry 01 of this blog series, we already showcased the power of agentic AI but did not address the question of how to start. In this entry, we demonstrate how to use agentic AI hands-on. WorkBuddy is an agentic AI platform developed by Tencent, an internet giant based in mainland China. If you wish to try the tool, you may sign up for an account here: https://www.workbuddy.ai/.
 
 WorkBuddy is not the only tool for agentic AI: integrated development environments (IDEs) such as VS Code, Codex, Claude Code and Cursor now ship agentic-AI modules, but those tools are built for professional programmers and developers, and a beginner would find them difficult to pick up. This entry runs in WorkBuddy instead, where you start from plain sentences.
 
 Before the hands-on part, revisit Entry 01's input-process-output model: plain sentences in, code written and run, files and tables out. Keep it in view to understand the big picture of what the two tracks below do.
 
-Open the [companion workshop](https://github.com/tesolchina/promptpraxis/tree/main/workshop). Choose either track. Track B runs in WorkBuddy using Python 3 from the repository root.
+<div class="figure-scroll" style="overflow-x:auto"><svg class="flow" viewBox="0 0 920 210" role="img" aria-label="Flow: a plain-language brief and source material feed an agentic AI that writes code and calls tools, producing something playable" style="max-width:100%;height:auto">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#006699"/>
+    </marker>
+  </defs>
+  <rect x="8" y="35" width="255" height="140" rx="14" fill="#fff" stroke="#dde5ee"/>
+  <text x="135" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2d3a">Plain-language brief</text>
+  <text x="135" y="94" text-anchor="middle" font-size="12.5" fill="#5c6f83">a permissioned article</text>
+  <text x="135" y="114" text-anchor="middle" font-size="12.5" fill="#5c6f83">Google's published research</text>
+  <text x="135" y="145" text-anchor="middle" font-size="12.5" fill="#b35c00" font-weight="700">quality input</text>
+  <rect x="330" y="35" width="255" height="140" rx="14" fill="#006699"/>
+  <text x="457" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Agentic AI</text>
+  <text x="457" y="94" text-anchor="middle" font-size="12.5" fill="#cfe3f2">writes programming code</text>
+  <text x="457" y="114" text-anchor="middle" font-size="12.5" fill="#cfe3f2">calls tools &amp; APIs</text>
+  <text x="457" y="145" text-anchor="middle" font-size="12.5" fill="#ffd9a8" font-weight="700">reasoning / processing</text>
+  <rect x="652" y="35" width="255" height="140" rx="14" fill="#fff" stroke="#f2c58c" stroke-width="2"/>
+  <text x="779" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2d3a">Playable</text>
+  <text x="779" y="94" text-anchor="middle" font-size="12.5" fill="#5c6f83">an interactive page</text>
+  <text x="779" y="114" text-anchor="middle" font-size="12.5" fill="#5c6f83">that runs, not a reply</text>
+  <text x="779" y="145" text-anchor="middle" font-size="12.5" fill="#b35c00" font-weight="700">output</text>
+  <line x1="263" y1="105" x2="328" y2="105" stroke="#006699" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="585" y1="105" x2="650" y2="105" stroke="#006699" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="460" y="196" text-anchor="middle" font-size="12" fill="#5c6f83">The pipeline of this entry, drawn in code — no image generator involved.</text>
+</svg></div>
+
+The companion workshop page here collects everything needed for both tracks; Track B runs in WorkBuddy using Python 3 from the repository root.
 
 ### Track A: describe the task from scratch
 
-Use WorkBuddy with network access and a writable workspace; it writes and runs its own code.
+Track A aims at one completed pass: plan the query, run it, and read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the last two are optional extensions once it works.
 
 1. **A1: Planning contract.** Establish rules first:
    > "I am new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet:
@@ -100,6 +126,18 @@ Use WorkBuddy with network access and a writable workspace; it writes and runs i
 4. **A4: Export to BibTeX and RIS.** Prompt:
    > "Convert the returned records into standard `found.bib` and `found.ris` files with clean citekeys, author separation, and DOIs preserved."
    *Outcome:* In Zotero, choose File → Import and check the records.
+
+**What a real pass returns.** The workshop's own run of this prompt (12 Nov 2026) matched 11,915 works and brought back five records.²
+
+| Title | Year | Citations | DOI |
+|---|---|---|---|
+| L2 writer engagement with automated written corrective feedback provided by ChatGPT: A mixed-method multiple case study | 2024 | 171 | [10.1057/s41599-024-03543-y](https://doi.org/10.1057/s41599-024-03543-y) |
+| Effectiveness of Generative AI in Automated Written Corrective Feedback With Prompting | 2025 | 19 | [10.1177/07356331251359430](https://doi.org/10.1177/07356331251359430) |
+| Impact of prompt sophistication on ChatGPT’s output for automated written corrective feedback | 2025 | 12 | [10.1017/s095834402510044x](https://doi.org/10.1017/s095834402510044x) |
+| Automated Written Corrective Feedback (AWCF) | 2024 | 1 | [10.1163/9789004719118_009](https://doi.org/10.1163/9789004719118_009) |
+| Automated Written Corrective Feedback in EFL context | 2026 | 0 | [10.48321/d13320141e](https://doi.org/10.48321/d13320141e) |
+
+Records from the workshop run of 12 Nov 2026; titles and metadata verified against OpenAlex on 16 Nov 2026.
 
 ### Track B: reuse the prepared Python script
 
