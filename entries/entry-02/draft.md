@@ -10,7 +10,7 @@
 - [Entry 1: From plain texts to playable](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) · *earlier entry*
 - [Entry 2: Introduction to Agentic AI](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry02/) · *reading now*
 
-**Standfirst:** "I'll read that later," she told herself, adding yet another paper to a hundred open browser tabs. A Nature column answered that evening: stop hunting, build a system. This entry takes the system's first two steps, shows where they still leak, and gives the leaking parts to code.
+**Standfirst:** How agentic AI deploys the tools that were available through a GUI before the advent of AI: enhance the solutions that work rather than start from scratch, and run the agent quickly in WorkBuddy alongside other tools.
 
 ---
 
