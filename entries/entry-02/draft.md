@@ -18,7 +18,7 @@
 
 In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing.¹
 
-Her article set out four steps: **locate the relevant research literature**, **curate the literature using Zotero**, read, and organize. Locating means finding the journal articles that matter to the researcher; curating means turning those finds into a lasting indexed database. Reading and organizing remain human work, since no script supplies the critical judgement they demand.
+Her article set out four steps: **locate the relevant research literature**, **curate the literature using Zotero**, **read the papers on a set routine**, and **organize your notes in a database you can query**. Locating means finding the journal articles that matter to the researcher; curating means turning those finds into a lasting indexed database. This entry takes the first two; reading and organizing remain human work, since no script supplies the critical judgement they demand.
 
 ## Part 2: The solutions she proposed (no AI in sight)
 
