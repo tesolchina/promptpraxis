@@ -10,15 +10,15 @@
 - [Entry 1: From plain texts to playable](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) · *earlier entry*
 - [Entry 2: Introduction to Agentic AI](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry02/) · *reading now*
 
-**Standfirst:** A researcher's hundred open tabs, and a column telling her to build a system. Here are the two steps where that system still leaks, and the code that takes them over.
+**Standfirst:** "I'll read that later," she told herself, adding yet another paper to a hundred open browser tabs. A Nature column answered that evening: stop hunting, build a system. This entry takes the system's first two steps, shows where they still leak, and gives the leaking parts to code.
 
 ---
 
 ## Part 1: A hundred open tabs
 
-In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing (Gosztyla, 2022).
+In July 2022, Maya Gosztyla wrote in the [*Nature* Career Column](https://www.nature.com/articles/d41586-022-01878-7) about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing.¹
 
-Her article outlined four steps: **find, manage, read, organize**. Collections leak at the first step: papers promised for later, alerts that flood the inbox. At the second, a scholar either files those intentions into an indexed database or loses them. Reading and organizing demand human judgement; no script can take them over.
+Her article outlined four steps: **find, manage, read, organize**. The first, finding, means locating the journal articles that are relevant to the researcher's interests and agenda. It is also where collections begin to leak: papers promised for later, alerts that flood the inbox, and the good intentions of a Friday afternoon. The second, managing, decides whether those intentions solidify into an indexed database or vanish. Reading and organizing remain human work; no script can supply the critical judgement they demand.
 
 This entry takes the first two, starting where she started: with the tools already on our desktops.
 
