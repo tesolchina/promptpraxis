@@ -57,37 +57,29 @@ Gosztyla's rule: the moment a paper is worth reading, send it to the manager and
 
 Everything in Part 2 runs **by hand, one click at a time**. That ceiling opens Part 3.
 
-## Part 3: GUI against API
+## Part 3: Enhancing GUI software solutions with agentic-AI-powered API programming
 
-### What the GUI is, and where it stops
+Every tool in Part 2 runs through a graphical user interface (GUI). That is its virtue and its boundary. A newcomer becomes productive in minutes, yet a GUI shows one screen at a time and moves at the speed of fingers and eyes. It cannot check for new papers while you teach, or repeat a multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of GUI-bounded searching.
 
-Every tool in Part 2 relies on a graphical user interface: what you see is what you get. That is its virtue, since a newcomer becomes productive in minutes. It is also its boundary. A GUI shows **one screen at a time** and moves at the speed of fingers and eyes. It cannot check for new papers while you teach, or reproduce last week's multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of GUI-bounded searching.
+Programmed code has no hands or eyes: it runs a query at dawn and repeats yesterday's search next month. API programming is the alternative, sending structured requests to a service and receiving exact, machine-readable records.
 
-### How Entry 1 crossed it
-
-[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established a different principle: an agent sits between human language and computing instruments. You describe a job in ordinary sentences, and the agent orchestrates the tools to execute multi-step workflows. Entry 1 also drew a boundary we preserve: **the agent reasons, and the database supplies the facts.** This entry never asks a model to recall what the literature says. It sends the agent to query verified databases.
-
-### Code as the way past the boundary
-
-Programmed code has no hands or eyes. It can run a query at dawn while you sleep, and repeat yesterday's search next month without retyping.
-
-Two instruments carry that work:
-
-- **An Application Programming Interface (API)** is a service counter with a fixed menu: you request structured data in a defined format and get exact, machine-readable records back, no chat. This address is a live query to OpenAlex:
+- An Application Programming Interface (API) is a service counter with a fixed menu: request structured data, get exact records back. This address is a live query to OpenAlex:
 
   ```
   https://api.openalex.org/works?search=applied linguistics AI&per-page=3
   ```
 
-  It returns three verified papers with DOIs. Across OpenAlex, that same search narrowed to 2026 journal articles matches 27,945 works.²
+  It returns three verified papers with DOIs; narrowed to 2026 journal articles, the same search matches 27,945 works.²
 
-- **Syndicated feeds (RSS)** deliver in the opposite direction: new tables of contents arrive at an endpoint, and an agent watches the feed, compares abstracts with your criteria, and flags only relevant work:
+- Syndicated feeds (RSS) deliver in the opposite direction: an agent watches the endpoint and compares abstracts with your criteria, flagging only relevant work:
 
   ```
   https://rss.arxiv.org/rss/cs.AI
   ```
 
-The GUI keeps the part that needs a person: reading critically, and deciding what to build next. Part 4 puts the pipeline into practice.
+[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established that an agent sits between human language and computing instruments: you describe a job in ordinary sentences, and the agent orchestrates the tools. That bridge is what makes API programming reachable for end users who do not write code. Entry 1 also drew a boundary we preserve: the agent reasons, and the database supplies the facts. This entry sends the agent to query verified databases.
+
+Both GUI solutions from Part 2 can be rebuilt without their screens. An RSS reader becomes a feed watcher; Zotero becomes a metadata store an agent can query and write records to, then export to BibTeX or RIS. The GUI keeps the part that needs a person: reading critically, and deciding what to keep. Part 4 puts the pipeline into practice.
 
 ## Part 4: How you do that, with WorkBuddy
 
