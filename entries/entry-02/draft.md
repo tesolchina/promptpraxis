@@ -22,11 +22,11 @@ Her article set out four steps: **locate the relevant research literature**, **c
 
 ## Part 2: RSS and Zotero: GUI software solutions for finding and managing research literature
 
-Her fixes were conventional, and they work: an RSS reader brings the literature to you, and a reference manager files it. Both are established tools from before AI, and each already encodes a way of working that any researcher can follow. Agentic AI builds on them: with vibe coding we can write small tools that reproduce these workflows, or adopt newer tools designed to work with agents.
+Her fixes were conventional, and they still work well today. An RSS reader brings the literature to you, and a reference manager files it; both are established tools from before AI, and each already encodes a way of working that any researcher can follow. Agentic AI builds on them. With vibe coding we can write small tools that reproduce these workflows, or adopt newer tools designed to work with agents.
 
 ### Step 1: Locate the relevant research literature
 
-Stop hunting for new papers and let them come to you. Really Simple Syndication (RSS) is a publishing format: when a journal posts new articles, it also publishes a small XML file at a fixed address, called a feed, that lists what is new with titles, authors and a short summary. An RSS reader visits those addresses on schedule and gathers every feed you follow into a single stream, so collecting runs automatically in the background instead of depending on your memory to check each journal. What you can do with that stream, though, depends on the reader you choose. A typical reader lets you skim the titles, mark what you have seen and save a few items for later; the feed itself only carries a summary, and features such as filtering, full-text reading or search differ from one reader to the next. Collection is automated; working through the stream is still up to you.
+Stop hunting for new papers and let them come to you. Really Simple Syndication (RSS) is a web feed format that carries updates from websites in a standard, computer-readable structure: each feed document lists new items with a title, a summary and a link, and is republished whenever the source adds something. A reader program follows those addresses and gathers everything you subscribe to into one place, removing the need to check each journal by hand; the same mechanism carries blog posts, news headlines and podcast episodes well beyond academic literature. What you can then do with the stream depends on the reader you choose: a typical reader lets you skim the titles, mark what you have seen and save items for later, while filtering, full-text reading and search vary from reader to reader. The three steps below set up a basic reading routine.
 
 1. **Choose a reader.** Web readers such as [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) need no installation; desktop and mobile readers work offline.
 2. **Subscribe with feed addresses.** Paste verified URLs into your reader: [*Nature*](https://www.nature.com/nature.rss), [*Nature Communications*](https://www.nature.com/ncomms.rss), [arXiv cs.AI](https://rss.arxiv.org/rss/cs.AI).
@@ -37,7 +37,7 @@ Stop hunting for new papers and let them come to you. Really Simple Syndication 
 
 ### Step 2: Curate the literature using Zotero
 
-If you still format references by hand, stop. A reference manager is a personal research database: full-text PDFs sit beside verified records, annotations stay bound to their pages, and one click pulls a paper off the web.
+For anyone still formatting references by hand, a reference manager is the first upgrade worth making. It works as a personal research database, where full-text PDFs sit beside verified records, annotations stay bound to their pages, and one click pulls a paper off the web.
 
 We use **Zotero** (free, open source, [zotero.org](https://www.zotero.org)): its metadata and citation engines can be inspected and reused in automated pipelines, and its open architecture keeps data in the scholar's hands. Mendeley and EndNote follow similar patterns.
 
@@ -55,7 +55,7 @@ Four operations complete the loop:
 
 Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab.
 
-Everything in Part 2 runs **by hand, one click at a time**. That ceiling opens Part 3.
+Both tools are dependable, and both wait for you once the feeds arrive. Every decision in this workflow runs through an interface: a person clicks the connector, drags the file, scans the list and chooses what to keep, and none of it happens again until someone returns to the screen. That is the practical limit of interface-driven work, and it is the question Part 3 takes up.
 
 ## Part 3: Enhancing GUI software solutions with agentic-AI-powered API programming
 
