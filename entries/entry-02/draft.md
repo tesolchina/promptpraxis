@@ -112,7 +112,7 @@ Everything needed for the demo is collected in the companion workshop folder.
 
 ### The demo: an RSS feed, a reading log, and Zotero
 
-The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI: an agent reads a journal feed, builds a reading log, and replicates a reference manager's core function from the reference manager's own source code — all from plain sentences. It aims at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the last two are optional extensions once it works.
+The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI: an agent reads a journal feed, builds a reading log, and replicates a reference manager's core function from the reference manager's own source code — all from plain sentences. It aims at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the rest are optional extensions once it works.
 
 1. **Planning contract.** Establish rules first:
    > "I am new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet:
@@ -126,6 +126,10 @@ The demo is a simple workflow built around RSS and Zotero, chosen to showcase th
 4. **Replicate a Zotero module, from its source.** Zotero is open-source, so its own code can serve as the specification. Point WorkBuddy at the repository and ask it to read one module, then write and run its own version:
    > "Read how Zotero implements record export in https://github.com/zotero/zotero, with its per-format translators in https://github.com/zotero/translators. Explain the steps in three bullet points, then write and run a Python script that replicates that module for our five records, producing `found.bib` and `found.ris` with clean citekeys and no invented fields."
    *Outcome:* The agent reads a real implementation, restates it, and runs its own version. What comes out is not a file prepared for import — it is a working replica of one Zotero function, written and run in the same pass. The same reading-then-replicating move applies to other modules: tagging, de-duplication, metadata clean-up.
+
+5. **From DOI to styled references.** A feed link hides a DOI, and a DOI is enough to rebuild the full reference — the identifier-lookup and style-rendering modules Zotero itself relies on. Start with the same planning contract as step 1, applied to this task, then send:
+   > "Take the five links in found.csv: a Nature link carries its DOI as the suffix after /articles/ (10.1038/…). For each DOI, fetch the record from https://api.crossref.org/works/<DOI> and save Title | Authors | Year | Container | DOI to found_meta.csv — empty fields stay empty, nothing is invented. Then render the same five records twice with citeproc, using apa.csl and chicago-notes-bibliography.csl from citation-style-language/styles, and save references-apa.txt and references-chicago.txt."
+   *Outcome:* Two files, the same five works in two styles — one APA, one Chicago — built from metadata the agent fetched itself. Other journals need a title search instead of the link swap; the style files are the same.
 
 **What the feed returned.** The five most recent items in Nature's RSS feed, fetched on 17 Nov 2026:
 
@@ -141,17 +145,9 @@ Every step above runs from plain sentences, and the code behind it is public: th
 
 ## Part 5: What we chose to cover, what can go wrong, and why upgrading beats rebuilding
 
-**Decisions:** We limit the lesson to find and manage; an entry attempting everything teaches nothing. BibTeX/RIS export stays the dependable bridge to reference managers.
+We limit the lesson to find and manage; an entry attempting everything teaches nothing, and BibTeX/RIS export stays the dependable bridge to reference managers. Language models can invent or miscopy citations even when tools are available, so compare outputs with the saved API response, keep missing fields empty, and judge relevance yourself — a DOI identifies a record; it does not establish the quality of its claims or guarantee free full text, and API conditions change, so stop on errors. What remains is the payoff: an afternoon of tab chasing becomes a two-minute query, and next month's review is this month's prompt with a new date filter.
 
-**Limits:** Language models can invent or miscopy citations even when tools are available. Compare outputs with the saved API response, keep missing fields empty, and judge relevance yourself. A DOI identifies a record; it does not establish the quality of its claims or guarantee free full text. API conditions change, so stop on errors.
-
-**Value:** An afternoon of tab chasing becomes a two-minute query; next month's review is this month's prompt with a new date filter.
-
-**Conclusion: from tool users to tool builders.** The starting point of this entry is deliberately not the latest AI technology. It is a workflow proposed before generative AI became widely available — Maya Gosztyla's four steps, built entirely from ordinary GUI software: RSS feeds and Zotero. Our strategy is to take well-established solutions like these and let agentic AI upgrade them instead of starting from scratch. Two properties make that possible. RSS is a machine-readable format, so an agent can vibe-code a small tool that reads a feed and processes what it finds. Zotero is open-source, so an agent can read its source code and re-use it to replicate functions such as export and tagging. Re-using the code and ideas of pre-AI tools brings the flexibility to add custom features on top, and the cumulative effect is a shift in role: from tool users to tool builders.
-
-## Closing: starting the cycle
-
-Open one paper today, rerun the prompt next week, and the pipeline becomes daily practice.
+The starting point of this entry is deliberately not the latest AI technology. It is a workflow proposed before generative AI became widely available — Maya Gosztyla's four steps, built entirely from ordinary GUI software: RSS feeds and Zotero. Our strategy is to take well-established solutions like these and let agentic AI upgrade them instead of starting from scratch. Two properties make that possible: RSS is a machine-readable format, so an agent can vibe-code a small tool that reads a feed and processes what it finds; Zotero is open-source, so an agent can read its source code and re-use it to replicate functions such as export and tagging. Re-using the code and ideas of pre-AI tools brings the flexibility to add custom features on top, and the cumulative effect is a shift in role: from tool users to tool builders.
 
 ---
 
