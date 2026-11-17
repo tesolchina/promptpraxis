@@ -50,8 +50,8 @@ Four operations complete the loop:
 | **Read & annotate** | Built-in reader; highlights become notes | Notes stay attached to the entry |
 | **Cite** | Plug-in for Word, LibreOffice, Google Docs | Thousands of styles, bibliography self-updates |
 
-![Figure 2: Literature management loop in Zotero](assets/zotero-demo.png)
-> **Figure 2** · *Literature management in Zotero (Web Library).* Incoming papers are filed into a project collection ('Applied Linguistics & AI' in this illustrative example) with complete metadata, source URL, and DOI captured in one click.
+![Figure 2: Traci's Zotero library](assets/zotero-demo-tnk.jpg)
+> **Figure 2** · *Literature management in Zotero (Web Library).* Incoming papers are filed into a project collection ('Applied Linguistics & AI' in this illustrative example) with complete metadata, source URL, and DOI captured in one click. *Screenshot courtesy of Traci Nathans-Kelly.*
 
 Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab.
 
