@@ -1,0 +1,387 @@
+===== page 1 =====
+NOTE: [Top half of page] Simon and team - Thank you for this draft. My eyes are exhausted from too much screen time, so I provided my notes the old-fashioned way. - Traci N-K
+NOTE: [Middle of page] Main take-aways
+NOTE: [Middle of page, first bullet] - Headings & subheadings should have parallel grammatical formatting.
+NOTE: [Middle of page, second bullet] - Almost every colon used in the draft wasn't quite right. (AI is crap at colons).
+NOTE: [Middle of page, third bullet] - A few other edits...
+NOTE: [Bottom of page] very helpful!!! I'm going to try this.
+
+LEGIBILITY: good. All handwritten text is clearly readable.
+
+===== page 2 =====
+TEXT: IEEE PRO COMM Professional Communication Society (https://procomm.ieee.org)
+TEXT: Search icon
+TEXT: IEEE (https://www.ieee.org/)
+TEXT: About
+TEXT: Conferences
+TEXT: Publications
+TEXT: Communication Resources
+TEXT: Awards
+TEXT: AI and ProComm
+TEXT: Prompt & Praxis
+TEXT: Experiments in AI and professional communication
+TEXT: A WORKING SERIES FOR IEEE PROCOMM - SIMON WANG
+TEXT: TABLE OF CONTENTS
+TEXT: 1. Entry 1: From plain texts to playable - earlier entry
+TEXT: 2. Entry 2: Introduction to Agentic AI - reading now
+TEXT: Later entries follow every two weeks.
+NOTE: Handwritten note in the right margin next to the Table of Contents: "Headings & subheadings should be grammatically the same at the same level. So, here, Parts 1-4 headings should all have the same grammar." There is a star symbol inside a circle next to the first bullet point.
+TEXT: ABOUT THIS BLOG SERIES
+NOTE: Handwritten note below the previous note: "Same for steps."
+TEXT: PROMPT & PRAXIS (IEEE PROCOMM) - 13 NOVEMBER 2026 - SERIES HOST: DR SIMON WANG (LANGUAGE CENTRE, HKBU)
+TEXT: Introduction to Agentic AI: a hands-on lesson for academic literature management
+NOTE: Handwritten insertion mark above "Agentic" with an "a" written above it.
+NOTE: Handwritten insertion mark above "a hands-" with an "A" written above it.
+TEXT: In this entry, we learn how to use agentic AI to enhance the tools for academic literature management that were available through a graphical user interface (GUI) before the advent of vibe coding. WorkBuddy is introduced as a platform to access agentic AI, but instructions and resources are applicable to other agentic AI platforms as well.
+TEXT: GUEST AUTHORS
+TEXT: Wenyun (Winnie) FU (Journalism, HKBU)
+TEXT: Zian (Andy) Zheng (Computer Science, HKBU)
+TEXT: - click to collapse/expand details
+TEXT: Wenyun (Winnie) FU CO-AUTHOR
+TEXT: Final year student - Department of Journalism
+TEXT: School of Communication, Hong Kong
+TEXT: Zian (Andy) Zheng CO-AUTHOR
+TEXT: Final year student - Department of Computer Science
+TEXT: Faculty of Science, Hong Kong Baptist University
+LEGIBILITY: good
+
+===== page 3 =====
+TEXT: Baptist University
+TEXT: Final-year Journalism undergraduate, HKBU. Human-in-the-loop writing workflows, source verification, literature synthesis.
+TEXT: Final-year Computer Science undergraduate, HKBU. Agentic pipelines, prototyping, API orchestration.
+TEXT: Part 1 · A hundred open tabs
+TEXT: In July 2022, Maya Gosztyla wrote in the Nature Career Column about the evening her laptop died. More than a hundred papers were waiting in browser tabs, each a promise to read later. When the crash took them, her first feeling was relief: the loss forced a decision she had been postponing.1
+TEXT: Her article set out four steps: locate the relevant research literature, curate the literature using Zotero, read the papers on a set routine, and organize your notes in a database you can query. Locating means finding the journal articles that matter to the researcher; curating means turning those finds into a lasting indexed database. This entry takes the first two; reading and organizing remain human work, since no script supplies the critical judgement they demand. Entry 3 picks up steps three and four.
+TEXT: Part 2 · RSS and Zotero: GUI software solutions for finding and managing research literature
+TEXT: Her fixes were conventional, and they still work well today. An RSS reader brings the literature to you, and a reference manager files it; both are established tools from before AI, and each already encodes a way of working that any researcher can follow. Agentic AI builds on them. With vibe coding we can write small tools that reproduce these workflows, or adopt newer tools designed to work with agents.
+NOTE: Handwritten text in the right margin, pointing to "Step 1": "Step A rather than Step 1, since the "parent" is numbered. Prevents confusion."
+NOTE: Handwritten mark crossing out "1" in "Step 1" and replacing it with "A".
+TEXT: Step 1: Locate the relevant research literature
+TEXT: Stop hunting for new papers and let them come to you. Really Simple Syndication (RSS) is a web feed format that carries updates from websites in a standard, computer-readable structure: each feed document lists new items with a title, a summary and a link, and is republished whenever the source adds something. A reader program follows those addresses and gathers everything you subscribe to into one place, removing the need to check each journal by hand; the same mechanism carries blog posts, news headlines and podcast episodes well beyond academic literature. What you can then do with the stream depends on the reader you choose: a typical reader lets you skim the titles, mark what you have seen and save items for later, while filtering, full-text reading and search vary from reader to reader. The three steps below set up a basic reading routine.
+NOTE: Handwritten mark circling the colon after "choose" and drawing an arrow to a handwritten semicolon in the right margin.
+TEXT: 1 Choose a reader. Web readers such as Feedly or Inoreader need no installation; desktop and mobile readers work offline.
+TEXT: 2 Subscribe with feed addresses. Paste verified URLs into your reader: Nature, Nature Communications, arXiv cs.AI.
+TEXT: 3 Keep a five-minute morning routine. Scan titles with your tea, move real candidates to Read Later, close the reader.
+TEXT: Winnie fu's Feedly
+TEXT: Today
+TEXT: Follow sources
+TEXT: Create AI Feed
+TEXT: Search
+TEXT: Go to...
+TEXT: Read later
+TEXT: Feeds
+TEXT: Upgrade
+TEXT: Academic
+TEXT: Today
+TEXT: Retractions of old papers are on the rise: when should bad science be culled?
+TEXT: Nature
+TEXT: Nature, 2024-05-08 00:00:00 Never have so many papers been retracted, but the true scale of the problem is unknown.
+TEXT: Deep Learning on Medium
+TEXT: Communications of
+LEGIBILITY: good
+
+===== page 4 =====
+TEXT: All
+TEXT: Academic
+TEXT: Nature
+TEXT: 1 more feed
+TEXT: Boards
+TEXT: Integrations & API
+TEXT: Blog
+TEXT: Learn & get support
+TEXT: Author or just 'acknowledged'? How women are not gaining full credit for research
+TEXT: Daily briefing: The 'overshoot COP' kicks off
+TEXT: Metascience should be a source of evidence, not a means of control
+TEXT: the ACM - Artificial
+TEXT: r/deeplearning
+TEXT: Explore
+
+TEXT: Figure 1 - Subscribing to journal feeds in Feedly. An 'Academic' collection aggregates incoming issues from journals like Nature and arXiv cs.AI into one reading stream, so morning triage needs no extra tabs.
+
+NOTE: Handwritten "B" over the "2" in "Step 2".
+TEXT: Step 2: Curate the literature using Zotero
+
+TEXT: For anyone still formatting references by hand, a reference manager is the first upgrade worth making. It works as a personal research database, where full-text PDFs sit beside verified records, annotations stay bound to their pages, and one click pulls a paper off the web.
+
+NOTE: Handwritten circle around the colon after "zotero.org)". A line connects this circle to a handwritten note in the right margin: "a semicolon is the correct punct".
+TEXT: We use Zotero (free, open source, zotero.org): its metadata and citation engines can be inspected and reused in automated pipelines, and its open architecture keeps data in the scholar's hands. Mendeley and EndNote follow similar patterns.
+
+NOTE: Handwritten cross-out over the word "loop" and the colon following it. Handwritten insertion: ", as noted below."
+NOTE: Handwritten note in the right margin, pointing towards the crossed-out colon: "no colon".
+TEXT: Four operations complete the loop:
+
+TEXT: Operation
+TEXT: Import
+TEXT: Organize
+TEXT: Read & annotate
+TEXT: Cite
+TEXT: What you do in Zotero
+TEXT: Browser connector, or by DOI, RIS/BibTeX, PDF drag-and-drop
+TEXT: Collections, tags, saved searches, duplicates
+TEXT: Built-in reader; highlights become notes
+TEXT: Plug-in for Word, LibreOffice, Google Docs
+TEXT: Advantage
+TEXT: Metadata and full PDF, no copy-pasting
+TEXT: Sorted by topic, no duplicated files
+TEXT: Notes stay attached to the entry
+TEXT: Thousands of styles, bibliography self-updates
+
+TEXT: zotero
+TEXT: My Library
+TEXT: Applied Linguistics & AI
+TEXT: My Publications
+TEXT: Trash
+TEXT: Web Library
+TEXT: Groups
+TEXT: Documentation
+TEXT: Forums
+TEXT: Get Involved
+TEXT: Winnniec fu
+TEXT: Upgrade Storage
+TEXT: Title
+TEXT: How to find, read and organize papers
+TEXT: Large language models encode clinical knowledge
+TEXT: Creator
+TEXT: Gosztyla
+TEXT: Singhal et al.
+TEXT: Date
+TEXT: 2022-07-07
+TEXT: 2023-08-03
+TEXT: Info
+TEXT: Notes
+TEXT: Tags
+TEXT: Attachments
+TEXT: Related
+TEXT: Item Type Journal Article
+TEXT: Title How to find, read and organize papers
+TEXT: Author Gosztyla, Maya
+TEXT: Publication Nature
+TEXT: Volume
+TEXT: Issue
+TEXT: Pages
+TEXT: Date 2022-07-07
+TEXT: Series
+TEXT: Series Title
+TEXT: Journal Abbr
+TEXT: Language
+TEXT: DOI 10.1038/d41586-022-01878-7
+TEXT: ISSN
+TEXT: Short Title
+TEXT: URL https://www.nature.com/articles/
+TEXT: Accessed 11/10/2023, 6:39:37 PM
+TEXT: Archive
+TEXT: Loc. in Archive
+TEXT: Library Catalog
+TEXT: Call Number
+TEXT: Rights
+TEXT: Extra
+TEXT: Date Added 11/10/2023, 6:39:37 PM
+TEXT: Modified 11/10/2023, 6:39:37 PM
+
+NOTE: Handwritten note in the bottom right margin: "I have a good-~~sized~~ sized Zotero library for AI articles. Would you like to use that as a screenshot?"
+TEXT: Figure 2 - Literature management in Zotero (Web Library). Incoming papers are filed into a project collection ('Applied Linguistics & AI' in this illustrative example) with complete metadata, source URL, and DOI captured in one click.
+
+LEGIBILITY: good
+
+===== page 5 =====
+TEXT: Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab.
+NOTE: Right margin, attached to the end of the first sentence with a line: "this seems a bit random"
+
+TEXT: Both tools are dependable, and both wait for you once the feeds arrive. Every decision in this workflow
+runs through an interface: a person clicks the connector, drags the file, scans the list and chooses what to
+keep, and none of it happens again until someone returns to the screen. That is the practical limit of
+interface-driven work, and it is the question Part 3 takes up.
+
+TEXT: Part 3 · Enhancing GUI software solutions with agentic-AI-
+powered API programming
+
+TEXT: Every tool in Part 2 reaches you through a graphical user interface (GUI): windows, buttons and menus that
+a person drives by hand, one screen at a time. The RSS reader shows incoming issues as a list you click
+through; Zotero shows your library as folders you drag files into. That is the GUI's virtue: a newcomer
+becomes productive in minutes. It is also its boundary: the screen moves at the speed of fingers and eyes,
+so it cannot check for new papers while you teach, or repeat last week's multi-filter search without
+retyping. Gosztyla's hundred tabs were a symptom of that boundary.
+NOTE: Right margin, attached to the paragraph with a bracket: "This is too much identifiable AI-patterned writing. It lowers credibility"
+
+TEXT: Programmed code has no hands or eyes: it runs a query at dawn and repeats yesterday's search next
+month. An Application Programming Interface (API) is how code reaches such services without a screen: a
+fixed menu of requests that returns exact, machine-readable records. Part 4 puts this in your hands: you
+describe the job, and an agent writes and runs the code that calls the API.
+NOTE: Strikethrough on "Programmed code has no hands or eyes: it runs a query at dawn and repeats yesterday's search next month."
+NOTE: Circles around "A", "P", and "I" in "Application Programming Interface".
+NOTE: Right margin, attached to "Application Programming Interface" with a line: "no caps because it's not a proper noun"
+NOTE: Semicolon inserted after "screen" in the second sentence, replacing the colon.
+
+TEXT: Graphical user interface (GUI) Application Programming Interface (API)
+Driven by fingers and eyes, one screen at a time requests sent in code, no screen in between
+Pace as fast as you can click runs at dawn, repeats on schedule
+Good for reading, judging, deciding what to keep searching, collecting, exporting at scale
+In this entry Feedly and Zotero, from Part 2 the hands-on build in Part 4
+
+TEXT: Entry 1 established the bridge that makes this reachable: an agent sits between human language and
+computing instruments. You describe a job in ordinary sentences and and the agent writes the code
+that calls the API. Entry 1 also drew a boundary we preserve: the agent reasons, and the database
+supplies the facts.
+NOTE: Insertion mark after "instruments." with a semicolon above it.
+NOTE: Semicolon inserted after "preserve", replacing the colon.
+
+TEXT: With an API in hand, both GUI solutions from Part 2 can be rebuilt without their screens: an RSS reader
+becomes a feed watcher that checks the journal for you, and Zotero becomes a metadata store an agent
+can query, write records to, and export as BibTeX or RIS. The GUI keeps the part that needs a person:
+reading critically, and deciding what to keep. Part 4 puts the pipeline into practice.
+NOTE: Semicolon inserted after "screens", replacing the colon.
+
+TEXT: Part 4 · How you do that, with WorkBuddy
+NOTE: Strikethrough on "How you do that, with WorkBuddy".
+NOTE: Written over the strikethrough: "Next Steps with Workbuddy"
+
+TEXT: In entry 01 of this blog series, we already showcased the power of agentic AI but did not address the
+question of how to start. In this entry, we demonstrate how to use agentic AI hands-on. WorkBuddy is an
+agentic AI platform developed by Tencent, an internet giant based in mainland China. If you wish to try the
+tool, you may sign up for an account here: https://www.workbuddy.ai/.
+NOTE: Underline under "entry 01 of this blog series".
+NOTE: Underline under "this entry, we demonstrate how to use agentic AI hands-on".
+NOTE: Strikethrough on "an internet giant based in mainland China".
+NOTE: Right margin, attached to "WorkBuddy" with a line: "link to it?"
+
+TEXT: WorkBuddy is not the only tool for agentic AI: integrated development environments (IDEs) such as VS
+Code, Codex, Claude Code and Cursor now ship agentic-AI modules, but those tools are built for
+professional programmers and developers, and a beginner would find them difficult to pick up. This entry
+runs in WorkBuddy instead, where you start from plain sentences.
+
+TEXT: Before the hands-on part, revisit Entry 01's input-process-output model: plain sentences in, code written
+NOTE: Underline under "Entry 01's".
+NOTE: Right margin, next to the last line: "link"
+
+LEGIBILITY: good
+
+===== page 6 =====
+TEXT: and run, files and tables out. Keep it in view to understand the big picture of what the demo below does.
+TEXT: Plain-language brief
+TEXT: a permissioned article
+TEXT: Google's published research
+TEXT: quality input
+TEXT: Agentic AI
+TEXT: writes programming code
+TEXT: calls tools & APIs
+TEXT: reasoning / processing
+TEXT: Playable
+TEXT: an interactive page
+TEXT: that runs, not a reply
+TEXT: output
+TEXT: The pipeline of this entry, drawn in code — no image generator involved.
+TEXT: Everything needed for the demo is collected in the companion workshop folder.
+TEXT: The demo: an RSS feed, a reading log, and Zotero
+TEXT: The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and
+TEXT: promise of agentic AI: an agent reads a journal feed, builds a reading log, and replicates a reference
+TEXT: manager’s core function from the reference manager’s own source code — all from plain sentences. It aims
+TEXT: at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with
+TEXT: network access and a writable workspace, it writes and runs its own code. The first two prompts deliver
+TEXT: that pass; the rest are optional extensions once it works.
+NOTE: Right margin, attached to "workspace, it writes": workspace, as it writes....
+TEXT: 1 Planning contract. Establish rules first:
+NOTE: Attached to the colon after "first": This isn't what colons do. Use a period here or no punctuation at all.
+TEXT: “I am new to this. Before doing anything: tell me in three bullet points what this prompt would
+NOTE: Attached to the colon after "anything": [circled colon]
+TEXT: do, what information you need from me, and what could go wrong. Do not run it yet: ‘Fetch the
+TEXT: five most recent articles from Nature’s RSS feed (https://www.nature.com/nature.rss) and show
+TEXT: Title, Publication date, and Link.’”
+TEXT: 2 Fetch the feed. Once the agent outlines its plan, send:
+NOTE: Attached to the colon after "send": no colon
+TEXT: “Fetch the RSS feed at https://www.nature.com/nature.rss with Python, parse the five most
+TEXT: recent items, and output a table: Title | Date | Link. Every row must come strictly from the feed;
+TEXT: leave missing fields empty and never invent records.”
+TEXT: Outcome: Five rows appear. Open one link to check it resolves. A feed is a plain XML file, so anything
+NOTE: Attached to "resolves": what does "resolves" mean?
+TEXT: the feed does not carry stays empty.
+NOTE: Attached to "the feed does not carry stays empty.": doesn't make sense
+TEXT: 3 Save to CSV. Ask:
+NOTE: Attached to the colon after "Ask": no colon
+TEXT: “Save this table to found.csv with columns: Title, Date, Link, Reading_Status, Notes. Set
+TEXT: Reading_Status to Unread and leave Notes blank.”
+TEXT: Outcome: Found.csv opens in Excel, Google Sheets, or Tencent Docs as a durable reading log.
+TEXT: 4 Replicate a Zotero module, from its source. Zotero is open-source, so its own code can serve as
+TEXT: the specification. Point WorkBuddy at the repository and ask it to read one module, then write and
+NOTE: Attached to "Point WorkBuddy at the repository": show us what this means
+TEXT: run its own version:
+TEXT: “Read how Zotero implements record export in https://github.com/zotero/zotero, with its per-
+TEXT: format translators in https://github.com/zotero/translators. Explain the steps in three bullet
+TEXT: points, then write and run a Python script that replicates that module for our five records,
+TEXT: producing found.bib and found.ris with clean citekeys and no invented fields.”
+NOTE: Right margin, attached to the block quote: ?
+TEXT: Outcome: The agent reads a real implementation, restates it, and runs its own version. What comes
+NOTE: Attached to "restates it": why?
+TEXT: out is not a file prepared for import; it is a working replica of one Zotero function, written and run in
+NOTE: Attached to the semicolon after "import": no dash
+
+LEGIBILITY: good
+
+===== page 7 =====
+TEXT: the same pass. The same reading-then-replicating move applies to other modules: tagging, de-duplication, metadata clean-up.
+
+TEXT: 5 From DOI to styled references. A feed link hides a DOI, and a DOI is enough to rebuild the full reference — the identifier-lookup and style-rendering modules Zotero itself relies on. Start with the same planning contract as step 1, applied to this task, then send:
+
+NOTE: Handwritten note in the right margin, next to the paragraph starting "5 From DOI...": "nevermind". Below it, a heavily scribbled-out block of text.
+
+NOTE: Handwritten note inserted after "send:" in the printed text: "no color". There is a circle around "as step 1, applied to this task, then send:" with an arrow pointing to "no color".
+
+NOTE: Handwritten note in the left margin, next to the block quote starting "Take the five links...": "font". There is a line pointing from "font" to the block quote.
+
+TEXT: "Take the five links in found.csv: a Nature link carries its DOI as the suffix after /articles/ (10.1038/...). For each DOI, fetch the record from https://api.crossref.org/works/<DOI> and save Title | Authors | Year | Container | DOI to found_meta.csv — empty fields stay empty, nothing is invented. Then render the same five records twice with citeproc, using apa.csl and chicago-notes-bibliography.csl from citation-style-language/styles, and save references-apa.txt and references-chicago.txt."
+
+TEXT: Outcome: Two files, the same five works in two styles — one APA, one Chicago — built from metadata the agent fetched itself. Other journals need a title search instead of the link swap; the style files are the same.
+
+NOTE: Handwritten note in the right margin, pointing to the sentence "Outcome: Two files...": "Please make this a full sentence." The phrase "Two files, the same five works in two styles — one APA, one Chicago — built from metadata the agent fetched itself." is circled.
+
+NOTE: Handwritten note in the right margin, pointing to the phrase "link swap" in the printed text: "Undefined term = link swap". The phrase "link swap" is circled.
+
+TEXT: What the feed returned. The five most recent items in Nature’s RSS feed, fetched on 17 Nov 2026:
+
+NOTE: Handwritten note in the right margin, pointing to the sentence "What the feed returned. The five most recent items in Nature’s RSS feed, fetched on 17 Nov 2026:": "Complete sentence needed". The word "Complete" has a scribbled-out letter at the end. The sentence "The five most recent items in Nature’s RSS feed, fetched on 17 Nov 2026:" is circled.
+
+TEXT: Title Date
+The climate is in crisis — here’s four things we can do 16 Nov 2026
+As El Niño builds, studies of extreme marine heatwaves must start now 16 Nov 2026
+The psychology of imaginary friends — and why they are good for kids 16 Nov 2026
+Is the sixth great extinction imminent? Scientists must draw on natural history for clues 16 Nov 2026
+Number of international students arriving in US plunges — worrying scientists 13 Nov 2026
+
+TEXT: Every step above runs from plain sentences, and the code behind it is public: the workshop folder in the series repository holds the scripts used here. Re-use them, change the feed URL or the columns to suit your own journal, and check back for updates, the instructions in that folder will grow as the workflow does.
+
+NOTE: Handwritten note in the right margin, next to the paragraph starting "Every step above...": "too many dashes". There is an insertion mark (an 'X' with a line) after "updates," in the printed text.
+
+TEXT: Part 5 · What we chose to cover, what can go wrong, and why upgrading beats rebuilding
+
+TEXT: We limit the lesson to find and manage; an entry attempting everything teaches nothing, and BibTeX/RIS export stays the dependable bridge to reference managers. Language models can invent or miscopy citations even when tools are available, so compare outputs with the saved API response, keep missing fields empty, and judge relevance yourself — a DOI identifies a record; it does not establish the quality of its claims or guarantee free full text, and API conditions change, so stop on errors.2 What remains is the payoff: an afternoon of tab chasing becomes a two-minute query. Next month’s review is this month’s prompt with a new date filter.
+
+NOTE: Handwritten note in the right margin, pointing to the underlined text "a DOI identifies a record; it does not establish the quality of its claims or guarantee free full text, and API conditions change, so stop on errors.2": "Amazing point. Maybe put in bold". There is a line connecting the note to the underlined text. There is an insertion mark (a caret '^') before "Next month's review".
+
+TEXT: The starting point of this entry is deliberately not the latest AI technology. It is a workflow proposed before generative AI became widely available — Maya Gosztyla’s four steps, built entirely from ordinary GUI software: RSS feeds and Zotero. Our strategy is to take well-established solutions like these and let agentic AI upgrade them instead of starting from scratch. Two properties make that possible: RSS is a machine-readable format, so an agent can vibe-code a small tool that reads a feed and processes what it finds; Zotero is open-source, so an agent can read its source code and re-use it to replicate functions such as export and tagging. Re-using the code and ideas of pre-AI tools brings the flexibility to add custom
+
+LEGIBILITY: good
+
+===== page 8 =====
+TEXT: as export and tagging. The ability to code and focus on pro AI tools brings the flexibility to add custom
+TEXT: features on top, and the cumulative effect is a shift in role: from tool users to tool builders.
+TEXT: Footnotes
+TEXT: 1. Gosztyla, M. (2022). How to find, read and organize papers. Nature Careers, 07 July 2022.
+TEXT: doi:10.1038/d41586-022-01878-7.
+TEXT: 2. Companion run evidence: workshop run records.
+TEXT: Questions or comments on this entry? Open the discussion: github.com/tesolchina/promptpraxis/issues/2
+TEXT: About this draft. Companion code: workshop/ in the series repository. Reviewer: Traci Nathans-
+TEXT: Kelly. Comments open on publication; moderated, approve-only.
+TEXT: Comments
+TEXT: Comments are moderated — clean comments publish immediately; anything with a link goes to review.
+TEXT: No comments yet.
+TEXT: Name
+TEXT: Email (a verification code is emailed to you)
+TEXT: Send code
+TEXT: Verification code (6 digits, expires in 15 minutes)
+TEXT: Comment
+TEXT: Profile link (optional — LinkedIn/X; checked by the moderator before it appears)
+TEXT: https://www.linkedin.com/in/you
+TEXT: Post comment
+TEXT: ▶ Post via API (agents)
+
+LEGIBILITY: good
+
