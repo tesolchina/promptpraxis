@@ -74,13 +74,13 @@ Programmed code has no hands or eyes: it runs a query at dawn and repeats yester
 
 With an API in hand, both GUI solutions from Part 2 can be rebuilt without their screens: an RSS reader becomes a feed watcher that checks the journal for you, and Zotero becomes a metadata store an agent can query, write records to, and export as BibTeX or RIS. The GUI keeps the part that needs a person: reading critically, and deciding what to keep. Part 4 puts the pipeline into practice.
 
-## Part 4: How you do that, with WorkBuddy
+## Part 4: Next steps with WorkBuddy
 
-In entry 01 of this blog series, we already showcased the power of agentic AI but did not address the question of how to start. In this entry, we demonstrate how to use agentic AI hands-on. WorkBuddy is an agentic AI platform developed by Tencent, an internet giant based in mainland China. If you wish to try the tool, you may sign up for an account here: https://www.workbuddy.ai/.
+In entry 01 of this blog series, we showcased the power of agentic AI without addressing how to start. In this entry, we demonstrate how to use agentic AI hands-on. [WorkBuddy](https://www.workbuddy.ai/) is an agentic AI platform developed by Tencent. If you wish to try the tool, you may [sign up for an account here](https://www.workbuddy.ai/).
 
 WorkBuddy is not the only tool for agentic AI: integrated development environments (IDEs) such as VS Code, Codex, Claude Code and Cursor now ship agentic-AI modules, but those tools are built for professional programmers and developers, and a beginner would find them difficult to pick up. This entry runs in WorkBuddy instead, where you start from plain sentences.
 
-Before the hands-on part, revisit Entry 01's input-process-output model: plain sentences in, code written and run, files and tables out. Keep it in view to understand the big picture of what the demo below does.
+Before the hands-on part, revisit [Entry 01's](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) input-process-output model: plain sentences in, code written and run, files and tables out. Keep it in view to understand the big picture of what the demo below does.
 
 <div class="figure-scroll" style="overflow-x:auto"><svg class="flow" viewBox="0 0 920 210" role="img" aria-label="Flow: a plain-language brief and source material feed an agentic AI that writes code and calls tools, producing something playable" style="max-width:100%;height:auto">
   <defs>
@@ -108,30 +108,29 @@ Before the hands-on part, revisit Entry 01's input-process-output model: plain s
   <text x="460" y="196" text-anchor="middle" font-size="12" fill="#5c6f83">The pipeline of this entry, drawn in code — no image generator involved.</text>
 </svg></div>
 
-Everything needed for the demo is collected in the companion workshop folder.
+Everything needed for the demo is collected in the [companion workshop folder](https://github.com/tesolchina/promptpraxis/tree/main/workshop).
 
 ### The demo: an RSS feed, a reading log, and Zotero
 
-The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI: an agent reads a journal feed, builds a reading log, and replicates a reference manager's core function from the reference manager's own source code — all from plain sentences. It aims at one completed pass: plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the rest are optional extensions once it works.
+The demo is a simple workflow built around RSS and Zotero, chosen to showcase the potential and promise of agentic AI; an agent reads a journal feed, builds a reading log, and replicates a reference manager's core function from the reference manager's own source code — all from plain sentences. It aims at one completed pass; plan the fetch, run it, read the records that come back. Use WorkBuddy with network access and a writable workspace; it writes and runs its own code. The first two prompts deliver that pass; the rest are optional extensions once it works.
 
-1. **Planning contract.** Establish rules first:
-   > "I am new to this. Before doing anything: tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet:
-   > 'Fetch the five most recent articles from Nature's RSS feed (https://www.nature.com/nature.rss) and show Title, Publication date, and Link.'"
-2. **Fetch the feed.** Once the agent outlines its plan, send:
+1. **Planning contract.** Establish rules first.
+   > "I am new to this. Before doing anything, tell me in three bullet points what this prompt would do, what information you need from me, and what could go wrong. Do not run it yet. 'Fetch the five most recent articles from Nature's RSS feed (https://www.nature.com/nature.rss) and show Title, Publication date, and Link.'"
+2. **Fetch the feed.** Once the agent outlines its plan, use this prompt.
    > "Fetch the RSS feed at https://www.nature.com/nature.rss with Python, parse the five most recent items, and output a table: Title | Date | Link. Every row must come strictly from the feed; leave missing fields empty and never invent records."
-   *Outcome:* Five rows appear. Open one link to check it resolves. A feed is a plain XML file, so anything the feed does not carry stays empty.
-3. **Save to CSV.** Ask:
+   *Outcome:* Five rows appear. Open one of the links to make sure the page loads. The feed is a plain XML file; fields it does not include are left blank.
+3. **Save to CSV.** The next prompt saves the table.
    > "Save this table to `found.csv` with columns: Title, Date, Link, Reading_Status, Notes. Set Reading_Status to Unread and leave Notes blank."
    *Outcome:* `found.csv` opens in Excel, Google Sheets, or Tencent Docs as a durable reading log.
-4. **Replicate a Zotero module, from its source.** Zotero is open-source, so its own code can serve as the specification. Point WorkBuddy at the repository and ask it to read one module, then write and run its own version:
+4. **Replicate a Zotero module, from its source.** Zotero is open-source, so its own code can serve as the specification. Paste the two repository links below into WorkBuddy and ask it to read one module, then write and run its own version.
    > "Read how Zotero implements record export in https://github.com/zotero/zotero, with its per-format translators in https://github.com/zotero/translators. Explain the steps in three bullet points, then write and run a Python script that replicates that module for our five records, producing `found.bib` and `found.ris` with clean citekeys and no invented fields."
-   *Outcome:* The agent reads a real implementation, restates it, and runs its own version. What comes out is not a file prepared for import — it is a working replica of one Zotero function, written and run in the same pass. The same reading-then-replicating move applies to other modules: tagging, de-duplication, metadata clean-up.
+   *Outcome:* The agent reads a real implementation and runs its own version. What comes out is not a file prepared for import; it is a working replica of one Zotero function, written and run in the same pass. The same reading-then-replicating move applies to other modules such as tagging, de-duplication and metadata clean-up.
 
-5. **From DOI to styled references.** A feed link hides a DOI, and a DOI is enough to rebuild the full reference — the identifier-lookup and style-rendering modules Zotero itself relies on. Start with the same planning contract as step 1, applied to this task, then send:
-   > "Take the five links in found.csv: a Nature link carries its DOI as the suffix after /articles/ (10.1038/…). For each DOI, fetch the record from https://api.crossref.org/works/<DOI> and save Title | Authors | Year | Container | DOI to found_meta.csv — empty fields stay empty, nothing is invented. Then render the same five records twice with citeproc, using apa.csl and chicago-notes-bibliography.csl from citation-style-language/styles, and save references-apa.txt and references-chicago.txt."
-   *Outcome:* Two files, the same five works in two styles — one APA, one Chicago — built from metadata the agent fetched itself. Other journals need a title search instead of the link swap; the style files are the same.
+5. **From DOI to styled references.** A feed link hides a DOI, and a DOI is enough to rebuild the full reference; that is the identifier-lookup and style-rendering work Zotero itself relies on. Start with the same planning contract as step 1, applied to this task. Use this prompt.
+   > "Take the five links in found.csv: a Nature link carries its DOI as the suffix after /articles/ (10.1038/…). For each DOI, fetch the record from https://api.crossref.org/works/<DOI> and save Title | Authors | Year | Container | DOI to found_meta.csv, leaving empty fields empty and inventing nothing. Then render the same five records twice with citeproc, using apa.csl and chicago-notes-bibliography.csl from citation-style-language/styles, and save references-apa.txt and references-chicago.txt."
+   *Outcome:* The two output files contain the same five works in two styles (one APA, one Chicago), built from metadata the agent fetched itself. For journals other than Nature you would search Crossref by title instead of taking the DOI from the link; the style files are the same.
 
-**What the feed returned.** The five most recent items in Nature's RSS feed, fetched on 17 Nov 2026:
+**What the feed returned.** The table below lists the five most recent items in *Nature*'s RSS feed, fetched on 17 Nov 2026.
 
 | Title | Date |
 |---|---|
@@ -141,11 +140,11 @@ The demo is a simple workflow built around RSS and Zotero, chosen to showcase th
 | Is the sixth great extinction imminent? Scientists must draw on natural history for clues | 16 Nov 2026 |
 | Number of international students arriving in US plunges — worrying scientists | 13 Nov 2026 |
 
-Every step above runs from plain sentences, and the code behind it is public: the [workshop folder](https://github.com/tesolchina/promptpraxis/tree/main/workshop) in the series repository holds the scripts used here. Re-use them, change the feed URL or the columns to suit your own journal, and check back for updates — the instructions in that folder will grow as the workflow does.
+Every step above runs from plain sentences, and the code behind it is public; the [workshop folder](https://github.com/tesolchina/promptpraxis/tree/main/workshop) in the series repository holds the scripts used here. Re-use them, change the feed URL or the columns to suit your own journal, and check back for updates. The instructions in that folder will grow as the workflow does.
 
 ## Part 5: What we chose to cover, what can go wrong, and why upgrading beats rebuilding
 
-We limit the lesson to find and manage; an entry attempting everything teaches nothing, and BibTeX/RIS export stays the dependable bridge to reference managers. Language models can invent or miscopy citations even when tools are available, so compare outputs with the saved API response, keep missing fields empty, and judge relevance yourself — a DOI identifies a record; it does not establish the quality of its claims or guarantee free full text, and API conditions change, so stop on errors. What remains is the payoff: an afternoon of tab chasing becomes a two-minute query, and next month's review is this month's prompt with a new date filter.
+We limit the lesson to find and manage; an entry attempting everything teaches nothing, and BibTeX/RIS export stays the dependable bridge to reference managers. Language models can invent or miscopy citations even when tools are available, so compare outputs with the saved API response, keep missing fields empty, and judge relevance yourself — **a DOI identifies a record; it does not establish the quality of its claims or guarantee free full text, and API conditions change, so stop on errors.** What remains is the payoff; an afternoon of tab chasing becomes a two-minute query, and next month's review is this month's prompt with a new date filter.
 
 The starting point of this entry is deliberately not the latest AI technology. It is a workflow proposed before generative AI became widely available — Maya Gosztyla's four steps, built entirely from ordinary GUI software: RSS feeds and Zotero. Our strategy is to take well-established solutions like these and let agentic AI upgrade them instead of starting from scratch. Two properties make that possible: RSS is a machine-readable format, so an agent can vibe-code a small tool that reads a feed and processes what it finds; Zotero is open-source, so an agent can read its source code and re-use it to replicate functions such as export and tagging. Re-using the code and ideas of pre-AI tools brings the flexibility to add custom features on top, and the cumulative effect is a shift in role: from tool users to tool builders.
 
