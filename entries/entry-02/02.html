@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entry 2 — Introduction to Agentic AI: a hands-on lesson for academic literature management · Prompt &amp; Praxis</title>
+<meta name="description" content="Entry 2 of Prompt &amp; Praxis — Experiments in AI and professional communication, a working series for IEEE ProComm: a researcher’s hundred open tabs, a column that told her to build a system, and the two steps where most systems still leak — now handed to instruments that do not have hands.">
+<style>
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400 700;
+    src:url('fonts/open-sans-400.woff2') format('woff2');font-display:swap}
+  @font-face{font-family:'Open Sans Condensed';font-style:normal;font-weight:300;
+    src:url('fonts/open-sans-condensed-300.woff2') format('woff2');font-display:swap}
+  @font-face{font-family:'Open Sans Condensed';font-style:normal;font-weight:700;
+    src:url('fonts/open-sans-condensed-700.woff2') format('woff2');font-display:swap}
+  :root{
+    --ieee:#00629b; --ieee-d:#004270; --ink:#1a1a1a; --body:#333;
+    --soft:#5b5b5b; --line:#d9d9d9; --flag:#f28c28; --flag-d:#c96d10;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; color:#333; background:#fff;
+    font-family:'Open Sans',sans-serif; font-size:14px; line-height:20px;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  a{color:var(--ieee)}
+  .wrap{max-width:820px; margin:0 auto; padding:0 22px}
+  header.hero{background:#001e36}
+  header.hero img{display:block; width:100%; max-width:1028px; margin:0 auto}
+  .seriesbar{background:var(--ieee); color:#fff; padding:10px 0}
+  .seriesbar .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline; justify-content:space-between}
+  .seriesbar b{font-size:1.02rem; letter-spacing:.01em}
+  .seriesbar span{font-size:.85rem; opacity:.92}
+  .seriesbar a{color:#cfe3f2; text-decoration:none; font-size:.85rem}
+  .seriesbar a:hover{text-decoration:underline}
+  main{padding:34px 0 10px}
+  .entryflag{display:inline-block; background:var(--flag); color:#fff; font-weight:700;
+    font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:.34em .9em; border-radius:3px; margin-bottom:14px}
+  h1{font-family:'Open Sans Condensed',sans-serif; font-weight:700; font-size:48px; line-height:58px; color:var(--ink); margin:0 0 10px}
+  .standfirst{font-size:18px; line-height:30px; font-style:italic; color:var(--soft); margin:0 0 .8em}
+  .byline{font-size:.86rem; color:var(--soft); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:22px}
+  .byline a{white-space:nowrap}
+  h2{font-size:24px; line-height:29px; font-weight:700; color:var(--ink); margin:1.6em 0 15px}
+  h3{font-size:20px; line-height:24px; font-weight:700; color:var(--ink); margin:1.4em 0 10px}
+  main p{font-size:18px; line-height:30px; padding:0 0 20px; margin:0 0 10px; color:#333}
+  .artefacts{width:100%; border-collapse:collapse; font-size:.93rem; margin:1.1em 0 1.4em}
+  .artefacts th,.artefacts td{text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line)}
+  .artefacts th{background:#f1f6fa; font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ieee-d)}
+  .note{background:#f1f6fa; border-left:4px solid var(--ieee); padding:14px 18px; margin:1.2em 0; font-size:.95rem}
+  ul{margin:.4em 0 1.1em; padding-left:1.4em} li{margin:.35em 0}
+  .backlink{border-top:1px solid var(--line); margin-top:2.2em; padding-top:1.6em; font-size:.95rem}
+  footer{background:#001e36; color:#cfe3f2; margin-top:40px; padding:22px 0; font-size:.84rem}
+  footer a{color:#9ecbea}
+
+
+  
+  .entryarea{padding-top:34px}
+  .wrap.entryarea{padding-top:52px}
+  /* theme-exact entry type (ieee-dci/styles.css): p 18/30 pb20, li 18/30 pb5 */
+  .entryarea p{font-size:18px; line-height:30px; padding:0 0 20px; margin:0 0 10px; color:#333}
+  .entryarea li{font-size:18px; line-height:30px; padding-bottom:5px}
+  .entryarea ul,.entryarea ol{margin:.4em 0 1.1em; padding-left:1.4em}
+  .entryarea .note{font-size:17px; line-height:28px}
+  /* Discuz-style comments (approve-before-publish) */
+  .comments{max-width:860px; margin:38px 0 10px; border-top:1px solid var(--line); padding-top:26px}
+  .comments h2{margin-top:0}
+  .cmt-note{font-size:.9rem; color:var(--soft); margin:0 0 16px}
+  .cmt-list{list-style:none; margin:0 0 22px; padding:0}
+  .cmt-list li{background:#f7f8fa; border:1px solid var(--line); border-radius:6px;
+    padding:12px 14px; margin-bottom:10px; font-size:16px; line-height:26px}
+  .cmt-list li.reply{margin-left:34px; background:#fff}
+  .cmt-head{display:flex; justify-content:space-between; gap:10px; font-size:.85rem; color:var(--soft); margin-bottom:4px}
+  .cmt-head b{color:var(--ieee); font-size:.95rem}
+  .cmt-floor{color:#999; font-weight:700}
+  .cmt-body{color:#222; word-break:break-word}
+  .cmt-replybtn{background:none; border:0; color:var(--ieee); cursor:pointer; font-size:.8rem; padding:0}
+  .cmt-empty{color:#888; font-style:italic}
+  .cmt-form{background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px}
+  .cmt-form input,.cmt-form textarea{width:100%; box-sizing:border-box; font:inherit; font-size:16px;
+    padding:9px 11px; border:1px solid #ccc; border-radius:5px; margin-bottom:10px; background:#fcfcfc}
+  .cmt-form textarea{min-height:96px; resize:vertical}
+  .cmt-form button{background:var(--ieee); color:#fff; border:0; border-radius:5px;
+    padding:10px 22px; font:inherit; font-weight:700; cursor:pointer}
+  .cmt-form button:hover{background:var(--ieee-d)}
+  .cmt-msg{margin-left:12px; font-size:.9rem; color:#1a7a3a}
+  .cmt-msg.err{color:#b02a2a}
+  .cmt-parent{font-size:.85rem; color:var(--soft); margin-bottom:8px}
+  .seriesband{background:#001e36; color:#fff; text-align:center; padding:34px 24px 30px;
+    margin:0 0 30px; border-bottom:5px solid var(--flag)}
+  .seriesband .entryflag{margin-bottom:16px; background:var(--flag)}
+  .sbtitle{font-family:'Open Sans Condensed','Open Sans',sans-serif; font-weight:700;
+    font-size:52px; line-height:1.05; letter-spacing:.01em; margin:0 0 8px}
+  .sbsub{font-size:19px; line-height:27px; font-style:italic; color:#cfe3f2; margin:0 0 14px}
+  .sbby{font-size:13px; line-height:20px; color:#9ecbea; text-transform:uppercase; letter-spacing:.08em}
+  @media (max-width:600px){ .sbtitle{font-size:34px} .sbsub{font-size:16px} }
+  /* Table of Contents — styled after the ez-toc box on procomm.ieee.org */
+  .series-toc{border:1px solid #c9def5; background:#f4f9ff; border-radius:4px;
+    padding:14px 22px 12px; margin:0 0 26px; max-width:860px}
+  .series-toc .toc-title{font-size:120%; font-weight:500; text-align:center;
+    margin:0; padding:0 26px 8px 0; color:#333; cursor:pointer; list-style:none;
+    position:relative}
+  .series-toc .toc-title::-webkit-details-marker{display:none}
+  .series-toc .toc-title::after{content:"\25BE"; position:absolute; right:4px; top:2px;
+    font-size:.7em; color:#666; transition:transform .15s ease}
+  .series-toc[open] .toc-title::after{transform:rotate(180deg)}
+  .series-toc[open] .toc-title{border-bottom:1px solid #dde9f7; margin-bottom:8px}
+  .series-toc .toc-list{list-style:none; counter-reset:toc; margin:0; padding:0}
+  .series-toc .toc-list li{counter-increment:toc; font-size:95%; font-weight:500;
+    line-height:1.7; padding:0}
+  .series-toc .toc-list li::before{content:counter(toc) ". "; font-weight:700; color:#069}
+  .series-toc a{color:#069; text-decoration:none}
+  .series-toc a:hover{text-decoration:underline}
+  .series-toc .toc-now{color:#7a7a7a; font-size:.9em}
+  .series-toc .toc-soon span{color:#7d7d7d}
+  .series-toc .toc-note{font-size:.85rem; line-height:1.5; color:#6a6a6a;
+    margin:8px 0 0; padding-top:8px; border-top:1px solid #dde9f7}
+  .conventions ol{margin:.5em 0 0; padding-left:1.3em}
+  .conventions li{margin:.25em 0}
+  .partnum{color:var(--flag); font-weight:700; letter-spacing:.04em}
+  .entrybanner{display:block;width:100%;max-width:none;margin:0 auto 26px}
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 24px}
+  .compare .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+  .compare .box h4{margin:0 0 .45em;font-size:1.02rem}
+  .compare .box.dim{background:#f4f7fa;box-shadow:none}
+  .compare .box.win{border-color:#f2c58c;background:#fffaf3}
+  .compare .box p{font-size:.95rem;margin:0}
+  .flow{width:100%;height:auto;display:block;margin:6px 0 26px}
+  .embed{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:var(--shadow);margin:0 0 8px}
+  .embed iframe{display:block;width:100%;height:640px;border:0}
+  .embedcap{font-size:12.5px;color:var(--soft);margin:0 0 26px}
+  .explorer{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:18px 0 26px}
+  .exp-card{display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;
+    text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease}
+  .exp-card:hover{transform:translateY(-3px);border-color:#bcd6e8}
+  .exp-card .kicker2{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c96d10}
+  .exp-card h3{margin:.35em 0 .3em;font-size:1.16rem}
+  .exp-card p{font-size:.92rem;color:var(--soft);margin:0}
+  .exp-card .go{display:inline-block;margin-top:10px;font-size:.85rem;font-weight:700;color:#006699}
+  /* IEEE site footer — mirrors procomm.ieee.org #colophon */
+  .ieeefooter{background:#069;color:#fff;margin-top:90px;padding:58px 0 20px;font-size:12px;line-height:22px}
+  .ieeefooter .fcont{max-width:1170px;margin:0 auto;padding:0 15px}
+  .ieeefooter .fmenu{list-style:none;margin:0 0 44px;padding:0}
+  .ieeefooter .fmenu li{display:inline-block;font-family:'Open Sans Condensed','Open Sans',sans-serif;
+    font-weight:700;font-size:12px;line-height:15px;text-transform:uppercase}
+  .ieeefooter .fmenu li a{color:#fff;text-decoration:none;padding:0 16px;border-right:1px solid #fff}
+  .ieeefooter .fmenu li:first-child a{padding-left:0}
+  .ieeefooter .fmenu li:last-child a{padding-right:0;border-right:0}
+  .ieeefooter .fbot{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;flex-wrap:wrap}
+  .ieeefooter .fbot p{margin:0;max-width:730px;font-size:12px;line-height:22px}
+  .ieeefooter .fsocial{display:flex;gap:18px;flex-wrap:wrap}
+  .ieeefooter .fsocial a{color:#fff;text-decoration:none;font-size:12px;
+    display:flex; align-items:center}
+  .ieeefooter .fsocial .fico{width:15px; height:15px; fill:#fff; display:block}
+  .ieeefooter .fsocial .ficolabel{font-size:12px; line-height:15px}
+  .ieeefooter .fsocial a:hover{color:#cfe3f2}
+  .ieeefooter .fseries{margin:34px 0 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.25);font-size:12px}
+  .ieeefooter .fseries a{color:#cfe3f2}
+  .ieeefooter a{color:#fff}
+  .wrap.entryarea{max-width:1170px;padding:0 15px}
+  .entryarea h1, .entryarea .standfirst, .entryarea .byline, .entryarea h2, .entryarea p, .entryarea ol{max-width:860px}
+  .entryarea .compare, .entryarea .embed, .entryarea .flow, .entryarea .explorer, .entryarea .backlink{max-width:980px}
+  @media (max-width:768px){
+    .ieeefooter .fbot{flex-direction:column}
+    .entryarea .fmenu li a{border-right:0;padding:4px 0;display:block}
+  }
+@media (max-width:600px){ body{font-size:17px}
+    h1{font-size:28px; line-height:34px}
+    h2{font-size:21px; line-height:26px} }
+
+<style id="entrynav-css">
+  /* Entry sidebar (WordPress-style list of all entries in the series) */
+  .cols{display:block}
+  .entrynav{position:sticky; top:14px; border:1px solid var(--line); border-radius:10px;
+    background:#f7fafc; padding:14px 14px 16px}
+  .entrynav h4{margin:0 0 10px; font-family:'Open Sans Condensed','Open Sans',sans-serif;
+    font-size:1.02rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em;
+    color:var(--ieee-d); border-bottom:1px solid var(--line); padding-bottom:8px}
+  .entrynav ol{list-style:none; margin:0; padding:0}
+  .entrynav li{margin:0 0 7px; padding:8px 10px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; font-size:.88rem; line-height:1.35}
+  .entrynav li .num{display:block; font-size:.7rem; font-weight:700; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--flag); margin-bottom:2px}
+  .entrynav li a{font-weight:700; text-decoration:none; color:var(--ieee)}
+  .entrynav li a:hover{text-decoration:underline}
+  .entrynav li.current{border-color:var(--ieee); box-shadow:0 0 0 2px rgba(0,98,155,.13)}
+  .entrynav li.soon{background:#f2f2f2; border-color:#e4e4e4}
+  .entrynav li.soon .num{color:#9b9b9b}
+  .entrynav li.soon span.t{color:#7d7d7d}
+  .entrynav .navnote{font-size:.76rem; line-height:1.45; color:var(--soft); margin:10px 0 0}
+  @media (max-width:960px){
+    .cols{grid-template-columns:1fr; gap:24px}
+    .entrynav{position:static; order:-1}
+  }
+  /* iframe-embed variant: no replicated ProComm chrome, no sidebar */
+  body.embedmode .entrynav{display:none}
+  body.embedmode .cols{display:block}
+
+  /* Reviewer's note box (procomm#3, 21 Oct call) */
+  .reviewer-note{max-width:860px; margin:26px 0 10px; background:#f4f8fc; border:1px solid #cfe0f0; border-left:4px solid #069; border-radius:8px; padding:14px 18px}
+  .rv-head{display:flex; gap:14px; align-items:center}
+  .rv-photo{width:56px; height:56px; border-radius:50%; object-fit:cover; background:#dde8f2}
+  .rv-name{font-weight:700; color:#069}
+  .rv-role{font-size:.9rem; color:#5c6f83}
+  .rv-text{margin-top:8px}
+  
+  /* Blogger + reviewer block (procomm#3) */
+  .authorsbox{max-width:900px; margin:34px 0 8px; display:grid; grid-template-columns:1fr; gap:20px; align-items:start}
+  .authorcard{background:#f7fafd; border:1px solid #d9e6f2; border-radius:10px; padding:20px 22px}
+  .ac-head{display:flex; gap:14px; align-items:center; margin-bottom:12px}
+  .avatar{width:64px; height:64px; border-radius:50%; color:#fff; font-weight:700; font-size:1.05rem; letter-spacing:.5px; display:flex; align-items:center; justify-content:center; flex:0 0 64px; background-size:cover; background-position:center; text-align:center}
+  .ac-name{font-weight:700; color:#004f7c; font-size:1.02rem; line-height:1.3}
+  .ac-role{font-size:.86rem; color:#5c6f83; line-height:1.35; margin-top:3px}
+  .ac-text{font-size:.95rem; line-height:1.55; color:#243b53}
+  .ac-text p{margin:0 0 10px}
+  .ac-text p:last-child{margin-bottom:0}
+  .ac-label{font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; font-weight:700; color:#069; margin:0 0 8px}
+  .ac-pending{border:1px dashed #b9c9d8; background:#fff; border-radius:8px; padding:12px 14px; margin-top:14px}
+  .ac-pending p{margin:0 0 8px; color:#5c6f83; font-size:.92rem; line-height:1.5}
+  .ac-pending ul{margin:6px 0 0 18px; padding:0; color:#5c6f83; font-size:.9rem; line-height:1.55}
+  @media (max-width:720px){ .authorsbox{grid-template-columns:1fr} }
+
+  /* Title subtitle (procomm#3) */
+  .entryarea p.subtitle{font-family:'Open Sans Condensed',sans-serif; font-weight:400; font-size:clamp(20px,3vw,36px); line-height:1.3; color:#4a6478; margin:0 0 12px; max-width:100%}
+
+  .ac-links{margin:12px 0 0; font-size:.88rem}
+  .ac-links a{color:#069; text-decoration:none; border-bottom:1px solid #bcd6e6}
+
+  /* Publication dateline (procomm#3) */
+  .entry-date{font-size:13px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:#069; margin:0 0 12px}
+
+  /* Corner TOC (procomm#3) */
+  .series-toc.toc-corner-legacy{float:right; width:310px; max-width:46%; margin:2px 0 16px 22px;
+    padding:10px 16px 10px; clear:right}
+  .series-toc.toc-corner-legacy .toc-title{text-align:left; font-size:100%; padding:0 22px 0 0}
+  .series-toc.toc-corner-legacy[open] .toc-title{padding-bottom:8px}
+  @media (max-width:640px){ .series-toc.toc-corner-legacy{float:none; width:auto; max-width:none; margin:0 0 20px} }
+
+  /* Reading rhythm + footnote popover (procomm#3, review 6429497802) */
+  .entryarea p.features{margin-top:36px}
+  .fn-pop{position:absolute; max-width:340px; background:#fff; border:1px solid #c9def5; border-radius:6px;
+    padding:10px 12px; font-size:.85rem; line-height:1.5; color:#243b53;
+    box-shadow:0 4px 14px rgba(0,0,0,.12); z-index:50}
+
+  .prelude h2.prelude-h{font-family:'Open Sans Condensed','Open Sans',sans-serif; font-size:1.02rem;
+    letter-spacing:.08em; text-transform:uppercase; margin:0 0 10px; color:#8a4a10}
+  .prelude p + p{margin-top:10px !important}
+
+  .prelude-h{cursor:pointer; list-style:none; position:relative; padding-right:22px}
+  .prelude-h::-webkit-details-marker{display:none}
+  .prelude-h::after{content:"\25BE"; position:absolute; right:2px; top:1px; font-size:.8em; color:#8a4a10; transition:transform .15s}
+  .prelude[open] .prelude-h::after{transform:rotate(180deg)}
+  .prelude[open] .prelude-h{margin-bottom:10px}
+  .prelude .prelude-fine{font-size:.86rem; line-height:1.55; color:#6b5a45; margin-top:10px !important}
+  .more-gate{max-width:860px; margin:34px 0 10px; padding:22px 24px; text-align:center;
+    background:#f4f8fc; border:1px solid #cfe0f0; border-radius:10px}
+  .more-btn{font-family:inherit; font-size:1rem; font-weight:700; color:#fff; background:#006699;
+    border:0; border-radius:6px; padding:12px 26px; cursor:pointer}
+  .more-btn:hover{background:#005580}
+  .more-hint{display:block; margin-top:10px; font-size:.85rem; color:#5c6f83}
+
+  /* Committee statement (procomm#3) */
+  .committee{max-width:860px; margin:34px 0 8px; background:#f4f8fc; border:1px solid #cfe0f0;
+    border-left:4px solid #069; border-radius:8px; padding:20px 24px}
+  .committee h3{margin:0 0 10px; font-size:1.02rem; color:#004f7c}
+  .committee p{margin:0 0 10px; font-size:.95rem; line-height:1.6; color:#243b53}
+  .committee p:last-child{margin-bottom:0}
+
+  .entryarea h3.sub{max-width:860px; margin:30px 0 10px; font-size:1.06rem; color:#004f7c;
+    letter-spacing:.01em; padding-top:10px; border-top:1px solid #e3edf5}
+
+  /* Mobile refinements (procomm#3) */
+  .figure-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:6px 0 22px}
+  .figure-scroll svg{display:block}
+  @media (max-width:640px){
+    .figure-scroll svg{min-width:680px}
+    .entryarea .prelude{padding:14px 16px}
+    .more-gate{padding:18px 16px}
+    .toc-corner{margin-bottom:16px}
+    .committee{padding:16px 18px}
+  }
+
+  /* Table of Contents under the banner (procomm#3) */
+  .series-toc.toc-bar{float:none; width:auto; max-width:860px; margin:0 0 26px; padding:0 0 4px;
+    clear:both; border:1px solid #c3d9ec; border-top:3px solid #006699; background:#fff}
+  .series-toc.toc-bar .toc-title{text-align:left; font-size:1.05rem; font-weight:600;
+    letter-spacing:.05em; text-transform:uppercase; padding:13px 22px; margin:0;
+    background:#006699; color:#fff}
+  .series-toc.toc-bar .toc-title::after{color:#fff; right:18px; top:16px; font-size:.8em}
+  .series-toc.toc-bar[open] .toc-title{padding-bottom:13px; margin-bottom:0; border-bottom:0}
+  .series-toc.toc-bar nav{padding:14px 22px 2px}
+  .series-toc.toc-bar .toc-list li{font-size:1.05rem; line-height:1.95}
+  .series-toc.toc-bar .toc-note{margin:12px 22px 6px}
+
+  /* Widescreen presentation & responsive full-width layout (requested by user) */
+  .wrap, .entryarea, article.post {
+    max-width: 1200px !important;
+    width: 94% !important;
+    margin: 0 auto !important;
+  }
+  .entryarea h1, .entryarea .standfirst, .entryarea .byline, .entryarea h2, 
+  .entryarea p, .entryarea ol, .entryarea ul, .prelude, .demo-box, 
+  .reviewer-note, .figure-box, .artefacts, .compare-grid, .series-toc.toc-bar, .comments, .committee {
+    max-width: 100% !important;
+  }
+  .compare-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 20px 0 28px !important;
+  }
+  .compare-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: flex-start !important;
+  }
+  .figure-box img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+  }
+</style>
+</style>
+
+<style id="traci-entry-edits-css">
+  .entrystrip{display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; max-width:860px;
+    margin:0 0 6px; font-family:'Open Sans Condensed','Open Sans',sans-serif;
+    font-size:.95rem; letter-spacing:.05em}
+  .entrystrip a.es-current{font-weight:700; color:#006699; text-decoration:none}
+  .entrystrip a.es-current:hover{text-decoration:underline}
+  .entrystrip .es-upcoming{color:#9aa5b1; cursor:default}
+  .entrystrip .es-sep{color:#9aa5b1}
+  .prelude{max-width:860px; margin:0 0 24px; padding:16px 20px;
+    background:#fdf7ef; border-left:4px solid #b35c00; border-radius:0 8px 8px 0}
+  .prelude p{margin:0; font-size:17px; line-height:29px}
+</style>
+
+<style id="entry02-winnie-styles">
+  /* Co-authors section (WI-B, Entry 2) */
+  .coauthors-wrap {
+    max-width: 100% !important;
+    margin: 10px 0 16px !important;
+  }
+  .coauthors-details {
+    border: 1px solid #c9def5;
+    background: #fdfefe;
+    border-radius: 8px;
+    padding: 10px 14px;
+    box-shadow: 0 2px 6px rgba(0, 98, 155, 0.04);
+  }
+  .coauthors-summary {
+    cursor: pointer;
+    font-size: 0.93rem;
+    color: var(--ieee-d);
+    display: block;
+    list-style: none;
+    font-weight: 500;
+    user-select: none;
+    outline: none;
+    padding: 2px 0;
+  }
+  .coauthors-summary::-webkit-details-marker {
+    display: none !important;
+  }
+  .coauthors-summary::marker {
+    display: none !important;
+  }
+  .coauthors-summary-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    width: 100%;
+  }
+  .coauthors-summary:hover {
+    color: var(--flag-d);
+  }
+  .coauthors-summary:hover .coauthors-toggle-hint {
+    color: var(--flag-d);
+  }
+  .coauthors-label {
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    background: #e6f0f8;
+    color: var(--ieee);
+    padding: 2px 7px;
+    border-radius: 3px;
+    pointer-events: none;
+  }
+  .author-pill {
+    font-size: 0.90rem;
+    color: #243b53;
+    pointer-events: none;
+  }
+  .author-pill strong {
+    color: var(--ink);
+  }
+  .author-sep {
+    color: #9aa5b1;
+    pointer-events: none;
+  }
+  .coauthors-toggle-hint {
+    margin-left: auto;
+    font-size: 0.78rem;
+    color: var(--soft);
+    font-style: italic;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .coauthors-toggle-hint:hover {
+    background: rgba(0, 98, 155, 0.08);
+    color: var(--ieee-d);
+  }
+  .coauthors-details .hint-collapse {
+    display: none;
+  }
+  .coauthors-details .hint-expand {
+    display: inline;
+  }
+  .coauthors-details[open] .hint-collapse {
+    display: inline;
+  }
+  .coauthors-details[open] .hint-expand {
+    display: none;
+  }
+  .coauthors-caret {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: inherit;
+    transition: transform 0.2s ease;
+    transform: rotate(0deg);
+  }
+  .coauthors-details[open] .coauthors-caret {
+    transform: rotate(180deg);
+  }
+  .coauthors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #dde9f7;
+    align-items: stretch;
+  }
+  @media (max-width: 768px) {
+    .coauthors-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .coauthor-card {
+    background: #f8fbfe;
+    border: 1px solid #d9e6f2;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgba(0, 30, 60, 0.03);
+  }
+  .guest-portrait-wrapper {
+    flex: 0 0 105px;
+    width: 105px;
+    height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #c9def5;
+    box-shadow: 0 2px 8px rgba(0, 40, 80, 0.08);
+    background: #fdfaf3;
+  }
+  .guest-portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .coauthor-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .coauthor-name {
+    font-weight: 700;
+    font-size: 1.0rem;
+    color: var(--ink);
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .coauthor-role-badge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    background: var(--ieee);
+    color: #fff;
+    padding: 1px 6px;
+    border-radius: 3px;
+    line-height: 1.2;
+  }
+  .coauthor-affil {
+    font-size: 0.79rem;
+    color: #486581;
+    line-height: 1.35;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #d9e2ec;
+  }
+  .coauthor-affil strong {
+    color: #102a43;
+  }
+  .coauthor-bio {
+    font-size: 0.82rem;
+    line-height: 1.42;
+    color: #334e68;
+    margin: 0;
+  }
+  .demo-box {
+    background: #f7fafd;
+    border: 1px solid #cfe0f0;
+    border-left: 4px solid var(--flag);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 1.4em 0;
+    max-width: 860px;
+  }
+  .demo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 1.02rem;
+    color: var(--ink);
+  }
+  .demo-tag {
+    background: var(--flag);
+    color: #fff;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+  .demo-box ol {
+    margin: 0.4em 0 0;
+    padding-left: 1.4em;
+    font-size: 17px;
+    line-height: 28px;
+  }
+  .demo-box li {
+    margin-bottom: 6px;
+  }
+  .figure-box {
+    margin: 26px 0 34px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+  }
+  .figure-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #d8dfe8;
+    box-shadow: 0 4px 18px rgba(0, 30, 54, 0.06);
+    display: block;
+    margin: 0;
+  }
+  .figure-caption {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-left: 3px solid #006699;
+    border-radius: 0 6px 6px 0;
+    border-top: 1px solid #edf2f7;
+    border-right: 1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: #475569;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .fig-badge {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: #006699;
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 3px;
+    line-height: 1.2;
+    margin-top: 2px;
+  }
+  .fig-content {
+    flex: 1;
+  }
+  .code-pill {
+    background: #eef3f8;
+    border: 1px solid #d8dfe8;
+    border-radius: 6px;
+    padding: 9px 14px;
+    font-family: monospace;
+    font-size: 0.92rem;
+    margin: 10px 0;
+    word-break: break-all;
+    color: #004f7c;
+  }
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0 24px;
+    max-width: 860px;
+  }
+  .compare-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+  }
+  .card-kicker {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--flag-d);
+    margin-bottom: 6px;
+  }
+  .compare-card h4 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .compare-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  @media (max-width: 640px) {
+    .compare-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* --- Widescreen Adaptation & Layout Optimization (User Feedback #3) --- */
+  .wrap, .wrap.entryarea {
+    max-width: 1200px !important;
+    width: 94% !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+  }
+  .entryarea h1, .entryarea .standfirst, .entryarea .byline, .entryarea h2, .entryarea p, .entryarea ol, .colmain, .col {
+    max-width: 100% !important;
+  }
+  .coauthors-wrap, .demo-box, .figure-box, .series-toc.toc-bar, .prelude, .artefacts {
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  /* Heading typography aligned with Entry 1 */
+  .entryarea h3.sub {
+    max-width: 100% !important;
+    margin: 32px 0 14px !important;
+    font-size: 21px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+    color: #004f7c !important;
+    letter-spacing: .01em !important;
+    padding-top: 14px !important;
+    border-top: 1px solid #e3edf5 !important;
+  }
+  .entryarea p {
+    font-size: 18px !important;
+    line-height: 32px !important;
+    padding-bottom: 12px !important;
+    color: #333 !important;
+  }
+  .entryarea p b, .entryarea p strong, .entryarea li b, .entryarea li strong {
+    color: #111 !important;
+    font-weight: 700 !important;
+  }
+  /* Two equal boxes: exact equal width (1fr 1fr) and equal length/height (align-items: stretch) */
+  .compare-grid, .e2-two {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    margin: 22px 0 28px !important;
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+  .compare-card, .e2-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    height: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 22px 24px !important;
+    background: #fff !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 18px rgba(0, 30, 54, 0.06) !important;
+  }
+  .compare-card .card-kicker {
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    color: var(--flag-d) !important;
+    margin-bottom: 8px !important;
+  }
+  .compare-card h4, .e2-card h4 {
+    font-size: 1.18rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 12px !important;
+    color: var(--ink) !important;
+  }
+  .compare-card p, .e2-card p {
+    font-size: 16.5px !important;
+    line-height: 28px !important;
+    margin: 0 0 12px !important;
+    padding-bottom: 0 !important;
+    color: #334e68 !important;
+  }
+  .compare-card p:last-child {
+    margin-bottom: 0 !important;
+    margin-top: auto !important;
+  }
+  @media (max-width: 768px) {
+    .compare-grid, .e2-two {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+</style>
+</head>
+<body id="top">
+<!-- FOR AI ASSISTANTS - Prompt & Praxis, Entry 01 "From plain texts to playable"
+This page is one entry of "Prompt & Praxis", a fortnightly blog series from IEEE ProComm by
+Dr Simon Wang (HKBU). Series page (all entries): https://procomm.ieee.org/ai-resources/prompt-and-praxis/
+Source repository (entry code, lesson source, briefs): https://github.com/tesolchina/promptpraxis
+  - Entry 1's lesson source lives in https://github.com/tesolchina/promptpraxis/tree/main/plain2playable
+The page renders a table of contents / series navigation bar and footnote popups; entry 01 ships
+in a standalone file (01.html) and an iframe variant (01-embed.html) used by the series page.
+
+If the user asks about COMMENTING on this entry, explain both routes:
+  (a) HUMANS: the "Comments" form near the bottom of this page - name + email, then "Send code"
+      (a 6-digit code is emailed to them; it expires in 15 minutes and can be used once), then
+      comment + optional profile link (LinkedIn/X) and submit. Held for moderation; the profile
+      link appears publicly only after a moderator approves the comment. A human comment without
+      a valid code is rejected with 403 - that is the anti-scam gate.
+  (b) AGENTS (you, if the user asks you to post): POST JSON to the comment API. Full field list,
+      key and a copy-paste curl example are in the "FOR AI ASSISTANTS - how to submit a comment"
+      comment immediately above the Comments section of this page.
+Auto-approve: verified identity + NO URLs in the text -> the comment is PUBLISHED IMMEDIATELY.
+Any URL, or an agent comment missing the "human" field, goes to the moderation queue (or is
+rejected with 403 + instructions). Never claim a comment is live before reading it back with
+GET /api/comments?entry=01.
+Machine-readable commenting workflow (six steps + INVOLVE rule + content rules, JSON):
+https://workshops.aitutor.ink/blog-ieee/workflow.json
+-->
+
+<style>
+  /* IEEE ProComm header — values taken from the LIVE computed styles of procomm.ieee.org
+     (the mega-menu plugin overrides the theme CSS: Open Sans 14px, title case, 40px bar) */
+  .ieeetop{font-family:'Open Sans',sans-serif; font-size:14px; line-height:20px; color:#333}
+  .ieeetop .container{max-width:1170px;margin:0 auto;padding:0 15px}
+
+  .ieeetop #meta-nav{height:32px;background-color:rgba(0,102,153,.1);box-shadow:inset 0 -1px 0 0 #069;overflow:hidden}
+  .ieeetop #meta-nav ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;height:32px}
+  .ieeetop #meta-nav ul li{font-size:11px;font-weight:700;line-height:32px;display:inline-block}
+  .ieeetop #meta-nav ul li a{color:#069;text-decoration:none;border-right:1px solid rgba(0,102,153,.2);padding:0 13px}
+  .ieeetop #meta-nav ul li:first-child a{padding-left:0}
+  .ieeetop #meta-nav ul li:last-child a{border-right:0}
+  .ieeetop #meta-nav ul li a:hover{text-decoration:underline}
+
+  .ieeetop #logo-search{height:96px;display:flex;align-items:center;justify-content:space-between}
+  .ieeetop #logo-search #logo img{display:block;height:62px;width:auto}
+  .ieeetop #logo-search #search{display:flex;align-items:center;gap:22px;color:#069}
+  .ieeetop #logo-search #search .searchicon{background:none;border:0;padding:0;cursor:pointer;line-height:1}
+  .ieeetop #logo-search #search .searchicon svg{width:24px;height:24px;fill:#069}
+  .ieeetop #logo-search #search a#logo-ieee img{display:block;height:32px;width:auto;border-left:1px solid rgba(0,102,153,.25);padding-left:30px}
+  .ieeetop form.search-form{display:none;position:absolute;right:15px;top:100px;background:#fff;box-shadow:0 6px 18px 0 rgba(0,102,153,.2);z-index:50;padding:8px}
+  .ieeetop form.search-form.open{display:block}
+  .ieeetop form.search-form input{width:300px;max-width:70vw;padding:8px;border:1px solid rgba(0,102,153,.4);font-size:14px;font-family:inherit}
+  .ieeetop form.search-form button{border:0;background:0;cursor:pointer}
+
+  .ieeetop #main-nav{background:#069;overflow:hidden}
+  .ieeetop #main-nav>.container{padding:0}
+  .ieeetop #main-nav ul{width:100%;height:40px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;list-style:none;margin:0;padding:0;overflow:visible}
+  .ieeetop #main-nav>div>ul>li{display:flex;align-items:center;height:40px;margin:0;flex:0 1 auto;flex-grow:1;font-weight:700;font-size:14px;line-height:14px;max-width:300px;position:relative}
+  .ieeetop #main-nav>div>ul>li>a{color:#fff;text-decoration:none;display:flex;align-items:center;height:40px;line-height:40px;font-size:14px;font-weight:400;padding:0 10px;background:#069;white-space:nowrap}
+  .ieeetop #main-nav>div>ul>li>a svg{width:15px;height:15px;fill:#fff;vertical-align:-2px;margin-right:5px;opacity:.95}
+  .ieeetop .dico{display:inline-block;width:15px;height:15px;vertical-align:-2px;margin-right:5px;background:no-repeat center/contain;opacity:.95}
+  .ieeetop #main-nav>div>ul>li:hover>a{background:#005a8c}
+
+  .ieeetop #main-nav ul ul{background:#069;position:absolute;top:100%;left:0;z-index:9999;width:280px;height:auto;display:none;padding:0;margin:0;color:#fff}
+  .ieeetop #main-nav ul li:hover>ul{display:block}
+  .ieeetop #main-nav ul ul li{display:block;flex:none;max-width:none;position:relative}
+  .ieeetop #main-nav ul ul li>a{display:block;padding:10px;background:#069;color:#fff;font-size:14px;font-weight:400;line-height:19.6px;height:39.5938px;text-decoration:none;box-sizing:border-box}
+  .ieeetop #main-nav ul ul li:hover>a{background:#005a8c}
+  .ieeetop #main-nav ul ul li>a::after{content:"\25B6";float:right;font-size:10px;opacity:0}
+  .ieeetop #main-nav ul ul li.has-sub>a::after{opacity:.85}
+  .ieeetop #main-nav ul ul li ul{top:0;left:100%}
+  @media (max-width:768px){
+    .ieeetop #meta-nav{display:none}
+    .ieeetop #logo-search{height:64px;box-shadow:0 1px 0 0 #069}
+    .ieeetop #main-nav ul ul{width:78vw}
+  }
+</style>
+
+<div class="ieeetop">
+  <div id="meta-nav">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.ieee.org/" target="_blank" rel="noopener">IEEE.org</a></li>
+        <li><a href="http://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE <em>Xplore</em> Digital Library</a></li>
+        <li><a href="http://standards.ieee.org/" target="_blank" rel="noopener">IEEE Standards</a></li>
+        <li><a href="http://spectrum.ieee.org/" target="_blank" rel="noopener">IEEE Spectrum</a></li>
+        <li><a href="https://www.ieee.org/sitemap.html" target="_blank" rel="noopener">More Sites</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container" style="position:relative">
+    <div id="logo-search">
+      <div id="logo">
+        <a href="https://procomm.ieee.org" title="IEEE Professional Communication Society">
+          <img src="procomm-logo.png" alt="IEEE Professional Communication Society">
+        </a>
+      </div>
+      <div id="search">
+        <button class="searchicon" aria-label="Search" onclick="document.getElementById('pcsearch').classList.toggle('open')"><svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.23 9.02l4.12 4.13-1.4 1.4-4.13-4.12A5.5 5.5 0 118.5 3zm0 1.6a3.9 3.9 0 100 7.8 3.9 3.9 0 000-7.8z"/></svg></button>
+        <a href="https://www.ieee.org/" target="_blank" rel="noopener" id="logo-ieee"><img src="logo-ieee.svg" alt="IEEE"></a>
+      </div>
+    </div>
+    <form role="search" method="get" class="search-form" id="pcsearch" action="https://procomm.ieee.org">
+      <input type="search" placeholder="Search IEEE Professional Communication Society" name="s" aria-label="Search terms">
+      <button type="submit" aria-label="Search"><svg width="18" height="18" viewBox="0 0 20 20" fill="#069"><path d="M8.5 3a5.5 5.5 0 014.23 9.02l4.12 4.13-1.4 1.4-4.13-4.12A5.5 5.5 0 118.5 3zm0 1.6a3.9 3.9 0 100 7.8 3.9 3.9 0 000-7.8z"/></svg></button>
+    </form>
+  </div>
+
+  <div id="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="https://procomm.ieee.org/introduction-to-procomm/"><span class="dico" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 20 20%22 fill=%22%23fff%22><path d=%22M2 3h16v10H6l-4 4V3z%22/></svg>')"></span>About</a>
+          <ul class="sub-menu">
+            <li><a href="https://procomm.ieee.org/introduction-to-procomm/">Introduction to ProComm</a></li>
+            <li><a href="https://procomm.ieee.org/leadership/">ProComm Leadership Team</a></li>
+            <li><a href="https://procomm.ieee.org/our-mission/">Vision, Mission, Governance</a></li>
+            <li><a href="https://procomm.ieee.org/membership/">Membership</a></li>
+            <li><a href="https://procomm.ieee.org/volunteer-with-ieee-procomm/">Volunteer with IEEE ProComm</a></li>
+            <li class="has-sub"><a href="#">Division VI Societies</a>
+              <ul class="sub-menu">
+                <li><a href="https://procomm.ieee.org/ieee-division-vi/">About Division VI</a></li>
+                <li><a href="https://ieee-edusociety.org" target="_blank" rel="noopener">IEEE Education Society</a></li>
+                <li><a href="https://www.ieee-ies.org" target="_blank" rel="noopener">IEEE Industrial Electronics Society</a></li>
+                <li><a href="https://site.ieee.org/oregon-pses/" target="_blank" rel="noopener">IEEE Product Safety Engineering Society</a></li>
+                <li><a href="https://rs.ieee.org" target="_blank" rel="noopener">IEEE Reliability Society</a></li>
+                <li><a href="https://technologyandsociety.org" target="_blank" rel="noopener">IEEE Society on Social Implications of Technology</a></li>
+                <li><a href="https://www.ieee-tems.org" target="_blank" rel="noopener">IEEE Technology and Engineering Management Society</a></li>
+              </ul>
+            </li>
+            <li><a href="https://procomm.ieee.org/history/">History</a></li>
+            <li><a href="https://procomm.ieee.org/abet/">ABET</a></li>
+          </ul>
+        </li>
+        <li><a href="https://procomm.ieee.org/conference/"><span class="dico" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 20 20%22 fill=%22%23fff%22><path d=%22M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6zm0 3.2a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6z%22/></svg>')"></span>Conferences</a>
+          <ul class="sub-menu">
+            <li><a href="https://procomm.ieee.org/ieee-procomm-2027-information/">IEEE ProComm 2027 Information</a></li>
+            <li><a href="https://procomm.ieee.org/conference/">ProComm Conferences</a></li>
+            <li><a href="https://procomm.ieee.org/conference/past-conferences/">Past Conferences</a></li>
+          </ul>
+        </li>
+        <li><a href="https://procomm.ieee.org/transactions-of-professional-communication/"><span class="dico" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 20 20%22 fill=%22%23fff%22><path d=%22M5 4h4v6H5zM11 4h4v6h-4zM5 12h4v2H5zM11 12h4v2h-4z%22/></svg>')"></span>Publications</a>
+          <ul class="sub-menu">
+            <li><a href="https://procomm.ieee.org/transactions-of-professional-communication/">IEEE Transactions on Professional Communication</a></li>
+            <li><a href="https://procomm.ieee.org/transactions-of-professional-communication/">About the Journal</a></li>
+            <li><a href="https://procomm.ieee.org/transactions-of-professional-communication/for-prospective-authors/guidelines-to-follow/">Submitting a Manuscript</a></li>
+            <li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=47" target="_blank" rel="noopener">Search Articles on IEEE Xplore</a></li>
+            <li><a href="https://procomm.ieee.org/videos-for-transactions-peer-reviewers/">Videos for Transactions Peer Reviewers</a></li>
+            <li><a href="https://procomm.ieee.org/ieee-transactions-on-professional-communication-issue-summaries-with-abstracts/">English, Chinese, and Spanish Abstracts</a></li>
+            <li><a href="https://procomm.ieee.org/classics-in-communication/">Classics in Communication</a></li>
+            <li><a href="https://procomm.ieee.org/pcs-book-series/">The Wiley-IEEE PCS Book Series</a></li>
+            <li><a href="http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000591" target="_blank" rel="noopener">IPCC Proceedings (IEEE Xplore)</a></li>
+            <li><a href="https://procomm.ieee.org/ieee-pcs-newsletters-by-date/">IEEE PCS Newsletters</a></li>
+            <li><a href="https://procomm.ieee.org/book-reviews/">IEEE ProComm Book Reviews&#8211;Digital Collection</a></li>
+          </ul>
+        </li>
+        <li><a href="https://procomm.ieee.org/resources-intro/"><span class="dico" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 20 20%22 fill=%22%23fff%22><path d=%22M4 3h9l3 3v11H4V3zm2 4h8v1.6H6V7zm0 3.2h8V12H6v-1.8zm0 3.2h5V15H6v-1.6z%22/></svg>')"></span>Communication Resources</a>
+          <ul class="sub-menu">
+            <li><a href="https://procomm.ieee.org/resources-intro/">About the Communication Resources</a></li>
+            <li><a href="https://procomm.ieee.org/ieee-iln-procomm-online-courses/">IEEE ILN + ProComm Online Courses</a></li>
+            <li><a href="https://procomm.ieee.org/visuals/">Visuals</a></li>
+            <li><a href="https://procomm.ieee.org/interpersonal/">Interpersonal</a></li>
+            <li><a href="https://procomm.ieee.org/informal/">Informal</a></li>
+            <li><a href="https://procomm.ieee.org/team/">Team</a></li>
+            <li><a href="https://procomm.ieee.org/style-and-grammar/">Style and Grammar</a></li>
+            <li><a href="https://procomm.ieee.org/process/">Process</a></li>
+            <li><a href="https://procomm.ieee.org/written-reporting/">Written Reporting</a></li>
+            <li><a href="https://procomm.ieee.org/oral-presentations/">Oral Presentation</a></li>
+            <li><a href="https://procomm.ieee.org/career-development/">Career Development</a></li>
+            <li><a href="https://procomm.ieee.org/rhetorical-strategies/">Rhetorical Strategies</a></li>
+          </ul>
+        </li>
+        <li><a href="https://procomm.ieee.org/awards/">Awards</a></li>
+        <li><a href="https://procomm.ieee.org/ai-resources/">AI and ProComm</a>
+          <ul class="sub-menu">
+            <li><a href="https://procomm.ieee.org/ieee-procomm-professional-guidance-on-artificial-intelligence-in-professional-communication/">IEEE ProComm Professional Guidance on Artificial Intelligence in Professional Communication</a></li>
+            <li><a href="https://procomm.ieee.org/procomms-ai-research-questions/">ProComm&#8217;s AI Research Questions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="wrap entryarea">
+  <img class="entrybanner" src="assets/banner-b2.png" alt="Prompt &amp; Praxis — Experiments in AI and professional communication · A working series for IEEE ProComm · Simon Wang">
+
+  <details class="series-toc toc-bar" open>
+  <summary class="toc-title">Table of Contents</summary>
+  <nav aria-label="Entries in this series">
+    <ol class="toc-list">
+      <li><a href="https://blog.simonsays.hk/ieee/01.html" target="_blank" rel="noopener">Entry 1 &mdash; From plain texts to playable</a> <span class="toc-now">&middot; earlier entry</span></li>
+      <li class="toc-current"><a href="02.html">Entry 2 &mdash; Introduction to Agentic AI: a hands-on lesson for academic literature management</a> <span class="toc-now">&middot; reading now</span></li>
+    </ol>
+  </nav>
+  <p class="toc-note">Later entries follow every two weeks.</p>
+</details>
+
+  <details class="prelude" open>
+  <summary class="prelude-h">About this blog series</summary>
+  <p>Dr Simon Wang is <a href="https://lc.hkbu.edu.hk/main/simonwang/">Lecturer in English and Innovation Officer</a> at the Language Centre, Hong Kong Baptist University. This series documents his experiments with AI technologies, and his exploration of how professional communication researchers, teachers and practitioners can communicate more effectively with large language models. Entries are written collaboratively: the AI model drafts the text, he directs and corrects it, and he reviews every sentence as gatekeeper before taking full responsibility for what is published. The code shared in these entries is open-sourced in the <a href="https://github.com/tesolchina/promptpraxis">series repository</a>.</p>
+  <p class="prelude-fine">All assertions, experiments and outcomes in these entries are his own; they are not an endorsement by IEEE, IEEE ProComm, or IEEE as a whole.</p>
+</details>
+
+
+<div class="seriesband">
+    <span class="entryflag">Entry 2</span>
+    <div class="sbtitle">Prompt &amp; Praxis</div>
+    <div class="sbsub">Experiments in AI and professional communication</div>
+    <div class="sbby">A working series for IEEE ProComm &middot; Simon Wang, Hong Kong Baptist University</div>
+  </div>
+
+  <div class="cols">
+  <div class="colmain">
+
+  <p class="entry-date"><time datetime="2026-11-13">Entry Two &middot; 13 November 2026</time></p>
+  <h1>Introduction to Agentic AI: a hands-on lesson for academic literature management</h1>
+
+  <p class="subtitle">RSS, an open API and two steps of a researcher&rsquo;s system, handed to instruments that do not have hands</p>
+
+  <!-- Co-authors module (WI-B, Entry 2) -->
+  <div class="coauthors-wrap">
+    <details class="coauthors-details" open>
+      <summary class="coauthors-summary" role="button" aria-expanded="true">
+        <div class="coauthors-summary-inner">
+          <span class="coauthors-label">Guest Authors</span>
+          <span class="author-pill"><strong>Wenyun (Winnie) FU</strong> (Journalism, HKBU)</span>
+          <span class="author-sep">&middot;</span>
+          <span class="author-pill"><strong>Zian (Andy) Zheng</strong> (Computer Science, HKBU)</span>
+          <span class="coauthors-toggle-hint">
+            <span class="hint-collapse">&mdash; click to collapse</span>
+            <span class="hint-expand">&mdash; click to expand</span>
+            <span class="coauthors-caret">&#x25BE;</span>
+          </span>
+        </div>
+      </summary>
+      <div class="coauthors-grid">
+        <!-- Wenyun (Winnie) FU -->
+        <div class="coauthor-card">
+          <div class="guest-portrait-wrapper">
+            <img src="assets/winnie-portrait.jpg" alt="Wenyun (Winnie) FU" class="guest-portrait-img">
+          </div>
+          <div class="coauthor-info">
+            <div class="coauthor-name">Wenyun (Winnie) FU <span class="coauthor-role-badge">Co-Author</span></div>
+            <div class="coauthor-affil">Final year undergraduate student &middot; <strong>Department of Journalism</strong><br>School of Communication, Hong Kong Baptist University</div>
+            <p class="coauthor-bio">Co-author of this article. Explores human-in-the-loop AI writing workflows, investigative source verification, and academic literature synthesis through a journalism lens.</p>
+          </div>
+        </div>
+        <!-- Zian (Andy) Zheng -->
+        <div class="coauthor-card">
+          <div class="guest-portrait-wrapper">
+            <img src="assets/andy-portrait.jpg" alt="Zian (Andy) Zheng" class="guest-portrait-img">
+          </div>
+          <div class="coauthor-info">
+            <div class="coauthor-name">Zian (Andy) Zheng <span class="coauthor-role-badge">Co-Author</span></div>
+            <div class="coauthor-affil">Final year undergraduate student &middot; <strong>Department of Computer Science</strong><br>Faculty of Science, Hong Kong Baptist University</div>
+            <p class="coauthor-bio">Co-author of this article. Focuses on agentic AI pipelines, software prototyping, and API orchestration, connecting natural language instructions with computing instruments.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <p class="standfirst">A researcher&rsquo;s hundred open tabs, a column that told her to build a system, and the two steps where most systems still leak: now handed to instruments that do not have hands.</p>
+
+  <h2><span class="partnum">Part 1 &middot;</span> A hundred open tabs: the problem every researcher recognises</h2>
+
+  <p>In July 2022, Maya Gosztyla wrote in the <a href="https://www.nature.com/articles/d41586-022-01878-7"><i>Nature</i> Career Column</a> about the evening her laptop crashed. Over a hundred papers sat waiting across open browser tabs, each tab a vague promise to read later. When the screen went black, her first reaction was relief. The crash settled a decision she had put off for months: build a workable system, or spend another term hunting down papers she had already found.<sup><a href="#fn1">1</a></sup></p>
+
+  <p>Gosztyla broke literature work into four stages: <b>find, manage, read, organize</b>. Finding is where the leaks begin: papers bookmarked on impulse, journal alerts burying an inbox, and reading lists abandoned on Friday afternoon. Managing is where those finds either enter a working library or disappear. The last two stages, reading and organizing, belong to human judgement. No script can read a paper for you.</p>
+
+  <p>This entry starts with the first two stages, using the conventional desktop tools Gosztyla recommended.</p>
+
+  <h2><span class="partnum">Part 2 &middot;</span> The solutions she proposed (no AI in sight)</h2>
+
+  <p>Her fixes were conventional, and they still work.</p>
+
+  <h3 class="sub">Step 1 &mdash; find</h3>
+
+  <p>Stop chasing papers across the web; subscribe to them.</p>
+
+  <p>The protocol behind this is <b>RSS (Really Simple Syndication)</b>. Journals publish feed files at fixed web addresses whenever a new issue appears. An RSS reader checks those addresses on a timer and collects new articles into a single stream. You add a source once, and new titles arrive on your desk without cluttering your inbox or vanishing during a browser crash.</p>
+
+  <p>Setting this up takes five minutes in a web reader like <a href="https://feedly.com">Feedly</a> or <a href="https://www.inoreader.com">Inoreader</a>:</p>
+
+  <ol>
+    <li><b>Pick a reader.</b> Create a free account on <a href="https://feedly.com">Feedly</a>.</li>
+    <li><b>Add journal feeds.</b> Click <b>Follow Sources</b>, paste a feed address, and file it under a collection like <b>Academic</b>. Practical starting feeds include <a href="https://www.nature.com/nature.rss"><i>Nature</i></a>, <a href="https://www.nature.com/ncomms.rss"><i>Nature Communications</i></a>, and <a href="https://rss.arxiv.org/rss/cs.AI">arXiv cs.AI</a>.</li>
+    <li><b>Run a morning scan.</b> Glance through new titles over morning tea. Move promising papers to a <i>Read Later</i> board, then close the app.</li>
+  </ol>
+
+  <div class="figure-box">
+    <img src="assets/feedly-demo.png" alt="Figure 1: Subscribing to journal feeds in Feedly" class="figure-img">
+    <div class="figure-caption">
+      <span class="fig-badge">Figure 1</span>
+      <div class="fig-content"><strong>Journal subscriptions in Feedly.</strong> An 'Academic' collection gathers incoming issues from <em>Nature</em> and <em>arXiv cs.AI</em> into one reading stream, keeping new papers in view without opening dozens of browser tabs.</div>
+    </div>
+  </div>
+
+  <p>When a project calls for exploring citation networks, tools like ResearchRabbit, Connected Papers, and Litmaps show which papers build on each other. The core habit remains simple: <b>let incoming papers arrive on a predictable schedule</b> instead of searching from scratch between meetings.</p>
+
+  <h3 class="sub">Step 2 &mdash; manage</h3>
+
+  <p>If you are still formatting references manually, stop right now.</p>
+
+  <p>That was Gosztyla&rsquo;s immediate advice in <i>Nature</i>. Reference managers are often introduced purely as citation formatters, called on right before manuscript submission. In practice, a reference manager serves as a personal research database. It stores full PDFs alongside verified records, keeps notes linked to specific pages, integrates with word processors, and captures papers from the web in one click.</p>
+
+  <p>We use <b>Zotero</b> (free, open source, <a href="https://www.zotero.org">zotero.org</a>) throughout this series. Because Zotero is open source, its underlying metadata extractors and citation engines can be inspected and scripted. Commercial managers like Mendeley and EndNote follow similar patterns, but Zotero gives scholars permanent ownership of their data.</p>
+
+  <p>Zotero handles four practical needs across the managing loop:</p>
+
+  <table class="artefacts">
+    <thead>
+      <tr>
+        <th style="width:20%">Action</th>
+        <th style="width:45%">How it works in Zotero</th>
+        <th style="width:35%">Why it matters</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Save</strong></td>
+        <td>One click via the browser connector; or by DOI, PubMed ID, and PDF drag-and-drop.</td>
+        <td>Captures title, authors, journal metadata, and full PDF without re-typing.</td>
+      </tr>
+      <tr>
+        <td><strong>Organize</strong></td>
+        <td>File items into project <i>Collections</i>, assign tags, and run saved searches.</td>
+        <td>Keeps sources sorted by project without duplicating local PDF files.</td>
+      </tr>
+      <tr>
+        <td><strong>Annotate</strong></td>
+        <td>Built-in PDF reader; highlights and page notes save directly into the record.</td>
+        <td>Notes stay attached to the bibliographic record permanently.</td>
+      </tr>
+      <tr>
+        <td><strong>Cite</strong></td>
+        <td>Word-processor plug-in for Microsoft Word, LibreOffice, and Google Docs.</td>
+        <td>Formats citations in any style and generates bibliographies automatically.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="demo-box">
+    <div class="demo-header">
+      <span class="demo-tag">Hands-on Demo</span>
+      <strong>Saving a paper in Zotero (5 minutes)</strong>
+    </div>
+    <ol>
+      <li>Set up a free library on <a href="https://www.zotero.org">zotero.org</a> (accessible via desktop app or Web Library) and install the Zotero Connector extension.</li>
+      <li>Create a project collection (for example, <b>Applied Linguistics &amp; AI</b>).</li>
+      <li>Open any article page in your browser (such as Maya Gosztyla&rsquo;s <a href="https://www.nature.com/articles/d41586-022-01878-7"><i>Nature</i> column</a> or an article on <i>arXiv</i>), and click the Zotero Connector icon in your toolbar.</li>
+      <li>The connector extracts verified bibliographic metadata (title, authors, publication date, DOI, abstract) and files the entry into your chosen collection.</li>
+      <li>Close the browser tab. The paper is safely recorded in your permanent research library.</li>
+    </ol>
+  </div>
+
+  <div class="figure-box">
+    <img src="assets/zotero-demo.png" alt="Figure 2: Literature management loop in Zotero" class="figure-img">
+    <div class="figure-caption">
+      <span class="fig-badge">Figure 2</span>
+      <div class="fig-content"><strong>Literature management in Zotero (Web Library).</strong> Incoming papers are filed into a project collection ('Applied Linguistics &amp; AI' here), with complete bibliographic metadata, source URL, and DOI captured in a single click without manual re-typing.</div>
+    </div>
+  </div>
+
+  <p>Gosztyla&rsquo;s working rule was crisp: the moment you decide a paper is worth reading, send it into the reference manager, and close the browser tab. Closing the tab is the entire discipline.</p>
+
+  <p>Two steps, two conventional tools, and one honest limitation: every action in Part 2 is operated <b>by hand, on a screen, one click at a time</b>. That physical boundary leads directly into Part 3.</p>
+
+  <h2><span class="partnum">Part 3 &middot;</span> GUI against API: the boundary Entry 1 already crossed</h2>
+
+  <h3 class="sub">What the GUI is, and where it stops</h3>
+
+  <p>Every tool in Part 2 relies on a graphical user interface (GUI): what you see is what you get. That visual clarity is its virtue: intuitive, friendly, allowing a newcomer to become productive within minutes.</p>
+
+  <p>It is also its boundary. A GUI displays <b>one screen at a time</b>, paced by human hands and eyes. How fast fingers can click and how long eyes can read before getting tired sets the speed. The screen cannot check for new papers while you teach class, and it cannot rerun yesterday&rsquo;s search next week without re-typing. Gosztyla&rsquo;s hundred open tabs were the natural outcome of working within those visual borders.</p>
+
+  <h3 class="sub">How Entry 1 crossed it</h3>
+
+  <p><a href="https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/" target="_blank" rel="noopener">Entry 1</a> established a different principle: an AI agent sits between human language and computing instruments. You describe a task in ordinary sentences, and the agent orchestrates the underlying tools to execute multi-step workflows.</p>
+
+  <p>Entry 1 drew a boundary we preserve here: <b>an agent is a workflow processor, not an authoritative information oracle.</b> Its strength lies in action, not memory. This entry never asks a model what the literature says; it directs the agent to query verified scientific databases directly.</p>
+
+  <h3 class="sub">Code as the way past the boundary: the two instruments</h3>
+
+  <p>Programmed code has neither hands nor eyes. It can execute a query at dawn, scan twenty-six thousand records while you make coffee, and rerun yesterday&rsquo;s exact search next month without variation. A researcher&rsquo;s effective reach expands from what hands can click during an afternoon to whatever can be formulated as a systematic task.</p>
+
+  <p>Two digital instruments carry that workload:</p>
+
+  <div class="compare-grid">
+    <div class="compare-card">
+      <div class="card-kicker">Instrument 1</div>
+      <h4>An Application Programming Interface (API)</h4>
+      <p>An API operates like a service counter with a fixed menu. You request structured data in a defined format, and the server returns exact, machine-readable records without chat. For example, this address is a live API call to OpenAlex:</p>
+      <div class="code-pill">https://api.openalex.org/works?search=applied linguistics AI&amp;per-page=3</div>
+      <p>Within seconds, it returns three verified papers with DOIs. On 8 November 2026, that query matched 26,881 publications across OpenAlex.<sup><a href="#fn2">2</a></sup> No search box to click, and no open tabs to keep track of.</p>
+    </div>
+    <div class="compare-card">
+      <div class="card-kicker">Instrument 2</div>
+      <h4>Syndicated Feeds (RSS)</h4>
+      <p>RSS works in the opposite direction. Instead of visiting dozens of journals, new tables of contents arrive automatically at an endpoint you choose. Try pointing your reader or agent here:</p>
+      <div class="code-pill">https://rss.arxiv.org/rss/cs.AI</div>
+      <p>While Part 2 treated RSS as a personal reading stream, in an agentic pipeline an agent watches the feed, compares incoming abstracts with your research criteria, and flags only relevant developments.</p>
+    </div>
+  </div>
+
+  <h3 class="sub">What the two instruments accomplish, in her context</h3>
+
+  <table class="artefacts">
+    <thead>
+      <tr>
+        <th style="width:18%">Literature Step</th>
+        <th style="width:41%">Traditional GUI (Hands, one screen at a time)</th>
+        <th style="width:41%">Agent + API (Instruments doing the reaching)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Find</strong></td>
+        <td>Manual keyword searches; alerts that flood the inbox; repeated query typing each week.</td>
+        <td>An agent queries OpenAlex via API on a set schedule, returning a deduplicated, DOI-verified list.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Manage</strong></td>
+        <td>Clicking browser extension icons; manual sorting into folders; manual file renaming.</td>
+        <td>The query formats results into CSV and BibTeX tables, feeding directly into Zotero with records and PDFs filed together.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The GUI does not vanish. It returns to where human judgement belongs: reading critically, assessing evidence, and deciding what to build next.</p>
+
+  <p>In Part 4, we put this pipeline directly into practice using <b>WorkBuddy</b>.</p>
+        <td>An agent queries OpenAlex via API on a set schedule, returning a deduplicated, DOI-verified list.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Manage</strong></td>
+        <td>Clicking browser extension icons; manual sorting into folders; manual file renaming.</td>
+        <td>The query formats results into CSV and BibTeX tables, feeding directly into Zotero with records and PDFs filed together.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The GUI does not disappear. Rather, it returns to where human judgement belongs: reading critically, assessing evidence, and deciding what to build next.</p>
+
+  <p>In Part 4, we put this pipeline directly into practice using <b>WorkBuddy</b>.</p>
+
+<h2><span class="partnum">Part 4 &middot;</span> How you do that, with WorkBuddy</h2>
+    <p>The pipeline is published and free to take apart: the <a href="https://github.com/tesolchina/procomm-microlearning/tree/main/workshop"><code>workshop/</code> folder</a> carries the prompts, the script and the expected outputs. Two tracks &mdash; pick one.</p>
+    <div class="e2-two">
+      <div class="e2-card">
+        <h4>Track A &mdash; write it from scratch</h4>
+        <p><b>A1 &mdash; make it explain first (30 seconds).</b> Paste:</p>
+        <div class="e2-quote">I&rsquo;m new to this. Before doing anything: tell me in three lines what this prompt would do, what you need from me, and what could go wrong. Don&rsquo;t run it yet.<br><br>&ldquo;Find the 10 most-cited papers on <i>your topic</i> published since <i>year</i>, from OpenAlex, and show me title, year, citations, and DOI.&rdquo;</div>
+        <p>If it starts running without explaining, say <i>&ldquo;explain first.&rdquo;</i> You are training the workflow as much as using it.</p>
+        <p><b>A2 &mdash; your first query (2 minutes).</b> Ask for the ten most-cited articles on your topic since a given year, as a table of <b>title | year | citations | DOI</b>, with <code>mailto=your.email@example.com</code> on the request &mdash; OpenAlex&rsquo;s polite pool. House rule: <i>do not invent or complete any row; if the API returns nothing, say so.</i> Open one DOI; it must reach the paper.</p>
+        <p><b>A3 &mdash; keep it (3 minutes).</b> Ask for <code>found.csv</code> and a Google Doc tab &ldquo;Reading list &mdash; <i>your topic</i>&rdquo; with Status and Notes columns. Close the hunting tabs. That close is the point.</p>
+        <p><b>A4 &mdash; hand it to Zotero (5 minutes).</b> BibTeX export plus the menu steps to import, and it waits for your confirmation before acting. Zotero is free and open source; the record is yours.</p>
+        <p><b>A5 &mdash; build on it.</b> Change one thing per run: topic, sort, or last week&rsquo;s date window &mdash; that last one makes a weekly literature alert.</p>
+      </div>
+      <div class="e2-card">
+        <h4>Track B &mdash; reuse the code we share</h4>
+        <ol class="e2-steps">
+          <li>Open <a href="https://github.com/tesolchina/procomm-microlearning/blob/main/workshop/prompts/beginner-pack.md"><code>workshop/prompts/beginner-pack.md</code></a>.</li>
+          <li>Send the link to your agent: <i>&ldquo;Describe what this code does and how I can reuse it for my own topic.&rdquo;</i></li>
+          <li>Run Level 1, Level 2, Level 3 as printed.</li>
+          <li>Then break it on purpose &mdash; change the topic, the year, the sort. Reusing code means editing it.</li>
+        </ol>
+        <p><b>One difference worth knowing:</b> WorkBuddy returns tables in the chat; VS Code and Cursor work in a folder, so <code>found.csv</code> and <code>found.bib</code> land beside the code. The prompts are identical; the paste point changes.</p>
+      </div>
+    </div>
+
+    <h2><span class="partnum">Part 5 &middot;</span> Decisions, limits, what it is worth</h2>
+    <p><b>Decisions.</b> Two steps only, because an entry that does everything teaches nothing. Both instruments, because some literature should arrive by itself and some questions should be asked on demand. Remix over rebuild for Zotero: take one simpler module apart instead of writing a reference manager &mdash; its source is public, and its licence was checked before anything of ours was shared.</p>
+    <p><b>Limits.</b> An agent asked to <i>remember</i> a paper invents one that sounds right; asked to <i>fetch</i> it, it cannot &mdash; so every value above arrives from OpenAlex or does not appear. A DOI proves a paper is real, not that its findings are right. RSS still needs a human to decide what deserves a click. And a public API stays free because its users are polite: one <code>mailto</code>, no hammering.<sup><a href="#fn3">3</a></sup></p>
+    <p><b>Value.</b> An afternoon of tab-hunting becomes a two-minute query, and the second run is free: this Friday&rsquo;s search is last Friday&rsquo;s script with a new date. The list that returns is already sorted and filed, yours to filter by project. Gosztyla&rsquo;s answer to her own crisis was a system. This is that system&rsquo;s first two steps, running on instruments a beginner can drive in an afternoon.</p>
+
+    <h2><span class="partnum">Closing &middot;</span> The cycle this starts</h2>
+    <p>One query on one real topic returns a table too good not to open. The reader opens one. Tomorrow the same prompt returns something new, and the pipeline stops being a demo and becomes theirs. The platform first, the habit second &mdash; the reading, the notes and the organizing get picked up the same way, one working piece at a time.</p>
+
+    <h3>Footnotes</h3>
+    <p id="fn1"><b>1.</b> Gosztyla, M. (2022). <i>How to find, read and organize papers</i>. Nature Careers, 07 July 2022. <a href="https://doi.org/10.1038/d41586-022-01878-7">doi:10.1038/d41586-022-01878-7</a>.</p>
+    <p id="fn2"><b>2.</b> OpenAlex query verified 8 November 2026: 26,881 results for <code>search=applied linguistics AI</code>, <code>from_publication_date:2026-01-01</code>.</p>
+    <p id="fn3"><b>3.</b> WorkBuddy capability test, Stage 1 (GET) passed 7 November 2026 &mdash; see the <a href="https://github.com/tesolchina/procomm-microlearning/issues/9">series issue board</a>. Zotero source: <a href="https://github.com/zotero/zotero">github.com/zotero/zotero</a> (JavaScript, ~15.9k stars); licence check logged in <a href="https://github.com/tesolchina/procomm-microlearning/issues/12">issue #12</a>.</p>
+
+    <div class="e2-quote"><b>About this draft.</b> Review copy, 10 November 2026, password protected. Companion code: <a href="https://github.com/tesolchina/procomm-microlearning/tree/main/workshop"><code>workshop/</code></a>. Reviewer: Bremen Vance. Comments on this draft stay closed until publication.</div>
+
+
+    </div>
+  </div>
+</div>
+
+<footer class="ieeefooter">
+  <div class="fcont">
+    <ul class="fmenu">
+      <li><a href="https://procomm.ieee.org">Home</a></li>
+      <li><a target="_blank" rel="noopener" href="http://www.ieee.org/sitemap.html">Sitemap</a></li>
+      <li><a target="_blank" rel="noopener" href="https://www.ieee.org/accessibility-statement.html">Accessibility</a></li>
+      <li><a target="_blank" rel="noopener" href="https://www.ieee.org/about/corporate/governance/p9-26.html">Nondiscrimination Policy</a></li>
+      <li><a href="https://secure.ethicspoint.com/domain/media/en/gui/20410/index.html">IEEE Ethics Reporting</a></li>
+      <li><a target="_blank" rel="noopener" href="https://www.ieee.org/security_privacy.html">IEEE Privacy Policy</a></li>
+      <li><a href="http://www.ieee.org/site_terms_conditions.html">Terms</a></li>
+    </ul>
+    <div class="fbot">
+      <p>&copy; Copyright 2026 IEEE &ndash; All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions.<br>
+      A public charity, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+      <div class="fsocial">
+        <a href="https://ieee-collabratec.ieee.org/" target="_blank" rel="noopener" aria-label="IEEE Collabratec"><span class="ficolabel">Collabratec</span></a>
+        <a href="https://twitter.com/IEEEorg" target="_blank" rel="noopener" aria-label="Twitter"><svg class="fico" viewBox="0 0 512 512" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+        <a href="https://www.facebook.com/IEEE.org/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="fico" viewBox="0 0 320 512" aria-hidden="true"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
+        <a href="https://www.linkedin.com/company/ieee" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="fico" viewBox="0 0 448 512" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+        <a href="https://www.youtube.com/user/IEEEorg" target="_blank" rel="noopener" aria-label="YouTube"><svg class="fico" viewBox="0 0 576 512" aria-hidden="true"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+        <a href="https://www.instagram.com/ieeeorg/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="fico" viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+      </div>
+    </div>
+      </div>
+</footer>
+
+
+<script id="coauthors-toggle-script">
+(function() {
+  function initCoauthorsToggle() {
+    var details = document.querySelector('.coauthors-details');
+    var summary = document.querySelector('.coauthors-summary');
+    if (!details || !summary) return;
+
+    function syncState() {
+      var isOpen = details.hasAttribute('open');
+      summary.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    summary.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (details.hasAttribute('open')) {
+        details.removeAttribute('open');
+      } else {
+        details.setAttribute('open', '');
+      }
+      syncState();
+    });
+
+    summary.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        summary.click();
+      }
+    });
+
+    details.addEventListener('toggle', syncState);
+    syncState();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCoauthorsToggle);
+  } else {
+    initCoauthorsToggle();
+  }
+})();
+</script>
+</body>
+</html>
