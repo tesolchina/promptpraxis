@@ -22,26 +22,26 @@ Her article set out four steps: **locate the relevant research literature**, **c
 
 ## Part 2: RSS and Zotero: GUI software solutions for finding and managing research literature
 
-Her fixes were conventional, and they still work well today. An RSS reader brings the literature to you, and a reference manager files it; both are established tools from before AI, and each already encodes a way of working that any researcher can follow. Agentic AI builds on them. With vibe coding we can write small tools that reproduce these workflows, or adopt newer tools designed to work with agents.
+Her fixes were conventional, and they still work well today. An RSS reader brings the literature to you, while a reference manager files it. Both predate AI, and each already embodies a workflow any researcher can follow. Agentic AI builds directly on these habits. With vibe coding, we can write small tools that reproduce these workflows or adopt newer tools designed to work with agents.
 
-### Step 1: Locate the relevant research literature
+### Step A: Locate the relevant research literature
 
-Stop hunting for new papers and let them come to you. Really Simple Syndication (RSS) is a web feed format that carries updates from websites in a standard, computer-readable structure: each feed document lists new items with a title, a summary and a link, and is republished whenever the source adds something. A reader program follows those addresses and gathers everything you subscribe to into one place, removing the need to check each journal by hand; the same mechanism carries blog posts, news headlines and podcast episodes well beyond academic literature. What you can then do with the stream depends on the reader you choose: a typical reader lets you skim the titles, mark what you have seen and save items for later, while filtering, full-text reading and search vary from reader to reader. The three steps below set up a basic reading routine.
+Stop hunting for new papers and let them come to you. Really Simple Syndication (RSS) delivers updates in a standardized, computer-readable format. Whenever a journal publishes a new issue, its feed updates with titles, summaries, and links. An RSS reader checks those web addresses automatically and collects everything into one place, so you never have to check individual journal sites by hand. The same mechanism works for blogs, news, and podcasts well beyond academic articles. From there, how you handle the stream depends on your reader. Most apps let you skim titles, mark items as seen, and bookmark candidates for later, though search and filtering vary across tools. Three quick steps set up a basic routine.
 
-1. **Choose a reader.** Web readers such as [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) need no installation; desktop and mobile readers work offline.
-2. **Subscribe with feed addresses.** Paste verified URLs into your reader: [*Nature*](https://www.nature.com/nature.rss), [*Nature Communications*](https://www.nature.com/ncomms.rss), [arXiv cs.AI](https://rss.arxiv.org/rss/cs.AI).
-3. **Keep a five-minute morning routine.** Scan titles with your tea, move real candidates to *Read Later*, close the reader.
+1. **Choose a reader.** Web readers like [Feedly](https://feedly.com) or [Inoreader](https://www.inoreader.com) require no setup, while dedicated desktop and mobile apps work offline.
+2. **Subscribe with feed addresses.** Add verified URLs directly to your reader, such as [*Nature*](https://www.nature.com/nature.rss), [*Nature Communications*](https://www.nature.com/ncomms.rss), or [arXiv cs.AI](https://rss.arxiv.org/rss/cs.AI).
+3. **Keep a five-minute morning routine.** Scan incoming titles over morning tea, move promising papers to *Read Later*, and close the app.
 
 ![Figure 1: Subscribing to journal feeds in Feedly](assets/feedly-demo.png)
 > **Figure 1** · *Subscribing to journal feeds in Feedly.* An 'Academic' collection aggregates incoming issues from journals like *Nature* and *arXiv cs.AI* into one reading stream, so morning triage needs no extra tabs.
 
-### Step 2: Curate the literature using Zotero
+### Step B: Curate the literature using Zotero
 
 For anyone still formatting references by hand, a reference manager is the first upgrade worth making. It works as a personal research database, where full-text PDFs sit beside verified records, annotations stay bound to their pages, and one click pulls a paper off the web.
 
-We use **Zotero** (free, open source, [zotero.org](https://www.zotero.org)): its metadata and citation engines can be inspected and reused in automated pipelines, and its open architecture keeps data in the scholar's hands. Mendeley and EndNote follow similar patterns.
+We use **Zotero** (free, open source, [zotero.org](https://www.zotero.org)). Because its metadata extractors and citation engines are open, they can be inspected and reused in automated pipelines. That open architecture keeps data squarely in the researcher's hands. Mendeley and EndNote follow similar patterns.
 
-Four operations complete the loop:
+Four operations complete the loop, as noted below.
 
 | Operation | What you do in Zotero | Advantage |
 |---|---|---|
@@ -53,9 +53,9 @@ Four operations complete the loop:
 ![Figure 2: Traci's Zotero library](assets/zotero-demo-tnk.jpg)
 > **Figure 2** · *Literature management in Zotero (Web Library).* Incoming papers are filed into a project collection ('Applied Linguistics & AI' in this illustrative example) with complete metadata, source URL, and DOI captured in one click. *Screenshot courtesy of Traci Nathans-Kelly.*
 
-Gosztyla's rule: the moment a paper is worth reading, send it to the manager and close the tab.
+As soon as a paper is worth reading, send it to the manager and close the tab.
 
-Both tools are dependable, and both wait for you once the feeds arrive. Every decision in this workflow runs through an interface: a person clicks the connector, drags the file, scans the list and chooses what to keep, and none of it happens again until someone returns to the screen. That is the practical limit of interface-driven work, and it is the question Part 3 takes up.
+Both tools are dependable, and both wait patiently once new items arrive. Yet every step still runs through an interface. A person has to click the connector, drag the file, scan the list, and decide what to keep. Nothing moves forward until someone sits back down in front of the screen. That is the practical ceiling of interface-driven work, and it is the boundary Part 3 takes up.
 
 ## Part 3: Enhancing GUI software solutions with agentic-AI-powered API programming
 
