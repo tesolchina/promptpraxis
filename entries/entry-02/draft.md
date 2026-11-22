@@ -59,9 +59,9 @@ Both tools are dependable, and both wait patiently once new items arrive. Yet ev
 
 ## Part 3: Enhancing GUI software solutions with agentic-AI-powered API programming
 
-Every tool in Part 2 reaches you through a graphical user interface (GUI): windows, buttons and menus that a person drives by hand, one screen at a time. The RSS reader shows incoming issues as a list you click through; Zotero shows your library as folders you drag files into. That is the GUI's virtue: a newcomer becomes productive in minutes. It is also its boundary: the screen moves at the speed of fingers and eyes, so it cannot check for new papers while you teach, or repeat last week's multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of that boundary.
+The tools presented in Part 2 interact with users through a graphical user interface (GUI), involving windows, buttons and menus that the user drives by hand, one screen at a time. Users see incoming journal issues as a list to click through in the RSS reader, and their Zotero library as folders to drag files into. The interface is easy to pick up, so a newcomer becomes productive in minutes, but its boundary is speed. The screen moves only as fast as fingers and eyes, so it cannot check for new papers while you teach, or repeat last week's multi-filter search without retyping. Gosztyla's hundred tabs were a symptom of that boundary.
 
-Programmed code has no hands or eyes: it runs a query at dawn and repeats yesterday's search next month. An Application Programming Interface (API) is how code reaches such services without a screen: a fixed menu of requests that returns exact, machine-readable records. Part 4 puts this in your hands: you describe the job, and an agent writes and runs the code that calls the API.
+With programming, the same tasks run much faster. Through an Application Programming Interface (API), code reaches such services without a screen; a fixed menu of requests returns exact, machine-readable records. The table below contrasts the two approaches.
 
 |  | Graphical user interface (GUI) | Application Programming Interface (API) |
 |---|---|---|
@@ -70,9 +70,9 @@ Programmed code has no hands or eyes: it runs a query at dawn and repeats yester
 | **Good for** | reading, judging, deciding what to keep | searching, collecting, exporting at scale |
 | **In this entry** | Feedly and Zotero, from Part 2 | the hands-on build in Part 4 |
 
-[Entry 1](https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry01/) established the bridge that makes this reachable: an agent sits between human language and computing instruments, so you describe a job in ordinary sentences and the agent writes the code that calls the API. Entry 1 also drew a boundary we preserve: **the agent reasons, and the database supplies the facts.**
+In Entry 1, we described how agentic AI can serve as a bridge between human language and computing instruments. You describe a job in ordinary sentences, and the agent writes the code that calls the API. Entry 1 also drew a boundary that this entry preserves. **The agent reasons, and the database supplies the facts.**
 
-With an API in hand, both GUI solutions from Part 2 can be rebuilt without their screens: an RSS reader becomes a feed watcher that checks the journal for you, and Zotero becomes a metadata store an agent can query, write records to, and export as BibTeX or RIS. The GUI keeps the part that needs a person: reading critically, and deciding what to keep. Part 4 puts the pipeline into practice.
+With an API in hand, both GUI solutions from Part 2 can be rebuilt without their screens. An RSS reader becomes a feed watcher that checks the journal for you, and Zotero becomes a metadata store an agent can query, write records to, and export as BibTeX or RIS. The interface keeps the work that needs a person, namely reading critically and deciding what to keep. In Part 4, we will put this pipeline into practice.
 
 ## Part 4: Next steps with WorkBuddy
 
