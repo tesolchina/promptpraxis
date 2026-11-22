@@ -5,6 +5,8 @@ Entry 03 covers **Step 3 (read) only** — *"we should probably only do step thr
 **Core idea:** Gosztyla's Step-3 advice is about *disconnecting* from technology; LLMs can instead **read with you** — demo = turn a research article into a **visually appealing mind map (Mermaid)** using **per-section rhetorical templates**.
 **Series note:** entries can later become a **workshop / workshop series** (hands-on training that upgrades pre-LLM published workflows).
 
+**Co-authors:** Wenyun (Winnie) FU (Journalism, HKBU) and Zian (Andy) Zheng (Computer Science, HKBU) — same guest-panel treatment as Entry 2 (collapsible panel, portraits from `assets/`).
+
 ## Working title
 
 *Reading with agentic AI: turning a paper into a structure you can see* — (open)
