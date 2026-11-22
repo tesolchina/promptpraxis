@@ -56,11 +56,16 @@ Step 3 of a 2019-style... — see page (drafted in the gated page)
 - Value: a 40-page paper becomes a 10-minute orientation before the deep read
 
 ## Open questions for Simon
-1. **Which paper** for the demo?
+1. ~~Which paper for the demo~~ — **CHOSEN** (Jwa, JSLW 75 (2027) 101387; see Part 4)
 2. Mermaid rendering: live `mermaid.js` in the embed (interactive) vs pre-rendered PNG/SVG?
 3. Create the WordPress `entry03/` page now (with WP-side gate) or keep the preview embed-only for now?
 4. Title + standfirst approval
 5. Cadence/deadline vs the series' two-week rhythm
+
+## Later roadmap (Simon, 22 Nov 2026)
+
+1. **A skill for users to analyze other papers** — package the per-section mind-mapping workflow as a reusable agent skill (transfer from Entry 02's demo prompts).
+2. **A BYOK frontend** — upload-a-paper interface (bring-your-own-key) so readers can run the analysis on their own PDFs in the browser.
 
 ## Build conventions inherited (from Entry 02)
 - Build chain: `entry_body.html` + `header.html` → `build.py` → `02-embed.html` → upload to `ieee/` on the ECS box (NOT `/var/www/blog.ieee/assets` — path trap documented)
