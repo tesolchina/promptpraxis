@@ -69,5 +69,5 @@ Step 3 of a 2019-style... — see page (drafted in the gated page)
 
 ## Build conventions inherited (from Entry 02)
 - Build chain: `entry_body.html` + `header.html` → `build.py` → `02-embed.html` → upload to `ieee/` on the ECS box (NOT `/var/www/blog.ieee/assets` — path trap documented)
-- Gate: embed-side SHA-256 gate (same series password, hash `1271e2d8…`), WP iframe in front once the WP page exists
+- **Gate rule (Simon, 24 Nov 2026): password gates live INSIDE the iframe embed (`0X-embed.html`), never in WordPress content** — removing a password must never involve a WordPress operation. (Entry 02's WP-side gate was stripped 24 Nov via REST with fresh credentials; entries 03+ gate embed-side only, same SHA-256 pattern, series password.)
 - Style rules learned in Entry 02 (Traci): **no prose colons**, **users as sentence subjects** (no GUI/API/tech-terms as subjects), parallel headings, reference tables/figures before showing them, word cap ~1,600
