@@ -55,6 +55,13 @@ Step 3 of a 2019-style... — see page (drafted in the gated page)
 - Limits: an agent can misread a paper's structure → check every map against the text; maps are orientation aids, not reading substitutes; personal-use mapping of copyrighted papers
 - Value: a 40-page paper becomes a 10-minute orientation before the deep read
 
+## Page setup — DONE (24 Nov 2026, 10:40 HKT)
+
+- **IEEE page live**: https://procomm.ieee.org/ai-resources/prompt-and-praxis/entry03/ (WP id **14120**, slug `entry03`, parent 14006, status `publish`) — thin iframe → `03-embed.html`, **no WordPress gate** (per the embed-only gate rule)
+- **Gate is embed-side**: SHA-256 series password inside `03-embed.html`, sessionStorage remembers within the session
+- **ToC updated on all entries**: Entry 1 (own page, links Entry 2 "13 November" + Entry 3 "30 November"), Entry 2 (Entry 3 "30 November"), Entry 3's page carries its own ToC
+- **Date: 30 November 2026** on the page (entry-date line) — **target completion: 30 Nov** (see task ledger)
+
 ## Open questions for Simon
 1. ~~Which paper for the demo~~ — **CHOSEN** (Jwa, JSLW 75 (2027) 101387; see Part 4)
 2. Mermaid rendering: live `mermaid.js` in the embed (interactive) vs pre-rendered PNG/SVG?
